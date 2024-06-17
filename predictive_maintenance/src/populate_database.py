@@ -6,7 +6,7 @@ import random
 conn = psycopg2.connect(
     dbname="myprojectdb",
     user="postgres",
-    password="your_password",
+    password="neoray123",  # Replace with your actual password
     host="localhost",
     port="5432"
 )
@@ -16,7 +16,7 @@ cur = conn.cursor()
 
 # Insert simulated data
 for _ in range(100):
-    timestamp = datetime.now()
+    timestamp = datetime.now().isoformat()  # Ensure proper ISO format
     sensor_id = random.randint(1, 100)
     temperature = random.uniform(20.0, 25.0)
     pressure = random.uniform(1.0, 2.0)
