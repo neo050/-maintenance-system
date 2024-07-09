@@ -19,6 +19,9 @@ def generate_sensor_data():
 if __name__ == "__main__":
     while True:
         sensor_data = generate_sensor_data()
-        producer.send('sensor_data', sensor_data)
-        print(f"Sent: {sensor_data}")
+        try:
+            producer.send('sensor_data', sensor_data)
+            print(f"Sent: {sensor_data}")
+        except Exception as e:
+            print(f"Error sending data: {e}")
         time.sleep(1)
