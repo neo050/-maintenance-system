@@ -1,0 +1,2 @@
+database:
+  url: postgresql://postgres:neoray123@localhost:5432/predictive_maintenance

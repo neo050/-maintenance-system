@@ -1,28 +1,134 @@
 import pandas as pd
-from sklearn.preprocessing import StandardScaler
+from sklearn.preprocessing import StandardScaler, MinMaxScaler, RobustScaler
+import numpy as np
+from utils.logging_util import get_logger
+import os
 
-# Load the raw data
-data = pd.read_csv('../data/raw/sensor_data.csv')
+# Get logger
+logger = get_logger(__name__)
 
-# Fill missing values
-data.fillna(method='ffill', inplace=True)
+def load_data(file_path):
+    logger.info("Loading data from file: %s", file_path)
+    try:
+        return pd.read_csv(file_path)
+    except Exception as e:
+        logger.error("Error loading data: %s", e)
+        raise
 
-# Feature engineering
-data['air_temp_diff'] = data['Process temperature [K]'] - data['Air temperature [K]']
-data['power'] = data['Torque [Nm]'] * data['Rotational speed [rpm]']
+def fill_missing_values(df):
+    logger.info("Filling missing values")
+    try:
+        return df.ffill()
+    except Exception as e:
+        logger.error("Error filling missing values: %s", e)
+        raise
 
-# Scaling the features
-scaler = StandardScaler()
-scaled_features = scaler.fit_transform(data[['Air temperature [K]', 'Process temperature [K]', 'Rotational speed [rpm]', 'Torque [Nm]', 'Tool wear [min]']])
-scaled_features_df = pd.DataFrame(scaled_features, columns=['Air temperature [K]', 'Process temperature [K]', 'Rotational speed [rpm]', 'Torque [Nm]', 'Tool wear [min]'])
+def feature_engineering(df):
+    logger.info("Performing feature engineering")
+    try:
+        df['air_temp_diff'] = df['Process temperature [K]'] - df['Air temperature [K]']
+        df['power'] = df['Torque [Nm]'] * df['Rotational speed [rpm]']
+        return df
+    except Exception as e:
+        logger.error("Error in feature engineering: %s", e)
+        raise
 
-# Adding lag features efficiently
-lags = 10
-lagged_data = pd.concat([scaled_features_df.shift(i).add_suffix(f'_lag_{i}') for i in range(1, lags + 1)], axis=1)
+def log_transform(df, feature_columns):
+    logger.info("Applying log transformation to handle skewness")
+    try:
+        for feature in feature_columns:
+            df[f'log_{feature}'] = np.log1p(df[feature])
+        return df
+    except Exception as e:
+        logger.error("Error applying log transformation: %s", e)
+        raise
 
-# Concatenate original data with lagged features
-processed_data = pd.concat([data, lagged_data], axis=1).dropna()
+def remove_outliers(df, feature_columns):
+    logger.info("Removing outliers")
+    try:
+        for feature in feature_columns:
+            Q1 = df[feature].quantile(0.25)
+            Q3 = df[feature].quantile(0.75)
+            IQR = Q3 - Q1
+            df = df[~((df[feature] < (Q1 - 1.5 * IQR)) | (df[feature] > (Q3 + 1.5 * IQR)))]
+        return df
+    except Exception as e:
+        logger.error("Error removing outliers: %s", e)
+        raise
 
-# Save processed data
-processed_data.to_csv('../data/processed/processed_data_with_lags.csv', index=False)
-print(f'Processed data shape: {processed_data.shape}')
+def scale_features(df, feature_columns, method='standard'):
+    logger.info("Scaling features using method: %s", method)
+    try:
+        if method == 'standard':
+            scaler = StandardScaler()
+        elif method == 'minmax':
+            scaler = MinMaxScaler()
+        elif method == 'robust':
+            scaler = RobustScaler()
+        else:
+            raise ValueError("Invalid scaling method. Choose 'standard', 'minmax', or 'robust'.")
+
+        scaled_features = scaler.fit_transform(df[feature_columns])
+        scaled_df = pd.DataFrame(scaled_features, columns=[f'scaled_{col}' for col in feature_columns])
+        df = pd.concat([df, scaled_df], axis=1)
+        return df
+    except Exception as e:
+        logger.error("Error scaling features: %s", e)
+        raise
+
+def add_lag_features(df, lags):
+    logger.info("Adding lag features")
+    try:
+        lagged_data = pd.concat([df.shift(i).add_suffix(f'_lag_{i}') for i in range(1, lags + 1)], axis=1)
+        return pd.concat([df, lagged_data], axis=1)
+    except Exception as e:
+        logger.error("Error adding lag features: %s", e)
+        raise
+def normalize_data(df, method='minmax'):
+    logger.info("Normalizing data using method: %s", method)
+    try:
+        if method == 'minmax':
+            scaler = MinMaxScaler()
+        elif method == 'standard':
+            scaler = StandardScaler()
+        elif method == 'robust':
+            scaler = RobustScaler()
+        else:
+            raise ValueError("Invalid normalization method. Choose 'minmax', 'standard', or 'robust'.")
+
+        normalized_data = scaler.fit_transform(df)
+        normalized_df = pd.DataFrame(normalized_data, columns=df.columns)
+        return normalized_df
+    except Exception as e:
+        logger.error("Error normalizing data: %s", e)
+        raise
+
+def preprocess_data(file_path, output_path, feature_columns, lags=10):
+    logger.info("Starting preprocessing pipeline")
+
+    data = load_data(file_path)
+    data = fill_missing_values(data)
+    data = feature_engineering(data)
+    data = log_transform(data, feature_columns)
+    data = remove_outliers(data, feature_columns)
+    data = scale_features(data, feature_columns)
+    data = add_lag_features(data, lags)
+
+    # Normalize data (additional step if necessary)
+    normalized_columns = [col for col in data.columns if col.startswith('scaled_') or col.startswith('log_')]
+    data[normalized_columns] = normalize_data(data[normalized_columns])
+
+    try:
+        data.dropna().to_csv(output_path, index=False)
+        logger.info(f'Processed data saved to: {output_path}')
+        logger.info(f'Processed data shape: {data.shape}')
+    except Exception as e:
+        logger.error("Error saving processed data: %s", e)
+        raise
+
+if __name__ == "__main__":
+    input_file = '../data/raw/sensor_data.csv'
+    output_file = '../data/processed/processed_data_with_lags.csv'
+    feature_columns = ['Air temperature [K]', 'Process temperature [K]', 'Rotational speed [rpm]', 'Torque [Nm]', 'Tool wear [min]']
+
+    preprocess_data(input_file, output_file, feature_columns)
