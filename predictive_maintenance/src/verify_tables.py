@@ -3,9 +3,11 @@ from sqlalchemy import create_engine
 import yaml
 import os
 
+
 def load_config(config_file):
     with open(config_file, 'r') as file:
         return yaml.safe_load(file)
+
 
 def verify_table(db_config_path, table_name):
     config = load_config(db_config_path)
@@ -23,7 +25,10 @@ def verify_table(db_config_path, table_name):
     else:
         print("Database configuration is missing or invalid")
 
+
 if __name__ == "__main__":
     db_config_file = '../config/database_config.yaml'
-    verify_table(db_config_file, 'processed_data')
-    verify_table(db_config_file, 'combined_data')
+    tables_to_verify = ['real_data', 'processed_data', 'simulated_data', 'combined_data']
+
+    for table_name in tables_to_verify:
+        verify_table(db_config_file, table_name)

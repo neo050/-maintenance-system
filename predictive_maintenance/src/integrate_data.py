@@ -6,7 +6,6 @@ import yaml
 
 logger = get_logger(__name__)
 
-
 def load_config(config_file):
     if not os.path.exists(config_file):
         logger.error(f"Configuration file does not exist: {config_file}")
@@ -20,11 +19,9 @@ def load_config(config_file):
             logger.error(f"Error loading configuration file: {e}")
             return None
 
-
 def load_data(file_path):
     logger.info(f"Loading data from {file_path}")
     return pd.read_csv(file_path)
-
 
 def save_to_database(engine, data, table_name):
     if engine is None:
@@ -35,7 +32,6 @@ def save_to_database(engine, data, table_name):
         logger.info(f"Data saved to database table {table_name} successfully")
     except Exception as e:
         logger.error(f"Error saving data to database: {e}")
-
 
 def integrate_data(real_data_path, simulated_data_path, output_path, db_config_path):
     real_data = load_data(real_data_path)
@@ -56,7 +52,6 @@ def integrate_data(real_data_path, simulated_data_path, output_path, db_config_p
         save_to_database(engine, combined_data, 'combined_data')
     else:
         logger.error("Database configuration is missing or invalid")
-
 
 if __name__ == "__main__":
     real_data_file = '../data/processed/processed_data_with_lags.csv'

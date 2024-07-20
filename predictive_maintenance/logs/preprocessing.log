@@ -203,3 +203,1083 @@
 2024-07-16 15:23:37,315 - INFO - Combined data saved to ../data/processed/combined_data.csv
 2024-07-16 15:23:37,315 - INFO - Configuration loaded successfully from ../config/database_config.yaml
 2024-07-16 15:23:51,180 - INFO - Data saved to database table combined_data successfully
+2024-07-19 21:17:14,994 - INFO - Descriptive Statistics for Real Data:
+               UDI  ...  scaled_Tool wear [min]_lag_10
+count  8657.000000  ...                    8657.000000
+mean   4555.221670  ...                       0.426756
+std    2629.164129  ...                       0.250840
+min      11.000000  ...                       0.000000
+25%    2278.000000  ...                       0.209486
+50%    4551.000000  ...                       0.426877
+75%    6838.000000  ...                       0.640316
+max    9091.000000  ...                       1.000000
+
+[8 rows x 264 columns]
+2024-07-19 21:17:15,052 - INFO - Descriptive Statistics for Simulated Data:
+               UDI  ...  scaled_Tool wear [min]_lag_10
+count  1000.000000  ...                     990.000000
+mean    500.500000  ...                       0.000931
+std     288.819436  ...                       1.001238
+min       1.000000  ...                      -1.700590
+25%     250.750000  ...                      -0.884837
+50%     500.500000  ...                       0.010338
+75%     750.250000  ...                       0.893741
+max    1000.000000  ...                       1.741011
+
+[8 rows x 264 columns]
+2024-07-19 21:17:15,362 - INFO - Kolmogorov-Smirnov Test Results:
+{'Air temperature [K]': {'ks_stat': 0.31013503523160446, 'p_value': 6.357567503238989e-77}, 'Process temperature [K]': {'ks_stat': 0.35208871433522004, 'p_value': 1.3085379761102406e-99}, 'Rotational speed [rpm]': {'ks_stat': 0.7731740787801779, 'p_value': 1.67e-321}, 'Torque [Nm]': {'ks_stat': 0.3933676793346425, 'p_value': 4.4285157831638416e-125}, 'Tool wear [min]': {'ks_stat': 0.26316795656694003, 'p_value': 3.3429426562535236e-55}}
+2024-07-19 21:17:15,416 - INFO - Chi-Square Test Results:
+{'Type': {'chi2': 8.320235892295088, 'p_value': 0.0805273412686243}, 'Machine failure': {'chi2': 0.0489050597107088, 'p_value': 0.8249796229293092}, 'TWF': {'chi2': 0.9579050674941085, 'p_value': 0.3277152594989981}, 'HDF': {'chi2': 0.0, 'p_value': 1.0}, 'PWF': {'chi2': 5.2934074891913365, 'p_value': 0.02140629553276103}, 'OSF': {'chi2': 3.685069062115094, 'p_value': 0.05490169785927677}, 'RNF': {'chi2': 0.0, 'p_value': 1.0}}
+2024-07-19 21:18:16,131 - INFO - Descriptive Statistics for Real Data:
+               UDI  ...  scaled_Tool wear [min]_lag_10
+count  8657.000000  ...                    8657.000000
+mean   4555.221670  ...                       0.426756
+std    2629.164129  ...                       0.250840
+min      11.000000  ...                       0.000000
+25%    2278.000000  ...                       0.209486
+50%    4551.000000  ...                       0.426877
+75%    6838.000000  ...                       0.640316
+max    9091.000000  ...                       1.000000
+
+[8 rows x 264 columns]
+2024-07-19 21:18:16,175 - INFO - Descriptive Statistics for Simulated Data:
+               UDI  ...  scaled_Tool wear [min]_lag_10
+count  1000.000000  ...                     990.000000
+mean    500.500000  ...                       0.000931
+std     288.819436  ...                       1.001238
+min       1.000000  ...                      -1.700590
+25%     250.750000  ...                      -0.884837
+50%     500.500000  ...                       0.010338
+75%     750.250000  ...                       0.893741
+max    1000.000000  ...                       1.741011
+
+[8 rows x 264 columns]
+2024-07-19 21:18:16,477 - INFO - Kolmogorov-Smirnov Test Results:
+{'Air temperature [K]': {'ks_stat': 0.31013503523160446, 'p_value': 6.357567503238989e-77}, 'Process temperature [K]': {'ks_stat': 0.35208871433522004, 'p_value': 1.3085379761102406e-99}, 'Rotational speed [rpm]': {'ks_stat': 0.7731740787801779, 'p_value': 1.67e-321}, 'Torque [Nm]': {'ks_stat': 0.3933676793346425, 'p_value': 4.4285157831638416e-125}, 'Tool wear [min]': {'ks_stat': 0.26316795656694003, 'p_value': 3.3429426562535236e-55}}
+2024-07-19 21:18:16,502 - INFO - Chi-Square Test Results:
+{'Type': {'chi2': 8.320235892295088, 'p_value': 0.0805273412686243}, 'Machine failure': {'chi2': 0.0489050597107088, 'p_value': 0.8249796229293092}, 'TWF': {'chi2': 0.9579050674941085, 'p_value': 0.3277152594989981}, 'HDF': {'chi2': 0.0, 'p_value': 1.0}, 'PWF': {'chi2': 5.2934074891913365, 'p_value': 0.02140629553276103}, 'OSF': {'chi2': 3.685069062115094, 'p_value': 0.05490169785927677}, 'RNF': {'chi2': 0.0, 'p_value': 1.0}}
+2024-07-19 21:19:25,966 - INFO - Descriptive Statistics for Real Data:
+               UDI  ...  scaled_Tool wear [min]_lag_10
+count  8657.000000  ...                    8657.000000
+mean   4555.221670  ...                       0.426756
+std    2629.164129  ...                       0.250840
+min      11.000000  ...                       0.000000
+25%    2278.000000  ...                       0.209486
+50%    4551.000000  ...                       0.426877
+75%    6838.000000  ...                       0.640316
+max    9091.000000  ...                       1.000000
+
+[8 rows x 264 columns]
+2024-07-19 21:19:26,010 - INFO - Descriptive Statistics for Simulated Data:
+               UDI  ...  scaled_Tool wear [min]_lag_10
+count  1000.000000  ...                     990.000000
+mean    500.500000  ...                       0.000931
+std     288.819436  ...                       1.001238
+min       1.000000  ...                      -1.700590
+25%     250.750000  ...                      -0.884837
+50%     500.500000  ...                       0.010338
+75%     750.250000  ...                       0.893741
+max    1000.000000  ...                       1.741011
+
+[8 rows x 264 columns]
+2024-07-19 21:19:26,310 - INFO - Kolmogorov-Smirnov Test Results:
+{'Air temperature [K]': {'ks_stat': 0.31013503523160446, 'p_value': 6.357567503238989e-77}, 'Process temperature [K]': {'ks_stat': 0.35208871433522004, 'p_value': 1.3085379761102406e-99}, 'Rotational speed [rpm]': {'ks_stat': 0.7731740787801779, 'p_value': 1.67e-321}, 'Torque [Nm]': {'ks_stat': 0.3933676793346425, 'p_value': 4.4285157831638416e-125}, 'Tool wear [min]': {'ks_stat': 0.26316795656694003, 'p_value': 3.3429426562535236e-55}}
+2024-07-19 21:19:26,335 - INFO - Chi-Square Test Results:
+{'Type': {'chi2': 8.320235892295088, 'p_value': 0.0805273412686243}, 'Machine failure': {'chi2': 0.0489050597107088, 'p_value': 0.8249796229293092}, 'TWF': {'chi2': 0.9579050674941085, 'p_value': 0.3277152594989981}, 'HDF': {'chi2': 0.0, 'p_value': 1.0}, 'PWF': {'chi2': 5.2934074891913365, 'p_value': 0.02140629553276103}, 'OSF': {'chi2': 3.685069062115094, 'p_value': 0.05490169785927677}, 'RNF': {'chi2': 0.0, 'p_value': 1.0}}
+2024-07-19 21:25:29,711 - INFO - Data loaded successfully from ../data/processed/processed_data_with_lags.csv
+2024-07-19 21:25:29,761 - INFO - Data loaded successfully from ../data/simulation/simulated_data.csv
+2024-07-19 21:25:30,347 - INFO - Descriptive Statistics for Real Data:
+               UDI  ...  scaled_Tool wear [min]_lag_10
+count  8657.000000  ...                    8657.000000
+mean   4555.221670  ...                       0.426756
+std    2629.164129  ...                       0.250840
+min      11.000000  ...                       0.000000
+25%    2278.000000  ...                       0.209486
+50%    4551.000000  ...                       0.426877
+75%    6838.000000  ...                       0.640316
+max    9091.000000  ...                       1.000000
+
+[8 rows x 264 columns]
+2024-07-19 21:25:30,391 - INFO - Descriptive Statistics for Simulated Data:
+               UDI  ...  scaled_Tool wear [min]_lag_10
+count  1000.000000  ...                     990.000000
+mean    500.500000  ...                       0.000931
+std     288.819436  ...                       1.001238
+min       1.000000  ...                      -1.700590
+25%     250.750000  ...                      -0.884837
+50%     500.500000  ...                       0.010338
+75%     750.250000  ...                       0.893741
+max    1000.000000  ...                       1.741011
+
+[8 rows x 264 columns]
+2024-07-19 21:25:30,698 - INFO - Kolmogorov-Smirnov Test Results:
+{'Air temperature [K]': {'ks_stat': 0.31013503523160446, 'p_value': 6.357567503238989e-77}, 'Process temperature [K]': {'ks_stat': 0.35208871433522004, 'p_value': 1.3085379761102406e-99}, 'Rotational speed [rpm]': {'ks_stat': 0.7731740787801779, 'p_value': 1.67e-321}, 'Torque [Nm]': {'ks_stat': 0.3933676793346425, 'p_value': 4.4285157831638416e-125}, 'Tool wear [min]': {'ks_stat': 0.26316795656694003, 'p_value': 3.3429426562535236e-55}}
+2024-07-19 21:25:30,723 - INFO - Chi-Square Test Results:
+{'Type': {'chi2': 8.320235892295088, 'p_value': 0.0805273412686243}, 'Machine failure': {'chi2': 0.0489050597107088, 'p_value': 0.8249796229293092}, 'TWF': {'chi2': 0.9579050674941085, 'p_value': 0.3277152594989981}, 'HDF': {'chi2': 0.0, 'p_value': 1.0}, 'PWF': {'chi2': 5.2934074891913365, 'p_value': 0.02140629553276103}, 'OSF': {'chi2': 3.685069062115094, 'p_value': 0.05490169785927677}, 'RNF': {'chi2': 0.0, 'p_value': 1.0}}
+2024-07-19 21:25:30,810 - INFO - Validation results saved to ../data/validation/statistical_validation_results.txt
+2024-07-20 08:34:21,775 - INFO - Loading data from file: ../data/processed/processed_data_with_lags.csv
+2024-07-20 08:34:23,221 - INFO - Simulated data saved to ../data/simulation/simulated_data.csv
+2024-07-20 08:36:38,143 - INFO - Loading data from file: ../data/processed/processed_data_with_lags.csv
+2024-07-20 08:36:39,617 - INFO - Simulated data saved to ../data/simulation/simulated_data.csv
+2024-07-20 08:37:21,419 - INFO - Descriptive Statistics for Real Data:
+               UDI  ...  scaled_Tool wear [min]_lag_10
+count  8657.000000  ...                    8657.000000
+mean   4555.221670  ...                       0.426756
+std    2629.164129  ...                       0.250840
+min      11.000000  ...                       0.000000
+25%    2278.000000  ...                       0.209486
+50%    4551.000000  ...                       0.426877
+75%    6838.000000  ...                       0.640316
+max    9091.000000  ...                       1.000000
+
+[8 rows x 264 columns]
+2024-07-20 08:37:21,477 - INFO - Descriptive Statistics for Simulated Data:
+               UDI  ...  scaled_Tool wear [min]_lag_10
+count  3130.000000  ...                    3130.000000
+mean   2605.808307  ...                       0.087801
+std    1414.001816  ...                       0.906778
+min      11.000000  ...                      -1.732522
+25%    1398.250000  ...                      -0.569432
+50%    2656.500000  ...                       0.052083
+75%    3826.750000  ...                       0.685697
+max    5000.000000  ...                       3.821726
+
+[8 rows x 264 columns]
+2024-07-20 08:37:21,572 - INFO - Kolmogorov-Smirnov Test Results:
+{'Air temperature [K]': {'ks_stat': 0.05506677821895963, 'p_value': 1.6751984122403827e-06}, 'Process temperature [K]': {'ks_stat': 0.06521203362364239, 'p_value': 6.039697612867601e-09}, 'Rotational speed [rpm]': {'ks_stat': 0.07738073051005649, 'p_value': 2.0231824762302988e-12}, 'Torque [Nm]': {'ks_stat': 0.025879812122712936, 'p_value': 0.09004614426388266}, 'Tool wear [min]': {'ks_stat': 0.09540787875589424, 'p_value': 1.1581764595656459e-18}}
+2024-07-20 08:37:21,601 - INFO - Chi-Square Test Results:
+{'Type': {'chi2': 1.254144977123317, 'p_value': 0.8691060643680675}, 'Machine failure': {'chi2': 0.06315155628103424, 'p_value': 0.8015823808457778}, 'TWF': {'chi2': 0.19606614883487844, 'p_value': 0.6579150520286183}, 'HDF': {'chi2': 0.021547354112584457, 'p_value': 0.8832976435577586}, 'PWF': {'chi2': 0.13566435654775408, 'p_value': 0.7126298498721102}, 'OSF': {'chi2': 0.7334698530653607, 'p_value': 0.3917607810275483}, 'RNF': {'chi2': 5.942158126657957, 'p_value': 0.014782906729890155}}
+2024-07-20 08:44:32,706 - INFO - Loading data from file: ../data/processed/processed_data_with_lags.csv
+2024-07-20 08:44:34,164 - INFO - Simulated data saved to ../data/simulation/simulated_data.csv
+2024-07-20 08:45:05,720 - INFO - Starting preprocessing pipeline
+2024-07-20 08:45:05,720 - INFO - Loading data from file: ../data/raw/sensor_data.csv
+2024-07-20 08:45:05,747 - INFO - Filling missing values
+2024-07-20 08:45:05,766 - INFO - Performing feature engineering
+2024-07-20 08:45:05,769 - INFO - Applying log transformation to handle skewness
+2024-07-20 08:45:05,773 - INFO - Removing outliers
+2024-07-20 08:45:05,782 - INFO - Scaling features using method: standard
+2024-07-20 08:45:05,788 - INFO - Adding lag features
+2024-07-20 08:45:05,845 - INFO - Normalizing data using method: minmax
+2024-07-20 08:45:07,828 - INFO - Processed data saved to: ../data/processed/processed_data_with_lags.csv
+2024-07-20 08:45:07,828 - INFO - Processed data shape: (9979, 286)
+2024-07-20 08:45:35,926 - INFO - Loading data from file: ../data/processed/processed_data_with_lags.csv
+2024-07-20 08:45:37,348 - INFO - Simulated data saved to ../data/simulation/simulated_data.csv
+2024-07-20 08:47:05,366 - INFO - Descriptive Statistics for Real Data:
+               UDI  ...  scaled_Tool wear [min]_lag_10
+count  8657.000000  ...                    8657.000000
+mean   4555.221670  ...                       0.426756
+std    2629.164129  ...                       0.250840
+min      11.000000  ...                       0.000000
+25%    2278.000000  ...                       0.209486
+50%    4551.000000  ...                       0.426877
+75%    6838.000000  ...                       0.640316
+max    9091.000000  ...                       1.000000
+
+[8 rows x 264 columns]
+2024-07-20 08:47:05,411 - INFO - Descriptive Statistics for Simulated Data:
+               UDI  ...  scaled_Tool wear [min]_lag_10
+count  3130.000000  ...                    3130.000000
+mean   2605.808307  ...                       0.087801
+std    1414.001816  ...                       0.906778
+min      11.000000  ...                      -1.732522
+25%    1398.250000  ...                      -0.569432
+50%    2656.500000  ...                       0.052083
+75%    3826.750000  ...                       0.685697
+max    5000.000000  ...                       3.821726
+
+[8 rows x 264 columns]
+2024-07-20 08:47:05,505 - INFO - Kolmogorov-Smirnov Test Results:
+{'Air temperature [K]': {'ks_stat': 0.05506677821895963, 'p_value': 1.6751984122403827e-06}, 'Process temperature [K]': {'ks_stat': 0.06521203362364239, 'p_value': 6.039697612867601e-09}, 'Rotational speed [rpm]': {'ks_stat': 0.07738073051005649, 'p_value': 2.0231824762302988e-12}, 'Torque [Nm]': {'ks_stat': 0.025879812122712936, 'p_value': 0.09004614426388266}, 'Tool wear [min]': {'ks_stat': 0.09540787875589424, 'p_value': 1.1581764595656459e-18}}
+2024-07-20 08:47:05,533 - INFO - Chi-Square Test Results:
+{'Type': {'chi2': 1.254144977123317, 'p_value': 0.8691060643680675}, 'Machine failure': {'chi2': 0.06315155628103424, 'p_value': 0.8015823808457778}, 'TWF': {'chi2': 0.19606614883487844, 'p_value': 0.6579150520286183}, 'HDF': {'chi2': 0.021547354112584457, 'p_value': 0.8832976435577586}, 'PWF': {'chi2': 0.13566435654775408, 'p_value': 0.7126298498721102}, 'OSF': {'chi2': 0.7334698530653607, 'p_value': 0.3917607810275483}, 'RNF': {'chi2': 0.06209449903245992, 'p_value': 0.8032156101359637}}
+2024-07-20 09:04:19,638 - INFO - Loading data from file: ../data/processed/processed_data_with_lags.csv
+2024-07-20 09:04:21,029 - INFO - Simulated data saved to ../data/simulation/simulated_data.csv
+2024-07-20 09:04:57,348 - INFO - Descriptive Statistics for Real Data:
+               UDI  ...  scaled_Tool wear [min]_lag_10
+count  8657.000000  ...                    8657.000000
+mean   4555.221670  ...                       0.426756
+std    2629.164129  ...                       0.250840
+min      11.000000  ...                       0.000000
+25%    2278.000000  ...                       0.209486
+50%    4551.000000  ...                       0.426877
+75%    6838.000000  ...                       0.640316
+max    9091.000000  ...                       1.000000
+
+[8 rows x 264 columns]
+2024-07-20 09:04:57,392 - INFO - Descriptive Statistics for Simulated Data:
+               UDI  ...  scaled_Tool wear [min]_lag_10
+count  3130.000000  ...                    3130.000000
+mean   2605.808307  ...                       0.087801
+std    1414.001816  ...                       0.906778
+min      11.000000  ...                      -1.732522
+25%    1398.250000  ...                      -0.569432
+50%    2656.500000  ...                       0.052083
+75%    3826.750000  ...                       0.685697
+max    5000.000000  ...                       3.821726
+
+[8 rows x 264 columns]
+2024-07-20 09:04:57,489 - INFO - Kolmogorov-Smirnov Test Results:
+{'Air temperature [K]': {'ks_stat': 0.05506677821895963, 'p_value': 1.6751984122403827e-06}, 'Process temperature [K]': {'ks_stat': 0.06521203362364239, 'p_value': 6.039697612867601e-09}, 'Rotational speed [rpm]': {'ks_stat': 0.07738073051005649, 'p_value': 2.0231824762302988e-12}, 'Torque [Nm]': {'ks_stat': 0.025879812122712936, 'p_value': 0.09004614426388266}, 'Tool wear [min]': {'ks_stat': 0.09540787875589424, 'p_value': 1.1581764595656459e-18}}
+2024-07-20 09:04:57,516 - INFO - Chi-Square Test Results:
+{'Type': {'chi2': 1.254144977123317, 'p_value': 0.8691060643680675}, 'Machine failure': {'chi2': 0.06315155628103424, 'p_value': 0.8015823808457778}, 'TWF': {'chi2': 0.19606614883487844, 'p_value': 0.6579150520286183}, 'HDF': {'chi2': 0.021547354112584457, 'p_value': 0.8832976435577586}, 'PWF': {'chi2': 0.13566435654775408, 'p_value': 0.7126298498721102}, 'OSF': {'chi2': 0.7334698530653607, 'p_value': 0.3917607810275483}, 'RNF': {'chi2': 0.06209449903245992, 'p_value': 0.8032156101359637}}
+2024-07-20 11:20:03,445 - INFO - Loading data from file: ../data/processed/processed_data_with_lags.csv
+2024-07-20 11:20:04,824 - INFO - Simulated data saved to ../data/simulation/simulated_data.csv
+2024-07-20 11:21:23,460 - INFO - Descriptive Statistics for Real Data:
+               UDI  ...  scaled_Tool wear [min]_lag_10
+count  8657.000000  ...                    8657.000000
+mean   4555.221670  ...                       0.426756
+std    2629.164129  ...                       0.250840
+min      11.000000  ...                       0.000000
+25%    2278.000000  ...                       0.209486
+50%    4551.000000  ...                       0.426877
+75%    6838.000000  ...                       0.640316
+max    9091.000000  ...                       1.000000
+
+[8 rows x 264 columns]
+2024-07-20 11:21:23,502 - INFO - Descriptive Statistics for Simulated Data:
+               UDI  ...  scaled_Tool wear [min]_lag_10
+count  3130.000000  ...                    3130.000000
+mean   2605.808307  ...                       0.087801
+std    1414.001816  ...                       0.906778
+min      11.000000  ...                      -1.732522
+25%    1398.250000  ...                      -0.569432
+50%    2656.500000  ...                       0.052083
+75%    3826.750000  ...                       0.685697
+max    5000.000000  ...                       3.821726
+
+[8 rows x 264 columns]
+2024-07-20 11:21:23,596 - INFO - Kolmogorov-Smirnov Test Results:
+{'Air temperature [K]': {'ks_stat': 0.05506677821895963, 'p_value': 1.6751984122403827e-06}, 'Process temperature [K]': {'ks_stat': 0.06521203362364239, 'p_value': 6.039697612867601e-09}, 'Rotational speed [rpm]': {'ks_stat': 0.07738073051005649, 'p_value': 2.0231824762302988e-12}, 'Torque [Nm]': {'ks_stat': 0.025879812122712936, 'p_value': 0.09004614426388266}, 'Tool wear [min]': {'ks_stat': 0.09540787875589424, 'p_value': 1.1581764595656459e-18}}
+2024-07-20 11:21:23,622 - INFO - Chi-Square Test Results:
+{'Type': {'chi2': 1.254144977123317, 'p_value': 0.8691060643680675}, 'Machine failure': {'chi2': 0.06315155628103424, 'p_value': 0.8015823808457778}, 'TWF': {'chi2': 0.19606614883487844, 'p_value': 0.6579150520286183}, 'HDF': {'chi2': 0.021547354112584457, 'p_value': 0.8832976435577586}, 'PWF': {'chi2': 0.13566435654775408, 'p_value': 0.7126298498721102}, 'OSF': {'chi2': 0.7334698530653607, 'p_value': 0.3917607810275483}, 'RNF': {'chi2': 0.06209449903245992, 'p_value': 0.8032156101359637}}
+2024-07-20 11:31:25,608 - INFO - Descriptive Statistics for Real Data:
+               UDI  ...  scaled_Tool wear [min]_lag_10
+count  8657.000000  ...                    8657.000000
+mean   4555.221670  ...                       0.426756
+std    2629.164129  ...                       0.250840
+min      11.000000  ...                       0.000000
+25%    2278.000000  ...                       0.209486
+50%    4551.000000  ...                       0.426877
+75%    6838.000000  ...                       0.640316
+max    9091.000000  ...                       1.000000
+
+[8 rows x 264 columns]
+2024-07-20 11:31:25,654 - INFO - Descriptive Statistics for Simulated Data:
+               UDI  ...  scaled_Tool wear [min]_lag_10
+count  3130.000000  ...                    3130.000000
+mean   2605.808307  ...                       0.087801
+std    1414.001816  ...                       0.906778
+min      11.000000  ...                      -1.732522
+25%    1398.250000  ...                      -0.569432
+50%    2656.500000  ...                       0.052083
+75%    3826.750000  ...                       0.685697
+max    5000.000000  ...                       3.821726
+
+[8 rows x 264 columns]
+2024-07-20 11:31:25,748 - INFO - Kolmogorov-Smirnov Test Results:
+{'Air temperature [K]': {'ks_stat': 0.05506677821895963, 'p_value': 1.6751984122403827e-06}, 'Process temperature [K]': {'ks_stat': 0.06521203362364239, 'p_value': 6.039697612867601e-09}, 'Rotational speed [rpm]': {'ks_stat': 0.07738073051005649, 'p_value': 2.0231824762302988e-12}, 'Torque [Nm]': {'ks_stat': 0.025879812122712936, 'p_value': 0.09004614426388266}, 'Tool wear [min]': {'ks_stat': 0.09540787875589424, 'p_value': 1.1581764595656459e-18}}
+2024-07-20 11:31:25,775 - INFO - Chi-Square Test Results:
+{'Type': {'chi2': 1.254144977123317, 'p_value': 0.8691060643680675}, 'Machine failure': {'chi2': 0.06315155628103424, 'p_value': 0.8015823808457778}, 'TWF': {'chi2': 0.19606614883487844, 'p_value': 0.6579150520286183}, 'HDF': {'chi2': 0.021547354112584457, 'p_value': 0.8832976435577586}, 'PWF': {'chi2': 0.13566435654775408, 'p_value': 0.7126298498721102}, 'OSF': {'chi2': 0.7334698530653607, 'p_value': 0.3917607810275483}, 'RNF': {'chi2': 0.06209449903245992, 'p_value': 0.8032156101359637}}
+2024-07-20 11:31:37,027 - INFO - Descriptive Statistics for Real Data:
+               UDI  ...  scaled_Tool wear [min]_lag_10
+count  8657.000000  ...                    8657.000000
+mean   4555.221670  ...                       0.426756
+std    2629.164129  ...                       0.250840
+min      11.000000  ...                       0.000000
+25%    2278.000000  ...                       0.209486
+50%    4551.000000  ...                       0.426877
+75%    6838.000000  ...                       0.640316
+max    9091.000000  ...                       1.000000
+
+[8 rows x 264 columns]
+2024-07-20 11:31:37,072 - INFO - Descriptive Statistics for Simulated Data:
+               UDI  ...  scaled_Tool wear [min]_lag_10
+count  3130.000000  ...                    3130.000000
+mean   2605.808307  ...                       0.087801
+std    1414.001816  ...                       0.906778
+min      11.000000  ...                      -1.732522
+25%    1398.250000  ...                      -0.569432
+50%    2656.500000  ...                       0.052083
+75%    3826.750000  ...                       0.685697
+max    5000.000000  ...                       3.821726
+
+[8 rows x 264 columns]
+2024-07-20 11:31:37,165 - INFO - Kolmogorov-Smirnov Test Results:
+{'Air temperature [K]': {'ks_stat': 0.05506677821895963, 'p_value': 1.6751984122403827e-06}, 'Process temperature [K]': {'ks_stat': 0.06521203362364239, 'p_value': 6.039697612867601e-09}, 'Rotational speed [rpm]': {'ks_stat': 0.07738073051005649, 'p_value': 2.0231824762302988e-12}, 'Torque [Nm]': {'ks_stat': 0.025879812122712936, 'p_value': 0.09004614426388266}, 'Tool wear [min]': {'ks_stat': 0.09540787875589424, 'p_value': 1.1581764595656459e-18}}
+2024-07-20 11:31:37,191 - INFO - Chi-Square Test Results:
+{'Type': {'chi2': 1.254144977123317, 'p_value': 0.8691060643680675}, 'Machine failure': {'chi2': 0.06315155628103424, 'p_value': 0.8015823808457778}, 'TWF': {'chi2': 0.19606614883487844, 'p_value': 0.6579150520286183}, 'HDF': {'chi2': 0.021547354112584457, 'p_value': 0.8832976435577586}, 'PWF': {'chi2': 0.13566435654775408, 'p_value': 0.7126298498721102}, 'OSF': {'chi2': 0.7334698530653607, 'p_value': 0.3917607810275483}, 'RNF': {'chi2': 0.06209449903245992, 'p_value': 0.8032156101359637}}
+2024-07-20 11:34:25,559 - INFO - Loading data from file: ../data/processed/processed_data_with_lags.csv
+2024-07-20 11:34:27,057 - INFO - Simulated data saved to ../data/simulation/simulated_data.csv
+2024-07-20 11:34:39,074 - INFO - Descriptive Statistics for Real Data:
+               UDI  ...  scaled_Tool wear [min]_lag_10
+count  8657.000000  ...                    8657.000000
+mean   4555.221670  ...                       0.426756
+std    2629.164129  ...                       0.250840
+min      11.000000  ...                       0.000000
+25%    2278.000000  ...                       0.209486
+50%    4551.000000  ...                       0.426877
+75%    6838.000000  ...                       0.640316
+max    9091.000000  ...                       1.000000
+
+[8 rows x 264 columns]
+2024-07-20 11:34:39,127 - INFO - Descriptive Statistics for Simulated Data:
+               UDI  ...  scaled_Tool wear [min]_lag_10
+count  3130.000000  ...                    3130.000000
+mean   2605.808307  ...                       0.087801
+std    1414.001816  ...                       0.906778
+min      11.000000  ...                      -1.732522
+25%    1398.250000  ...                      -0.569432
+50%    2656.500000  ...                       0.052083
+75%    3826.750000  ...                       0.685697
+max    5000.000000  ...                       3.821726
+
+[8 rows x 264 columns]
+2024-07-20 11:34:39,223 - INFO - Kolmogorov-Smirnov Test Results:
+{'Air temperature [K]': {'ks_stat': 0.05506677821895963, 'p_value': 1.6751984122403827e-06}, 'Process temperature [K]': {'ks_stat': 0.06521203362364239, 'p_value': 6.039697612867601e-09}, 'Rotational speed [rpm]': {'ks_stat': 0.07738073051005649, 'p_value': 2.0231824762302988e-12}, 'Torque [Nm]': {'ks_stat': 0.025879812122712936, 'p_value': 0.09004614426388266}, 'Tool wear [min]': {'ks_stat': 0.09540787875589424, 'p_value': 1.1581764595656459e-18}}
+2024-07-20 11:34:39,250 - INFO - Chi-Square Test Results:
+{'Type': {'chi2': 1.254144977123317, 'p_value': 0.8691060643680675}, 'Machine failure': {'chi2': 0.06315155628103424, 'p_value': 0.8015823808457778}, 'TWF': {'chi2': 0.19606614883487844, 'p_value': 0.6579150520286183}, 'HDF': {'chi2': 0.021547354112584457, 'p_value': 0.8832976435577586}, 'PWF': {'chi2': 0.13566435654775408, 'p_value': 0.7126298498721102}, 'OSF': {'chi2': 0.7334698530653607, 'p_value': 0.3917607810275483}, 'RNF': {'chi2': 0.06209449903245992, 'p_value': 0.8032156101359637}}
+2024-07-20 11:36:07,494 - INFO - Loading data from file: ../data/processed/processed_data_with_lags.csv
+2024-07-20 11:36:08,957 - INFO - Simulated data saved to ../data/simulation/simulated_data.csv
+2024-07-20 11:36:17,312 - INFO - Descriptive Statistics for Real Data:
+               UDI  ...  scaled_Tool wear [min]_lag_10
+count  8657.000000  ...                    8657.000000
+mean   4555.221670  ...                       0.426756
+std    2629.164129  ...                       0.250840
+min      11.000000  ...                       0.000000
+25%    2278.000000  ...                       0.209486
+50%    4551.000000  ...                       0.426877
+75%    6838.000000  ...                       0.640316
+max    9091.000000  ...                       1.000000
+
+[8 rows x 264 columns]
+2024-07-20 11:36:17,357 - INFO - Descriptive Statistics for Simulated Data:
+               UDI  ...  scaled_Tool wear [min]_lag_10
+count  3130.000000  ...                    3130.000000
+mean   2605.808307  ...                       0.087801
+std    1414.001816  ...                       0.906778
+min      11.000000  ...                      -1.732522
+25%    1398.250000  ...                      -0.569432
+50%    2656.500000  ...                       0.052083
+75%    3826.750000  ...                       0.685697
+max    5000.000000  ...                       3.821726
+
+[8 rows x 264 columns]
+2024-07-20 11:36:17,453 - INFO - Kolmogorov-Smirnov Test Results:
+{'Air temperature [K]': {'ks_stat': 0.05506677821895963, 'p_value': 1.6751984122403827e-06}, 'Process temperature [K]': {'ks_stat': 0.06521203362364239, 'p_value': 6.039697612867601e-09}, 'Rotational speed [rpm]': {'ks_stat': 0.07738073051005649, 'p_value': 2.0231824762302988e-12}, 'Torque [Nm]': {'ks_stat': 0.025879812122712936, 'p_value': 0.09004614426388266}, 'Tool wear [min]': {'ks_stat': 0.09540787875589424, 'p_value': 1.1581764595656459e-18}}
+2024-07-20 11:36:17,479 - INFO - Chi-Square Test Results:
+{'Type': {'chi2': 1.254144977123317, 'p_value': 0.8691060643680675}, 'Machine failure': {'chi2': 0.06315155628103424, 'p_value': 0.8015823808457778}, 'TWF': {'chi2': 0.19606614883487844, 'p_value': 0.6579150520286183}, 'HDF': {'chi2': 0.021547354112584457, 'p_value': 0.8832976435577586}, 'PWF': {'chi2': 0.13566435654775408, 'p_value': 0.7126298498721102}, 'OSF': {'chi2': 0.7334698530653607, 'p_value': 0.3917607810275483}, 'RNF': {'chi2': 0.06209449903245992, 'p_value': 0.8032156101359637}}
+2024-07-20 11:42:55,322 - INFO - Loading data from file: ../data/processed/processed_data_with_lags.csv
+2024-07-20 11:42:56,733 - INFO - Simulated data saved to ../data/simulation/simulated_data.csv
+2024-07-20 11:43:03,351 - INFO - Descriptive Statistics for Real Data:
+               UDI  ...  scaled_Tool wear [min]_lag_10
+count  8657.000000  ...                    8657.000000
+mean   4555.221670  ...                       0.426756
+std    2629.164129  ...                       0.250840
+min      11.000000  ...                       0.000000
+25%    2278.000000  ...                       0.209486
+50%    4551.000000  ...                       0.426877
+75%    6838.000000  ...                       0.640316
+max    9091.000000  ...                       1.000000
+
+[8 rows x 264 columns]
+2024-07-20 11:43:03,397 - INFO - Descriptive Statistics for Simulated Data:
+               UDI  ...  scaled_Tool wear [min]_lag_10
+count  3130.000000  ...                    3130.000000
+mean   2605.808307  ...                       0.087801
+std    1414.001816  ...                       0.906778
+min      11.000000  ...                      -1.732522
+25%    1398.250000  ...                      -0.569432
+50%    2656.500000  ...                       0.052083
+75%    3826.750000  ...                       0.685697
+max    5000.000000  ...                       3.821726
+
+[8 rows x 264 columns]
+2024-07-20 11:43:03,492 - INFO - Kolmogorov-Smirnov Test Results:
+{'Air temperature [K]': {'ks_stat': 0.05506677821895963, 'p_value': 1.6751984122403827e-06}, 'Process temperature [K]': {'ks_stat': 0.06521203362364239, 'p_value': 6.039697612867601e-09}, 'Rotational speed [rpm]': {'ks_stat': 0.07738073051005649, 'p_value': 2.0231824762302988e-12}, 'Torque [Nm]': {'ks_stat': 0.025879812122712936, 'p_value': 0.09004614426388266}, 'Tool wear [min]': {'ks_stat': 0.09540787875589424, 'p_value': 1.1581764595656459e-18}}
+2024-07-20 11:43:03,517 - INFO - Chi-Square Test Results:
+{'Type': {'chi2': 1.254144977123317, 'p_value': 0.8691060643680675}, 'Machine failure': {'chi2': 0.06315155628103424, 'p_value': 0.8015823808457778}, 'TWF': {'chi2': 0.19606614883487844, 'p_value': 0.6579150520286183}, 'HDF': {'chi2': 0.021547354112584457, 'p_value': 0.8832976435577586}, 'PWF': {'chi2': 0.13566435654775408, 'p_value': 0.7126298498721102}, 'OSF': {'chi2': 0.7334698530653607, 'p_value': 0.3917607810275483}, 'RNF': {'chi2': 0.06209449903245992, 'p_value': 0.8032156101359637}}
+2024-07-20 11:47:18,068 - INFO - Loading data from file: ../data/processed/processed_data_with_lags.csv
+2024-07-20 11:47:19,485 - INFO - Simulated data saved to ../data/simulation/simulated_data.csv
+2024-07-20 11:48:08,193 - INFO - Descriptive Statistics for Real Data:
+               UDI  ...  scaled_Tool wear [min]_lag_10
+count  8657.000000  ...                    8657.000000
+mean   4555.221670  ...                       0.426756
+std    2629.164129  ...                       0.250840
+min      11.000000  ...                       0.000000
+25%    2278.000000  ...                       0.209486
+50%    4551.000000  ...                       0.426877
+75%    6838.000000  ...                       0.640316
+max    9091.000000  ...                       1.000000
+
+[8 rows x 264 columns]
+2024-07-20 11:48:08,239 - INFO - Descriptive Statistics for Simulated Data:
+               UDI  ...  scaled_Tool wear [min]_lag_10
+count  3130.000000  ...                    3130.000000
+mean   2605.808307  ...                       0.087801
+std    1414.001816  ...                       0.906778
+min      11.000000  ...                      -1.732522
+25%    1398.250000  ...                      -0.569432
+50%    2656.500000  ...                       0.052083
+75%    3826.750000  ...                       0.685697
+max    5000.000000  ...                       3.821726
+
+[8 rows x 264 columns]
+2024-07-20 11:48:08,336 - INFO - Kolmogorov-Smirnov Test Results:
+{'Air temperature [K]': {'ks_stat': 0.05506677821895963, 'p_value': 1.6751984122403827e-06}, 'Process temperature [K]': {'ks_stat': 0.06521203362364239, 'p_value': 6.039697612867601e-09}, 'Rotational speed [rpm]': {'ks_stat': 0.07738073051005649, 'p_value': 2.0231824762302988e-12}, 'Torque [Nm]': {'ks_stat': 0.025879812122712936, 'p_value': 0.09004614426388266}, 'Tool wear [min]': {'ks_stat': 0.09540787875589424, 'p_value': 1.1581764595656459e-18}}
+2024-07-20 11:48:08,364 - INFO - Chi-Square Test Results:
+{'Type': {'chi2': 1.254144977123317, 'p_value': 0.8691060643680675}, 'Machine failure': {'chi2': 0.06315155628103424, 'p_value': 0.8015823808457778}, 'TWF': {'chi2': 0.19606614883487844, 'p_value': 0.6579150520286183}, 'HDF': {'chi2': 0.021547354112584457, 'p_value': 0.8832976435577586}, 'PWF': {'chi2': 0.13566435654775408, 'p_value': 0.7126298498721102}, 'OSF': {'chi2': 0.7334698530653607, 'p_value': 0.3917607810275483}, 'RNF': {'chi2': 0.06209449903245992, 'p_value': 0.8032156101359637}}
+2024-07-20 11:50:31,433 - INFO - Loading data from file: ../data/processed/processed_data_with_lags.csv
+2024-07-20 11:50:32,855 - INFO - Simulated data saved to ../data/simulation/simulated_data.csv
+2024-07-20 11:50:40,666 - INFO - Descriptive Statistics for Real Data:
+               UDI  ...  scaled_Tool wear [min]_lag_10
+count  8657.000000  ...                    8657.000000
+mean   4555.221670  ...                       0.426756
+std    2629.164129  ...                       0.250840
+min      11.000000  ...                       0.000000
+25%    2278.000000  ...                       0.209486
+50%    4551.000000  ...                       0.426877
+75%    6838.000000  ...                       0.640316
+max    9091.000000  ...                       1.000000
+
+[8 rows x 264 columns]
+2024-07-20 11:50:40,711 - INFO - Descriptive Statistics for Simulated Data:
+               UDI  ...  scaled_Tool wear [min]_lag_10
+count  3130.000000  ...                    3130.000000
+mean   2605.808307  ...                       0.087801
+std    1414.001816  ...                       0.906778
+min      11.000000  ...                      -1.732522
+25%    1398.250000  ...                      -0.569432
+50%    2656.500000  ...                       0.052083
+75%    3826.750000  ...                       0.685697
+max    5000.000000  ...                       3.821726
+
+[8 rows x 264 columns]
+2024-07-20 11:50:40,810 - INFO - Kolmogorov-Smirnov Test Results:
+{'Air temperature [K]': {'ks_stat': 0.05506677821895963, 'p_value': 1.6751984122403827e-06}, 'Process temperature [K]': {'ks_stat': 0.06521203362364239, 'p_value': 6.039697612867601e-09}, 'Rotational speed [rpm]': {'ks_stat': 0.07738073051005649, 'p_value': 2.0231824762302988e-12}, 'Torque [Nm]': {'ks_stat': 0.025879812122712936, 'p_value': 0.09004614426388266}, 'Tool wear [min]': {'ks_stat': 0.09540787875589424, 'p_value': 1.1581764595656459e-18}}
+2024-07-20 11:50:40,837 - INFO - Chi-Square Test Results:
+{'Type': {'chi2': 1.254144977123317, 'p_value': 0.8691060643680675}, 'Machine failure': {'chi2': 0.06315155628103424, 'p_value': 0.8015823808457778}, 'TWF': {'chi2': 0.19606614883487844, 'p_value': 0.6579150520286183}, 'HDF': {'chi2': 0.021547354112584457, 'p_value': 0.8832976435577586}, 'PWF': {'chi2': 0.13566435654775408, 'p_value': 0.7126298498721102}, 'OSF': {'chi2': 0.7334698530653607, 'p_value': 0.3917607810275483}, 'RNF': {'chi2': 0.06209449903245992, 'p_value': 0.8032156101359637}}
+2024-07-20 11:52:14,578 - INFO - Loading data from file: ../data/processed/processed_data_with_lags.csv
+2024-07-20 11:52:16,015 - INFO - Simulated data saved to ../data/simulation/simulated_data.csv
+2024-07-20 11:52:20,679 - INFO - Descriptive Statistics for Real Data:
+               UDI  ...  scaled_Tool wear [min]_lag_10
+count  8657.000000  ...                    8657.000000
+mean   4555.221670  ...                       0.426756
+std    2629.164129  ...                       0.250840
+min      11.000000  ...                       0.000000
+25%    2278.000000  ...                       0.209486
+50%    4551.000000  ...                       0.426877
+75%    6838.000000  ...                       0.640316
+max    9091.000000  ...                       1.000000
+
+[8 rows x 264 columns]
+2024-07-20 11:52:20,724 - INFO - Descriptive Statistics for Simulated Data:
+               UDI  ...  scaled_Tool wear [min]_lag_10
+count  3130.000000  ...                    3130.000000
+mean   2605.808307  ...                       0.087801
+std    1414.001816  ...                       0.906778
+min      11.000000  ...                      -1.732522
+25%    1398.250000  ...                      -0.569432
+50%    2656.500000  ...                       0.052083
+75%    3826.750000  ...                       0.685697
+max    5000.000000  ...                       3.821726
+
+[8 rows x 264 columns]
+2024-07-20 11:52:20,817 - INFO - Kolmogorov-Smirnov Test Results:
+{'Air temperature [K]': {'ks_stat': 0.05506677821895963, 'p_value': 1.6751984122403827e-06}, 'Process temperature [K]': {'ks_stat': 0.06521203362364239, 'p_value': 6.039697612867601e-09}, 'Rotational speed [rpm]': {'ks_stat': 0.07738073051005649, 'p_value': 2.0231824762302988e-12}, 'Torque [Nm]': {'ks_stat': 0.025879812122712936, 'p_value': 0.09004614426388266}, 'Tool wear [min]': {'ks_stat': 0.09540787875589424, 'p_value': 1.1581764595656459e-18}}
+2024-07-20 11:52:20,843 - INFO - Chi-Square Test Results:
+{'Type': {'chi2': 1.254144977123317, 'p_value': 0.8691060643680675}, 'Machine failure': {'chi2': 0.06315155628103424, 'p_value': 0.8015823808457778}, 'TWF': {'chi2': 0.19606614883487844, 'p_value': 0.6579150520286183}, 'HDF': {'chi2': 0.021547354112584457, 'p_value': 0.8832976435577586}, 'PWF': {'chi2': 0.13566435654775408, 'p_value': 0.7126298498721102}, 'OSF': {'chi2': 0.7334698530653607, 'p_value': 0.3917607810275483}, 'RNF': {'chi2': 0.06209449903245992, 'p_value': 0.8032156101359637}}
+2024-07-20 11:55:57,941 - INFO - Loading data from file: ../data/processed/processed_data_with_lags.csv
+2024-07-20 11:55:59,387 - INFO - Simulated data saved to ../data/simulation/simulated_data.csv
+2024-07-20 11:56:04,178 - INFO - Descriptive Statistics for Real Data:
+               UDI  ...  scaled_Tool wear [min]_lag_10
+count  8657.000000  ...                    8657.000000
+mean   4555.221670  ...                       0.426756
+std    2629.164129  ...                       0.250840
+min      11.000000  ...                       0.000000
+25%    2278.000000  ...                       0.209486
+50%    4551.000000  ...                       0.426877
+75%    6838.000000  ...                       0.640316
+max    9091.000000  ...                       1.000000
+
+[8 rows x 264 columns]
+2024-07-20 11:56:04,222 - INFO - Descriptive Statistics for Simulated Data:
+               UDI  ...  scaled_Tool wear [min]_lag_10
+count  3130.000000  ...                    3130.000000
+mean   2605.808307  ...                       0.087801
+std    1414.001816  ...                       0.906778
+min      11.000000  ...                      -1.732522
+25%    1398.250000  ...                      -0.569432
+50%    2656.500000  ...                       0.052083
+75%    3826.750000  ...                       0.685697
+max    5000.000000  ...                       3.821726
+
+[8 rows x 264 columns]
+2024-07-20 11:56:04,317 - INFO - Kolmogorov-Smirnov Test Results:
+{'Air temperature [K]': {'ks_stat': 0.05506677821895963, 'p_value': 1.6751984122403827e-06}, 'Process temperature [K]': {'ks_stat': 0.06521203362364239, 'p_value': 6.039697612867601e-09}, 'Rotational speed [rpm]': {'ks_stat': 0.07738073051005649, 'p_value': 2.0231824762302988e-12}, 'Torque [Nm]': {'ks_stat': 0.025879812122712936, 'p_value': 0.09004614426388266}, 'Tool wear [min]': {'ks_stat': 0.09540787875589424, 'p_value': 1.1581764595656459e-18}}
+2024-07-20 11:56:04,342 - INFO - Chi-Square Test Results:
+{'Type': {'chi2': 1.254144977123317, 'p_value': 0.8691060643680675}, 'Machine failure': {'chi2': 0.06315155628103424, 'p_value': 0.8015823808457778}, 'TWF': {'chi2': 0.19606614883487844, 'p_value': 0.6579150520286183}, 'HDF': {'chi2': 0.021547354112584457, 'p_value': 0.8832976435577586}, 'PWF': {'chi2': 0.13566435654775408, 'p_value': 0.7126298498721102}, 'OSF': {'chi2': 0.7334698530653607, 'p_value': 0.3917607810275483}, 'RNF': {'chi2': 0.06209449903245992, 'p_value': 0.8032156101359637}}
+2024-07-20 11:57:09,817 - INFO - Loading data from file: ../data/processed/processed_data_with_lags.csv
+2024-07-20 11:57:11,273 - INFO - Simulated data saved to ../data/simulation/simulated_data.csv
+2024-07-20 11:57:18,279 - INFO - Descriptive Statistics for Real Data:
+               UDI  ...  scaled_Tool wear [min]_lag_10
+count  8657.000000  ...                    8657.000000
+mean   4555.221670  ...                       0.426756
+std    2629.164129  ...                       0.250840
+min      11.000000  ...                       0.000000
+25%    2278.000000  ...                       0.209486
+50%    4551.000000  ...                       0.426877
+75%    6838.000000  ...                       0.640316
+max    9091.000000  ...                       1.000000
+
+[8 rows x 264 columns]
+2024-07-20 11:57:18,322 - INFO - Descriptive Statistics for Simulated Data:
+               UDI  ...  scaled_Tool wear [min]_lag_10
+count  3130.000000  ...                    3130.000000
+mean   2605.808307  ...                       0.087801
+std    1414.001816  ...                       0.906778
+min      11.000000  ...                      -1.732522
+25%    1398.250000  ...                      -0.569432
+50%    2656.500000  ...                       0.052083
+75%    3826.750000  ...                       0.685697
+max    5000.000000  ...                       3.821726
+
+[8 rows x 264 columns]
+2024-07-20 11:57:18,416 - INFO - Kolmogorov-Smirnov Test Results:
+{'Air temperature [K]': {'ks_stat': 0.05506677821895963, 'p_value': 1.6751984122403827e-06}, 'Process temperature [K]': {'ks_stat': 0.06521203362364239, 'p_value': 6.039697612867601e-09}, 'Rotational speed [rpm]': {'ks_stat': 0.07738073051005649, 'p_value': 2.0231824762302988e-12}, 'Torque [Nm]': {'ks_stat': 0.025879812122712936, 'p_value': 0.09004614426388266}, 'Tool wear [min]': {'ks_stat': 0.09540787875589424, 'p_value': 1.1581764595656459e-18}}
+2024-07-20 11:57:18,441 - INFO - Chi-Square Test Results:
+{'Type': {'chi2': 1.254144977123317, 'p_value': 0.8691060643680675}, 'Machine failure': {'chi2': 0.06315155628103424, 'p_value': 0.8015823808457778}, 'TWF': {'chi2': 0.19606614883487844, 'p_value': 0.6579150520286183}, 'HDF': {'chi2': 0.021547354112584457, 'p_value': 0.8832976435577586}, 'PWF': {'chi2': 0.13566435654775408, 'p_value': 0.7126298498721102}, 'OSF': {'chi2': 0.7334698530653607, 'p_value': 0.3917607810275483}, 'RNF': {'chi2': 0.06209449903245992, 'p_value': 0.8032156101359637}}
+2024-07-20 12:06:30,291 - INFO - Loading data from file: ../data/processed/processed_data_with_lags.csv
+2024-07-20 12:06:31,699 - INFO - Simulated data saved to ../data/simulation/simulated_data.csv
+2024-07-20 12:06:39,229 - INFO - Descriptive Statistics for Real Data:
+               UDI  ...  scaled_Tool wear [min]_lag_10
+count  8657.000000  ...                    8657.000000
+mean   4555.221670  ...                       0.426756
+std    2629.164129  ...                       0.250840
+min      11.000000  ...                       0.000000
+25%    2278.000000  ...                       0.209486
+50%    4551.000000  ...                       0.426877
+75%    6838.000000  ...                       0.640316
+max    9091.000000  ...                       1.000000
+
+[8 rows x 264 columns]
+2024-07-20 12:06:39,275 - INFO - Descriptive Statistics for Simulated Data:
+               UDI  ...  scaled_Tool wear [min]_lag_10
+count  3130.000000  ...                    3130.000000
+mean   2605.808307  ...                       0.087801
+std    1414.001816  ...                       0.906778
+min      11.000000  ...                      -1.732522
+25%    1398.250000  ...                      -0.569432
+50%    2656.500000  ...                       0.052083
+75%    3826.750000  ...                       0.685697
+max    5000.000000  ...                       3.821726
+
+[8 rows x 264 columns]
+2024-07-20 12:06:39,371 - INFO - Kolmogorov-Smirnov Test Results:
+{'Air temperature [K]': {'ks_stat': 0.05506677821895963, 'p_value': 1.6751984122403827e-06}, 'Process temperature [K]': {'ks_stat': 0.06521203362364239, 'p_value': 6.039697612867601e-09}, 'Rotational speed [rpm]': {'ks_stat': 0.07738073051005649, 'p_value': 2.0231824762302988e-12}, 'Torque [Nm]': {'ks_stat': 0.025879812122712936, 'p_value': 0.09004614426388266}, 'Tool wear [min]': {'ks_stat': 0.09540787875589424, 'p_value': 1.1581764595656459e-18}}
+2024-07-20 12:06:39,397 - INFO - Chi-Square Test Results:
+{'Type': {'chi2': 1.254144977123317, 'p_value': 0.8691060643680675}, 'Machine failure': {'chi2': 0.06315155628103424, 'p_value': 0.8015823808457778}, 'TWF': {'chi2': 0.19606614883487844, 'p_value': 0.6579150520286183}, 'HDF': {'chi2': 0.021547354112584457, 'p_value': 0.8832976435577586}, 'PWF': {'chi2': 0.13566435654775408, 'p_value': 0.7126298498721102}, 'OSF': {'chi2': 0.7334698530653607, 'p_value': 0.3917607810275483}, 'RNF': {'chi2': 0.06209449903245992, 'p_value': 0.8032156101359637}}
+2024-07-20 12:10:29,145 - INFO - Loading data from file: ../data/processed/processed_data_with_lags.csv
+2024-07-20 12:10:31,125 - INFO - Simulated data saved to ../data/simulation/simulated_data.csv
+2024-07-20 12:10:34,913 - INFO - Loading data from file: ../data/processed/processed_data_with_lags.csv
+2024-07-20 12:10:36,853 - INFO - Simulated data saved to ../data/simulation/simulated_data.csv
+2024-07-20 12:11:51,080 - INFO - Descriptive Statistics for Real Data:
+               UDI  ...  scaled_Tool wear [min]_lag_10
+count  8657.000000  ...                    8657.000000
+mean   4555.221670  ...                       0.426756
+std    2629.164129  ...                       0.250840
+min      11.000000  ...                       0.000000
+25%    2278.000000  ...                       0.209486
+50%    4551.000000  ...                       0.426877
+75%    6838.000000  ...                       0.640316
+max    9091.000000  ...                       1.000000
+
+[8 rows x 264 columns]
+2024-07-20 12:11:51,123 - INFO - Descriptive Statistics for Simulated Data:
+               UDI  ...  scaled_Tool wear [min]_lag_10
+count  5131.000000  ...                    5131.000000
+mean   4379.985773  ...                       0.102262
+std    2534.731594  ...                       0.901116
+min      11.000000  ...                      -1.710109
+25%    2096.500000  ...                      -0.554482
+50%    4375.000000  ...                       0.064421
+75%    6643.500000  ...                       0.722210
+max    8657.000000  ...                       3.834592
+
+[8 rows x 264 columns]
+2024-07-20 12:11:51,265 - INFO - Kolmogorov-Smirnov Test Results:
+{'Air temperature [K]': {'ks_stat': 0.05231249003946886, 'p_value': 4.179533712905727e-08}, 'Process temperature [K]': {'ks_stat': 0.05861874586424789, 'p_value': 4.564171323285477e-10}, 'Rotational speed [rpm]': {'ks_stat': 0.060938110203890596, 'p_value': 7.615675082085266e-11}, 'Torque [Nm]': {'ks_stat': 0.028544701310362956, 'p_value': 0.010241625954112238}, 'Tool wear [min]': {'ks_stat': 0.09687447960129374, 'p_value': 9.220048601905601e-27}}
+2024-07-20 12:11:51,295 - INFO - Chi-Square Test Results:
+{'Type': {'chi2': 4.849816293154291, 'p_value': 0.30305726626987933}, 'Machine failure': {'chi2': 0.31418208839939193, 'p_value': 0.5751251557439936}, 'TWF': {'chi2': 0.6778414745128343, 'p_value': 0.4103309969507831}, 'HDF': {'chi2': 2.783867572452937, 'p_value': 0.09521797874335644}, 'PWF': {'chi2': 0.29327932507459153, 'p_value': 0.588126684970631}, 'OSF': {'chi2': 1.7506611279154716, 'p_value': 0.18579364096590184}, 'RNF': {'chi2': 0.06612786255903937, 'p_value': 0.7970603688172726}}
+2024-07-20 12:15:08,303 - INFO - Loading data from file: ../data/processed/processed_data_with_lags.csv
+2024-07-20 12:15:10,853 - INFO - Simulated data saved to ../data/simulation/simulated_data.csv
+2024-07-20 12:15:18,148 - INFO - Descriptive Statistics for Real Data:
+               UDI  ...  scaled_Tool wear [min]_lag_10
+count  8657.000000  ...                    8657.000000
+mean   4555.221670  ...                       0.426756
+std    2629.164129  ...                       0.250840
+min      11.000000  ...                       0.000000
+25%    2278.000000  ...                       0.209486
+50%    4551.000000  ...                       0.426877
+75%    6838.000000  ...                       0.640316
+max    9091.000000  ...                       1.000000
+
+[8 rows x 264 columns]
+2024-07-20 12:15:18,192 - INFO - Descriptive Statistics for Simulated Data:
+               UDI  ...  scaled_Tool wear [min]_lag_10
+count  8647.000000  ...                    8647.000000
+mean   4334.000000  ...                       0.000446
+std    2496.318222  ...                       1.000070
+min      11.000000  ...                      -1.693091
+25%    2172.500000  ...                      -0.862427
+50%    4334.000000  ...                      -0.016091
+75%    6495.500000  ...                       0.861591
+max    8657.000000  ...                       2.240805
+
+[8 rows x 264 columns]
+2024-07-20 12:15:18,239 - INFO - Kolmogorov-Smirnov Test Results:
+{'Air temperature [K]': {'ks_stat': 0.00484217397796139, 'p_value': 0.9999461777737043}, 'Process temperature [K]': {'ks_stat': 0.015622704166696111, 'p_value': 0.23797367125807864}, 'Rotational speed [rpm]': {'ks_stat': 0.011178902665972313, 'p_value': 0.645750102523442}, 'Torque [Nm]': {'ks_stat': 0.005716413273352545, 'p_value': 0.9987325826874428}, 'Tool wear [min]': {'ks_stat': 0.00857487372703923, 'p_value': 0.9039414928922189}}
+2024-07-20 12:15:18,268 - INFO - Chi-Square Test Results:
+{'Type': {'chi2': 6.431223622409217, 'p_value': 0.1691757642528175}, 'Machine failure': {'chi2': 2.5720485800854185, 'p_value': 0.10876679678697332}, 'TWF': {'chi2': 12.528672719285725, 'p_value': 0.0004007543851100069}, 'HDF': {'chi2': 0.01670092097813234, 'p_value': 0.8971740420241755}, 'PWF': {'chi2': 0.43660764434496624, 'p_value': 0.5087643619699337}, 'OSF': {'chi2': 6.2306517991767665, 'p_value': 0.012555751212735465}, 'RNF': {'chi2': 0.21603023746973685, 'p_value': 0.6420814695735306}}
+2024-07-20 12:19:55,650 - INFO - Loading data from file: ../data/processed/processed_data_with_lags.csv
+2024-07-20 12:19:57,835 - INFO - Simulated data saved to ../data/simulation/simulated_data.csv
+2024-07-20 12:20:06,196 - INFO - Descriptive Statistics for Real Data:
+               UDI  ...  scaled_Tool wear [min]_lag_10
+count  8657.000000  ...                    8657.000000
+mean   4555.221670  ...                       0.426756
+std    2629.164129  ...                       0.250840
+min      11.000000  ...                       0.000000
+25%    2278.000000  ...                       0.209486
+50%    4551.000000  ...                       0.426877
+75%    6838.000000  ...                       0.640316
+max    9091.000000  ...                       1.000000
+
+[8 rows x 264 columns]
+2024-07-20 12:20:06,240 - INFO - Descriptive Statistics for Simulated Data:
+               UDI  ...  scaled_Tool wear [min]_lag_10
+count  8647.000000  ...                    8647.000000
+mean   4334.000000  ...                       0.000098
+std    2496.318222  ...                       0.999816
+min      11.000000  ...                      -1.702710
+25%    2172.500000  ...                      -0.870787
+50%    4334.000000  ...                       0.008226
+75%    6495.500000  ...                       0.855846
+max    8657.000000  ...                       2.237152
+
+[8 rows x 264 columns]
+2024-07-20 12:20:06,283 - INFO - Kolmogorov-Smirnov Test Results:
+{'Air temperature [K]': {'ks_stat': 0.00981499692233516, 'p_value': 0.7931398585987763}, 'Process temperature [K]': {'ks_stat': 0.012037645764938277, 'p_value': 0.551517273531647}, 'Rotational speed [rpm]': {'ks_stat': 0.010022432213792365, 'p_value': 0.7717524403614705}, 'Torque [Nm]': {'ks_stat': 0.005955027980720434, 'p_value': 0.9976292409119377}, 'Tool wear [min]': {'ks_stat': 0.005184907094758533, 'p_value': 0.9997738092846591}}
+2024-07-20 12:20:06,311 - INFO - Chi-Square Test Results:
+{'Type': {'chi2': 1.0973906737404426, 'p_value': 0.8946859836480162}, 'Machine failure': {'chi2': 0.13992728531694393, 'p_value': 0.7083533112169688}, 'TWF': {'chi2': 0.009067108754983443, 'p_value': 0.9241389985962691}, 'HDF': {'chi2': 0.7947252291496475, 'p_value': 0.3726751334693392}, 'PWF': {'chi2': 0.5997208732147196, 'p_value': 0.43868454541335566}, 'OSF': {'chi2': 13.00460372407421, 'p_value': 0.00031072609313658486}, 'RNF': {'chi2': 0.1733298588517558, 'p_value': 0.6771692547981735}}
+2024-07-20 12:23:08,355 - INFO - Loading data from file: ../data/processed/processed_data_with_lags.csv
+2024-07-20 12:23:10,655 - INFO - Simulated data saved to ../data/simulation/simulated_data.csv
+2024-07-20 12:23:21,430 - INFO - Descriptive Statistics for Real Data:
+               UDI  ...  scaled_Tool wear [min]_lag_10
+count  8657.000000  ...                    8657.000000
+mean   4555.221670  ...                       0.426756
+std    2629.164129  ...                       0.250840
+min      11.000000  ...                       0.000000
+25%    2278.000000  ...                       0.209486
+50%    4551.000000  ...                       0.426877
+75%    6838.000000  ...                       0.640316
+max    9091.000000  ...                       1.000000
+
+[8 rows x 264 columns]
+2024-07-20 12:23:21,473 - INFO - Descriptive Statistics for Simulated Data:
+               UDI  ...  scaled_Tool wear [min]_lag_10
+count  8647.000000  ...                    8647.000000
+mean   4334.000000  ...                       0.000098
+std    2496.318222  ...                       0.999816
+min      11.000000  ...                      -1.702710
+25%    2172.500000  ...                      -0.870787
+50%    4334.000000  ...                       0.008226
+75%    6495.500000  ...                       0.855846
+max    8657.000000  ...                       2.237152
+
+[8 rows x 264 columns]
+2024-07-20 12:23:21,517 - INFO - Kolmogorov-Smirnov Test Results:
+{'Air temperature [K]': {'ks_stat': 0.00981499692233516, 'p_value': 0.7931398585987763}, 'Process temperature [K]': {'ks_stat': 0.012037645764938277, 'p_value': 0.551517273531647}, 'Rotational speed [rpm]': {'ks_stat': 0.010022432213792365, 'p_value': 0.7717524403614705}, 'Torque [Nm]': {'ks_stat': 0.005955027980720434, 'p_value': 0.9976292409119377}, 'Tool wear [min]': {'ks_stat': 0.005184907094758533, 'p_value': 0.9997738092846591}}
+2024-07-20 12:23:21,545 - INFO - Chi-Square Test Results:
+{'Type': {'chi2': 1.0973906737404426, 'p_value': 0.8946859836480162}, 'Machine failure': {'chi2': 0.13992728531694393, 'p_value': 0.7083533112169688}, 'TWF': {'chi2': 0.009067108754983443, 'p_value': 0.9241389985962691}, 'HDF': {'chi2': 0.7947252291496475, 'p_value': 0.3726751334693392}, 'PWF': {'chi2': 0.5997208732147196, 'p_value': 0.43868454541335566}, 'OSF': {'chi2': 7.32653285639312, 'p_value': 0.0067943992746526995}, 'RNF': {'chi2': 0.1733298588517558, 'p_value': 0.6771692547981735}}
+2024-07-20 12:52:31,715 - INFO - Loading data from file: ../data/processed/processed_data_with_lags.csv
+2024-07-20 12:52:32,085 - INFO - Starting iteration 1
+2024-07-20 12:52:32,171 - INFO - Desired results achieved. Saving simulated data.
+2024-07-20 12:54:27,693 - INFO - Descriptive Statistics for Real Data:
+               UDI  ...  scaled_Tool wear [min]_lag_10
+count  8657.000000  ...                    8657.000000
+mean   4555.221670  ...                       0.426756
+std    2629.164129  ...                       0.250840
+min      11.000000  ...                       0.000000
+25%    2278.000000  ...                       0.209486
+50%    4551.000000  ...                       0.426877
+75%    6838.000000  ...                       0.640316
+max    9091.000000  ...                       1.000000
+
+[8 rows x 264 columns]
+2024-07-20 12:54:27,739 - INFO - Descriptive Statistics for Simulated Data:
+               UDI  ...  scaled_Tool wear [min]_lag_10
+count   990.000000  ...                     990.000000
+mean    505.500000  ...                      -0.000524
+std     285.932684  ...                       1.003039
+min      11.000000  ...                      -1.740856
+25%     258.250000  ...                      -0.859426
+50%     505.500000  ...                       0.037744
+75%     752.750000  ...                       0.868020
+max    1000.000000  ...                       1.989482
+
+[8 rows x 264 columns]
+2024-07-20 12:54:27,755 - INFO - Kolmogorov-Smirnov Test Results:
+{'Air temperature [K]': {'ks_stat': 0.02289220027466533, 'p_value': 0.7305404553215461}, 'Process temperature [K]': {'ks_stat': 0.022561061697021035, 'p_value': 0.746708450227421}, 'Rotational speed [rpm]': {'ks_stat': 0.018127911901736554, 'p_value': 0.9264761828886131}, 'Torque [Nm]': {'ks_stat': 0.02114152965487146, 'p_value': 0.8131121905646793}, 'Tool wear [min]': {'ks_stat': 0.03094477173257351, 'p_value': 0.35472009184460107}}
+2024-07-20 12:54:27,780 - INFO - Chi-Square Test Results:
+{'Type': {'chi2': 1.3279972507767988, 'p_value': 0.8566077991407469}, 'Machine failure': {'chi2': 0.2993672185615887, 'p_value': 0.584279390057505}, 'TWF': {'chi2': 0.023808951203674766, 'p_value': 0.8773720189922768}, 'HDF': {'chi2': 0.0, 'p_value': 1.0}, 'PWF': {'chi2': 0.0773135493947677, 'p_value': 0.7809715656127497}, 'OSF': {'chi2': 0.05127939500673365, 'p_value': 0.8208517996526474}, 'RNF': {'chi2': 0.0, 'p_value': 1.0}}
+2024-07-20 12:57:51,297 - INFO - Loading data from file: ../data/processed/processed_data_with_lags.csv
+2024-07-20 12:57:51,607 - INFO - Starting iteration 1
+2024-07-20 12:57:51,759 - INFO - Desired results not achieved. Continuing to next iteration.
+2024-07-20 12:57:51,759 - INFO - Starting iteration 2
+2024-07-20 12:57:51,954 - INFO - Desired results not achieved. Continuing to next iteration.
+2024-07-20 12:57:51,956 - INFO - Starting iteration 3
+2024-07-20 12:57:52,107 - INFO - Desired results achieved. Saving simulated data.
+2024-07-20 12:58:14,244 - INFO - Descriptive Statistics for Real Data:
+               UDI  ...  scaled_Tool wear [min]_lag_10
+count  8657.000000  ...                    8657.000000
+mean   4555.221670  ...                       0.426756
+std    2629.164129  ...                       0.250840
+min      11.000000  ...                       0.000000
+25%    2278.000000  ...                       0.209486
+50%    4551.000000  ...                       0.426877
+75%    6838.000000  ...                       0.640316
+max    9091.000000  ...                       1.000000
+
+[8 rows x 264 columns]
+2024-07-20 12:58:14,287 - INFO - Descriptive Statistics for Simulated Data:
+                UDI  ...  scaled_Tool wear [min]_lag_10
+count  10647.000000  ...                   10647.000000
+mean    5334.000000  ...                      -0.000121
+std     3073.668492  ...                       1.000102
+min       11.000000  ...                      -1.705572
+25%     2672.500000  ...                      -0.873898
+50%     5334.000000  ...                      -0.010840
+75%     7995.500000  ...                       0.867910
+max    10657.000000  ...                       2.264495
+
+[8 rows x 264 columns]
+2024-07-20 12:58:14,298 - INFO - Kolmogorov-Smirnov Test Results:
+{'Air temperature [K]': {'ks_stat': 0.012286522109608802, 'p_value': 0.46316959529614343}, 'Process temperature [K]': {'ks_stat': 0.0051831442702325314, 'p_value': 0.9994749159403225}, 'Rotational speed [rpm]': {'ks_stat': 0.007506139751277119, 'p_value': 0.948848903668775}, 'Torque [Nm]': {'ks_stat': 0.006847353929750555, 'p_value': 0.9774761827234815}, 'Tool wear [min]': {'ks_stat': 0.006692619926907839, 'p_value': 0.98212425288525}}
+2024-07-20 12:58:14,330 - INFO - Chi-Square Test Results:
+{'Type': {'chi2': 2.643100933445397, 'p_value': 0.6192072800192421}, 'Machine failure': {'chi2': 7.130715355086887, 'p_value': 0.007577449053575438}, 'TWF': {'chi2': 0.721446899177092, 'p_value': 0.3956697097619827}, 'HDF': {'chi2': 0.04708545591709919, 'p_value': 0.8282147090469107}, 'PWF': {'chi2': 4.045911585579552, 'p_value': 0.04427845855181566}, 'OSF': {'chi2': 0.6508678456787815, 'p_value': 0.41980257289615985}, 'RNF': {'chi2': 0.18881851690708468, 'p_value': 0.6639017800301296}}
+2024-07-20 13:06:34,861 - INFO - Loading data from file: ../data/processed/processed_data_with_lags.csv
+2024-07-20 13:06:35,164 - INFO - Starting iteration 1
+2024-07-20 13:06:35,223 - INFO - Iteration 1 KS Test Results: {'Air temperature [K]': {'ks_stat': 0.02289220027466533, 'p_value': 0.7305404553215461}, 'Process temperature [K]': {'ks_stat': 0.022561061697021035, 'p_value': 0.746708450227421}, 'Rotational speed [rpm]': {'ks_stat': 0.018127911901736554, 'p_value': 0.9264761828886131}, 'Torque [Nm]': {'ks_stat': 0.02114152965487146, 'p_value': 0.8131121905646793}, 'Tool wear [min]': {'ks_stat': 0.03094477173257351, 'p_value': 0.35472009184460107}}
+2024-07-20 13:06:35,223 - INFO - Iteration 1 Chi-Square Test Results: {'Type': {'chi2': 4.8732814368130235, 'p_value': 0.30054846419568776}, 'Machine failure': {'chi2': 1.0612610601833399, 'p_value': 0.30292774253092625}, 'TWF': {'chi2': 0.023808951203674766, 'p_value': 0.8773720189922768}, 'HDF': {'chi2': 0.0, 'p_value': 1.0}, 'PWF': {'chi2': 0.01017283544667996, 'p_value': 0.9196612193179521}, 'OSF': {'chi2': 0.05127939500673365, 'p_value': 0.8208517996526474}, 'RNF': {'chi2': 0.0, 'p_value': 1.0}}
+2024-07-20 13:06:35,223 - INFO - Desired results achieved. Saving simulated data.
+2024-07-20 13:06:57,213 - INFO - Descriptive Statistics for Real Data:
+               UDI  ...  scaled_Tool wear [min]_lag_10
+count  8657.000000  ...                    8657.000000
+mean   4555.221670  ...                       0.426756
+std    2629.164129  ...                       0.250840
+min      11.000000  ...                       0.000000
+25%    2278.000000  ...                       0.209486
+50%    4551.000000  ...                       0.426877
+75%    6838.000000  ...                       0.640316
+max    9091.000000  ...                       1.000000
+
+[8 rows x 264 columns]
+2024-07-20 13:06:57,259 - INFO - Descriptive Statistics for Simulated Data:
+               UDI  ...  scaled_Tool wear [min]_lag_10
+count   990.000000  ...                     990.000000
+mean    505.500000  ...                      -0.000524
+std     285.932684  ...                       1.003039
+min      11.000000  ...                      -1.740856
+25%     258.250000  ...                      -0.859426
+50%     505.500000  ...                       0.037744
+75%     752.750000  ...                       0.868020
+max    1000.000000  ...                       1.989482
+
+[8 rows x 264 columns]
+2024-07-20 13:06:57,275 - INFO - Kolmogorov-Smirnov Test Results:
+{'Air temperature [K]': {'ks_stat': 0.02289220027466533, 'p_value': 0.7305404553215461}, 'Process temperature [K]': {'ks_stat': 0.022561061697021035, 'p_value': 0.746708450227421}, 'Rotational speed [rpm]': {'ks_stat': 0.018127911901736554, 'p_value': 0.9264761828886131}, 'Torque [Nm]': {'ks_stat': 0.02114152965487146, 'p_value': 0.8131121905646793}, 'Tool wear [min]': {'ks_stat': 0.03094477173257351, 'p_value': 0.35472009184460107}}
+2024-07-20 13:06:57,301 - INFO - Chi-Square Test Results:
+{'Type': {'chi2': 1.3279972507767988, 'p_value': 0.8566077991407469}, 'Machine failure': {'chi2': 1.0612610601833399, 'p_value': 0.30292774253092625}, 'TWF': {'chi2': 0.023808951203674766, 'p_value': 0.8773720189922768}, 'HDF': {'chi2': 0.0, 'p_value': 1.0}, 'PWF': {'chi2': 0.01017283544667996, 'p_value': 0.9196612193179521}, 'OSF': {'chi2': 0.05127939500673365, 'p_value': 0.8208517996526474}, 'RNF': {'chi2': 0.0, 'p_value': 1.0}}
+2024-07-20 13:10:03,434 - INFO - Loading data from file: ../data/processed/processed_data_with_lags.csv
+2024-07-20 13:10:03,734 - INFO - Starting iteration 1
+2024-07-20 13:10:03,858 - INFO - Iteration 1 KS Test Results: {'Air temperature [K]': {'ks_stat': 0.008275578533756899, 'p_value': 0.9802673872099695}, 'Process temperature [K]': {'ks_stat': 0.009974552315905926, 'p_value': 0.9070544870407234}, 'Rotational speed [rpm]': {'ks_stat': 0.01460518356801393, 'p_value': 0.5033246680996528}, 'Torque [Nm]': {'ks_stat': 0.0158194406602277, 'p_value': 0.4013776936453006}, 'Tool wear [min]': {'ks_stat': 0.009920684617473367, 'p_value': 0.9103797024293934}}
+2024-07-20 13:10:03,858 - INFO - Iteration 1 Chi-Square Test Results: {'Type': {'chi2': 5.564762070726123, 'p_value': 0.2340952206591958}, 'Machine failure': {'chi2': 0.1847224686853943, 'p_value': 0.6673458479983653}, 'TWF': {'chi2': 0.7971351126384839, 'p_value': 0.371951306427206}, 'HDF': {'chi2': 0.5428953983693312, 'p_value': 0.4612352504252645}, 'PWF': {'chi2': 0.045160881600399265, 'p_value': 0.8317084768796036}, 'OSF': {'chi2': 7.38329084263604, 'p_value': 0.006583260091347852}, 'RNF': {'chi2': 0.0712829023140808, 'p_value': 0.7894779532101002}}
+2024-07-20 13:10:03,858 - INFO - Desired results not achieved. Continuing to next iteration.
+2024-07-20 13:10:03,858 - INFO - Starting iteration 2
+2024-07-20 13:10:04,013 - INFO - Iteration 2 KS Test Results: {'Air temperature [K]': {'ks_stat': 0.00533110304775399, 'p_value': 0.9998741978449144}, 'Process temperature [K]': {'ks_stat': 0.01173173842134583, 'p_value': 0.6557270882346312}, 'Rotational speed [rpm]': {'ks_stat': 0.016992227877809567, 'p_value': 0.2109529236767971}, 'Torque [Nm]': {'ks_stat': 0.007196025676047053, 'p_value': 0.9871010903924397}, 'Tool wear [min]': {'ks_stat': 0.014100193960150005, 'p_value': 0.42042135825533083}}
+2024-07-20 13:10:04,013 - INFO - Iteration 2 Chi-Square Test Results: {'Type': {'chi2': 2.1396812617232577, 'p_value': 0.7100861228813306}, 'Machine failure': {'chi2': 1.351567639435753, 'p_value': 0.24500424685374367}, 'TWF': {'chi2': 0.5438968481015756, 'p_value': 0.46082221809155977}, 'HDF': {'chi2': 1.7153794702405456, 'p_value': 0.1902888966819344}, 'PWF': {'chi2': 0.07921557929058114, 'p_value': 0.7783632608458144}, 'OSF': {'chi2': 0.11017742726437507, 'p_value': 0.7399422277699632}, 'RNF': {'chi2': 0.18483129691748745, 'p_value': 0.6672537597871774}}
+2024-07-20 13:10:04,013 - INFO - Desired results achieved. Saving simulated data.
+2024-07-20 13:10:20,027 - INFO - Descriptive Statistics for Real Data:
+               UDI  ...  scaled_Tool wear [min]_lag_10
+count  8657.000000  ...                    8657.000000
+mean   4555.221670  ...                       0.426756
+std    2629.164129  ...                       0.250840
+min      11.000000  ...                       0.000000
+25%    2278.000000  ...                       0.209486
+50%    4551.000000  ...                       0.426877
+75%    6838.000000  ...                       0.640316
+max    9091.000000  ...                       1.000000
+
+[8 rows x 264 columns]
+2024-07-20 13:10:20,072 - INFO - Descriptive Statistics for Simulated Data:
+               UDI  ...  scaled_Tool wear [min]_lag_10
+count  6990.000000  ...                    6990.000000
+mean   3505.500000  ...                       0.000392
+std    2017.983523  ...                       1.000040
+min      11.000000  ...                      -1.715333
+25%    1758.250000  ...                      -0.870181
+50%    3505.500000  ...                       0.021925
+75%    5252.750000  ...                       0.867077
+max    7000.000000  ...                       2.244362
+
+[8 rows x 264 columns]
+2024-07-20 13:10:20,115 - INFO - Kolmogorov-Smirnov Test Results:
+{'Air temperature [K]': {'ks_stat': 0.00533110304775399, 'p_value': 0.9998741978449144}, 'Process temperature [K]': {'ks_stat': 0.01173173842134583, 'p_value': 0.6557270882346312}, 'Rotational speed [rpm]': {'ks_stat': 0.016992227877809567, 'p_value': 0.2109529236767971}, 'Torque [Nm]': {'ks_stat': 0.007196025676047053, 'p_value': 0.9871010903924397}, 'Tool wear [min]': {'ks_stat': 0.014100193960150005, 'p_value': 0.42042135825533083}}
+2024-07-20 13:10:20,143 - INFO - Chi-Square Test Results:
+{'Type': {'chi2': 5.957629814132616, 'p_value': 0.20233492821941787}, 'Machine failure': {'chi2': 1.7491544502957774, 'p_value': 0.1859830650537849}, 'TWF': {'chi2': 0.5438968481015756, 'p_value': 0.46082221809155977}, 'HDF': {'chi2': 1.7153794702405456, 'p_value': 0.1902888966819344}, 'PWF': {'chi2': 10.860678509969743, 'p_value': 0.0009822769901043954}, 'OSF': {'chi2': 0.7360112916236035, 'p_value': 0.3909416072298263}, 'RNF': {'chi2': 3.7135357635763864, 'p_value': 0.05397294442228519}}
+2024-07-20 13:18:58,352 - INFO - Loading data from file: ../data/processed/processed_data_with_lags.csv
+2024-07-20 13:18:58,671 - INFO - Starting iteration 1
+2024-07-20 13:18:58,801 - INFO - Iteration 1 KS Test Results: {'Air temperature [K]': {'ks_stat': 0.008275578533756899, 'p_value': 0.9802673872099695}, 'Process temperature [K]': {'ks_stat': 0.009974552315905926, 'p_value': 0.9070544870407234}, 'Rotational speed [rpm]': {'ks_stat': 0.01460518356801393, 'p_value': 0.5033246680996528}, 'Torque [Nm]': {'ks_stat': 0.0158194406602277, 'p_value': 0.4013776936453006}, 'Tool wear [min]': {'ks_stat': 0.009920684617473367, 'p_value': 0.9103797024293934}}
+2024-07-20 13:18:58,801 - INFO - Iteration 1 Chi-Square Test Results: {'Type': {'chi2': 5.564762070726123, 'p_value': 0.2340952206591958}, 'Machine failure': {'chi2': 0.1847224686853943, 'p_value': 0.6673458479983653}, 'TWF': {'chi2': 0.7971351126384839, 'p_value': 0.371951306427206}, 'HDF': {'chi2': 0.5428953983693312, 'p_value': 0.4612352504252645}, 'PWF': {'chi2': 0.045160881600399265, 'p_value': 0.8317084768796036}, 'OSF': {'chi2': 7.38329084263604, 'p_value': 0.006583260091347852}, 'RNF': {'chi2': 0.0712829023140808, 'p_value': 0.7894779532101002}}
+2024-07-20 13:18:58,801 - INFO - Desired results not achieved. Continuing to next iteration.
+2024-07-20 13:18:58,801 - INFO - Starting iteration 2
+2024-07-20 13:18:58,921 - INFO - Iteration 2 KS Test Results: {'Air temperature [K]': {'ks_stat': 0.005383100670460162, 'p_value': 0.9999397012393351}, 'Process temperature [K]': {'ks_stat': 0.00533170778836469, 'p_value': 0.9999514081639695}, 'Rotational speed [rpm]': {'ks_stat': 0.018338715926181692, 'p_value': 0.18184118967729196}, 'Torque [Nm]': {'ks_stat': 0.010102452144355952, 'p_value': 0.8580228057202693}, 'Tool wear [min]': {'ks_stat': 0.017518512526074895, 'p_value': 0.22395207860357036}}
+2024-07-20 13:18:58,921 - INFO - Iteration 2 Chi-Square Test Results: {'Type': {'chi2': 4.883920903581372, 'p_value': 0.29941663603543467}, 'Machine failure': {'chi2': 0.6303788093293323, 'p_value': 0.42721639820773327}, 'TWF': {'chi2': 0.5214930560816717, 'p_value': 0.47020548079094104}, 'HDF': {'chi2': 0.46330888415052607, 'p_value': 0.49608160842422255}, 'PWF': {'chi2': 0.054416704163973054, 'p_value': 0.8155487381041286}, 'OSF': {'chi2': 0.3939100110835564, 'p_value': 0.5302512611207935}, 'RNF': {'chi2': 0.17781013230804021, 'p_value': 0.6732619718466819}}
+2024-07-20 13:18:58,922 - INFO - Desired results achieved. Saving simulated data.
+2024-07-20 13:19:35,124 - INFO - Descriptive Statistics for Real Data:
+               UDI  ...  scaled_Tool wear [min]_lag_10
+count  8657.000000  ...                    8657.000000
+mean   4555.221670  ...                       0.426756
+std    2629.164129  ...                       0.250840
+min      11.000000  ...                       0.000000
+25%    2278.000000  ...                       0.209486
+50%    4551.000000  ...                       0.426877
+75%    6838.000000  ...                       0.640316
+max    9091.000000  ...                       1.000000
+
+[8 rows x 264 columns]
+2024-07-20 13:19:35,170 - INFO - Descriptive Statistics for Simulated Data:
+               UDI  ...  scaled_Tool wear [min]_lag_10
+count  5990.000000  ...                    5990.000000
+mean   3005.500000  ...                       0.000781
+std    1729.308388  ...                       0.999747
+min      11.000000  ...                      -1.736594
+25%    1508.250000  ...                      -0.857432
+50%    3005.500000  ...                       0.006031
+75%    4502.750000  ...                       0.853795
+max    6000.000000  ...                       2.062643
+
+[8 rows x 264 columns]
+2024-07-20 13:19:35,208 - INFO - Kolmogorov-Smirnov Test Results:
+{'Air temperature [K]': {'ks_stat': 0.005383100670460162, 'p_value': 0.9999397012393351}, 'Process temperature [K]': {'ks_stat': 0.00533170778836469, 'p_value': 0.9999514081639695}, 'Rotational speed [rpm]': {'ks_stat': 0.018338715926181692, 'p_value': 0.18184118967729196}, 'Torque [Nm]': {'ks_stat': 0.010102452144355952, 'p_value': 0.8580228057202693}, 'Tool wear [min]': {'ks_stat': 0.017518512526074895, 'p_value': 0.22395207860357036}}
+2024-07-20 13:19:35,234 - INFO - Chi-Square Test Results:
+{'Type': {'chi2': 1.4308750870538833, 'p_value': 0.8388114177619295}, 'Machine failure': {'chi2': 0.23561887489674402, 'p_value': 0.627388457406918}, 'TWF': {'chi2': 4.466524912115013, 'p_value': 0.03456522376201978}, 'HDF': {'chi2': 0.002771136738504462, 'p_value': 0.9580174808258288}, 'PWF': {'chi2': 0.054416704163973054, 'p_value': 0.8155487381041286}, 'OSF': {'chi2': 0.5527059738489991, 'p_value': 0.45721413783043174}, 'RNF': {'chi2': 0.17781013230804021, 'p_value': 0.6732619718466819}}
+2024-07-20 13:24:45,119 - INFO - Loading data from file: ../data/processed/processed_data_with_lags.csv
+2024-07-20 13:24:45,453 - INFO - Starting iteration 1
+2024-07-20 13:24:45,572 - INFO - Iteration 1 KS Test Results: {'Air temperature [K]': {'ks_stat': 0.008275578533756899, 'p_value': 0.9802673872099695}, 'Process temperature [K]': {'ks_stat': 0.009974552315905926, 'p_value': 0.9070544870407234}, 'Rotational speed [rpm]': {'ks_stat': 0.01460518356801393, 'p_value': 0.5033246680996528}, 'Torque [Nm]': {'ks_stat': 0.0158194406602277, 'p_value': 0.4013776936453006}, 'Tool wear [min]': {'ks_stat': 0.009920684617473367, 'p_value': 0.9103797024293934}}
+2024-07-20 13:24:45,572 - INFO - Iteration 1 Chi-Square Test Results: {'Type': {'chi2': 5.564762070726123, 'p_value': 0.2340952206591958}, 'Machine failure': {'chi2': 0.1847224686853943, 'p_value': 0.6673458479983653}, 'TWF': {'chi2': 0.7971351126384839, 'p_value': 0.371951306427206}, 'HDF': {'chi2': 0.5428953983693312, 'p_value': 0.4612352504252645}, 'PWF': {'chi2': 0.045160881600399265, 'p_value': 0.8317084768796036}, 'OSF': {'chi2': 7.38329084263604, 'p_value': 0.006583260091347852}, 'RNF': {'chi2': 0.0712829023140808, 'p_value': 0.7894779532101002}}
+2024-07-20 13:24:45,572 - INFO - Desired results not achieved. Continuing to next iteration.
+2024-07-20 13:24:45,572 - INFO - Starting iteration 2
+2024-07-20 13:24:45,702 - INFO - Iteration 2 KS Test Results: {'Air temperature [K]': {'ks_stat': 0.005383100670460162, 'p_value': 0.9999397012393351}, 'Process temperature [K]': {'ks_stat': 0.00533170778836469, 'p_value': 0.9999514081639695}, 'Rotational speed [rpm]': {'ks_stat': 0.018338715926181692, 'p_value': 0.18184118967729196}, 'Torque [Nm]': {'ks_stat': 0.010102452144355952, 'p_value': 0.8580228057202693}, 'Tool wear [min]': {'ks_stat': 0.017518512526074895, 'p_value': 0.22395207860357036}}
+2024-07-20 13:24:45,703 - INFO - Iteration 2 Chi-Square Test Results: {'Type': {'chi2': 4.883920903581372, 'p_value': 0.29941663603543467}, 'Machine failure': {'chi2': 0.6303788093293323, 'p_value': 0.42721639820773327}, 'TWF': {'chi2': 0.5214930560816717, 'p_value': 0.47020548079094104}, 'HDF': {'chi2': 0.46330888415052607, 'p_value': 0.49608160842422255}, 'PWF': {'chi2': 0.054416704163973054, 'p_value': 0.8155487381041286}, 'OSF': {'chi2': 0.3939100110835564, 'p_value': 0.5302512611207935}, 'RNF': {'chi2': 0.17781013230804021, 'p_value': 0.6732619718466819}}
+2024-07-20 13:24:45,703 - INFO - Desired results achieved. Saving simulated data.
+2024-07-20 13:25:34,017 - INFO - Descriptive Statistics for Real Data:
+               UDI  ...  scaled_Tool wear [min]_lag_10
+count  8657.000000  ...                    8657.000000
+mean   4555.221670  ...                       0.426756
+std    2629.164129  ...                       0.250840
+min      11.000000  ...                       0.000000
+25%    2278.000000  ...                       0.209486
+50%    4551.000000  ...                       0.426877
+75%    6838.000000  ...                       0.640316
+max    9091.000000  ...                       1.000000
+
+[8 rows x 264 columns]
+2024-07-20 13:25:34,063 - INFO - Descriptive Statistics for Simulated Data:
+               UDI  ...  scaled_Tool wear [min]_lag_10
+count  5990.000000  ...                    5990.000000
+mean   3005.500000  ...                       0.000781
+std    1729.308388  ...                       0.999747
+min      11.000000  ...                      -1.736594
+25%    1508.250000  ...                      -0.857432
+50%    3005.500000  ...                       0.006031
+75%    4502.750000  ...                       0.853795
+max    6000.000000  ...                       2.062643
+
+[8 rows x 264 columns]
+2024-07-20 13:25:34,101 - INFO - Kolmogorov-Smirnov Test Results:
+{'Air temperature [K]': {'ks_stat': 0.005383100670460162, 'p_value': 0.9999397012393351}, 'Process temperature [K]': {'ks_stat': 0.00533170778836469, 'p_value': 0.9999514081639695}, 'Rotational speed [rpm]': {'ks_stat': 0.018338715926181692, 'p_value': 0.18184118967729196}, 'Torque [Nm]': {'ks_stat': 0.010102452144355952, 'p_value': 0.8580228057202693}, 'Tool wear [min]': {'ks_stat': 0.017518512526074895, 'p_value': 0.22395207860357036}}
+2024-07-20 13:25:34,128 - INFO - Chi-Square Test Results:
+{'Type': {'chi2': 1.4308750870538833, 'p_value': 0.8388114177619295}, 'Machine failure': {'chi2': 0.23561887489674402, 'p_value': 0.627388457406918}, 'TWF': {'chi2': 4.466524912115013, 'p_value': 0.03456522376201978}, 'HDF': {'chi2': 0.002771136738504462, 'p_value': 0.9580174808258288}, 'PWF': {'chi2': 0.054416704163973054, 'p_value': 0.8155487381041286}, 'OSF': {'chi2': 0.5527059738489991, 'p_value': 0.45721413783043174}, 'RNF': {'chi2': 0.17781013230804021, 'p_value': 0.6732619718466819}}
+2024-07-20 13:26:51,898 - INFO - Descriptive Statistics for Real Data:
+               UDI  ...  scaled_Tool wear [min]_lag_10
+count  8657.000000  ...                    8657.000000
+mean   4555.221670  ...                       0.426756
+std    2629.164129  ...                       0.250840
+min      11.000000  ...                       0.000000
+25%    2278.000000  ...                       0.209486
+50%    4551.000000  ...                       0.426877
+75%    6838.000000  ...                       0.640316
+max    9091.000000  ...                       1.000000
+
+[8 rows x 264 columns]
+2024-07-20 13:26:51,942 - INFO - Descriptive Statistics for Simulated Data:
+               UDI  ...  scaled_Tool wear [min]_lag_10
+count  5990.000000  ...                    5990.000000
+mean   3005.500000  ...                       0.000781
+std    1729.308388  ...                       0.999747
+min      11.000000  ...                      -1.736594
+25%    1508.250000  ...                      -0.857432
+50%    3005.500000  ...                       0.006031
+75%    4502.750000  ...                       0.853795
+max    6000.000000  ...                       2.062643
+
+[8 rows x 264 columns]
+2024-07-20 13:26:51,981 - INFO - Kolmogorov-Smirnov Test Results:
+{'Air temperature [K]': {'ks_stat': 0.005383100670460162, 'p_value': 0.9999397012393351}, 'Process temperature [K]': {'ks_stat': 0.00533170778836469, 'p_value': 0.9999514081639695}, 'Rotational speed [rpm]': {'ks_stat': 0.018338715926181692, 'p_value': 0.18184118967729196}, 'Torque [Nm]': {'ks_stat': 0.010102452144355952, 'p_value': 0.8580228057202693}, 'Tool wear [min]': {'ks_stat': 0.017518512526074895, 'p_value': 0.22395207860357036}}
+2024-07-20 13:26:52,007 - INFO - Chi-Square Test Results:
+{'Type': {'chi2': 1.4308750870538833, 'p_value': 0.8388114177619295}, 'Machine failure': {'chi2': 0.23561887489674402, 'p_value': 0.627388457406918}, 'TWF': {'chi2': 4.466524912115013, 'p_value': 0.03456522376201978}, 'HDF': {'chi2': 0.002771136738504462, 'p_value': 0.9580174808258288}, 'PWF': {'chi2': 0.054416704163973054, 'p_value': 0.8155487381041286}, 'OSF': {'chi2': 0.5527059738489991, 'p_value': 0.45721413783043174}, 'RNF': {'chi2': 0.17781013230804021, 'p_value': 0.6732619718466819}}
+2024-07-20 13:41:36,028 - INFO - Loading data from file: ../data/processed/processed_data_with_lags.csv
+2024-07-20 13:41:36,329 - INFO - Starting iteration 1
+2024-07-20 13:42:57,088 - INFO - Loading data from file: ../data/processed/processed_data_with_lags.csv
+2024-07-20 13:42:57,392 - INFO - Starting iteration 1
+2024-07-20 13:42:57,510 - INFO - Iteration 1 KS Test Results: {'Air temperature [K]': {'ks_stat': 0.008275578533756899, 'p_value': 0.9802673872099695}, 'Process temperature [K]': {'ks_stat': 0.009974552315905926, 'p_value': 0.9070544870407234}, 'Rotational speed [rpm]': {'ks_stat': 0.01460518356801393, 'p_value': 0.5033246680996528}, 'Torque [Nm]': {'ks_stat': 0.0158194406602277, 'p_value': 0.4013776936453006}, 'Tool wear [min]': {'ks_stat': 0.009920684617473367, 'p_value': 0.9103797024293934}}
+2024-07-20 13:42:57,511 - INFO - Iteration 1 Chi-Square Test Results: {'Type': {'chi2': 5.564762070726123, 'p_value': 0.2340952206591958}, 'Machine failure': {'chi2': 0.1847224686853943, 'p_value': 0.6673458479983653}, 'TWF': {'chi2': 8.074447883122923, 'p_value': 0.004489378374353784}, 'HDF': {'chi2': 0.5428953983693312, 'p_value': 0.4612352504252645}, 'PWF': {'chi2': 0.045160881600399265, 'p_value': 0.8317084768796036}, 'OSF': {'chi2': 7.38329084263604, 'p_value': 0.006583260091347852}, 'RNF': {'chi2': 0.0712829023140808, 'p_value': 0.7894779532101002}}
+2024-07-20 13:42:57,511 - INFO - Desired results not achieved. Continuing to next iteration.
+2024-07-20 13:42:57,511 - INFO - Starting iteration 2
+2024-07-20 13:42:57,628 - INFO - Iteration 2 KS Test Results: {'Air temperature [K]': {'ks_stat': 0.005383100670460162, 'p_value': 0.9999397012393351}, 'Process temperature [K]': {'ks_stat': 0.00533170778836469, 'p_value': 0.9999514081639695}, 'Rotational speed [rpm]': {'ks_stat': 0.018338715926181692, 'p_value': 0.18184118967729196}, 'Torque [Nm]': {'ks_stat': 0.010102452144355952, 'p_value': 0.8580228057202693}, 'Tool wear [min]': {'ks_stat': 0.017518512526074895, 'p_value': 0.22395207860357036}}
+2024-07-20 13:42:57,628 - INFO - Iteration 2 Chi-Square Test Results: {'Type': {'chi2': 4.883920903581372, 'p_value': 0.29941663603543467}, 'Machine failure': {'chi2': 0.6303788093293323, 'p_value': 0.42721639820773327}, 'TWF': {'chi2': 0.1228074551860122, 'p_value': 0.7260093021295438}, 'HDF': {'chi2': 0.46330888415052607, 'p_value': 0.49608160842422255}, 'PWF': {'chi2': 0.054416704163973054, 'p_value': 0.8155487381041286}, 'OSF': {'chi2': 0.3939100110835564, 'p_value': 0.5302512611207935}, 'RNF': {'chi2': 0.17781013230804021, 'p_value': 0.6732619718466819}}
+2024-07-20 13:42:57,629 - INFO - Desired results achieved. Saving simulated data.
+2024-07-20 13:43:15,992 - INFO - Descriptive Statistics for Real Data:
+               UDI  ...  scaled_Tool wear [min]_lag_10
+count  8657.000000  ...                    8657.000000
+mean   4555.221670  ...                       0.426756
+std    2629.164129  ...                       0.250840
+min      11.000000  ...                       0.000000
+25%    2278.000000  ...                       0.209486
+50%    4551.000000  ...                       0.426877
+75%    6838.000000  ...                       0.640316
+max    9091.000000  ...                       1.000000
+
+[8 rows x 264 columns]
+2024-07-20 13:43:16,034 - INFO - Descriptive Statistics for Simulated Data:
+               UDI  ...  scaled_Tool wear [min]_lag_10
+count  5990.000000  ...                    5990.000000
+mean   3005.500000  ...                       0.000781
+std    1729.308388  ...                       0.999747
+min      11.000000  ...                      -1.736594
+25%    1508.250000  ...                      -0.857432
+50%    3005.500000  ...                       0.006031
+75%    4502.750000  ...                       0.853795
+max    6000.000000  ...                       2.062643
+
+[8 rows x 264 columns]
+2024-07-20 13:43:16,074 - INFO - Kolmogorov-Smirnov Test Results:
+{'Air temperature [K]': {'ks_stat': 0.005383100670460162, 'p_value': 0.9999397012393351}, 'Process temperature [K]': {'ks_stat': 0.00533170778836469, 'p_value': 0.9999514081639695}, 'Rotational speed [rpm]': {'ks_stat': 0.018338715926181692, 'p_value': 0.18184118967729196}, 'Torque [Nm]': {'ks_stat': 0.010102452144355952, 'p_value': 0.8580228057202693}, 'Tool wear [min]': {'ks_stat': 0.017518512526074895, 'p_value': 0.22395207860357036}}
+2024-07-20 13:43:16,102 - INFO - Chi-Square Test Results:
+{'Type': {'chi2': 1.4308750870538833, 'p_value': 0.8388114177619295}, 'Machine failure': {'chi2': 0.23561887489674402, 'p_value': 0.627388457406918}, 'TWF': {'chi2': 6.395967951927916, 'p_value': 0.011437984734796692}, 'HDF': {'chi2': 0.002771136738504462, 'p_value': 0.9580174808258288}, 'PWF': {'chi2': 0.054416704163973054, 'p_value': 0.8155487381041286}, 'OSF': {'chi2': 0.5527059738489991, 'p_value': 0.45721413783043174}, 'RNF': {'chi2': 0.17781013230804021, 'p_value': 0.6732619718466819}}
+2024-07-20 13:46:30,938 - INFO - Loading data from file: ../data/processed/processed_data_with_lags.csv
+2024-07-20 13:46:31,238 - INFO - Starting iteration 1
+2024-07-20 13:46:31,362 - INFO - Iteration 1 KS Test Results: {'Air temperature [K]': {'ks_stat': 0.008275578533756899, 'p_value': 0.9802673872099695}, 'Process temperature [K]': {'ks_stat': 0.009974552315905926, 'p_value': 0.9070544870407234}, 'Rotational speed [rpm]': {'ks_stat': 0.01460518356801393, 'p_value': 0.5033246680996528}, 'Torque [Nm]': {'ks_stat': 0.0158194406602277, 'p_value': 0.4013776936453006}, 'Tool wear [min]': {'ks_stat': 0.009920684617473367, 'p_value': 0.9103797024293934}}
+2024-07-20 13:46:31,362 - INFO - Iteration 1 Chi-Square Test Results: {'Type': {'chi2': 5.564762070726123, 'p_value': 0.2340952206591958}, 'Machine failure': {'chi2': 0.1847224686853943, 'p_value': 0.6673458479983653}, 'TWF': {'chi2': 8.074447883122923, 'p_value': 0.004489378374353784}, 'HDF': {'chi2': 0.5428953983693312, 'p_value': 0.4612352504252645}, 'PWF': {'chi2': 0.045160881600399265, 'p_value': 0.8317084768796036}, 'OSF': {'chi2': 7.38329084263604, 'p_value': 0.006583260091347852}, 'RNF': {'chi2': 0.0712829023140808, 'p_value': 0.7894779532101002}}
+2024-07-20 13:46:31,362 - INFO - Desired results not achieved. Continuing to next iteration.
+2024-07-20 13:46:31,362 - INFO - Starting iteration 2
+2024-07-20 13:46:31,474 - INFO - Iteration 2 KS Test Results: {'Air temperature [K]': {'ks_stat': 0.005383100670460162, 'p_value': 0.9999397012393351}, 'Process temperature [K]': {'ks_stat': 0.00533170778836469, 'p_value': 0.9999514081639695}, 'Rotational speed [rpm]': {'ks_stat': 0.018338715926181692, 'p_value': 0.18184118967729196}, 'Torque [Nm]': {'ks_stat': 0.010102452144355952, 'p_value': 0.8580228057202693}, 'Tool wear [min]': {'ks_stat': 0.017518512526074895, 'p_value': 0.22395207860357036}}
+2024-07-20 13:46:31,475 - INFO - Iteration 2 Chi-Square Test Results: {'Type': {'chi2': 4.883920903581372, 'p_value': 0.29941663603543467}, 'Machine failure': {'chi2': 0.6303788093293323, 'p_value': 0.42721639820773327}, 'TWF': {'chi2': 0.1228074551860122, 'p_value': 0.7260093021295438}, 'HDF': {'chi2': 0.46330888415052607, 'p_value': 0.49608160842422255}, 'PWF': {'chi2': 0.054416704163973054, 'p_value': 0.8155487381041286}, 'OSF': {'chi2': 0.3939100110835564, 'p_value': 0.5302512611207935}, 'RNF': {'chi2': 0.17781013230804021, 'p_value': 0.6732619718466819}}
+2024-07-20 13:46:31,475 - INFO - Desired results achieved. Saving simulated data.
+2024-07-20 13:51:22,002 - INFO - Loading data from file: ../data/processed/processed_data_with_lags.csv
+2024-07-20 13:51:22,428 - INFO - Starting iteration 1
+2024-07-20 13:51:22,580 - INFO - Iteration 1 KS Test Results: {'Air temperature [K]': {'ks_stat': 0.008275578533756899, 'p_value': 0.9802673872099695}, 'Process temperature [K]': {'ks_stat': 0.009974552315905926, 'p_value': 0.9070544870407234}, 'Rotational speed [rpm]': {'ks_stat': 0.01460518356801393, 'p_value': 0.5033246680996528}, 'Torque [Nm]': {'ks_stat': 0.0158194406602277, 'p_value': 0.4013776936453006}, 'Tool wear [min]': {'ks_stat': 0.009920684617473367, 'p_value': 0.9103797024293934}}
+2024-07-20 13:51:22,581 - INFO - Iteration 1 Chi-Square Test Results: {'Type': {'chi2': 5.564762070726123, 'p_value': 0.2340952206591958}, 'Machine failure': {'chi2': 0.1847224686853943, 'p_value': 0.6673458479983653}, 'TWF': {'chi2': 8.074447883122923, 'p_value': 0.004489378374353784}, 'HDF': {'chi2': 0.5428953983693312, 'p_value': 0.4612352504252645}, 'PWF': {'chi2': 0.045160881600399265, 'p_value': 0.8317084768796036}, 'OSF': {'chi2': 7.38329084263604, 'p_value': 0.006583260091347852}, 'RNF': {'chi2': 0.0712829023140808, 'p_value': 0.7894779532101002}}
+2024-07-20 13:51:22,581 - INFO - Desired results not achieved. Continuing to next iteration.
+2024-07-20 13:51:22,581 - INFO - Starting iteration 2
+2024-07-20 13:51:22,736 - INFO - Iteration 2 KS Test Results: {'Air temperature [K]': {'ks_stat': 0.005383100670460162, 'p_value': 0.9999397012393351}, 'Process temperature [K]': {'ks_stat': 0.00533170778836469, 'p_value': 0.9999514081639695}, 'Rotational speed [rpm]': {'ks_stat': 0.018338715926181692, 'p_value': 0.18184118967729196}, 'Torque [Nm]': {'ks_stat': 0.010102452144355952, 'p_value': 0.8580228057202693}, 'Tool wear [min]': {'ks_stat': 0.017518512526074895, 'p_value': 0.22395207860357036}}
+2024-07-20 13:51:22,736 - INFO - Iteration 2 Chi-Square Test Results: {'Type': {'chi2': 4.883920903581372, 'p_value': 0.29941663603543467}, 'Machine failure': {'chi2': 0.6303788093293323, 'p_value': 0.42721639820773327}, 'TWF': {'chi2': 0.1228074551860122, 'p_value': 0.7260093021295438}, 'HDF': {'chi2': 0.46330888415052607, 'p_value': 0.49608160842422255}, 'PWF': {'chi2': 0.054416704163973054, 'p_value': 0.8155487381041286}, 'OSF': {'chi2': 0.3939100110835564, 'p_value': 0.5302512611207935}, 'RNF': {'chi2': 0.17781013230804021, 'p_value': 0.6732619718466819}}
+2024-07-20 13:51:22,736 - INFO - Desired results achieved. Saving simulated data.
+2024-07-20 13:52:17,782 - INFO - Descriptive Statistics for Real Data:
+               UDI  ...  scaled_Tool wear [min]_lag_10
+count  8657.000000  ...                    8657.000000
+mean   4555.221670  ...                       0.426756
+std    2629.164129  ...                       0.250840
+min      11.000000  ...                       0.000000
+25%    2278.000000  ...                       0.209486
+50%    4551.000000  ...                       0.426877
+75%    6838.000000  ...                       0.640316
+max    9091.000000  ...                       1.000000
+
+[8 rows x 264 columns]
+2024-07-20 13:52:17,840 - INFO - Descriptive Statistics for Simulated Data:
+               UDI  ...  scaled_Tool wear [min]_lag_10
+count  5990.000000  ...                    5990.000000
+mean   3005.500000  ...                       0.000781
+std    1729.308388  ...                       0.999747
+min      11.000000  ...                      -1.736594
+25%    1508.250000  ...                      -0.857432
+50%    3005.500000  ...                       0.006031
+75%    4502.750000  ...                       0.853795
+max    6000.000000  ...                       2.062643
+
+[8 rows x 264 columns]
+2024-07-20 13:52:17,890 - INFO - Kolmogorov-Smirnov Test Results:
+{'Air temperature [K]': {'ks_stat': 0.005383100670460162, 'p_value': 0.9999397012393351}, 'Process temperature [K]': {'ks_stat': 0.00533170778836469, 'p_value': 0.9999514081639695}, 'Rotational speed [rpm]': {'ks_stat': 0.018338715926181692, 'p_value': 0.18184118967729196}, 'Torque [Nm]': {'ks_stat': 0.010102452144355952, 'p_value': 0.8580228057202693}, 'Tool wear [min]': {'ks_stat': 0.017518512526074895, 'p_value': 0.22395207860357036}}
+2024-07-20 13:52:17,928 - INFO - Chi-Square Test Results:
+{'Type': {'chi2': 1.4308750870538833, 'p_value': 0.8388114177619295}, 'Machine failure': {'chi2': 0.23561887489674402, 'p_value': 0.627388457406918}, 'TWF': {'chi2': 6.395967951927916, 'p_value': 0.011437984734796692}, 'HDF': {'chi2': 0.002771136738504462, 'p_value': 0.9580174808258288}, 'PWF': {'chi2': 0.054416704163973054, 'p_value': 0.8155487381041286}, 'OSF': {'chi2': 0.5527059738489991, 'p_value': 0.45721413783043174}, 'RNF': {'chi2': 0.17781013230804021, 'p_value': 0.6732619718466819}}
+2024-07-20 13:58:51,935 - INFO - Loading data from file: ../data/processed/processed_data_with_lags.csv
+2024-07-20 13:58:52,237 - INFO - Starting iteration 1
+2024-07-20 13:58:52,357 - INFO - Iteration 1 KS Test Results: {'Air temperature [K]': {'ks_stat': 0.009336589315861711, 'p_value': 0.9422979528808014}, 'Process temperature [K]': {'ks_stat': 0.013312520848558617, 'p_value': 0.6225714666530765}, 'Rotational speed [rpm]': {'ks_stat': 0.008507276769086284, 'p_value': 0.9741184883250376}, 'Torque [Nm]': {'ks_stat': 0.014838594828562056, 'p_value': 0.48280515226535464}, 'Tool wear [min]': {'ks_stat': 0.013917265048752929, 'p_value': 0.5658357794813803}}
+2024-07-20 13:58:52,357 - INFO - Iteration 1 Chi-Square Test Results: {'Type': {'chi2': 0.42005146274531624, 'p_value': 0.9808025573484239}, 'Machine failure': {'chi2': 3.643059964756649, 'p_value': 0.056303363687562585}, 'TWF': {'chi2': 32.36582739244682, 'p_value': 1.2771273293363254e-08}, 'HDF': {'chi2': 2.276726908909304, 'p_value': 0.13132876952679504}, 'PWF': {'chi2': 27.88113260857342, 'p_value': 1.2900156890385663e-07}, 'OSF': {'chi2': 0.34478970640758827, 'p_value': 0.5570774742080744}, 'RNF': {'chi2': 0.0794635632620685, 'p_value': 0.7780256934269422}}
+2024-07-20 13:58:52,357 - INFO - Desired results not achieved. Continuing to next iteration.
+2024-07-20 13:58:52,357 - INFO - Starting iteration 2
+2024-07-20 13:58:52,469 - INFO - Iteration 2 KS Test Results: {'Air temperature [K]': {'ks_stat': 0.00635347156508007, 'p_value': 0.9986256708446765}, 'Process temperature [K]': {'ks_stat': 0.009090966944059668, 'p_value': 0.9282379082741858}, 'Rotational speed [rpm]': {'ks_stat': 0.010716775465944454, 'p_value': 0.8054486767518308}, 'Torque [Nm]': {'ks_stat': 0.013320398654489992, 'p_value': 0.5504050867925199}, 'Tool wear [min]': {'ks_stat': 0.015180088179772108, 'p_value': 0.38338783533846793}}
+2024-07-20 13:58:52,469 - INFO - Iteration 2 Chi-Square Test Results: {'Type': {'chi2': 0.6560413772726735, 'p_value': 0.9566372017732804}, 'Machine failure': {'chi2': 0.12830082098780424, 'p_value': 0.7202003522160318}, 'TWF': {'chi2': 0.553422994009893, 'p_value': 0.4569224239095324}, 'HDF': {'chi2': 0.6834519599745327, 'p_value': 0.4084005825164331}, 'PWF': {'chi2': 0.06655388237153184, 'p_value': 0.7964220404848504}, 'OSF': {'chi2': 0.5228324014878183, 'p_value': 0.46963595465858177}, 'RNF': {'chi2': 0.13424217886130732, 'p_value': 0.7140735239085796}}
+2024-07-20 13:58:52,469 - INFO - Desired results achieved. Saving simulated data.
+2024-07-20 13:59:01,704 - INFO - Descriptive Statistics for Real Data:
+               UDI  ...  scaled_Tool wear [min]_lag_10
+count  8657.000000  ...                    8657.000000
+mean   4555.221670  ...                       0.426756
+std    2629.164129  ...                       0.250840
+min      11.000000  ...                       0.000000
+25%    2278.000000  ...                       0.209486
+50%    4551.000000  ...                       0.426877
+75%    6838.000000  ...                       0.640316
+max    9091.000000  ...                       1.000000
+
+[8 rows x 264 columns]
+2024-07-20 13:59:01,749 - INFO - Descriptive Statistics for Simulated Data:
+               UDI  ...  scaled_Tool wear [min]_lag_10
+count  5990.000000  ...                    5990.000000
+mean   3005.500000  ...                      -0.000472
+std    1729.308388  ...                       0.999756
+min      11.000000  ...                      -1.676375
+25%    1508.250000  ...                      -0.845704
+50%    3005.500000  ...                      -0.015033
+75%    4502.750000  ...                       0.862657
+max    6000.000000  ...                       2.288904
+
+[8 rows x 264 columns]
+2024-07-20 13:59:01,787 - INFO - Kolmogorov-Smirnov Test Results:
+{'Air temperature [K]': {'ks_stat': 0.00635347156508007, 'p_value': 0.9986256708446765}, 'Process temperature [K]': {'ks_stat': 0.009090966944059668, 'p_value': 0.9282379082741858}, 'Rotational speed [rpm]': {'ks_stat': 0.010716775465944454, 'p_value': 0.8054486767518308}, 'Torque [Nm]': {'ks_stat': 0.013320398654489992, 'p_value': 0.5504050867925199}, 'Tool wear [min]': {'ks_stat': 0.015180088179772108, 'p_value': 0.38338783533846793}}
+2024-07-20 13:59:01,815 - INFO - Chi-Square Test Results:
+{'Type': {'chi2': 2.1850378958193044, 'p_value': 0.7017694347616447}, 'Machine failure': {'chi2': 0.0034512368501311338, 'p_value': 0.9531534414094671}, 'TWF': {'chi2': 0.553422994009893, 'p_value': 0.4569224239095324}, 'HDF': {'chi2': 0.2991398158303121, 'p_value': 0.5844221821127956}, 'PWF': {'chi2': 0.06655388237153184, 'p_value': 0.7964220404848504}, 'OSF': {'chi2': 0.5228324014878183, 'p_value': 0.46963595465858177}, 'RNF': {'chi2': 0.13424217886130732, 'p_value': 0.7140735239085796}}
+2024-07-20 14:46:25,659 - INFO - Loading data from ../data/processed/processed_data_with_lags.csv
+2024-07-20 14:46:25,990 - INFO - Loading data from ../data/simulation/simulated_data.csv
+2024-07-20 14:46:29,471 - INFO - Combined data saved to ../data/processed/combined_data.csv
+2024-07-20 14:46:29,473 - INFO - Configuration loaded successfully from ../config/database_config.yaml
+2024-07-20 14:46:29,949 - ERROR - Error saving data to database: (psycopg2.OperationalError) connection to server at "localhost" (::1), port 5432 failed: FATAL:  database "predictive_maintenance" does not exist
+
+(Background on this error at: https://sqlalche.me/e/20/e3q8)
+2024-07-20 14:47:15,446 - INFO - Loading data from ../data/processed/processed_data_with_lags.csv
+2024-07-20 14:47:15,763 - INFO - Loading data from ../data/simulation/simulated_data.csv
+2024-07-20 14:47:19,371 - INFO - Combined data saved to ../data/processed/combined_data.csv
+2024-07-20 14:47:19,372 - INFO - Configuration loaded successfully from ../config/database_config.yaml
+2024-07-20 14:47:39,430 - INFO - Data saved to database table combined_data successfully
+2024-07-20 14:51:48,384 - INFO - Loading data from ../data/processed/processed_data_with_lags.csv
+2024-07-20 14:51:48,689 - INFO - Loading data from ../data/simulation/simulated_data.csv
+2024-07-20 14:51:52,015 - INFO - Combined data saved to ../data/processed/combined_data.csv
+2024-07-20 14:51:52,016 - INFO - Configuration loaded successfully from ../config/database_config.yaml
+2024-07-20 14:52:12,689 - INFO - Data saved to database table combined_data successfully
+2024-07-20 14:52:49,501 - INFO - Loading data from ../data/processed/processed_data_with_lags.csv
+2024-07-20 14:52:49,807 - INFO - Loading data from ../data/simulation/simulated_data.csv
+2024-07-20 14:52:53,172 - INFO - Combined data saved to ../data/processed/combined_data.csv
+2024-07-20 14:52:53,174 - INFO - Configuration loaded successfully from ../config/database_config.yaml
+2024-07-20 14:53:14,510 - INFO - Data saved to database table combined_data successfully
