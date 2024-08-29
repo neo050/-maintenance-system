@@ -25,7 +25,7 @@ max    6000.000000  ...                       2.288904
 [8 rows x 264 columns]
 
 Kolmogorov-Smirnov Test Results:
-{'Air temperature [K]': {'ks_stat': 0.00635347156508007, 'p_value': 0.9986256708446765}, 'Process temperature [K]': {'ks_stat': 0.009090966944059668, 'p_value': 0.9282379082741858}, 'Rotational speed [rpm]': {'ks_stat': 0.010716775465944454, 'p_value': 0.8054486767518308}, 'Torque [Nm]': {'ks_stat': 0.013320398654489992, 'p_value': 0.5504050867925199}, 'Tool wear [min]': {'ks_stat': 0.015180088179772108, 'p_value': 0.38338783533846793}}
+{'Air temperature [K]': {'ks_stat': 0.00635347156508007, 'p_value': 0.9986256708446765}, 'Process temperature [K]': {'ks_stat': 0.009090966944059668, 'p_value': 0.9282379082741858}, 'Rotational speed [rpm]': {'ks_stat': 0.010716775465944454, 'p_value': 0.8054486767518308}, 'Torque [Nm]': {'ks_stat': 0.013320398654489992, 'p_value': 0.5504050867925199}, 'Tool wear [min]': {'ks_stat': 0.015180088179772108, 'p_value': 0.38338783533846793}, 'air_temp_diff': {'ks_stat': 0.24027684275301545, 'p_value': 8.301338811490412e-180}, 'power': {'ks_stat': 0.12423312274143711, 'p_value': 4.708898663764172e-48}}
 
 Chi-Square Test Results:
 {'Type': {'chi2': 2.1850378958193044, 'p_value': 0.7017694347616447}, 'Machine failure': {'chi2': 0.0034512368501311338, 'p_value': 0.9531534414094671}, 'TWF': {'chi2': 0.553422994009893, 'p_value': 0.4569224239095324}, 'HDF': {'chi2': 0.2991398158303121, 'p_value': 0.5844221821127956}, 'PWF': {'chi2': 0.06655388237153184, 'p_value': 0.7964220404848504}, 'OSF': {'chi2': 0.5228324014878183, 'p_value': 0.46963595465858177}, 'RNF': {'chi2': 0.13424217886130732, 'p_value': 0.7140735239085796}}
