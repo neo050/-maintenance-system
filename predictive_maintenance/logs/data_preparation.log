@@ -1,0 +1,101 @@
+2024-09-03 10:44:01,616 - INFO - Starting data preparation for LSTM training
+2024-09-03 10:44:01,781 - INFO - Data loaded from ../../data/simulation/simulate_processed_sensor_data_with_lags.csv, shape: (5990, 186)
+2024-09-03 10:44:01,784 - INFO - Selected feature columns: ['air temperature [K]', 'process temperature [K]', 'rotational speed [rpm]', 'torque [Nm]', 'tool wear [min]']
+2024-09-03 10:44:01,784 - INFO - Target column: machine failure
+2024-09-03 10:47:30,129 - INFO - Starting data preparation for LSTM training
+2024-09-03 10:47:30,272 - INFO - Data loaded from ../../data/simulation/simulate_processed_sensor_data_with_lags.csv, shape: (5990, 186)
+2024-09-03 10:47:30,284 - INFO - Selected feature columns: ['air temperature [K]', 'process temperature [K]', 'rotational speed [rpm]', 'torque [Nm]', 'tool wear [min]']
+2024-09-03 10:47:30,284 - INFO - Target column: machine failure
+2024-09-03 11:17:12,240 - INFO - Starting data preparation for LSTM training
+2024-09-03 11:17:12,373 - INFO - Data loaded from ../../data/simulation/simulate_processed_sensor_data_with_lags.csv, shape: (5990, 186)
+2024-09-03 11:17:12,377 - INFO - No missing values detected.
+2024-09-03 11:17:12,391 - INFO - Data types:
+UDI                          int64
+Product ID                  object
+Type                        object
+Air temperature [K]        float64
+Process temperature [K]    float64
+                            ...   
+lag_1_lag_5                float64
+lag_2_lag_5                float64
+lag_3_lag_5                float64
+lag_4_lag_5                float64
+lag_5_lag_5                float64
+Length: 186, dtype: object
+2024-09-03 11:17:12,391 - INFO - Selected feature columns: ['Air temperature [K]', 'Process temperature [K]', 'Rotational speed [rpm]', 'Torque [Nm]', 'Tool wear [min]', 'Air temperature [K]_lag_1', 'Air temperature [K]_lag_2', 'Air temperature [K]_lag_3', 'Air temperature [K]_lag_4', 'Air temperature [K]_lag_5', 'Process temperature [K]_lag_1', 'Process temperature [K]_lag_2', 'Process temperature [K]_lag_3', 'Process temperature [K]_lag_4', 'Process temperature [K]_lag_5', 'Rotational speed [rpm]_lag_1', 'Rotational speed [rpm]_lag_2', 'Rotational speed [rpm]_lag_3', 'Rotational speed [rpm]_lag_4', 'Rotational speed [rpm]_lag_5', 'Torque [Nm]_lag_1', 'Torque [Nm]_lag_2', 'Torque [Nm]_lag_3', 'Torque [Nm]_lag_4', 'Torque [Nm]_lag_5', 'Tool wear [min]_lag_1', 'Tool wear [min]_lag_2', 'Tool wear [min]_lag_3', 'Tool wear [min]_lag_4', 'Tool wear [min]_lag_5']
+2024-09-03 11:17:12,393 - INFO - All selected features are present in the dataset.
+2024-09-03 11:17:12,394 - INFO - Target column: Machine failure
+2024-09-03 11:17:12,414 - INFO - Feature scaling applied using StandardScaler.
+2024-09-03 11:17:12,421 - INFO - Data split into training and test sets: Training set size: 4792, Test set size: 1198
+2024-09-03 11:17:12,652 - INFO - Prepared datasets saved to processed directory.
+2024-09-03 11:17:12,652 - INFO - Data preparation for LSTM training completed successfully.
+2024-09-03 11:19:20,212 - INFO - Starting data preparation for LSTM training
+2024-09-03 11:19:20,353 - INFO - Data loaded from ../../data/simulation/simulate_processed_sensor_data_with_lags.csv, shape: (5990, 186)
+2024-09-03 11:19:20,355 - INFO - No missing values detected.
+2024-09-03 11:19:20,355 - INFO - Data types:
+UDI                          int64
+Product ID                  object
+Type                        object
+Air temperature [K]        float64
+Process temperature [K]    float64
+                            ...   
+lag_1_lag_5                float64
+lag_2_lag_5                float64
+lag_3_lag_5                float64
+lag_4_lag_5                float64
+lag_5_lag_5                float64
+Length: 186, dtype: object
+2024-09-03 11:19:20,355 - INFO - Selected feature columns: ['Air temperature [K]', 'Process temperature [K]', 'Rotational speed [rpm]', 'Torque [Nm]', 'Tool wear [min]', 'Air temperature [K]_lag_1', 'Air temperature [K]_lag_2', 'Air temperature [K]_lag_3', 'Air temperature [K]_lag_4', 'Air temperature [K]_lag_5', 'Process temperature [K]_lag_1', 'Process temperature [K]_lag_2', 'Process temperature [K]_lag_3', 'Process temperature [K]_lag_4', 'Process temperature [K]_lag_5', 'Rotational speed [rpm]_lag_1', 'Rotational speed [rpm]_lag_2', 'Rotational speed [rpm]_lag_3', 'Rotational speed [rpm]_lag_4', 'Rotational speed [rpm]_lag_5', 'Torque [Nm]_lag_1', 'Torque [Nm]_lag_2', 'Torque [Nm]_lag_3', 'Torque [Nm]_lag_4', 'Torque [Nm]_lag_5', 'Tool wear [min]_lag_1', 'Tool wear [min]_lag_2', 'Tool wear [min]_lag_3', 'Tool wear [min]_lag_4', 'Tool wear [min]_lag_5']
+2024-09-03 11:19:20,355 - INFO - All selected features are present in the dataset.
+2024-09-03 11:19:20,355 - INFO - Target column: Machine failure
+2024-09-03 11:19:20,363 - INFO - Feature scaling applied using StandardScaler.
+2024-09-03 11:19:20,368 - INFO - Data split into training and test sets: Training set size: 4792, Test set size: 1198
+2024-09-03 11:19:20,586 - INFO - Prepared datasets saved to processed directory.
+2024-09-03 11:19:20,586 - INFO - Data preparation for LSTM training completed successfully.
+2024-09-03 11:28:29,629 - INFO - Starting data preparation for LSTM training
+2024-09-03 11:29:01,756 - INFO - Starting data preparation for LSTM training
+2024-09-03 11:29:02,155 - INFO - Data loaded from ../../data/processed/combined_data.csv, shape: (14647, 186)
+2024-09-03 11:29:02,164 - INFO - No missing values detected.
+2024-09-03 11:29:02,165 - INFO - Data types:
+UDI                        float64
+Product ID                  object
+Type                        object
+Air temperature [K]        float64
+Process temperature [K]    float64
+                            ...   
+lag_1_lag_5                float64
+lag_2_lag_5                float64
+lag_3_lag_5                float64
+lag_4_lag_5                float64
+lag_5_lag_5                float64
+Length: 186, dtype: object
+2024-09-03 11:29:02,165 - INFO - Selected feature columns: ['Air temperature [K]', 'Process temperature [K]', 'Rotational speed [rpm]', 'Torque [Nm]', 'Tool wear [min]', 'Air temperature [K]_lag_1', 'Air temperature [K]_lag_2', 'Air temperature [K]_lag_3', 'Air temperature [K]_lag_4', 'Air temperature [K]_lag_5', 'Process temperature [K]_lag_1', 'Process temperature [K]_lag_2', 'Process temperature [K]_lag_3', 'Process temperature [K]_lag_4', 'Process temperature [K]_lag_5', 'Rotational speed [rpm]_lag_1', 'Rotational speed [rpm]_lag_2', 'Rotational speed [rpm]_lag_3', 'Rotational speed [rpm]_lag_4', 'Rotational speed [rpm]_lag_5', 'Torque [Nm]_lag_1', 'Torque [Nm]_lag_2', 'Torque [Nm]_lag_3', 'Torque [Nm]_lag_4', 'Torque [Nm]_lag_5', 'Tool wear [min]_lag_1', 'Tool wear [min]_lag_2', 'Tool wear [min]_lag_3', 'Tool wear [min]_lag_4', 'Tool wear [min]_lag_5']
+2024-09-03 11:29:02,165 - INFO - All selected features are present in the dataset.
+2024-09-03 11:29:02,166 - INFO - Target column: Machine failure
+2024-09-03 11:29:02,179 - INFO - Feature scaling applied using StandardScaler.
+2024-09-03 11:29:02,190 - INFO - Data split into training and test sets: Training set size: 11717, Test set size: 2930
+2024-09-03 11:29:02,737 - INFO - Prepared datasets saved to processed directory.
+2024-09-03 11:29:02,737 - INFO - Data preparation for LSTM training completed successfully.
+2024-09-03 11:30:16,240 - INFO - Starting data preparation for LSTM training
+2024-09-03 11:30:16,455 - INFO - Data loaded from ../../data/processed/processed_data_with_lags.csv, shape: (8657, 186)
+2024-09-03 11:30:16,460 - INFO - No missing values detected.
+2024-09-03 11:30:16,460 - INFO - Data types:
+UDI                        float64
+Product ID                  object
+Type                        object
+Air temperature [K]        float64
+Process temperature [K]    float64
+                            ...   
+lag_1_lag_5                float64
+lag_2_lag_5                float64
+lag_3_lag_5                float64
+lag_4_lag_5                float64
+lag_5_lag_5                float64
+Length: 186, dtype: object
+2024-09-03 11:30:16,461 - INFO - Selected feature columns: ['Air temperature [K]', 'Process temperature [K]', 'Rotational speed [rpm]', 'Torque [Nm]', 'Tool wear [min]', 'Air temperature [K]_lag_1', 'Air temperature [K]_lag_2', 'Air temperature [K]_lag_3', 'Air temperature [K]_lag_4', 'Air temperature [K]_lag_5', 'Process temperature [K]_lag_1', 'Process temperature [K]_lag_2', 'Process temperature [K]_lag_3', 'Process temperature [K]_lag_4', 'Process temperature [K]_lag_5', 'Rotational speed [rpm]_lag_1', 'Rotational speed [rpm]_lag_2', 'Rotational speed [rpm]_lag_3', 'Rotational speed [rpm]_lag_4', 'Rotational speed [rpm]_lag_5', 'Torque [Nm]_lag_1', 'Torque [Nm]_lag_2', 'Torque [Nm]_lag_3', 'Torque [Nm]_lag_4', 'Torque [Nm]_lag_5', 'Tool wear [min]_lag_1', 'Tool wear [min]_lag_2', 'Tool wear [min]_lag_3', 'Tool wear [min]_lag_4', 'Tool wear [min]_lag_5']
+2024-09-03 11:30:16,461 - INFO - All selected features are present in the dataset.
+2024-09-03 11:30:16,461 - INFO - Target column: Machine failure
+2024-09-03 11:30:16,471 - INFO - Feature scaling applied using StandardScaler.
+2024-09-03 11:30:16,476 - INFO - Data split into training and test sets: Training set size: 6925, Test set size: 1732
+2024-09-03 11:30:16,798 - INFO - Prepared datasets saved to processed directory.
+2024-09-03 11:30:16,798 - INFO - Data preparation for LSTM training completed successfully.

@@ -1,0 +1,69 @@
+2024-09-03 11:45:32,453 - INFO - Processing database: simulation
+2024-09-03 11:45:32,509 - INFO - Training on fold 1/5 for simulation...
+2024-09-03 11:45:32,707 - INFO - LSTM model created successfully with 64 units, dropout rate 0.3, and learning rate 0.001
+2024-09-03 11:46:45,139 - INFO - LSTM model and history saved for fold 1 of simulation
+2024-09-03 11:46:45,139 - INFO - Training on fold 2/5 for simulation...
+2024-09-03 11:46:45,185 - INFO - LSTM model created successfully with 64 units, dropout rate 0.3, and learning rate 0.001
+2024-09-03 11:48:01,457 - INFO - LSTM model and history saved for fold 2 of simulation
+2024-09-03 11:48:01,458 - INFO - Training on fold 3/5 for simulation...
+2024-09-03 11:48:01,510 - INFO - LSTM model created successfully with 64 units, dropout rate 0.3, and learning rate 0.001
+2024-09-03 11:49:24,863 - INFO - LSTM model and history saved for fold 3 of simulation
+2024-09-03 11:49:24,863 - INFO - Training on fold 4/5 for simulation...
+2024-09-03 11:49:24,908 - INFO - LSTM model created successfully with 64 units, dropout rate 0.3, and learning rate 0.001
+2024-09-03 11:50:49,167 - INFO - LSTM model and history saved for fold 4 of simulation
+2024-09-03 11:50:49,168 - INFO - Training on fold 5/5 for simulation...
+2024-09-03 11:50:49,214 - INFO - LSTM model created successfully with 64 units, dropout rate 0.3, and learning rate 0.001
+2024-09-03 11:56:54,003 - INFO - Processing database: simulation
+2024-09-03 11:56:54,059 - INFO - Training on fold 1/5 for simulation...
+2024-09-03 11:56:54,152 - INFO - LSTM model created successfully with 64 units, dropout rate 0.3, and learning rate 0.001
+2024-09-03 11:58:06,288 - INFO - LSTM model and history saved for fold 1 of simulation
+2024-09-03 11:58:06,288 - INFO - Training on fold 2/5 for simulation...
+2024-09-03 11:58:06,330 - INFO - LSTM model created successfully with 64 units, dropout rate 0.3, and learning rate 0.001
+2024-09-03 11:59:24,084 - INFO - LSTM model and history saved for fold 2 of simulation
+2024-09-03 11:59:24,084 - INFO - Training on fold 3/5 for simulation...
+2024-09-03 11:59:24,123 - INFO - LSTM model created successfully with 64 units, dropout rate 0.3, and learning rate 0.001
+2024-09-03 12:00:44,285 - INFO - LSTM model and history saved for fold 3 of simulation
+2024-09-03 12:00:44,286 - INFO - Training on fold 4/5 for simulation...
+2024-09-03 12:00:44,333 - INFO - LSTM model created successfully with 64 units, dropout rate 0.3, and learning rate 0.001
+2024-09-03 12:02:03,523 - INFO - LSTM model and history saved for fold 4 of simulation
+2024-09-03 12:02:03,523 - INFO - Training on fold 5/5 for simulation...
+2024-09-03 12:02:03,565 - INFO - LSTM model created successfully with 64 units, dropout rate 0.3, and learning rate 0.001
+2024-09-03 12:03:29,323 - INFO - LSTM model and history saved for fold 5 of simulation
+2024-09-03 12:03:29,323 - INFO - Average AUC across folds for simulation: 0.9920928001403808
+2024-09-03 12:03:29,324 - INFO - Model performance for simulation is satisfactory.
+2024-09-03 12:03:29,324 - INFO - Processing database: combined
+2024-09-03 12:03:29,442 - INFO - Training on fold 1/5 for combined...
+2024-09-03 12:03:29,485 - INFO - LSTM model created successfully with 64 units, dropout rate 0.3, and learning rate 0.001
+2024-09-03 12:06:44,458 - INFO - LSTM model and history saved for fold 1 of combined
+2024-09-03 12:06:44,459 - INFO - Training on fold 2/5 for combined...
+2024-09-03 12:06:44,501 - INFO - LSTM model created successfully with 64 units, dropout rate 0.3, and learning rate 0.001
+2024-09-03 12:10:03,667 - INFO - LSTM model and history saved for fold 2 of combined
+2024-09-03 12:10:03,668 - INFO - Training on fold 3/5 for combined...
+2024-09-03 12:10:03,710 - INFO - LSTM model created successfully with 64 units, dropout rate 0.3, and learning rate 0.001
+2024-09-03 12:13:25,453 - INFO - LSTM model and history saved for fold 3 of combined
+2024-09-03 12:13:25,453 - INFO - Training on fold 4/5 for combined...
+2024-09-03 12:13:25,498 - INFO - LSTM model created successfully with 64 units, dropout rate 0.3, and learning rate 0.001
+2024-09-03 12:16:41,195 - INFO - LSTM model and history saved for fold 4 of combined
+2024-09-03 12:16:41,196 - INFO - Training on fold 5/5 for combined...
+2024-09-03 12:16:41,239 - INFO - LSTM model created successfully with 64 units, dropout rate 0.3, and learning rate 0.001
+2024-09-03 12:19:57,622 - INFO - LSTM model and history saved for fold 5 of combined
+2024-09-03 12:19:57,622 - INFO - Average AUC across folds for combined: 0.9933873414993286
+2024-09-03 12:19:57,622 - INFO - Model performance for combined is satisfactory.
+2024-09-03 12:19:57,622 - INFO - Processing database: real
+2024-09-03 12:19:57,703 - INFO - Training on fold 1/5 for real...
+2024-09-03 12:19:57,747 - INFO - LSTM model created successfully with 64 units, dropout rate 0.3, and learning rate 0.001
+2024-09-03 12:21:55,624 - INFO - LSTM model and history saved for fold 1 of real
+2024-09-03 12:21:55,624 - INFO - Training on fold 2/5 for real...
+2024-09-03 12:21:55,664 - INFO - LSTM model created successfully with 64 units, dropout rate 0.3, and learning rate 0.001
+2024-09-03 12:23:57,600 - INFO - LSTM model and history saved for fold 2 of real
+2024-09-03 12:23:57,601 - INFO - Training on fold 3/5 for real...
+2024-09-03 12:23:57,647 - INFO - LSTM model created successfully with 64 units, dropout rate 0.3, and learning rate 0.001
+2024-09-03 12:25:56,817 - INFO - LSTM model and history saved for fold 3 of real
+2024-09-03 12:25:56,817 - INFO - Training on fold 4/5 for real...
+2024-09-03 12:25:56,860 - INFO - LSTM model created successfully with 64 units, dropout rate 0.3, and learning rate 0.001
+2024-09-03 12:27:59,243 - INFO - LSTM model and history saved for fold 4 of real
+2024-09-03 12:27:59,243 - INFO - Training on fold 5/5 for real...
+2024-09-03 12:27:59,288 - INFO - LSTM model created successfully with 64 units, dropout rate 0.3, and learning rate 0.001
+2024-09-03 12:29:58,224 - INFO - LSTM model and history saved for fold 5 of real
+2024-09-03 12:29:58,224 - INFO - Average AUC across folds for real: 0.9936924934387207
+2024-09-03 12:29:58,224 - INFO - Model performance for real is satisfactory.

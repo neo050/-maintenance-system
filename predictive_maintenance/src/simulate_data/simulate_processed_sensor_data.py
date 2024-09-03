@@ -2,11 +2,19 @@ import pandas as pd
 import numpy as np
 from sklearn.preprocessing import StandardScaler
 from scipy.stats import ks_2samp, chi2_contingency
-import os
-import logging
 
 # Setup logging
-logging.basicConfig(level=logging.INFO, format='%(asctime)s - %(levelname)s - %(message)s')
+import logging
+import os
+
+# Setup logging to file
+log_file_path = '../../logs/preprocessing.log'
+os.makedirs(os.path.dirname(log_file_path), exist_ok=True)
+
+logging.basicConfig(level=logging.INFO,
+                    format='%(asctime)s - %(levelname)s - %(message)s',
+                    handlers=[logging.FileHandler(log_file_path),
+                              logging.StreamHandler()])
 
 def load_data(file_path):
     """Load the raw data from the specified file path."""
