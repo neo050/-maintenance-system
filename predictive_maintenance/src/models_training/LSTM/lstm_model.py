@@ -11,7 +11,7 @@ from tensorflow.keras.optimizers import Adam
 from sklearn.utils import resample
 
 # Setup logging
-log_file_path = '../../logs/model_training.log'
+log_file_path = '../../../logs/model_training.log'
 os.makedirs(os.path.dirname(log_file_path), exist_ok=True)
 
 logging.basicConfig(level=logging.INFO,

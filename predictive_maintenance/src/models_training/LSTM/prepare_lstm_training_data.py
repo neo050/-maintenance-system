@@ -4,13 +4,13 @@ from sklearn.model_selection import train_test_split
 import logging
 
 # Setup logging
-logging.basicConfig(filename='../../logs/data_preparation.log', level=logging.INFO,
+logging.basicConfig(filename='../../../logs/data_preparation.log', level=logging.INFO,
                     format='%(asctime)s - %(levelname)s - %(message)s')
 
 logging.info('Starting data preparation for LSTM training')
 
 # Load the data
-data_path = '../../data/processed/processed_data_with_lags.csv'
+data_path = '../../../data/processed/processed_data_with_lags.csv'
 data = pd.read_csv(data_path)
 logging.info(f'Data loaded from {data_path}, shape: {data.shape}')
 

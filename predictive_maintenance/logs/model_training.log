@@ -67,3 +67,281 @@
 2024-09-03 12:29:58,224 - INFO - LSTM model and history saved for fold 5 of real
 2024-09-03 12:29:58,224 - INFO - Average AUC across folds for real: 0.9936924934387207
 2024-09-03 12:29:58,224 - INFO - Model performance for real is satisfactory.
+2024-09-04 17:25:08,979 - INFO - Processing database: simulation
+2024-09-04 17:29:00,770 - INFO - Processing database: simulation
+2024-09-04 17:35:46,453 - INFO - Processing database: simulation
+2024-09-04 17:39:08,062 - INFO - Processing database: simulation
+2024-09-04 17:44:39,200 - INFO - Processing database: simulation
+2024-09-04 17:52:47,364 - INFO - Processing database: simulation
+2024-09-04 17:52:47,365 - INFO - Loaded X shape: (4792, 1, 30)
+2024-09-04 17:53:01,798 - INFO - Processing database: simulation
+2024-09-04 17:53:01,799 - INFO - Loaded X shape: (4792, 1, 30)
+2024-09-04 17:58:40,013 - INFO - Processing database: simulation
+2024-09-04 17:58:40,014 - INFO - Loaded X shape: (4792, 1, 30)
+2024-09-04 18:02:53,454 - INFO - Processing database: simulation
+2024-09-04 18:02:53,455 - INFO - Loaded X shape: (4792, 1, 30)
+2024-09-04 18:02:53,473 - INFO - Training on fold 1/5 for simulation...
+2024-09-04 18:06:16,985 - INFO - Processing database: simulation
+2024-09-04 18:06:16,987 - INFO - Loaded X shape: (4792, 1, 30)
+2024-09-04 18:06:16,994 - INFO - Training on fold 1/5 for simulation...
+2024-09-04 18:09:14,881 - INFO - Processing database: simulation
+2024-09-04 18:09:14,883 - INFO - Loaded X shape: (4792, 1, 30)
+2024-09-04 18:09:14,889 - INFO - Training on fold 1/5 for simulation...
+2024-09-04 18:13:15,075 - INFO - Processing database: simulation
+2024-09-04 18:13:15,076 - INFO - Loaded X shape: (4792, 1, 30)
+2024-09-04 18:13:15,083 - INFO - Training on fold 1/5 for simulation...
+2024-09-04 18:16:26,879 - INFO - Processing database: simulation
+2024-09-04 18:16:26,880 - INFO - Loaded X shape: (4792, 1, 30)
+2024-09-04 18:16:26,887 - INFO - Training on fold 1/5 for simulation...
+2024-09-04 18:25:43,807 - INFO - Processing database: simulation
+2024-09-04 18:25:43,808 - INFO - Loaded X shape: (4792, 1, 30)
+2024-09-04 18:25:43,819 - INFO - Training on fold 1/5 for simulation...
+2024-09-04 18:25:43,969 - INFO - CNN model created with 64 filters, kernel size 1, and learning rate 0.001
+2024-09-04 18:26:04,082 - INFO - CNN model and history saved for fold 1 of simulation
+2024-09-04 18:26:04,082 - INFO - Training on fold 2/5 for simulation...
+2024-09-04 18:26:04,243 - INFO - CNN model created with 64 filters, kernel size 1, and learning rate 0.001
+2024-09-04 18:26:21,613 - INFO - CNN model and history saved for fold 2 of simulation
+2024-09-04 18:26:21,613 - INFO - Training on fold 3/5 for simulation...
+2024-09-04 18:26:21,687 - INFO - CNN model created with 64 filters, kernel size 1, and learning rate 0.001
+2024-09-04 18:26:38,898 - INFO - CNN model and history saved for fold 3 of simulation
+2024-09-04 18:26:38,898 - INFO - Training on fold 4/5 for simulation...
+2024-09-04 18:26:38,943 - INFO - CNN model created with 64 filters, kernel size 1, and learning rate 0.001
+2024-09-04 18:26:53,927 - INFO - CNN model and history saved for fold 4 of simulation
+2024-09-04 18:26:53,928 - INFO - Training on fold 5/5 for simulation...
+2024-09-04 18:26:53,975 - INFO - CNN model created with 64 filters, kernel size 1, and learning rate 0.001
+2024-09-04 18:27:10,200 - INFO - CNN model and history saved for fold 5 of simulation
+2024-09-04 18:27:10,200 - INFO - Average AUC across folds for simulation: 0.999872875213623
+2024-09-04 18:27:10,200 - INFO - Model performance for simulation is satisfactory.
+2024-09-04 18:27:10,202 - INFO - Processing database: combined
+2024-09-04 18:27:10,203 - INFO - Loaded X shape: (11717, 1, 30)
+2024-09-04 18:27:10,215 - INFO - Training on fold 1/5 for combined...
+2024-09-04 18:27:10,265 - INFO - CNN model created with 64 filters, kernel size 1, and learning rate 0.001
+2024-09-04 18:27:37,302 - INFO - CNN model and history saved for fold 1 of combined
+2024-09-04 18:27:37,302 - INFO - Training on fold 2/5 for combined...
+2024-09-04 18:27:37,352 - INFO - CNN model created with 64 filters, kernel size 1, and learning rate 0.001
+2024-09-04 18:28:02,921 - INFO - CNN model and history saved for fold 2 of combined
+2024-09-04 18:28:02,921 - INFO - Training on fold 3/5 for combined...
+2024-09-04 18:28:02,968 - INFO - CNN model created with 64 filters, kernel size 1, and learning rate 0.001
+2024-09-04 18:28:32,073 - INFO - CNN model and history saved for fold 3 of combined
+2024-09-04 18:28:32,073 - INFO - Training on fold 4/5 for combined...
+2024-09-04 18:28:32,119 - INFO - CNN model created with 64 filters, kernel size 1, and learning rate 0.001
+2024-09-04 18:28:58,707 - INFO - CNN model and history saved for fold 4 of combined
+2024-09-04 18:28:58,707 - INFO - Training on fold 5/5 for combined...
+2024-09-04 18:28:58,752 - INFO - CNN model created with 64 filters, kernel size 1, and learning rate 0.001
+2024-09-04 18:29:25,938 - INFO - CNN model and history saved for fold 5 of combined
+2024-09-04 18:29:25,939 - INFO - Average AUC across folds for combined: 0.9969199419021606
+2024-09-04 18:29:25,939 - INFO - Model performance for combined is satisfactory.
+2024-09-04 18:29:25,939 - INFO - Processing database: real
+2024-09-04 18:29:25,941 - INFO - Loaded X shape: (6925, 1, 30)
+2024-09-04 18:29:25,950 - INFO - Training on fold 1/5 for real...
+2024-09-04 18:29:25,995 - INFO - CNN model created with 64 filters, kernel size 1, and learning rate 0.001
+2024-09-04 18:29:43,373 - INFO - CNN model and history saved for fold 1 of real
+2024-09-04 18:29:43,373 - INFO - Training on fold 2/5 for real...
+2024-09-04 18:29:43,421 - INFO - CNN model created with 64 filters, kernel size 1, and learning rate 0.001
+2024-09-04 18:30:02,564 - INFO - CNN model and history saved for fold 2 of real
+2024-09-04 18:30:02,565 - INFO - Training on fold 3/5 for real...
+2024-09-04 18:30:02,611 - INFO - CNN model created with 64 filters, kernel size 1, and learning rate 0.001
+2024-09-04 18:30:20,871 - INFO - CNN model and history saved for fold 3 of real
+2024-09-04 18:30:20,871 - INFO - Training on fold 4/5 for real...
+2024-09-04 18:30:20,918 - INFO - CNN model created with 64 filters, kernel size 1, and learning rate 0.001
+2024-09-04 18:30:39,369 - INFO - CNN model and history saved for fold 4 of real
+2024-09-04 18:30:39,370 - INFO - Training on fold 5/5 for real...
+2024-09-04 18:30:39,416 - INFO - CNN model created with 64 filters, kernel size 1, and learning rate 0.001
+2024-09-04 18:30:56,790 - INFO - CNN model and history saved for fold 5 of real
+2024-09-04 18:30:56,790 - INFO - Average AUC across folds for real: 0.9972051024436951
+2024-09-04 18:30:56,790 - INFO - Model performance for real is satisfactory.
+2024-09-04 18:51:57,911 - INFO - Processing database: simulation
+2024-09-04 18:51:57,912 - INFO - Loaded X shape: (4792, 1, 30)
+2024-09-04 18:51:57,925 - INFO - Training on fold 1/5 for simulation...
+2024-09-04 18:51:58,020 - INFO - CNN model created with 64 filters, kernel size 1, and learning rate 0.001
+2024-09-04 18:52:15,741 - INFO - CNN model and history saved for fold 1 of simulation
+2024-09-04 18:52:15,741 - INFO - Training on fold 2/5 for simulation...
+2024-09-04 18:52:15,884 - INFO - CNN model created with 64 filters, kernel size 1, and learning rate 0.001
+2024-09-04 18:52:31,136 - INFO - CNN model and history saved for fold 2 of simulation
+2024-09-04 18:52:31,136 - INFO - Training on fold 3/5 for simulation...
+2024-09-04 18:52:31,184 - INFO - CNN model created with 64 filters, kernel size 1, and learning rate 0.001
+2024-09-04 18:52:43,189 - INFO - CNN model and history saved for fold 3 of simulation
+2024-09-04 18:52:43,189 - INFO - Training on fold 4/5 for simulation...
+2024-09-04 18:52:43,235 - INFO - CNN model created with 64 filters, kernel size 1, and learning rate 0.001
+2024-09-04 18:52:55,538 - INFO - CNN model and history saved for fold 4 of simulation
+2024-09-04 18:52:55,538 - INFO - Training on fold 5/5 for simulation...
+2024-09-04 18:52:55,746 - INFO - CNN model created with 64 filters, kernel size 1, and learning rate 0.001
+2024-09-04 18:53:08,191 - INFO - CNN model and history saved for fold 5 of simulation
+2024-09-04 18:53:08,191 - INFO - Average AUC across folds for simulation: 0.9998675465583802
+2024-09-04 18:53:08,191 - INFO - Model performance for simulation is satisfactory.
+2024-09-04 18:53:08,191 - INFO - Processing database: combined
+2024-09-04 18:53:08,193 - INFO - Loaded X shape: (11717, 1, 30)
+2024-09-04 18:53:08,205 - INFO - Training on fold 1/5 for combined...
+2024-09-04 18:53:08,259 - INFO - CNN model created with 64 filters, kernel size 1, and learning rate 0.001
+2024-09-04 18:53:33,568 - INFO - CNN model and history saved for fold 1 of combined
+2024-09-04 18:53:33,568 - INFO - Training on fold 2/5 for combined...
+2024-09-04 18:53:33,616 - INFO - CNN model created with 64 filters, kernel size 1, and learning rate 0.001
+2024-09-04 18:53:59,915 - INFO - CNN model and history saved for fold 2 of combined
+2024-09-04 18:53:59,916 - INFO - Training on fold 3/5 for combined...
+2024-09-04 18:53:59,961 - INFO - CNN model created with 64 filters, kernel size 1, and learning rate 0.001
+2024-09-04 18:54:27,007 - INFO - CNN model and history saved for fold 3 of combined
+2024-09-04 18:54:27,007 - INFO - Training on fold 4/5 for combined...
+2024-09-04 18:54:27,059 - INFO - CNN model created with 64 filters, kernel size 1, and learning rate 0.001
+2024-09-04 18:54:57,785 - INFO - CNN model and history saved for fold 4 of combined
+2024-09-04 18:54:57,785 - INFO - Training on fold 5/5 for combined...
+2024-09-04 18:54:57,830 - INFO - CNN model created with 64 filters, kernel size 1, and learning rate 0.001
+2024-09-04 18:55:28,929 - INFO - CNN model and history saved for fold 5 of combined
+2024-09-04 18:55:28,929 - INFO - Average AUC across folds for combined: 0.9967755794525146
+2024-09-04 18:55:28,929 - INFO - Model performance for combined is satisfactory.
+2024-09-04 18:55:28,930 - INFO - Processing database: real
+2024-09-04 18:55:28,931 - INFO - Loaded X shape: (6925, 1, 30)
+2024-09-04 18:55:28,942 - INFO - Training on fold 1/5 for real...
+2024-09-04 18:55:28,998 - INFO - CNN model created with 64 filters, kernel size 1, and learning rate 0.001
+2024-09-04 18:55:51,141 - INFO - CNN model and history saved for fold 1 of real
+2024-09-04 18:55:51,141 - INFO - Training on fold 2/5 for real...
+2024-09-04 18:55:51,185 - INFO - CNN model created with 64 filters, kernel size 1, and learning rate 0.001
+2024-09-04 18:56:15,751 - INFO - CNN model and history saved for fold 2 of real
+2024-09-04 18:56:15,753 - INFO - Training on fold 3/5 for real...
+2024-09-04 18:56:15,811 - INFO - CNN model created with 64 filters, kernel size 1, and learning rate 0.001
+2024-09-04 18:56:37,320 - INFO - CNN model and history saved for fold 3 of real
+2024-09-04 18:56:37,320 - INFO - Training on fold 4/5 for real...
+2024-09-04 18:56:37,375 - INFO - CNN model created with 64 filters, kernel size 1, and learning rate 0.001
+2024-09-04 18:57:01,652 - INFO - CNN model and history saved for fold 4 of real
+2024-09-04 18:57:01,652 - INFO - Training on fold 5/5 for real...
+2024-09-04 18:57:01,707 - INFO - CNN model created with 64 filters, kernel size 1, and learning rate 0.001
+2024-09-04 18:57:24,955 - INFO - CNN model and history saved for fold 5 of real
+2024-09-04 18:57:24,956 - INFO - Average AUC across folds for real: 0.9964958667755127
+2024-09-04 18:57:24,956 - INFO - Model performance for real is satisfactory.
+2024-09-04 19:00:39,314 - INFO - Processing database: simulation
+2024-09-04 19:00:39,315 - INFO - Loaded X shape: (4792, 1, 30)
+2024-09-04 19:00:39,325 - INFO - Training on fold 1/5 for simulation...
+2024-09-04 19:00:39,443 - INFO - CNN model created with 64 filters, kernel size 1, and learning rate 0.001
+2024-09-04 19:00:56,927 - INFO - CNN model and history saved for fold 1 of simulation
+2024-09-04 19:00:57,327 - INFO - Confusion Matrix for simulation, Fold 1:
+[[916  13]
+ [  0 929]]
+2024-09-04 19:00:57,327 - INFO - F1-Score for simulation, Fold 1: 0.9930518439337253
+2024-09-04 19:00:57,331 - INFO - Precision-Recall AUC for simulation, Fold 1: 0.9999694773563106
+2024-09-04 19:00:57,331 - INFO - Training on fold 2/5 for simulation...
+2024-09-04 19:00:57,480 - INFO - CNN model created with 64 filters, kernel size 1, and learning rate 0.001
+2024-09-04 19:01:14,335 - INFO - CNN model and history saved for fold 2 of simulation
+2024-09-04 19:01:14,566 - INFO - Confusion Matrix for simulation, Fold 2:
+[[917  12]
+ [  0 929]]
+2024-09-04 19:01:14,566 - INFO - F1-Score for simulation, Fold 2: 0.9935828877005347
+2024-09-04 19:01:14,567 - INFO - Precision-Recall AUC for simulation, Fold 2: 0.9999356089117155
+2024-09-04 19:01:14,567 - INFO - Training on fold 3/5 for simulation...
+2024-09-04 19:01:14,614 - INFO - CNN model created with 64 filters, kernel size 1, and learning rate 0.001
+2024-09-04 19:01:29,916 - INFO - CNN model and history saved for fold 3 of simulation
+2024-09-04 19:01:30,171 - INFO - Confusion Matrix for simulation, Fold 3:
+[[911  18]
+ [  0 929]]
+2024-09-04 19:01:30,171 - INFO - F1-Score for simulation, Fold 3: 0.990405117270789
+2024-09-04 19:01:30,172 - INFO - Precision-Recall AUC for simulation, Fold 3: 0.9999119977608205
+2024-09-04 19:01:30,172 - INFO - Training on fold 4/5 for simulation...
+2024-09-04 19:01:30,222 - INFO - CNN model created with 64 filters, kernel size 1, and learning rate 0.001
+2024-09-04 19:01:46,477 - INFO - CNN model and history saved for fold 4 of simulation
+2024-09-04 19:01:46,718 - INFO - Confusion Matrix for simulation, Fold 4:
+[[910  19]
+ [  0 929]]
+2024-09-04 19:01:46,718 - INFO - F1-Score for simulation, Fold 4: 0.9898774640383591
+2024-09-04 19:01:46,720 - INFO - Precision-Recall AUC for simulation, Fold 4: 0.999778876388724
+2024-09-04 19:01:46,720 - INFO - Training on fold 5/5 for simulation...
+2024-09-04 19:01:46,777 - INFO - CNN model created with 64 filters, kernel size 1, and learning rate 0.001
+2024-09-04 19:02:02,535 - INFO - CNN model and history saved for fold 5 of simulation
+2024-09-04 19:02:02,774 - INFO - Confusion Matrix for simulation, Fold 5:
+[[896  33]
+ [  0 929]]
+2024-09-04 19:02:02,774 - INFO - F1-Score for simulation, Fold 5: 0.9825489159175039
+2024-09-04 19:02:02,775 - INFO - Precision-Recall AUC for simulation, Fold 5: 0.9989756261324122
+2024-09-04 19:02:02,775 - INFO - Average AUC across folds for simulation: 0.999910545349121
+2024-09-04 19:02:02,775 - INFO - Average F1-Score across folds for simulation: 0.9898932457721823
+2024-09-04 19:02:02,775 - INFO - Average Precision-Recall AUC across folds for simulation: 0.9997143173099966
+2024-09-04 19:02:02,775 - INFO - Model performance for simulation is satisfactory.
+2024-09-04 19:02:02,776 - INFO - Processing database: combined
+2024-09-04 19:02:02,778 - INFO - Loaded X shape: (11717, 1, 30)
+2024-09-04 19:02:02,791 - INFO - Training on fold 1/5 for combined...
+2024-09-04 19:02:02,845 - INFO - CNN model created with 64 filters, kernel size 1, and learning rate 0.001
+2024-09-04 19:02:33,967 - INFO - CNN model and history saved for fold 1 of combined
+2024-09-04 19:02:34,355 - INFO - Confusion Matrix for combined, Fold 1:
+[[2209   67]
+ [   0 2275]]
+2024-09-04 19:02:34,355 - INFO - F1-Score for combined, Fold 1: 0.9854884123889972
+2024-09-04 19:02:34,357 - INFO - Precision-Recall AUC for combined, Fold 1: 0.9965170545236977
+2024-09-04 19:02:34,357 - INFO - Training on fold 2/5 for combined...
+2024-09-04 19:02:34,414 - INFO - CNN model created with 64 filters, kernel size 1, and learning rate 0.001
+2024-09-04 19:03:07,895 - INFO - CNN model and history saved for fold 2 of combined
+2024-09-04 19:03:08,257 - INFO - Confusion Matrix for combined, Fold 2:
+[[2193   82]
+ [   3 2273]]
+2024-09-04 19:03:08,257 - INFO - F1-Score for combined, Fold 2: 0.9816454329518463
+2024-09-04 19:03:08,259 - INFO - Precision-Recall AUC for combined, Fold 2: 0.9937626267922004
+2024-09-04 19:03:08,259 - INFO - Training on fold 3/5 for combined...
+2024-09-04 19:03:08,319 - INFO - CNN model created with 64 filters, kernel size 1, and learning rate 0.001
+2024-09-04 19:03:39,762 - INFO - CNN model and history saved for fold 3 of combined
+2024-09-04 19:03:40,105 - INFO - Confusion Matrix for combined, Fold 3:
+[[2185   90]
+ [   0 2275]]
+2024-09-04 19:03:40,105 - INFO - F1-Score for combined, Fold 3: 0.9806034482758621
+2024-09-04 19:03:40,106 - INFO - Precision-Recall AUC for combined, Fold 3: 0.995781855464276
+2024-09-04 19:03:40,106 - INFO - Training on fold 4/5 for combined...
+2024-09-04 19:03:40,162 - INFO - CNN model created with 64 filters, kernel size 1, and learning rate 0.001
+2024-09-04 19:04:07,335 - INFO - CNN model and history saved for fold 4 of combined
+2024-09-04 19:04:07,696 - INFO - Confusion Matrix for combined, Fold 4:
+[[2202   73]
+ [   8 2267]]
+2024-09-04 19:04:07,696 - INFO - F1-Score for combined, Fold 4: 0.9824485373781149
+2024-09-04 19:04:07,697 - INFO - Precision-Recall AUC for combined, Fold 4: 0.9960451584755993
+2024-09-04 19:04:07,698 - INFO - Training on fold 5/5 for combined...
+2024-09-04 19:04:07,748 - INFO - CNN model created with 64 filters, kernel size 1, and learning rate 0.001
+2024-09-04 19:04:37,242 - INFO - CNN model and history saved for fold 5 of combined
+2024-09-04 19:04:37,590 - INFO - Confusion Matrix for combined, Fold 5:
+[[2201   74]
+ [   5 2270]]
+2024-09-04 19:04:37,590 - INFO - F1-Score for combined, Fold 5: 0.9828967308941329
+2024-09-04 19:04:37,592 - INFO - Precision-Recall AUC for combined, Fold 5: 0.9956947583084563
+2024-09-04 19:04:37,592 - INFO - Average AUC across folds for combined: 0.9967811226844787
+2024-09-04 19:04:37,592 - INFO - Average F1-Score across folds for combined: 0.9826165123777907
+2024-09-04 19:04:37,592 - INFO - Average Precision-Recall AUC across folds for combined: 0.9955602907128458
+2024-09-04 19:04:37,592 - INFO - Model performance for combined is satisfactory.
+2024-09-04 19:04:37,592 - INFO - Processing database: real
+2024-09-04 19:04:37,594 - INFO - Loaded X shape: (6925, 1, 30)
+2024-09-04 19:04:37,603 - INFO - Training on fold 1/5 for real...
+2024-09-04 19:04:37,651 - INFO - CNN model created with 64 filters, kernel size 1, and learning rate 0.001
+2024-09-04 19:04:55,753 - INFO - CNN model and history saved for fold 1 of real
+2024-09-04 19:04:56,026 - INFO - Confusion Matrix for real, Fold 1:
+[[1302   45]
+ [   0 1347]]
+2024-09-04 19:04:56,026 - INFO - F1-Score for real, Fold 1: 0.9835706462212487
+2024-09-04 19:04:56,027 - INFO - Precision-Recall AUC for real, Fold 1: 0.9955466883639393
+2024-09-04 19:04:56,027 - INFO - Training on fold 2/5 for real...
+2024-09-04 19:04:56,084 - INFO - CNN model created with 64 filters, kernel size 1, and learning rate 0.001
+2024-09-04 19:05:13,790 - INFO - CNN model and history saved for fold 2 of real
+2024-09-04 19:05:14,078 - INFO - Confusion Matrix for real, Fold 2:
+[[1298   49]
+ [   0 1346]]
+2024-09-04 19:05:14,078 - INFO - F1-Score for real, Fold 2: 0.9821233126596133
+2024-09-04 19:05:14,079 - INFO - Precision-Recall AUC for real, Fold 2: 0.9916848958055099
+2024-09-04 19:05:14,079 - INFO - Training on fold 3/5 for real...
+2024-09-04 19:05:14,135 - INFO - CNN model created with 64 filters, kernel size 1, and learning rate 0.001
+2024-09-04 19:05:31,147 - INFO - CNN model and history saved for fold 3 of real
+2024-09-04 19:05:31,429 - INFO - Confusion Matrix for real, Fold 3:
+[[1306   41]
+ [   0 1346]]
+2024-09-04 19:05:31,430 - INFO - F1-Score for real, Fold 3: 0.9849981705085986
+2024-09-04 19:05:31,431 - INFO - Precision-Recall AUC for real, Fold 3: 0.9971439598862836
+2024-09-04 19:05:31,431 - INFO - Training on fold 4/5 for real...
+2024-09-04 19:05:31,492 - INFO - CNN model created with 64 filters, kernel size 1, and learning rate 0.001
+2024-09-04 19:05:49,272 - INFO - CNN model and history saved for fold 4 of real
+2024-09-04 19:05:49,599 - INFO - Confusion Matrix for real, Fold 4:
+[[1314   32]
+ [   0 1347]]
+2024-09-04 19:05:49,599 - INFO - F1-Score for real, Fold 4: 0.9882611885546588
+2024-09-04 19:05:49,600 - INFO - Precision-Recall AUC for real, Fold 4: 0.9981842207781226
+2024-09-04 19:05:49,600 - INFO - Training on fold 5/5 for real...
+2024-09-04 19:05:49,649 - INFO - CNN model created with 64 filters, kernel size 1, and learning rate 0.001
+2024-09-04 19:06:07,128 - INFO - CNN model and history saved for fold 5 of real
+2024-09-04 19:06:07,380 - INFO - Confusion Matrix for real, Fold 5:
+[[1298   48]
+ [   0 1347]]
+2024-09-04 19:06:07,380 - INFO - F1-Score for real, Fold 5: 0.9824945295404814
+2024-09-04 19:06:07,381 - INFO - Precision-Recall AUC for real, Fold 5: 0.99609080787187
+2024-09-04 19:06:07,381 - INFO - Average AUC across folds for real: 0.9973314046859741
+2024-09-04 19:06:07,381 - INFO - Average F1-Score across folds for real: 0.9842895694969203
+2024-09-04 19:06:07,381 - INFO - Average Precision-Recall AUC across folds for real: 0.9957301145411451
+2024-09-04 19:06:07,381 - INFO - Model performance for real is satisfactory.
