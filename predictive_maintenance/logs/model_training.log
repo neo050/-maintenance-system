@@ -345,3 +345,1190 @@
 2024-09-04 19:06:07,381 - INFO - Average F1-Score across folds for real: 0.9842895694969203
 2024-09-04 19:06:07,381 - INFO - Average Precision-Recall AUC across folds for real: 0.9957301145411451
 2024-09-04 19:06:07,381 - INFO - Model performance for real is satisfactory.
+2024-09-04 20:30:40,316 - INFO - Processing database: simulation
+2024-09-04 20:33:14,223 - INFO - Processing database: simulation
+2024-09-04 20:33:14,299 - INFO - Training on fold 1/5 for simulation...
+2024-09-04 20:33:14,402 - INFO - LSTM model created successfully with 64 units, dropout rate 0.3, and learning rate 0.001
+2024-09-04 20:34:29,315 - INFO - LSTM model and history saved for fold 1 of simulation
+2024-09-04 20:34:30,168 - INFO - Confusion Matrix for simulation, Fold 1:
+[[864  65]
+ [  0 929]]
+2024-09-04 20:34:30,168 - INFO - F1-Score for simulation, Fold 1: 0.9661986479459178
+2024-09-04 20:34:30,169 - INFO - Precision-Recall AUC for simulation, Fold 1: 0.9886290838963143
+2024-09-04 20:34:30,169 - INFO - Training on fold 2/5 for simulation...
+2024-09-04 20:34:30,208 - INFO - LSTM model created successfully with 64 units, dropout rate 0.3, and learning rate 0.001
+2024-09-04 20:35:47,481 - INFO - LSTM model and history saved for fold 2 of simulation
+2024-09-04 20:35:48,297 - INFO - Confusion Matrix for simulation, Fold 2:
+[[866  63]
+ [  0 929]]
+2024-09-04 20:35:48,297 - INFO - F1-Score for simulation, Fold 2: 0.9672045809474232
+2024-09-04 20:35:48,298 - INFO - Precision-Recall AUC for simulation, Fold 2: 0.9877135993876873
+2024-09-04 20:35:48,298 - INFO - Training on fold 3/5 for simulation...
+2024-09-04 20:35:48,350 - INFO - LSTM model created successfully with 64 units, dropout rate 0.3, and learning rate 0.001
+2024-09-04 20:37:10,108 - INFO - LSTM model and history saved for fold 3 of simulation
+2024-09-04 20:37:10,974 - INFO - Confusion Matrix for simulation, Fold 3:
+[[862  67]
+ [  0 929]]
+2024-09-04 20:37:10,975 - INFO - F1-Score for simulation, Fold 3: 0.9651948051948052
+2024-09-04 20:37:10,976 - INFO - Precision-Recall AUC for simulation, Fold 3: 0.9841023600313272
+2024-09-04 20:37:10,976 - INFO - Training on fold 4/5 for simulation...
+2024-09-04 20:37:11,016 - INFO - LSTM model created successfully with 64 units, dropout rate 0.3, and learning rate 0.001
+2024-09-04 20:38:32,140 - INFO - LSTM model and history saved for fold 4 of simulation
+2024-09-04 20:38:32,996 - INFO - Confusion Matrix for simulation, Fold 4:
+[[860  69]
+ [  0 929]]
+2024-09-04 20:38:32,996 - INFO - F1-Score for simulation, Fold 4: 0.964193046185781
+2024-09-04 20:38:32,997 - INFO - Precision-Recall AUC for simulation, Fold 4: 0.9879773675409718
+2024-09-04 20:38:32,997 - INFO - Training on fold 5/5 for simulation...
+2024-09-04 20:38:33,036 - INFO - LSTM model created successfully with 64 units, dropout rate 0.3, and learning rate 0.001
+2024-09-04 20:39:54,062 - INFO - LSTM model and history saved for fold 5 of simulation
+2024-09-04 20:39:54,988 - INFO - Confusion Matrix for simulation, Fold 5:
+[[859  70]
+ [  0 929]]
+2024-09-04 20:39:54,988 - INFO - F1-Score for simulation, Fold 5: 0.9636929460580913
+2024-09-04 20:39:54,989 - INFO - Precision-Recall AUC for simulation, Fold 5: 0.984444650834278
+2024-09-04 20:39:54,989 - INFO - Average AUC across folds for simulation: 0.9912808418273926
+2024-09-04 20:39:54,989 - INFO - Average F1-Score across folds for simulation: 0.9652968052664038
+2024-09-04 20:39:54,989 - INFO - Average Precision-Recall AUC across folds for simulation: 0.9865734123381158
+2024-09-04 20:39:54,990 - INFO - Model performance for simulation is satisfactory.
+2024-09-04 20:39:54,990 - INFO - Processing database: combined
+2024-09-04 20:39:55,132 - INFO - Training on fold 1/5 for combined...
+2024-09-04 20:39:55,175 - INFO - LSTM model created successfully with 64 units, dropout rate 0.3, and learning rate 0.001
+2024-09-04 20:43:13,308 - INFO - LSTM model and history saved for fold 1 of combined
+2024-09-04 20:43:14,672 - INFO - Confusion Matrix for combined, Fold 1:
+[[2151  125]
+ [  37 2238]]
+2024-09-04 20:43:14,672 - INFO - F1-Score for combined, Fold 1: 0.9650711513583441
+2024-09-04 20:43:14,675 - INFO - Precision-Recall AUC for combined, Fold 1: 0.9840483185590851
+2024-09-04 20:43:14,675 - INFO - Training on fold 2/5 for combined...
+2024-09-04 20:43:14,746 - INFO - LSTM model created successfully with 64 units, dropout rate 0.3, and learning rate 0.001
+2024-09-04 20:46:34,063 - INFO - LSTM model and history saved for fold 2 of combined
+2024-09-04 20:46:35,737 - INFO - Confusion Matrix for combined, Fold 2:
+[[2167  108]
+ [   0 2276]]
+2024-09-04 20:46:35,737 - INFO - F1-Score for combined, Fold 2: 0.976824034334764
+2024-09-04 20:46:35,738 - INFO - Precision-Recall AUC for combined, Fold 2: 0.9882406616112012
+2024-09-04 20:46:35,738 - INFO - Training on fold 3/5 for combined...
+2024-09-04 20:46:35,780 - INFO - LSTM model created successfully with 64 units, dropout rate 0.3, and learning rate 0.001
+2024-09-04 20:49:59,408 - INFO - LSTM model and history saved for fold 3 of combined
+2024-09-04 20:50:00,814 - INFO - Confusion Matrix for combined, Fold 3:
+[[2179   96]
+ [  14 2261]]
+2024-09-04 20:50:00,814 - INFO - F1-Score for combined, Fold 3: 0.9762521588946459
+2024-09-04 20:50:00,814 - INFO - Precision-Recall AUC for combined, Fold 3: 0.9909433938429163
+2024-09-04 20:50:00,815 - INFO - Training on fold 4/5 for combined...
+2024-09-04 20:50:00,860 - INFO - LSTM model created successfully with 64 units, dropout rate 0.3, and learning rate 0.001
+2024-09-04 20:53:21,310 - INFO - LSTM model and history saved for fold 4 of combined
+2024-09-04 20:53:22,676 - INFO - Confusion Matrix for combined, Fold 4:
+[[2153  122]
+ [   5 2270]]
+2024-09-04 20:53:22,677 - INFO - F1-Score for combined, Fold 4: 0.9727876580244268
+2024-09-04 20:53:22,678 - INFO - Precision-Recall AUC for combined, Fold 4: 0.9862986594316613
+2024-09-04 20:53:22,678 - INFO - Training on fold 5/5 for combined...
+2024-09-04 20:53:22,719 - INFO - LSTM model created successfully with 64 units, dropout rate 0.3, and learning rate 0.001
+2024-09-04 20:56:50,498 - INFO - LSTM model and history saved for fold 5 of combined
+2024-09-04 20:56:51,921 - INFO - Confusion Matrix for combined, Fold 5:
+[[2163  112]
+ [   0 2275]]
+2024-09-04 20:56:51,922 - INFO - F1-Score for combined, Fold 5: 0.975975975975976
+2024-09-04 20:56:51,923 - INFO - Precision-Recall AUC for combined, Fold 5: 0.990214446708672
+2024-09-04 20:56:51,923 - INFO - Average AUC across folds for combined: 0.9920642018318176
+2024-09-04 20:56:51,923 - INFO - Average F1-Score across folds for combined: 0.9733821957176314
+2024-09-04 20:56:51,923 - INFO - Average Precision-Recall AUC across folds for combined: 0.9879490960307071
+2024-09-04 20:56:51,923 - INFO - Model performance for combined is satisfactory.
+2024-09-04 20:56:51,924 - INFO - Processing database: real
+2024-09-04 20:56:52,021 - INFO - Training on fold 1/5 for real...
+2024-09-04 20:56:52,061 - INFO - LSTM model created successfully with 64 units, dropout rate 0.3, and learning rate 0.001
+2024-09-04 20:58:50,600 - INFO - LSTM model and history saved for fold 1 of real
+2024-09-04 20:58:51,655 - INFO - Confusion Matrix for real, Fold 1:
+[[1300   47]
+ [   5 1342]]
+2024-09-04 20:58:51,655 - INFO - F1-Score for real, Fold 1: 0.9809941520467836
+2024-09-04 20:58:51,656 - INFO - Precision-Recall AUC for real, Fold 1: 0.994858696263605
+2024-09-04 20:58:51,657 - INFO - Training on fold 2/5 for real...
+2024-09-04 20:58:51,697 - INFO - LSTM model created successfully with 64 units, dropout rate 0.3, and learning rate 0.001
+2024-09-04 21:00:49,299 - INFO - LSTM model and history saved for fold 2 of real
+2024-09-04 21:00:50,323 - INFO - Confusion Matrix for real, Fold 2:
+[[1298   49]
+ [   7 1339]]
+2024-09-04 21:00:50,323 - INFO - F1-Score for real, Fold 2: 0.9795171909290417
+2024-09-04 21:00:50,325 - INFO - Precision-Recall AUC for real, Fold 2: 0.990742071237574
+2024-09-04 21:00:50,325 - INFO - Training on fold 3/5 for real...
+2024-09-04 21:00:50,369 - INFO - LSTM model created successfully with 64 units, dropout rate 0.3, and learning rate 0.001
+2024-09-04 21:02:57,572 - INFO - LSTM model and history saved for fold 3 of real
+2024-09-04 21:02:58,616 - INFO - Confusion Matrix for real, Fold 3:
+[[1302   45]
+ [   6 1340]]
+2024-09-04 21:02:58,616 - INFO - F1-Score for real, Fold 3: 0.9813255217868913
+2024-09-04 21:02:58,618 - INFO - Precision-Recall AUC for real, Fold 3: 0.9896649916787682
+2024-09-04 21:02:58,618 - INFO - Training on fold 4/5 for real...
+2024-09-04 21:02:58,658 - INFO - LSTM model created successfully with 64 units, dropout rate 0.3, and learning rate 0.001
+2024-09-04 21:05:07,198 - INFO - LSTM model and history saved for fold 4 of real
+2024-09-04 21:05:08,415 - INFO - Confusion Matrix for real, Fold 4:
+[[1293   53]
+ [  22 1325]]
+2024-09-04 21:05:08,415 - INFO - F1-Score for real, Fold 4: 0.9724770642201835
+2024-09-04 21:05:08,416 - INFO - Precision-Recall AUC for real, Fold 4: 0.9927277043762108
+2024-09-04 21:05:08,416 - INFO - Training on fold 5/5 for real...
+2024-09-04 21:05:08,459 - INFO - LSTM model created successfully with 64 units, dropout rate 0.3, and learning rate 0.001
+2024-09-04 21:07:31,519 - INFO - LSTM model and history saved for fold 5 of real
+2024-09-04 21:07:32,633 - INFO - Confusion Matrix for real, Fold 5:
+[[1281   65]
+ [   0 1347]]
+2024-09-04 21:07:32,633 - INFO - F1-Score for real, Fold 5: 0.9764407393983328
+2024-09-04 21:07:32,634 - INFO - Precision-Recall AUC for real, Fold 5: 0.99190981622108
+2024-09-04 21:07:32,635 - INFO - Average AUC across folds for real: 0.9941853880882263
+2024-09-04 21:07:32,635 - INFO - Average F1-Score across folds for real: 0.9781509336762466
+2024-09-04 21:07:32,635 - INFO - Average Precision-Recall AUC across folds for real: 0.9919806559554475
+2024-09-04 21:07:32,635 - INFO - Model performance for real is satisfactory.
+2024-09-06 17:21:40,039 - INFO - Processing database: simulation
+2024-09-06 17:21:40,054 - INFO - Loaded X shape: (4792, 1, 30)
+2024-09-06 17:21:40,074 - INFO - Training on fold 1/5 for simulation...
+2024-09-06 17:21:40,329 - INFO - CNN-LSTM model created with 64 filters, 50 LSTM units, dropout rate 0.3, and learning rate 0.001
+2024-09-06 17:21:59,863 - INFO - CNN-LSTM model and history saved for fold 1 of simulation
+2024-09-06 17:22:00,513 - INFO - Confusion Matrix for simulation, Fold 1:
+[[916  13]
+ [  0 929]]
+2024-09-06 17:22:00,514 - INFO - F1-Score for simulation, Fold 1: 0.9930518439337253
+2024-09-06 17:22:00,518 - INFO - Precision-Recall AUC for simulation, Fold 1: 0.9998823980447352
+2024-09-06 17:22:00,518 - INFO - Training on fold 2/5 for simulation...
+2024-09-06 17:22:00,591 - INFO - CNN-LSTM model created with 64 filters, 50 LSTM units, dropout rate 0.3, and learning rate 0.001
+2024-09-06 17:22:19,406 - INFO - CNN-LSTM model and history saved for fold 2 of simulation
+2024-09-06 17:22:19,998 - INFO - Confusion Matrix for simulation, Fold 2:
+[[920   9]
+ [  0 929]]
+2024-09-06 17:22:19,998 - INFO - F1-Score for simulation, Fold 2: 0.9951794322442421
+2024-09-06 17:22:20,000 - INFO - Precision-Recall AUC for simulation, Fold 2: 0.9998219287465363
+2024-09-06 17:22:20,000 - INFO - Training on fold 3/5 for simulation...
+2024-09-06 17:22:20,263 - INFO - CNN-LSTM model created with 64 filters, 50 LSTM units, dropout rate 0.3, and learning rate 0.001
+2024-09-06 17:22:38,851 - INFO - CNN-LSTM model and history saved for fold 3 of simulation
+2024-09-06 17:22:39,508 - INFO - Confusion Matrix for simulation, Fold 3:
+[[879  50]
+ [  0 929]]
+2024-09-06 17:22:39,508 - INFO - F1-Score for simulation, Fold 3: 0.9737945492662474
+2024-09-06 17:22:39,509 - INFO - Precision-Recall AUC for simulation, Fold 3: 0.9992719104520725
+2024-09-06 17:22:39,510 - INFO - Training on fold 4/5 for simulation...
+2024-09-06 17:22:39,576 - INFO - CNN-LSTM model created with 64 filters, 50 LSTM units, dropout rate 0.3, and learning rate 0.001
+2024-09-06 17:22:58,553 - INFO - CNN-LSTM model and history saved for fold 4 of simulation
+2024-09-06 17:22:59,193 - INFO - Confusion Matrix for simulation, Fold 4:
+[[911  18]
+ [  0 929]]
+2024-09-06 17:22:59,193 - INFO - F1-Score for simulation, Fold 4: 0.990405117270789
+2024-09-06 17:22:59,194 - INFO - Precision-Recall AUC for simulation, Fold 4: 0.9999400768396085
+2024-09-06 17:22:59,194 - INFO - Training on fold 5/5 for simulation...
+2024-09-06 17:22:59,265 - INFO - CNN-LSTM model created with 64 filters, 50 LSTM units, dropout rate 0.3, and learning rate 0.001
+2024-09-06 17:23:18,727 - INFO - CNN-LSTM model and history saved for fold 5 of simulation
+2024-09-06 17:23:19,337 - INFO - Confusion Matrix for simulation, Fold 5:
+[[924   5]
+ [  0 929]]
+2024-09-06 17:23:19,338 - INFO - F1-Score for simulation, Fold 5: 0.9973161567364466
+2024-09-06 17:23:19,338 - INFO - Precision-Recall AUC for simulation, Fold 5: 1.0
+2024-09-06 17:23:19,339 - INFO - Average AUC across folds for simulation: 0.9998592019081116
+2024-09-06 17:23:19,339 - INFO - Average F1-Score across folds for simulation: 0.9899494198902901
+2024-09-06 17:23:19,339 - INFO - Average Precision-Recall AUC across folds for simulation: 0.9997832628165906
+2024-09-06 17:23:19,339 - INFO - Model performance for simulation is satisfactory.
+2024-09-06 17:23:19,339 - INFO - Processing database: combined
+2024-09-06 17:23:19,362 - INFO - Loaded X shape: (11717, 1, 30)
+2024-09-06 17:23:19,374 - INFO - Training on fold 1/5 for combined...
+2024-09-06 17:23:19,452 - INFO - CNN-LSTM model created with 64 filters, 50 LSTM units, dropout rate 0.3, and learning rate 0.001
+2024-09-06 17:23:59,218 - INFO - CNN-LSTM model and history saved for fold 1 of combined
+2024-09-06 17:23:59,971 - INFO - Confusion Matrix for combined, Fold 1:
+[[2183   93]
+ [   0 2275]]
+2024-09-06 17:23:59,971 - INFO - F1-Score for combined, Fold 1: 0.9799698470816283
+2024-09-06 17:23:59,972 - INFO - Precision-Recall AUC for combined, Fold 1: 0.9953744875986001
+2024-09-06 17:23:59,972 - INFO - Training on fold 2/5 for combined...
+2024-09-06 17:24:00,054 - INFO - CNN-LSTM model created with 64 filters, 50 LSTM units, dropout rate 0.3, and learning rate 0.001
+2024-09-06 17:24:39,144 - INFO - CNN-LSTM model and history saved for fold 2 of combined
+2024-09-06 17:24:39,900 - INFO - Confusion Matrix for combined, Fold 2:
+[[2151  124]
+ [   0 2276]]
+2024-09-06 17:24:39,900 - INFO - F1-Score for combined, Fold 2: 0.9734816082121471
+2024-09-06 17:24:39,902 - INFO - Precision-Recall AUC for combined, Fold 2: 0.9926401369683171
+2024-09-06 17:24:39,902 - INFO - Training on fold 3/5 for combined...
+2024-09-06 17:24:39,974 - INFO - CNN-LSTM model created with 64 filters, 50 LSTM units, dropout rate 0.3, and learning rate 0.001
+2024-09-06 17:25:19,155 - INFO - CNN-LSTM model and history saved for fold 3 of combined
+2024-09-06 17:25:19,914 - INFO - Confusion Matrix for combined, Fold 3:
+[[2189   86]
+ [   0 2275]]
+2024-09-06 17:25:19,915 - INFO - F1-Score for combined, Fold 3: 0.9814495254529767
+2024-09-06 17:25:19,916 - INFO - Precision-Recall AUC for combined, Fold 3: 0.9946590301628133
+2024-09-06 17:25:19,916 - INFO - Training on fold 4/5 for combined...
+2024-09-06 17:25:19,991 - INFO - CNN-LSTM model created with 64 filters, 50 LSTM units, dropout rate 0.3, and learning rate 0.001
+2024-09-06 17:25:59,287 - INFO - CNN-LSTM model and history saved for fold 4 of combined
+2024-09-06 17:26:00,067 - INFO - Confusion Matrix for combined, Fold 4:
+[[2196   79]
+ [   0 2275]]
+2024-09-06 17:26:00,067 - INFO - F1-Score for combined, Fold 4: 0.9829336789803413
+2024-09-06 17:26:00,068 - INFO - Precision-Recall AUC for combined, Fold 4: 0.9963438745739895
+2024-09-06 17:26:00,068 - INFO - Training on fold 5/5 for combined...
+2024-09-06 17:26:00,150 - INFO - CNN-LSTM model created with 64 filters, 50 LSTM units, dropout rate 0.3, and learning rate 0.001
+2024-09-06 17:26:39,516 - INFO - CNN-LSTM model and history saved for fold 5 of combined
+2024-09-06 17:26:40,295 - INFO - Confusion Matrix for combined, Fold 5:
+[[2201   74]
+ [   0 2275]]
+2024-09-06 17:26:40,295 - INFO - F1-Score for combined, Fold 5: 0.9839965397923875
+2024-09-06 17:26:40,296 - INFO - Precision-Recall AUC for combined, Fold 5: 0.9971781934952816
+2024-09-06 17:26:40,297 - INFO - Average AUC across folds for combined: 0.9967643022537231
+2024-09-06 17:26:40,297 - INFO - Average F1-Score across folds for combined: 0.9803662399038963
+2024-09-06 17:26:40,297 - INFO - Average Precision-Recall AUC across folds for combined: 0.9952391445598003
+2024-09-06 17:26:40,297 - INFO - Model performance for combined is satisfactory.
+2024-09-06 17:26:40,297 - INFO - Processing database: real
+2024-09-06 17:26:40,331 - INFO - Loaded X shape: (6925, 1, 30)
+2024-09-06 17:26:40,341 - INFO - Training on fold 1/5 for real...
+2024-09-06 17:26:40,412 - INFO - CNN-LSTM model created with 64 filters, 50 LSTM units, dropout rate 0.3, and learning rate 0.001
+2024-09-06 17:27:05,754 - INFO - CNN-LSTM model and history saved for fold 1 of real
+2024-09-06 17:27:06,436 - INFO - Confusion Matrix for real, Fold 1:
+[[1313   34]
+ [   0 1347]]
+2024-09-06 17:27:06,436 - INFO - F1-Score for real, Fold 1: 0.9875366568914956
+2024-09-06 17:27:06,437 - INFO - Precision-Recall AUC for real, Fold 1: 0.9926242394720202
+2024-09-06 17:27:06,437 - INFO - Training on fold 2/5 for real...
+2024-09-06 17:27:06,509 - INFO - CNN-LSTM model created with 64 filters, 50 LSTM units, dropout rate 0.3, and learning rate 0.001
+2024-09-06 17:27:32,232 - INFO - CNN-LSTM model and history saved for fold 2 of real
+2024-09-06 17:27:32,922 - INFO - Confusion Matrix for real, Fold 2:
+[[1298   49]
+ [  19 1327]]
+2024-09-06 17:27:32,922 - INFO - F1-Score for real, Fold 2: 0.9750183688464364
+2024-09-06 17:27:32,923 - INFO - Precision-Recall AUC for real, Fold 2: 0.9918209905584277
+2024-09-06 17:27:32,923 - INFO - Training on fold 3/5 for real...
+2024-09-06 17:27:32,993 - INFO - CNN-LSTM model created with 64 filters, 50 LSTM units, dropout rate 0.3, and learning rate 0.001
+2024-09-06 17:28:00,649 - INFO - CNN-LSTM model and history saved for fold 3 of real
+2024-09-06 17:28:01,324 - INFO - Confusion Matrix for real, Fold 3:
+[[1319   28]
+ [   7 1339]]
+2024-09-06 17:28:01,324 - INFO - F1-Score for real, Fold 3: 0.9870991522300037
+2024-09-06 17:28:01,325 - INFO - Precision-Recall AUC for real, Fold 3: 0.9960096538207291
+2024-09-06 17:28:01,325 - INFO - Training on fold 4/5 for real...
+2024-09-06 17:28:01,402 - INFO - CNN-LSTM model created with 64 filters, 50 LSTM units, dropout rate 0.3, and learning rate 0.001
+2024-09-06 17:28:26,768 - INFO - CNN-LSTM model and history saved for fold 4 of real
+2024-09-06 17:28:27,449 - INFO - Confusion Matrix for real, Fold 4:
+[[1323   23]
+ [  24 1323]]
+2024-09-06 17:28:27,449 - INFO - F1-Score for real, Fold 4: 0.9825473449684367
+2024-09-06 17:28:27,450 - INFO - Precision-Recall AUC for real, Fold 4: 0.9963789815547947
+2024-09-06 17:28:27,450 - INFO - Training on fold 5/5 for real...
+2024-09-06 17:28:27,520 - INFO - CNN-LSTM model created with 64 filters, 50 LSTM units, dropout rate 0.3, and learning rate 0.001
+2024-09-06 17:28:53,392 - INFO - CNN-LSTM model and history saved for fold 5 of real
+2024-09-06 17:28:54,102 - INFO - Confusion Matrix for real, Fold 5:
+[[1311   35]
+ [   0 1347]]
+2024-09-06 17:28:54,102 - INFO - F1-Score for real, Fold 5: 0.9871747893001099
+2024-09-06 17:28:54,103 - INFO - Precision-Recall AUC for real, Fold 5: 0.9914605586799363
+2024-09-06 17:28:54,103 - INFO - Average AUC across folds for real: 0.9960330128669739
+2024-09-06 17:28:54,103 - INFO - Average F1-Score across folds for real: 0.9838752624472965
+2024-09-06 17:28:54,104 - INFO - Average Precision-Recall AUC across folds for real: 0.9936588848171816
+2024-09-06 17:28:54,104 - INFO - Model performance for real is satisfactory.
+2024-09-06 18:13:37,577 - INFO - Processing database: simulation
+2024-09-06 18:13:37,578 - INFO - Loaded X shape: (4792, 1, 30)
+2024-09-06 18:13:37,584 - INFO - Training on fold 1/5 for simulation...
+2024-09-06 18:13:37,708 - INFO - CNN-LSTM model created with 64 filters, 50 LSTM units, dropout rate 0.3, learning rate 0.001, and L2 regularization lambda 0.01
+2024-09-06 18:13:48,685 - INFO - CNN-LSTM model and history saved for fold 1 of simulation
+2024-09-06 18:13:49,277 - INFO - Confusion Matrix for simulation, Fold 1:
+[[  0 929]
+ [  0 929]]
+2024-09-06 18:13:49,277 - INFO - F1-Score for simulation, Fold 1: 0.6666666666666666
+2024-09-06 18:13:49,278 - INFO - Precision-Recall AUC for simulation, Fold 1: 0.75
+2024-09-06 18:13:49,278 - INFO - Training on fold 2/5 for simulation...
+2024-09-06 18:13:49,351 - INFO - CNN-LSTM model created with 64 filters, 50 LSTM units, dropout rate 0.3, learning rate 0.001, and L2 regularization lambda 0.01
+2024-09-06 18:13:59,999 - INFO - CNN-LSTM model and history saved for fold 2 of simulation
+2024-09-06 18:14:00,662 - INFO - Confusion Matrix for simulation, Fold 2:
+[[  0 929]
+ [  0 929]]
+2024-09-06 18:14:00,662 - INFO - F1-Score for simulation, Fold 2: 0.6666666666666666
+2024-09-06 18:14:00,663 - INFO - Precision-Recall AUC for simulation, Fold 2: 0.75
+2024-09-06 18:14:00,663 - INFO - Training on fold 3/5 for simulation...
+2024-09-06 18:14:00,737 - INFO - CNN-LSTM model created with 64 filters, 50 LSTM units, dropout rate 0.3, learning rate 0.001, and L2 regularization lambda 0.01
+2024-09-06 18:14:12,293 - INFO - CNN-LSTM model and history saved for fold 3 of simulation
+2024-09-06 18:14:12,951 - INFO - Confusion Matrix for simulation, Fold 3:
+[[  0 929]
+ [  0 929]]
+2024-09-06 18:14:12,951 - INFO - F1-Score for simulation, Fold 3: 0.6666666666666666
+2024-09-06 18:14:12,952 - INFO - Precision-Recall AUC for simulation, Fold 3: 0.75
+2024-09-06 18:14:12,952 - INFO - Training on fold 4/5 for simulation...
+2024-09-06 18:14:13,023 - INFO - CNN-LSTM model created with 64 filters, 50 LSTM units, dropout rate 0.3, learning rate 0.001, and L2 regularization lambda 0.01
+2024-09-06 18:14:25,946 - INFO - CNN-LSTM model and history saved for fold 4 of simulation
+2024-09-06 18:14:26,569 - INFO - Confusion Matrix for simulation, Fold 4:
+[[929   0]
+ [929   0]]
+2024-09-06 18:14:26,569 - INFO - F1-Score for simulation, Fold 4: 0.0
+2024-09-06 18:14:26,569 - INFO - Precision-Recall AUC for simulation, Fold 4: 0.75
+2024-09-06 18:14:26,569 - INFO - Training on fold 5/5 for simulation...
+2024-09-06 18:14:26,643 - INFO - CNN-LSTM model created with 64 filters, 50 LSTM units, dropout rate 0.3, learning rate 0.001, and L2 regularization lambda 0.01
+2024-09-06 18:14:39,445 - INFO - CNN-LSTM model and history saved for fold 5 of simulation
+2024-09-06 18:14:40,084 - INFO - Confusion Matrix for simulation, Fold 5:
+[[  0 929]
+ [  0 929]]
+2024-09-06 18:14:40,084 - INFO - F1-Score for simulation, Fold 5: 0.6666666666666666
+2024-09-06 18:14:40,085 - INFO - Precision-Recall AUC for simulation, Fold 5: 0.75
+2024-09-06 18:14:40,085 - INFO - Average AUC across folds for simulation: 0.5
+2024-09-06 18:14:40,085 - INFO - Average F1-Score across folds for simulation: 0.5333333333333333
+2024-09-06 18:14:40,085 - INFO - Average Precision-Recall AUC across folds for simulation: 0.75
+2024-09-06 18:14:40,085 - INFO - Low AUC detected or high variance between folds for simulation, adjusting hyperparameters...
+2024-09-06 18:14:40,085 - INFO - New parameters for simulation - Learning Rate: 0.0005, Filters: 96, LSTM Units: 82, Dropout Rate: 0.4
+2024-09-06 18:14:40,087 - INFO - Training on fold 1/5 for simulation...
+2024-09-06 18:14:40,182 - INFO - CNN-LSTM model created with 96 filters, 82 LSTM units, dropout rate 0.4, learning rate 0.0005, and L2 regularization lambda 0.01
+2024-09-06 18:14:54,395 - INFO - CNN-LSTM model and history saved for fold 1 of simulation
+2024-09-06 18:14:55,010 - INFO - Confusion Matrix for simulation, Fold 1:
+[[929   0]
+ [929   0]]
+2024-09-06 18:14:55,010 - INFO - F1-Score for simulation, Fold 1: 0.0
+2024-09-06 18:14:55,011 - INFO - Precision-Recall AUC for simulation, Fold 1: 0.75
+2024-09-06 18:14:55,011 - INFO - Training on fold 2/5 for simulation...
+2024-09-06 18:14:55,082 - INFO - CNN-LSTM model created with 96 filters, 82 LSTM units, dropout rate 0.4, learning rate 0.0005, and L2 regularization lambda 0.01
+2024-09-06 18:15:11,201 - INFO - CNN-LSTM model and history saved for fold 2 of simulation
+2024-09-06 18:15:11,836 - INFO - Confusion Matrix for simulation, Fold 2:
+[[  0 929]
+ [  0 929]]
+2024-09-06 18:15:11,836 - INFO - F1-Score for simulation, Fold 2: 0.6666666666666666
+2024-09-06 18:15:11,837 - INFO - Precision-Recall AUC for simulation, Fold 2: 0.75
+2024-09-06 18:15:11,837 - INFO - Training on fold 3/5 for simulation...
+2024-09-06 18:15:11,909 - INFO - CNN-LSTM model created with 96 filters, 82 LSTM units, dropout rate 0.4, learning rate 0.0005, and L2 regularization lambda 0.01
+2024-09-06 18:15:29,158 - INFO - CNN-LSTM model and history saved for fold 3 of simulation
+2024-09-06 18:15:29,821 - INFO - Confusion Matrix for simulation, Fold 3:
+[[929   0]
+ [929   0]]
+2024-09-06 18:15:29,821 - INFO - F1-Score for simulation, Fold 3: 0.0
+2024-09-06 18:15:29,822 - INFO - Precision-Recall AUC for simulation, Fold 3: 0.75
+2024-09-06 18:15:29,822 - INFO - Training on fold 4/5 for simulation...
+2024-09-06 18:15:29,894 - INFO - CNN-LSTM model created with 96 filters, 82 LSTM units, dropout rate 0.4, learning rate 0.0005, and L2 regularization lambda 0.01
+2024-09-06 18:15:52,739 - INFO - CNN-LSTM model and history saved for fold 4 of simulation
+2024-09-06 18:15:53,357 - INFO - Confusion Matrix for simulation, Fold 4:
+[[929   0]
+ [929   0]]
+2024-09-06 18:15:53,357 - INFO - F1-Score for simulation, Fold 4: 0.0
+2024-09-06 18:15:53,357 - INFO - Precision-Recall AUC for simulation, Fold 4: 0.75
+2024-09-06 18:15:53,358 - INFO - Training on fold 5/5 for simulation...
+2024-09-06 18:15:53,434 - INFO - CNN-LSTM model created with 96 filters, 82 LSTM units, dropout rate 0.4, learning rate 0.0005, and L2 regularization lambda 0.01
+2024-09-06 18:16:09,063 - INFO - CNN-LSTM model and history saved for fold 5 of simulation
+2024-09-06 18:16:09,710 - INFO - Confusion Matrix for simulation, Fold 5:
+[[  0 929]
+ [  0 929]]
+2024-09-06 18:16:09,710 - INFO - F1-Score for simulation, Fold 5: 0.6666666666666666
+2024-09-06 18:16:09,711 - INFO - Precision-Recall AUC for simulation, Fold 5: 0.75
+2024-09-06 18:16:09,712 - INFO - Average AUC across folds for simulation: 0.5
+2024-09-06 18:16:09,712 - INFO - Average F1-Score across folds for simulation: 0.26666666666666666
+2024-09-06 18:16:09,712 - INFO - Average Precision-Recall AUC across folds for simulation: 0.75
+2024-09-06 18:16:09,712 - INFO - Low AUC detected or high variance between folds for simulation, adjusting hyperparameters...
+2024-09-06 18:16:09,712 - INFO - New parameters for simulation - Learning Rate: 0.00025, Filters: 128, LSTM Units: 114, Dropout Rate: 0.5
+2024-09-06 18:16:09,713 - INFO - Training on fold 1/5 for simulation...
+2024-09-06 18:16:09,791 - INFO - CNN-LSTM model created with 128 filters, 114 LSTM units, dropout rate 0.5, learning rate 0.00025, and L2 regularization lambda 0.01
+2024-09-06 18:16:34,533 - INFO - CNN-LSTM model and history saved for fold 1 of simulation
+2024-09-06 18:16:35,186 - INFO - Confusion Matrix for simulation, Fold 1:
+[[  0 929]
+ [  0 929]]
+2024-09-06 18:16:35,186 - INFO - F1-Score for simulation, Fold 1: 0.6666666666666666
+2024-09-06 18:16:35,187 - INFO - Precision-Recall AUC for simulation, Fold 1: 0.75
+2024-09-06 18:16:35,187 - INFO - Training on fold 2/5 for simulation...
+2024-09-06 18:16:35,264 - INFO - CNN-LSTM model created with 128 filters, 114 LSTM units, dropout rate 0.5, learning rate 0.00025, and L2 regularization lambda 0.01
+2024-09-06 18:16:57,616 - INFO - CNN-LSTM model and history saved for fold 2 of simulation
+2024-09-06 18:16:58,271 - INFO - Confusion Matrix for simulation, Fold 2:
+[[929   0]
+ [929   0]]
+2024-09-06 18:16:58,271 - INFO - F1-Score for simulation, Fold 2: 0.0
+2024-09-06 18:16:58,272 - INFO - Precision-Recall AUC for simulation, Fold 2: 0.75
+2024-09-06 18:16:58,272 - INFO - Training on fold 3/5 for simulation...
+2024-09-06 18:16:58,347 - INFO - CNN-LSTM model created with 128 filters, 114 LSTM units, dropout rate 0.5, learning rate 0.00025, and L2 regularization lambda 0.01
+2024-09-06 18:17:21,734 - INFO - CNN-LSTM model and history saved for fold 3 of simulation
+2024-09-06 18:17:22,457 - INFO - Confusion Matrix for simulation, Fold 3:
+[[  0 929]
+ [  0 929]]
+2024-09-06 18:17:22,457 - INFO - F1-Score for simulation, Fold 3: 0.6666666666666666
+2024-09-06 18:17:22,458 - INFO - Precision-Recall AUC for simulation, Fold 3: 0.75
+2024-09-06 18:17:22,458 - INFO - Training on fold 4/5 for simulation...
+2024-09-06 18:17:22,547 - INFO - CNN-LSTM model created with 128 filters, 114 LSTM units, dropout rate 0.5, learning rate 0.00025, and L2 regularization lambda 0.01
+2024-09-06 18:17:50,239 - INFO - CNN-LSTM model and history saved for fold 4 of simulation
+2024-09-06 18:17:50,900 - INFO - Confusion Matrix for simulation, Fold 4:
+[[929   0]
+ [929   0]]
+2024-09-06 18:17:50,900 - INFO - F1-Score for simulation, Fold 4: 0.0
+2024-09-06 18:17:50,901 - INFO - Precision-Recall AUC for simulation, Fold 4: 0.75
+2024-09-06 18:17:50,901 - INFO - Training on fold 5/5 for simulation...
+2024-09-06 18:17:50,982 - INFO - CNN-LSTM model created with 128 filters, 114 LSTM units, dropout rate 0.5, learning rate 0.00025, and L2 regularization lambda 0.01
+2024-09-06 18:18:12,431 - INFO - CNN-LSTM model and history saved for fold 5 of simulation
+2024-09-06 18:18:13,150 - INFO - Confusion Matrix for simulation, Fold 5:
+[[929   0]
+ [929   0]]
+2024-09-06 18:18:13,150 - INFO - F1-Score for simulation, Fold 5: 0.0
+2024-09-06 18:18:13,151 - INFO - Precision-Recall AUC for simulation, Fold 5: 0.75
+2024-09-06 18:18:13,151 - INFO - Average AUC across folds for simulation: 0.5
+2024-09-06 18:18:13,151 - INFO - Average F1-Score across folds for simulation: 0.26666666666666666
+2024-09-06 18:18:13,151 - INFO - Average Precision-Recall AUC across folds for simulation: 0.75
+2024-09-06 18:18:13,151 - INFO - Low AUC detected or high variance between folds for simulation, adjusting hyperparameters...
+2024-09-06 18:18:13,152 - INFO - New parameters for simulation - Learning Rate: 0.000125, Filters: 160, LSTM Units: 146, Dropout Rate: 0.6
+2024-09-06 18:18:13,152 - INFO - Training on fold 1/5 for simulation...
+2024-09-06 18:18:13,258 - INFO - CNN-LSTM model created with 160 filters, 146 LSTM units, dropout rate 0.6, learning rate 0.000125, and L2 regularization lambda 0.01
+2024-09-06 18:18:45,842 - INFO - CNN-LSTM model and history saved for fold 1 of simulation
+2024-09-06 18:18:46,524 - INFO - Confusion Matrix for simulation, Fold 1:
+[[929   0]
+ [929   0]]
+2024-09-06 18:18:46,524 - INFO - F1-Score for simulation, Fold 1: 0.0
+2024-09-06 18:18:46,525 - INFO - Precision-Recall AUC for simulation, Fold 1: 0.75
+2024-09-06 18:18:46,525 - INFO - Training on fold 2/5 for simulation...
+2024-09-06 18:18:46,603 - INFO - CNN-LSTM model created with 160 filters, 146 LSTM units, dropout rate 0.6, learning rate 0.000125, and L2 regularization lambda 0.01
+2024-09-06 18:19:18,218 - INFO - CNN-LSTM model and history saved for fold 2 of simulation
+2024-09-06 18:19:18,945 - INFO - Confusion Matrix for simulation, Fold 2:
+[[  0 929]
+ [  0 929]]
+2024-09-06 18:19:18,945 - INFO - F1-Score for simulation, Fold 2: 0.6666666666666666
+2024-09-06 18:19:18,946 - INFO - Precision-Recall AUC for simulation, Fold 2: 0.75
+2024-09-06 18:19:18,946 - INFO - Training on fold 3/5 for simulation...
+2024-09-06 18:19:19,023 - INFO - CNN-LSTM model created with 160 filters, 146 LSTM units, dropout rate 0.6, learning rate 0.000125, and L2 regularization lambda 0.01
+2024-09-06 18:19:53,004 - INFO - CNN-LSTM model and history saved for fold 3 of simulation
+2024-09-06 18:19:53,742 - INFO - Confusion Matrix for simulation, Fold 3:
+[[929   0]
+ [929   0]]
+2024-09-06 18:19:53,743 - INFO - F1-Score for simulation, Fold 3: 0.0
+2024-09-06 18:19:53,743 - INFO - Precision-Recall AUC for simulation, Fold 3: 0.75
+2024-09-06 18:19:53,743 - INFO - Training on fold 4/5 for simulation...
+2024-09-06 18:19:53,831 - INFO - CNN-LSTM model created with 160 filters, 146 LSTM units, dropout rate 0.6, learning rate 0.000125, and L2 regularization lambda 0.01
+2024-09-06 18:20:28,134 - INFO - CNN-LSTM model and history saved for fold 4 of simulation
+2024-09-06 18:20:28,836 - INFO - Confusion Matrix for simulation, Fold 4:
+[[  0 929]
+ [  0 929]]
+2024-09-06 18:20:28,836 - INFO - F1-Score for simulation, Fold 4: 0.6666666666666666
+2024-09-06 18:20:28,836 - INFO - Precision-Recall AUC for simulation, Fold 4: 0.75
+2024-09-06 18:20:28,836 - INFO - Training on fold 5/5 for simulation...
+2024-09-06 18:20:28,918 - INFO - CNN-LSTM model created with 160 filters, 146 LSTM units, dropout rate 0.6, learning rate 0.000125, and L2 regularization lambda 0.01
+2024-09-06 18:21:07,742 - INFO - CNN-LSTM model and history saved for fold 5 of simulation
+2024-09-06 18:21:08,575 - INFO - Confusion Matrix for simulation, Fold 5:
+[[929   0]
+ [929   0]]
+2024-09-06 18:21:08,575 - INFO - F1-Score for simulation, Fold 5: 0.0
+2024-09-06 18:21:08,576 - INFO - Precision-Recall AUC for simulation, Fold 5: 0.75
+2024-09-06 18:21:08,576 - INFO - Average AUC across folds for simulation: 0.5001076459884644
+2024-09-06 18:21:08,576 - INFO - Average F1-Score across folds for simulation: 0.26666666666666666
+2024-09-06 18:21:08,576 - INFO - Average Precision-Recall AUC across folds for simulation: 0.75
+2024-09-06 18:21:08,576 - INFO - Low AUC detected or high variance between folds for simulation, adjusting hyperparameters...
+2024-09-06 18:21:08,576 - INFO - New parameters for simulation - Learning Rate: 6.25e-05, Filters: 192, LSTM Units: 178, Dropout Rate: 0.7
+2024-09-06 18:21:08,577 - INFO - Training on fold 1/5 for simulation...
+2024-09-06 18:21:08,683 - INFO - CNN-LSTM model created with 192 filters, 178 LSTM units, dropout rate 0.7, learning rate 6.25e-05, and L2 regularization lambda 0.01
+2024-09-06 18:21:53,471 - INFO - CNN-LSTM model and history saved for fold 1 of simulation
+2024-09-06 18:21:54,190 - INFO - Confusion Matrix for simulation, Fold 1:
+[[929   0]
+ [929   0]]
+2024-09-06 18:21:54,190 - INFO - F1-Score for simulation, Fold 1: 0.0
+2024-09-06 18:21:54,191 - INFO - Precision-Recall AUC for simulation, Fold 1: 0.75
+2024-09-06 18:21:54,191 - INFO - Training on fold 2/5 for simulation...
+2024-09-06 18:21:54,278 - INFO - CNN-LSTM model created with 192 filters, 178 LSTM units, dropout rate 0.7, learning rate 6.25e-05, and L2 regularization lambda 0.01
+2024-09-06 18:22:34,854 - INFO - CNN-LSTM model and history saved for fold 2 of simulation
+2024-09-06 18:22:35,558 - INFO - Confusion Matrix for simulation, Fold 2:
+[[929   0]
+ [929   0]]
+2024-09-06 18:22:35,558 - INFO - F1-Score for simulation, Fold 2: 0.0
+2024-09-06 18:22:35,559 - INFO - Precision-Recall AUC for simulation, Fold 2: 0.75
+2024-09-06 18:22:35,560 - INFO - Training on fold 3/5 for simulation...
+2024-09-06 18:22:35,646 - INFO - CNN-LSTM model created with 192 filters, 178 LSTM units, dropout rate 0.7, learning rate 6.25e-05, and L2 regularization lambda 0.01
+2024-09-06 18:23:17,224 - INFO - CNN-LSTM model and history saved for fold 3 of simulation
+2024-09-06 18:23:17,925 - INFO - Confusion Matrix for simulation, Fold 3:
+[[  0 929]
+ [  0 929]]
+2024-09-06 18:23:17,925 - INFO - F1-Score for simulation, Fold 3: 0.6666666666666666
+2024-09-06 18:23:17,925 - INFO - Precision-Recall AUC for simulation, Fold 3: 0.75
+2024-09-06 18:23:17,926 - INFO - Training on fold 4/5 for simulation...
+2024-09-06 18:23:18,017 - INFO - CNN-LSTM model created with 192 filters, 178 LSTM units, dropout rate 0.7, learning rate 6.25e-05, and L2 regularization lambda 0.01
+2024-09-06 18:23:58,487 - INFO - CNN-LSTM model and history saved for fold 4 of simulation
+2024-09-06 18:23:59,172 - INFO - Confusion Matrix for simulation, Fold 4:
+[[929   0]
+ [929   0]]
+2024-09-06 18:23:59,172 - INFO - F1-Score for simulation, Fold 4: 0.0
+2024-09-06 18:23:59,173 - INFO - Precision-Recall AUC for simulation, Fold 4: 0.75
+2024-09-06 18:23:59,173 - INFO - Training on fold 5/5 for simulation...
+2024-09-06 18:23:59,267 - INFO - CNN-LSTM model created with 192 filters, 178 LSTM units, dropout rate 0.7, learning rate 6.25e-05, and L2 regularization lambda 0.01
+2024-09-06 18:24:40,814 - INFO - CNN-LSTM model and history saved for fold 5 of simulation
+2024-09-06 18:24:41,541 - INFO - Confusion Matrix for simulation, Fold 5:
+[[929   0]
+ [929   0]]
+2024-09-06 18:24:41,541 - INFO - F1-Score for simulation, Fold 5: 0.0
+2024-09-06 18:24:41,542 - INFO - Precision-Recall AUC for simulation, Fold 5: 0.75
+2024-09-06 18:24:41,542 - INFO - Average AUC across folds for simulation: 0.5006458520889282
+2024-09-06 18:24:41,542 - INFO - Average F1-Score across folds for simulation: 0.13333333333333333
+2024-09-06 18:24:41,542 - INFO - Average Precision-Recall AUC across folds for simulation: 0.75
+2024-09-06 18:24:41,542 - INFO - Low AUC detected or high variance between folds for simulation, adjusting hyperparameters...
+2024-09-06 18:24:41,542 - INFO - New parameters for simulation - Learning Rate: 3.125e-05, Filters: 224, LSTM Units: 210, Dropout Rate: 0.7999999999999999
+2024-09-06 18:24:41,543 - INFO - Training on fold 1/5 for simulation...
+2024-09-06 18:24:41,645 - INFO - CNN-LSTM model created with 224 filters, 210 LSTM units, dropout rate 0.7999999999999999, learning rate 3.125e-05, and L2 regularization lambda 0.01
+2024-09-06 18:25:33,700 - INFO - CNN-LSTM model and history saved for fold 1 of simulation
+2024-09-06 18:25:34,463 - INFO - Confusion Matrix for simulation, Fold 1:
+[[929   0]
+ [929   0]]
+2024-09-06 18:25:34,463 - INFO - F1-Score for simulation, Fold 1: 0.0
+2024-09-06 18:25:34,464 - INFO - Precision-Recall AUC for simulation, Fold 1: 0.5579665990434715
+2024-09-06 18:25:34,464 - INFO - Training on fold 2/5 for simulation...
+2024-09-06 18:25:34,567 - INFO - CNN-LSTM model created with 224 filters, 210 LSTM units, dropout rate 0.7999999999999999, learning rate 3.125e-05, and L2 regularization lambda 0.01
+2024-09-06 18:26:27,038 - INFO - CNN-LSTM model and history saved for fold 2 of simulation
+2024-09-06 18:26:27,774 - INFO - Confusion Matrix for simulation, Fold 2:
+[[  0 929]
+ [  0 929]]
+2024-09-06 18:26:27,774 - INFO - F1-Score for simulation, Fold 2: 0.6666666666666666
+2024-09-06 18:26:27,775 - INFO - Precision-Recall AUC for simulation, Fold 2: 0.6536300038401159
+2024-09-06 18:26:27,775 - INFO - Training on fold 3/5 for simulation...
+2024-09-06 18:26:27,870 - INFO - CNN-LSTM model created with 224 filters, 210 LSTM units, dropout rate 0.7999999999999999, learning rate 3.125e-05, and L2 regularization lambda 0.01
+2024-09-06 18:27:20,255 - INFO - CNN-LSTM model and history saved for fold 3 of simulation
+2024-09-06 18:27:20,982 - INFO - Confusion Matrix for simulation, Fold 3:
+[[929   0]
+ [929   0]]
+2024-09-06 18:27:20,982 - INFO - F1-Score for simulation, Fold 3: 0.0
+2024-09-06 18:27:20,983 - INFO - Precision-Recall AUC for simulation, Fold 3: 0.6838919705145692
+2024-09-06 18:27:20,983 - INFO - Training on fold 4/5 for simulation...
+2024-09-06 18:27:21,080 - INFO - CNN-LSTM model created with 224 filters, 210 LSTM units, dropout rate 0.7999999999999999, learning rate 3.125e-05, and L2 regularization lambda 0.01
+2024-09-06 18:28:15,500 - INFO - CNN-LSTM model and history saved for fold 4 of simulation
+2024-09-06 18:28:16,233 - INFO - Confusion Matrix for simulation, Fold 4:
+[[929   0]
+ [929   0]]
+2024-09-06 18:28:16,233 - INFO - F1-Score for simulation, Fold 4: 0.0
+2024-09-06 18:28:16,234 - INFO - Precision-Recall AUC for simulation, Fold 4: 0.2566978957295407
+2024-09-06 18:28:16,234 - INFO - Training on fold 5/5 for simulation...
+2024-09-06 18:28:16,333 - INFO - CNN-LSTM model created with 224 filters, 210 LSTM units, dropout rate 0.7999999999999999, learning rate 3.125e-05, and L2 regularization lambda 0.01
+2024-09-06 18:29:09,821 - INFO - CNN-LSTM model and history saved for fold 5 of simulation
+2024-09-06 18:29:10,553 - INFO - Confusion Matrix for simulation, Fold 5:
+[[  0 929]
+ [  0 929]]
+2024-09-06 18:29:10,553 - INFO - F1-Score for simulation, Fold 5: 0.6666666666666666
+2024-09-06 18:29:10,553 - INFO - Precision-Recall AUC for simulation, Fold 5: 0.5830182829281824
+2024-09-06 18:29:10,554 - INFO - Average AUC across folds for simulation: 0.5100992798805237
+2024-09-06 18:29:10,554 - INFO - Average F1-Score across folds for simulation: 0.26666666666666666
+2024-09-06 18:29:10,554 - INFO - Average Precision-Recall AUC across folds for simulation: 0.5470409504111758
+2024-09-06 18:29:10,554 - INFO - Low AUC detected or high variance between folds for simulation, adjusting hyperparameters...
+2024-09-06 18:29:10,554 - INFO - New parameters for simulation - Learning Rate: 1.5625e-05, Filters: 256, LSTM Units: 242, Dropout Rate: 0.8999999999999999
+2024-09-06 18:29:10,555 - INFO - Training on fold 1/5 for simulation...
+2024-09-06 18:29:10,672 - INFO - CNN-LSTM model created with 256 filters, 242 LSTM units, dropout rate 0.8999999999999999, learning rate 1.5625e-05, and L2 regularization lambda 0.01
+2024-09-06 18:30:21,225 - INFO - CNN-LSTM model and history saved for fold 1 of simulation
+2024-09-06 18:30:21,995 - INFO - Confusion Matrix for simulation, Fold 1:
+[[488 441]
+ [490 439]]
+2024-09-06 18:30:21,995 - INFO - F1-Score for simulation, Fold 1: 0.4853510226644555
+2024-09-06 18:30:21,996 - INFO - Precision-Recall AUC for simulation, Fold 1: 0.5042309590642664
+2024-09-06 18:30:21,996 - INFO - Training on fold 2/5 for simulation...
+2024-09-06 18:30:22,107 - INFO - CNN-LSTM model created with 256 filters, 242 LSTM units, dropout rate 0.8999999999999999, learning rate 1.5625e-05, and L2 regularization lambda 0.01
+2024-09-06 18:31:29,763 - INFO - CNN-LSTM model and history saved for fold 2 of simulation
+2024-09-06 18:31:30,535 - INFO - Confusion Matrix for simulation, Fold 2:
+[[493 436]
+ [453 476]]
+2024-09-06 18:31:30,535 - INFO - F1-Score for simulation, Fold 2: 0.5171102661596958
+2024-09-06 18:31:30,536 - INFO - Precision-Recall AUC for simulation, Fold 2: 0.5420158372247381
+2024-09-06 18:31:30,536 - INFO - Training on fold 3/5 for simulation...
+2024-09-06 18:31:30,645 - INFO - CNN-LSTM model created with 256 filters, 242 LSTM units, dropout rate 0.8999999999999999, learning rate 1.5625e-05, and L2 regularization lambda 0.01
+2024-09-06 18:32:38,586 - INFO - CNN-LSTM model and history saved for fold 3 of simulation
+2024-09-06 18:32:39,349 - INFO - Confusion Matrix for simulation, Fold 3:
+[[493 436]
+ [498 431]]
+2024-09-06 18:32:39,349 - INFO - F1-Score for simulation, Fold 3: 0.4799554565701559
+2024-09-06 18:32:39,350 - INFO - Precision-Recall AUC for simulation, Fold 3: 0.4991364843223829
+2024-09-06 18:32:39,350 - INFO - Training on fold 4/5 for simulation...
+2024-09-06 18:32:39,460 - INFO - CNN-LSTM model created with 256 filters, 242 LSTM units, dropout rate 0.8999999999999999, learning rate 1.5625e-05, and L2 regularization lambda 0.01
+2024-09-06 18:33:47,477 - INFO - CNN-LSTM model and history saved for fold 4 of simulation
+2024-09-06 18:33:48,257 - INFO - Confusion Matrix for simulation, Fold 4:
+[[426 503]
+ [364 565]]
+2024-09-06 18:33:48,257 - INFO - F1-Score for simulation, Fold 4: 0.5658487731597396
+2024-09-06 18:33:48,258 - INFO - Precision-Recall AUC for simulation, Fold 4: 0.5199082680749619
+2024-09-06 18:33:48,258 - INFO - Training on fold 5/5 for simulation...
+2024-09-06 18:33:48,365 - INFO - CNN-LSTM model created with 256 filters, 242 LSTM units, dropout rate 0.8999999999999999, learning rate 1.5625e-05, and L2 regularization lambda 0.01
+2024-09-06 22:07:34,635 - INFO - Starting training for real_data
+2024-09-06 22:07:34,660 - INFO - Training on fold 1/5 for real_data...
+2024-09-06 22:07:34,909 - INFO - CNN-LSTM model created with 64 filters, 50 LSTM units, dropout rate 0.3, learning rate 0.001, and L2 regularization lambda 0.01
+2024-09-06 22:08:17,198 - INFO - CNN-LSTM model and history saved for fold 1 of real_data
+2024-09-06 22:08:18,036 - INFO - Confusion Matrix for real_data, Fold 1:
+[[1682    0]
+ [  50    0]]
+2024-09-06 22:08:18,036 - INFO - F1-Score for real_data, Fold 1: 0.0
+2024-09-06 22:08:18,040 - INFO - Precision-Recall AUC for real_data, Fold 1: 0.48533649415806773
+2024-09-06 22:08:18,040 - INFO - Training on fold 2/5 for real_data...
+2024-09-06 22:08:18,114 - INFO - CNN-LSTM model created with 64 filters, 50 LSTM units, dropout rate 0.3, learning rate 0.001, and L2 regularization lambda 0.01
+2024-09-06 22:08:57,726 - INFO - CNN-LSTM model and history saved for fold 2 of real_data
+2024-09-06 22:08:58,544 - INFO - Confusion Matrix for real_data, Fold 2:
+[[1682    0]
+ [  50    0]]
+2024-09-06 22:08:58,544 - INFO - F1-Score for real_data, Fold 2: 0.0
+2024-09-06 22:08:58,545 - INFO - Precision-Recall AUC for real_data, Fold 2: 0.5144341801385681
+2024-09-06 22:08:58,546 - INFO - Training on fold 3/5 for real_data...
+2024-09-06 22:08:58,616 - INFO - CNN-LSTM model created with 64 filters, 50 LSTM units, dropout rate 0.3, learning rate 0.001, and L2 regularization lambda 0.01
+2024-09-06 22:09:43,100 - INFO - CNN-LSTM model and history saved for fold 3 of real_data
+2024-09-06 22:09:43,953 - INFO - Confusion Matrix for real_data, Fold 3:
+[[1681    0]
+ [  50    0]]
+2024-09-06 22:09:43,953 - INFO - F1-Score for real_data, Fold 3: 0.0
+2024-09-06 22:09:43,954 - INFO - Precision-Recall AUC for real_data, Fold 3: 0.5144675925925926
+2024-09-06 22:09:43,954 - INFO - Training on fold 4/5 for real_data...
+2024-09-06 22:09:44,024 - INFO - CNN-LSTM model created with 64 filters, 50 LSTM units, dropout rate 0.3, learning rate 0.001, and L2 regularization lambda 0.01
+2024-09-06 22:10:39,618 - INFO - CNN-LSTM model and history saved for fold 4 of real_data
+2024-09-06 22:10:40,677 - INFO - Confusion Matrix for real_data, Fold 4:
+[[1681    0]
+ [  50    0]]
+2024-09-06 22:10:40,678 - INFO - F1-Score for real_data, Fold 4: 0.0
+2024-09-06 22:10:40,678 - INFO - Precision-Recall AUC for real_data, Fold 4: 0.014442518775274409
+2024-09-06 22:10:40,678 - INFO - Training on fold 5/5 for real_data...
+2024-09-06 22:10:40,762 - INFO - CNN-LSTM model created with 64 filters, 50 LSTM units, dropout rate 0.3, learning rate 0.001, and L2 regularization lambda 0.01
+2024-09-06 22:12:11,685 - INFO - CNN-LSTM model and history saved for fold 5 of real_data
+2024-09-06 22:12:12,535 - INFO - Confusion Matrix for real_data, Fold 5:
+[[1681    0]
+ [  50    0]]
+2024-09-06 22:12:12,535 - INFO - F1-Score for real_data, Fold 5: 0.0
+2024-09-06 22:12:12,536 - INFO - Precision-Recall AUC for real_data, Fold 5: 0.5144425187752744
+2024-09-06 22:12:12,536 - INFO - Average AUC across folds for real_data: 0.5
+2024-09-06 22:12:12,536 - INFO - Average F1-Score across folds for real_data: 0.0
+2024-09-06 22:12:12,536 - INFO - Average Precision-Recall AUC across folds for real_data: 0.4086246608879554
+2024-09-06 22:12:12,536 - INFO - Low AUC detected or high variance between folds for real_data, adjusting hyperparameters...
+2024-09-06 22:12:12,536 - INFO - New parameters for real_data - Learning Rate: 0.0005, Filters: 96, LSTM Units: 82, Dropout Rate: 0.4
+2024-09-06 22:12:12,537 - INFO - Training on fold 1/5 for real_data...
+2024-09-06 22:12:12,620 - INFO - CNN-LSTM model created with 96 filters, 82 LSTM units, dropout rate 0.4, learning rate 0.0005, and L2 regularization lambda 0.01
+2024-09-06 22:13:46,559 - INFO - CNN-LSTM model and history saved for fold 1 of real_data
+2024-09-06 22:13:47,544 - INFO - Confusion Matrix for real_data, Fold 1:
+[[1682    0]
+ [  50    0]]
+2024-09-06 22:13:47,545 - INFO - F1-Score for real_data, Fold 1: 0.0
+2024-09-06 22:13:47,545 - INFO - Precision-Recall AUC for real_data, Fold 1: 0.5144341801385681
+2024-09-06 22:13:47,545 - INFO - Training on fold 2/5 for real_data...
+2024-09-06 22:13:47,619 - INFO - CNN-LSTM model created with 96 filters, 82 LSTM units, dropout rate 0.4, learning rate 0.0005, and L2 regularization lambda 0.01
+2024-09-06 22:15:20,858 - INFO - CNN-LSTM model and history saved for fold 2 of real_data
+2024-09-06 22:15:21,825 - INFO - Confusion Matrix for real_data, Fold 2:
+[[1682    0]
+ [  50    0]]
+2024-09-06 22:15:21,825 - INFO - F1-Score for real_data, Fold 2: 0.0
+2024-09-06 22:15:21,826 - INFO - Precision-Recall AUC for real_data, Fold 2: 0.5144341801385681
+2024-09-06 22:15:21,826 - INFO - Training on fold 3/5 for real_data...
+2024-09-06 22:15:21,900 - INFO - CNN-LSTM model created with 96 filters, 82 LSTM units, dropout rate 0.4, learning rate 0.0005, and L2 regularization lambda 0.01
+2024-09-06 22:16:26,582 - INFO - CNN-LSTM model and history saved for fold 3 of real_data
+2024-09-06 22:16:27,617 - INFO - Confusion Matrix for real_data, Fold 3:
+[[1681    0]
+ [  50    0]]
+2024-09-06 22:16:27,617 - INFO - F1-Score for real_data, Fold 3: 0.0
+2024-09-06 22:16:27,618 - INFO - Precision-Recall AUC for real_data, Fold 3: 0.02010907954826241
+2024-09-06 22:16:27,618 - INFO - Training on fold 4/5 for real_data...
+2024-09-06 22:16:27,692 - INFO - CNN-LSTM model created with 96 filters, 82 LSTM units, dropout rate 0.4, learning rate 0.0005, and L2 regularization lambda 0.01
+2024-09-06 22:17:38,689 - INFO - CNN-LSTM model and history saved for fold 4 of real_data
+2024-09-06 22:17:39,748 - INFO - Confusion Matrix for real_data, Fold 4:
+[[1681    0]
+ [  50    0]]
+2024-09-06 22:17:39,749 - INFO - F1-Score for real_data, Fold 4: 0.0
+2024-09-06 22:17:39,749 - INFO - Precision-Recall AUC for real_data, Fold 4: 0.4953651314349296
+2024-09-06 22:17:39,750 - INFO - Training on fold 5/5 for real_data...
+2024-09-06 22:17:39,820 - INFO - CNN-LSTM model created with 96 filters, 82 LSTM units, dropout rate 0.4, learning rate 0.0005, and L2 regularization lambda 0.01
+2024-09-06 22:19:11,569 - INFO - CNN-LSTM model and history saved for fold 5 of real_data
+2024-09-06 22:19:12,600 - INFO - Confusion Matrix for real_data, Fold 5:
+[[1681    0]
+ [  50    0]]
+2024-09-06 22:19:12,600 - INFO - F1-Score for real_data, Fold 5: 0.0
+2024-09-06 22:19:12,601 - INFO - Precision-Recall AUC for real_data, Fold 5: 0.5144675925925926
+2024-09-06 22:19:12,601 - INFO - Average AUC across folds for real_data: 0.46810351610183715
+2024-09-06 22:19:12,601 - INFO - Average F1-Score across folds for real_data: 0.0
+2024-09-06 22:19:12,601 - INFO - Average Precision-Recall AUC across folds for real_data: 0.41176203277058415
+2024-09-06 22:19:12,601 - INFO - Low AUC detected or high variance between folds for real_data, adjusting hyperparameters...
+2024-09-06 22:19:12,601 - INFO - New parameters for real_data - Learning Rate: 0.00025, Filters: 128, LSTM Units: 114, Dropout Rate: 0.5
+2024-09-06 22:19:12,602 - INFO - Training on fold 1/5 for real_data...
+2024-09-06 22:19:12,682 - INFO - CNN-LSTM model created with 128 filters, 114 LSTM units, dropout rate 0.5, learning rate 0.00025, and L2 regularization lambda 0.01
+2024-09-06 22:21:46,883 - INFO - CNN-LSTM model and history saved for fold 1 of real_data
+2024-09-06 22:21:48,105 - INFO - Confusion Matrix for real_data, Fold 1:
+[[1682    0]
+ [  50    0]]
+2024-09-06 22:21:48,105 - INFO - F1-Score for real_data, Fold 1: 0.0
+2024-09-06 22:21:48,107 - INFO - Precision-Recall AUC for real_data, Fold 1: 0.48533649415806773
+2024-09-06 22:21:48,107 - INFO - Training on fold 2/5 for real_data...
+2024-09-06 22:21:48,183 - INFO - CNN-LSTM model created with 128 filters, 114 LSTM units, dropout rate 0.5, learning rate 0.00025, and L2 regularization lambda 0.01
+2024-09-06 22:24:23,854 - INFO - CNN-LSTM model and history saved for fold 2 of real_data
+2024-09-06 22:24:25,048 - INFO - Confusion Matrix for real_data, Fold 2:
+[[1682    0]
+ [  50    0]]
+2024-09-06 22:24:25,048 - INFO - F1-Score for real_data, Fold 2: 0.0
+2024-09-06 22:24:25,048 - INFO - Precision-Recall AUC for real_data, Fold 2: 0.5144341801385681
+2024-09-06 22:24:25,049 - INFO - Training on fold 3/5 for real_data...
+2024-09-06 22:24:25,128 - INFO - CNN-LSTM model created with 128 filters, 114 LSTM units, dropout rate 0.5, learning rate 0.00025, and L2 regularization lambda 0.01
+2024-09-06 22:25:29,830 - INFO - CNN-LSTM model and history saved for fold 3 of real_data
+2024-09-06 22:25:31,029 - INFO - Confusion Matrix for real_data, Fold 3:
+[[1681    0]
+ [  50    0]]
+2024-09-06 22:25:31,030 - INFO - F1-Score for real_data, Fold 3: 0.0
+2024-09-06 22:25:31,030 - INFO - Precision-Recall AUC for real_data, Fold 3: 0.018450492552363782
+2024-09-06 22:25:31,031 - INFO - Training on fold 4/5 for real_data...
+2024-09-06 22:25:31,109 - INFO - CNN-LSTM model created with 128 filters, 114 LSTM units, dropout rate 0.5, learning rate 0.00025, and L2 regularization lambda 0.01
+2024-09-06 22:27:21,257 - INFO - CNN-LSTM model and history saved for fold 4 of real_data
+2024-09-06 22:27:22,504 - INFO - Confusion Matrix for real_data, Fold 4:
+[[1681    0]
+ [  50    0]]
+2024-09-06 22:27:22,504 - INFO - F1-Score for real_data, Fold 4: 0.0
+2024-09-06 22:27:22,505 - INFO - Precision-Recall AUC for real_data, Fold 4: 0.05396160558464223
+2024-09-06 22:27:22,505 - INFO - Training on fold 5/5 for real_data...
+2024-09-06 22:27:22,585 - INFO - CNN-LSTM model created with 128 filters, 114 LSTM units, dropout rate 0.5, learning rate 0.00025, and L2 regularization lambda 0.01
+2024-09-06 22:29:55,997 - INFO - CNN-LSTM model and history saved for fold 5 of real_data
+2024-09-06 22:29:57,211 - INFO - Confusion Matrix for real_data, Fold 5:
+[[1681    0]
+ [  50    0]]
+2024-09-06 22:29:57,211 - INFO - F1-Score for real_data, Fold 5: 0.0
+2024-09-06 22:29:57,212 - INFO - Precision-Recall AUC for real_data, Fold 5: 0.5144592249855408
+2024-09-06 22:29:57,212 - INFO - Average AUC across folds for real_data: 0.6081660866737366
+2024-09-06 22:29:57,212 - INFO - Average F1-Score across folds for real_data: 0.0
+2024-09-06 22:29:57,213 - INFO - Average Precision-Recall AUC across folds for real_data: 0.3173283994838365
+2024-09-06 22:29:57,213 - INFO - Low AUC detected or high variance between folds for real_data, adjusting hyperparameters...
+2024-09-06 22:29:57,213 - INFO - New parameters for real_data - Learning Rate: 0.000125, Filters: 160, LSTM Units: 146, Dropout Rate: 0.6
+2024-09-06 22:29:57,214 - INFO - Training on fold 1/5 for real_data...
+2024-09-06 22:29:57,304 - INFO - CNN-LSTM model created with 160 filters, 146 LSTM units, dropout rate 0.6, learning rate 0.000125, and L2 regularization lambda 0.01
+2024-09-06 22:32:47,651 - INFO - CNN-LSTM model and history saved for fold 1 of real_data
+2024-09-06 22:32:49,295 - INFO - Confusion Matrix for real_data, Fold 1:
+[[1682    0]
+ [  50    0]]
+2024-09-06 22:32:49,295 - INFO - F1-Score for real_data, Fold 1: 0.0
+2024-09-06 22:32:49,296 - INFO - Precision-Recall AUC for real_data, Fold 1: 0.20195394787356868
+2024-09-06 22:32:49,296 - INFO - Training on fold 2/5 for real_data...
+2024-09-06 22:32:49,396 - INFO - CNN-LSTM model created with 160 filters, 146 LSTM units, dropout rate 0.6, learning rate 0.000125, and L2 regularization lambda 0.01
+2024-09-06 22:36:19,791 - INFO - CNN-LSTM model and history saved for fold 2 of real_data
+2024-09-06 22:36:21,202 - INFO - Confusion Matrix for real_data, Fold 2:
+[[1682    0]
+ [  50    0]]
+2024-09-06 22:36:21,202 - INFO - F1-Score for real_data, Fold 2: 0.0
+2024-09-06 22:36:21,203 - INFO - Precision-Recall AUC for real_data, Fold 2: 0.02140342477327776
+2024-09-06 22:36:21,203 - INFO - Training on fold 3/5 for real_data...
+2024-09-06 22:36:21,294 - INFO - CNN-LSTM model created with 160 filters, 146 LSTM units, dropout rate 0.6, learning rate 0.000125, and L2 regularization lambda 0.01
+2024-09-06 22:39:30,279 - INFO - CNN-LSTM model and history saved for fold 3 of real_data
+2024-09-06 22:39:31,932 - INFO - Confusion Matrix for real_data, Fold 3:
+[[1681    0]
+ [  50    0]]
+2024-09-06 22:39:31,933 - INFO - F1-Score for real_data, Fold 3: 0.0
+2024-09-06 22:39:31,933 - INFO - Precision-Recall AUC for real_data, Fold 3: 0.020168879889385618
+2024-09-06 22:39:31,934 - INFO - Training on fold 4/5 for real_data...
+2024-09-06 22:39:32,629 - INFO - CNN-LSTM model created with 160 filters, 146 LSTM units, dropout rate 0.6, learning rate 0.000125, and L2 regularization lambda 0.01
+2024-09-06 22:54:56,363 - INFO - Starting training for real_data
+2024-09-06 22:54:56,377 - INFO - Training on fold 1/5 for real_data...
+2024-09-06 23:02:18,494 - INFO - Starting training for real_data
+2024-09-06 23:02:18,510 - INFO - Training on fold 1/5 for real_data...
+2024-09-06 23:09:50,015 - INFO - Processing database: simulation
+2024-09-06 23:09:50,028 - INFO - Loaded X shape: (4792, 1, 30)
+2024-09-06 23:09:50,042 - INFO - Training on fold 1/5 for simulation...
+2024-09-06 23:09:50,172 - INFO - CNN-LSTM model created with 64 filters, 50 LSTM units, dropout rate 0.3, and learning rate 0.001
+2024-09-06 23:10:09,642 - INFO - CNN-LSTM model and history saved for fold 1 of simulation
+2024-09-06 23:10:10,259 - INFO - Confusion Matrix for simulation, Fold 1:
+[[895  34]
+ [  0 929]]
+2024-09-06 23:10:10,259 - INFO - F1-Score for simulation, Fold 1: 0.9820295983086681
+2024-09-06 23:10:10,261 - INFO - Precision-Recall AUC for simulation, Fold 1: 0.9989772690824826
+2024-09-06 23:10:10,261 - INFO - Training on fold 2/5 for simulation...
+2024-09-06 23:10:10,335 - INFO - CNN-LSTM model created with 64 filters, 50 LSTM units, dropout rate 0.3, and learning rate 0.001
+2024-09-06 23:10:30,094 - INFO - CNN-LSTM model and history saved for fold 2 of simulation
+2024-09-06 23:10:30,770 - INFO - Confusion Matrix for simulation, Fold 2:
+[[900  29]
+ [  0 929]]
+2024-09-06 23:10:30,771 - INFO - F1-Score for simulation, Fold 2: 0.9846316905140434
+2024-09-06 23:10:30,771 - INFO - Precision-Recall AUC for simulation, Fold 2: 1.0
+2024-09-06 23:10:30,771 - INFO - Training on fold 3/5 for simulation...
+2024-09-06 23:10:31,005 - INFO - CNN-LSTM model created with 64 filters, 50 LSTM units, dropout rate 0.3, and learning rate 0.001
+2024-09-06 23:10:51,420 - INFO - CNN-LSTM model and history saved for fold 3 of simulation
+2024-09-06 23:10:52,095 - INFO - Confusion Matrix for simulation, Fold 3:
+[[919  10]
+ [  0 929]]
+2024-09-06 23:10:52,095 - INFO - F1-Score for simulation, Fold 3: 0.9946466809421841
+2024-09-06 23:10:52,097 - INFO - Precision-Recall AUC for simulation, Fold 3: 0.9999930327667405
+2024-09-06 23:10:52,097 - INFO - Training on fold 4/5 for simulation...
+2024-09-06 23:10:52,172 - INFO - CNN-LSTM model created with 64 filters, 50 LSTM units, dropout rate 0.3, and learning rate 0.001
+2024-09-06 23:11:12,814 - INFO - CNN-LSTM model and history saved for fold 4 of simulation
+2024-09-06 23:11:13,452 - INFO - Confusion Matrix for simulation, Fold 4:
+[[898  31]
+ [  0 929]]
+2024-09-06 23:11:13,452 - INFO - F1-Score for simulation, Fold 4: 0.9835892006352568
+2024-09-06 23:11:13,453 - INFO - Precision-Recall AUC for simulation, Fold 4: 0.9996351030936333
+2024-09-06 23:11:13,453 - INFO - Training on fold 5/5 for simulation...
+2024-09-06 23:11:13,538 - INFO - CNN-LSTM model created with 64 filters, 50 LSTM units, dropout rate 0.3, and learning rate 0.001
+2024-09-06 23:11:33,609 - INFO - CNN-LSTM model and history saved for fold 5 of simulation
+2024-09-06 23:11:34,263 - INFO - Confusion Matrix for simulation, Fold 5:
+[[897  32]
+ [  0 929]]
+2024-09-06 23:11:34,263 - INFO - F1-Score for simulation, Fold 5: 0.9830687830687831
+2024-09-06 23:11:34,264 - INFO - Precision-Recall AUC for simulation, Fold 5: 0.9973287853095212
+2024-09-06 23:11:34,264 - INFO - Average AUC across folds for simulation: 0.9995923042297363
+2024-09-06 23:11:34,264 - INFO - Average F1-Score across folds for simulation: 0.985593190693787
+2024-09-06 23:11:34,264 - INFO - Average Precision-Recall AUC across folds for simulation: 0.9991868380504755
+2024-09-06 23:11:34,264 - INFO - Model performance for simulation is satisfactory.
+2024-09-06 23:11:34,264 - INFO - Processing database: combined
+2024-09-06 23:11:34,281 - INFO - Loaded X shape: (11717, 1, 30)
+2024-09-06 23:11:34,292 - INFO - Training on fold 1/5 for combined...
+2024-09-06 23:11:34,368 - INFO - CNN-LSTM model created with 64 filters, 50 LSTM units, dropout rate 0.3, and learning rate 0.001
+2024-09-06 23:12:21,646 - INFO - CNN-LSTM model and history saved for fold 1 of combined
+2024-09-06 23:12:22,499 - INFO - Confusion Matrix for combined, Fold 1:
+[[2201   75]
+ [  22 2253]]
+2024-09-06 23:12:22,500 - INFO - F1-Score for combined, Fold 1: 0.978926786878123
+2024-09-06 23:12:22,501 - INFO - Precision-Recall AUC for combined, Fold 1: 0.9960527599359187
+2024-09-06 23:12:22,501 - INFO - Training on fold 2/5 for combined...
+2024-09-06 23:12:22,577 - INFO - CNN-LSTM model created with 64 filters, 50 LSTM units, dropout rate 0.3, and learning rate 0.001
+2024-09-06 23:13:08,228 - INFO - CNN-LSTM model and history saved for fold 2 of combined
+2024-09-06 23:13:09,055 - INFO - Confusion Matrix for combined, Fold 2:
+[[2205   70]
+ [   0 2276]]
+2024-09-06 23:13:09,055 - INFO - F1-Score for combined, Fold 2: 0.9848550411077456
+2024-09-06 23:13:09,056 - INFO - Precision-Recall AUC for combined, Fold 2: 0.9938431911709226
+2024-09-06 23:13:09,056 - INFO - Training on fold 3/5 for combined...
+2024-09-06 23:13:09,135 - INFO - CNN-LSTM model created with 64 filters, 50 LSTM units, dropout rate 0.3, and learning rate 0.001
+2024-09-06 23:13:55,473 - INFO - CNN-LSTM model and history saved for fold 3 of combined
+2024-09-06 23:13:56,335 - INFO - Confusion Matrix for combined, Fold 3:
+[[2221   54]
+ [  26 2249]]
+2024-09-06 23:13:56,335 - INFO - F1-Score for combined, Fold 3: 0.9825251201397991
+2024-09-06 23:13:56,336 - INFO - Precision-Recall AUC for combined, Fold 3: 0.9958554502866168
+2024-09-06 23:13:56,336 - INFO - Training on fold 4/5 for combined...
+2024-09-06 23:13:56,412 - INFO - CNN-LSTM model created with 64 filters, 50 LSTM units, dropout rate 0.3, and learning rate 0.001
+2024-09-06 23:14:43,537 - INFO - CNN-LSTM model and history saved for fold 4 of combined
+2024-09-06 23:14:44,350 - INFO - Confusion Matrix for combined, Fold 4:
+[[2201   74]
+ [  15 2260]]
+2024-09-06 23:14:44,350 - INFO - F1-Score for combined, Fold 4: 0.9806899544369712
+2024-09-06 23:14:44,351 - INFO - Precision-Recall AUC for combined, Fold 4: 0.9964081101697482
+2024-09-06 23:14:44,351 - INFO - Training on fold 5/5 for combined...
+2024-09-06 23:14:44,427 - INFO - CNN-LSTM model created with 64 filters, 50 LSTM units, dropout rate 0.3, and learning rate 0.001
+2024-09-06 23:15:28,781 - INFO - CNN-LSTM model and history saved for fold 5 of combined
+2024-09-06 23:15:29,607 - INFO - Confusion Matrix for combined, Fold 5:
+[[2189   86]
+ [  13 2262]]
+2024-09-06 23:15:29,607 - INFO - F1-Score for combined, Fold 5: 0.9785853341985724
+2024-09-06 23:15:29,608 - INFO - Precision-Recall AUC for combined, Fold 5: 0.9960562791496071
+2024-09-06 23:15:29,609 - INFO - Average AUC across folds for combined: 0.9967061161994935
+2024-09-06 23:15:29,609 - INFO - Average F1-Score across folds for combined: 0.9811164473522422
+2024-09-06 23:15:29,609 - INFO - Average Precision-Recall AUC across folds for combined: 0.9956431581425627
+2024-09-06 23:15:29,609 - INFO - Model performance for combined is satisfactory.
+2024-09-06 23:15:29,610 - INFO - Processing database: real
+2024-09-06 23:15:29,624 - INFO - Loaded X shape: (6925, 1, 30)
+2024-09-06 23:15:29,634 - INFO - Training on fold 1/5 for real...
+2024-09-06 23:15:29,705 - INFO - CNN-LSTM model created with 64 filters, 50 LSTM units, dropout rate 0.3, and learning rate 0.001
+2024-09-06 23:15:58,675 - INFO - CNN-LSTM model and history saved for fold 1 of real
+2024-09-06 23:15:59,402 - INFO - Confusion Matrix for real, Fold 1:
+[[1303   44]
+ [   0 1347]]
+2024-09-06 23:15:59,402 - INFO - F1-Score for real, Fold 1: 0.9839298758217677
+2024-09-06 23:15:59,403 - INFO - Precision-Recall AUC for real, Fold 1: 0.9944892720616896
+2024-09-06 23:15:59,403 - INFO - Training on fold 2/5 for real...
+2024-09-06 23:15:59,483 - INFO - CNN-LSTM model created with 64 filters, 50 LSTM units, dropout rate 0.3, and learning rate 0.001
+2024-09-06 23:16:29,316 - INFO - CNN-LSTM model and history saved for fold 2 of real
+2024-09-06 23:16:30,033 - INFO - Confusion Matrix for real, Fold 2:
+[[1294   53]
+ [   0 1346]]
+2024-09-06 23:16:30,033 - INFO - F1-Score for real, Fold 2: 0.9806921675774135
+2024-09-06 23:16:30,035 - INFO - Precision-Recall AUC for real, Fold 2: 0.9934583649969195
+2024-09-06 23:16:30,035 - INFO - Training on fold 3/5 for real...
+2024-09-06 23:16:30,111 - INFO - CNN-LSTM model created with 64 filters, 50 LSTM units, dropout rate 0.3, and learning rate 0.001
+2024-09-06 23:17:00,160 - INFO - CNN-LSTM model and history saved for fold 3 of real
+2024-09-06 23:17:00,875 - INFO - Confusion Matrix for real, Fold 3:
+[[1317   30]
+ [   0 1346]]
+2024-09-06 23:17:00,875 - INFO - F1-Score for real, Fold 3: 0.9889786921381337
+2024-09-06 23:17:00,876 - INFO - Precision-Recall AUC for real, Fold 3: 0.9963313446363177
+2024-09-06 23:17:00,876 - INFO - Training on fold 4/5 for real...
+2024-09-06 23:17:00,954 - INFO - CNN-LSTM model created with 64 filters, 50 LSTM units, dropout rate 0.3, and learning rate 0.001
+2024-09-06 23:17:32,117 - INFO - CNN-LSTM model and history saved for fold 4 of real
+2024-09-06 23:17:32,849 - INFO - Confusion Matrix for real, Fold 4:
+[[1319   27]
+ [   0 1347]]
+2024-09-06 23:17:32,849 - INFO - F1-Score for real, Fold 4: 0.9900771775082691
+2024-09-06 23:17:32,850 - INFO - Precision-Recall AUC for real, Fold 4: 0.9955286990322415
+2024-09-06 23:17:32,850 - INFO - Training on fold 5/5 for real...
+2024-09-06 23:17:32,925 - INFO - CNN-LSTM model created with 64 filters, 50 LSTM units, dropout rate 0.3, and learning rate 0.001
+2024-09-06 23:18:04,778 - INFO - CNN-LSTM model and history saved for fold 5 of real
+2024-09-06 23:18:05,509 - INFO - Confusion Matrix for real, Fold 5:
+[[1313   33]
+ [   0 1347]]
+2024-09-06 23:18:05,509 - INFO - F1-Score for real, Fold 5: 0.9878987898789879
+2024-09-06 23:18:05,510 - INFO - Precision-Recall AUC for real, Fold 5: 0.9953752533647542
+2024-09-06 23:18:05,510 - INFO - Average AUC across folds for real: 0.9967047214508057
+2024-09-06 23:18:05,510 - INFO - Average F1-Score across folds for real: 0.9863153405849143
+2024-09-06 23:18:05,510 - INFO - Average Precision-Recall AUC across folds for real: 0.9950365868183845
+2024-09-06 23:18:05,510 - INFO - Model performance for real is satisfactory.
+2024-09-07 11:26:06,254 - INFO - Processing database: simulation
+2024-09-07 11:26:06,268 - INFO - Loaded X shape: (4792, 1, 30)
+2024-09-07 11:26:06,287 - INFO - Training on fold 1/5 for simulation...
+2024-09-07 11:41:34,541 - INFO - Processing database: simulation
+2024-09-07 11:41:34,542 - INFO - Loaded X shape: (4792, 1, 30)
+2024-09-07 11:44:13,726 - INFO - Processing database: simulation
+2024-09-07 11:44:13,727 - INFO - Loaded X shape: (4792, 1, 30)
+2024-09-07 11:44:13,734 - INFO - Training on fold 1/5 for simulation...
+2024-09-07 11:47:48,350 - INFO - Processing database: simulation
+2024-09-07 11:47:48,352 - INFO - Loaded X shape: (4792, 1, 30)
+2024-09-07 11:47:48,358 - INFO - Training on fold 1/5 for simulation...
+2024-09-07 11:47:48,584 - INFO - CNN-LSTM model created with 64 filters, 50 LSTM units, dropout rate 0.3, learning rate 0.001, and kernel size 1
+2024-09-07 12:10:42,497 - INFO - Processing database: simulation
+2024-09-07 12:10:42,498 - INFO - Loaded X shape: (4792, 1, 30)
+2024-09-07 12:12:54,663 - INFO - Processing database: simulation
+2024-09-07 12:12:54,664 - INFO - Loaded X shape: (4792, 1, 30)
+2024-09-07 12:12:54,664 - INFO - Input data is already 3D: (4792, 1, 30)
+2024-09-07 12:12:54,671 - INFO - Training on fold 1/5 for simulation...
+2024-09-07 12:12:54,792 - INFO - CNN-LSTM model created with 64 filters, 50 LSTM units, dropout rate 0.3, learning rate 0.001, and kernel size 1
+2024-09-07 12:14:47,075 - INFO - Processing database: simulation
+2024-09-07 12:14:47,076 - INFO - Loaded X shape: (4792, 1, 30)
+2024-09-07 12:14:47,077 - INFO - Input data is already 3D: (4792, 1, 30)
+2024-09-07 12:14:47,084 - INFO - Training on fold 1/5 for simulation...
+2024-09-07 12:14:47,251 - INFO - CNN-LSTM model created with 64 filters, 50 LSTM units, dropout rate 0.3, learning rate 0.001, and kernel size 1
+2024-09-07 12:23:35,352 - INFO - Processing database: simulation
+2024-09-07 12:23:35,353 - INFO - Loaded X shape: (4792, 1, 30)
+2024-09-07 12:23:35,353 - INFO - Input data is already 3D: (4792, 1, 30)
+2024-09-07 12:23:35,360 - INFO - Training on fold 1/5 for simulation...
+2024-09-07 12:23:35,481 - INFO - CNN-LSTM model created with 64 filters, 50 LSTM units, dropout rate 0.3, learning rate 0.001, and kernel size 1
+2024-09-07 12:23:54,624 - INFO - CNN-LSTM model and history saved for fold 1 of simulation
+2024-09-07 12:23:55,239 - INFO - Confusion Matrix for simulation, Fold 1:
+[[904  25]
+ [  0 929]]
+2024-09-07 12:23:55,239 - INFO - F1-Score for simulation, Fold 1: 0.9867233138608603
+2024-09-07 12:23:55,243 - INFO - Precision-Recall AUC for simulation, Fold 1: 0.9979459238703858
+2024-09-07 12:23:55,243 - INFO - Training on fold 2/5 for simulation...
+2024-09-07 12:23:55,307 - INFO - CNN-LSTM model created with 64 filters, 50 LSTM units, dropout rate 0.3, learning rate 0.001, and kernel size 1
+2024-09-07 12:24:14,322 - INFO - CNN-LSTM model and history saved for fold 2 of simulation
+2024-09-07 12:24:14,978 - INFO - Confusion Matrix for simulation, Fold 2:
+[[909  20]
+ [  0 929]]
+2024-09-07 12:24:14,978 - INFO - F1-Score for simulation, Fold 2: 0.9893503727369543
+2024-09-07 12:24:14,979 - INFO - Precision-Recall AUC for simulation, Fold 2: 0.997344115003375
+2024-09-07 12:24:14,979 - INFO - Training on fold 3/5 for simulation...
+2024-09-07 12:24:15,244 - INFO - CNN-LSTM model created with 64 filters, 50 LSTM units, dropout rate 0.3, learning rate 0.001, and kernel size 1
+2024-09-07 12:24:34,648 - INFO - CNN-LSTM model and history saved for fold 3 of simulation
+2024-09-07 12:24:35,257 - INFO - Confusion Matrix for simulation, Fold 3:
+[[899  30]
+ [  0 929]]
+2024-09-07 12:24:35,257 - INFO - F1-Score for simulation, Fold 3: 0.9841101694915254
+2024-09-07 12:24:35,258 - INFO - Precision-Recall AUC for simulation, Fold 3: 0.9997059509572197
+2024-09-07 12:24:35,258 - INFO - Training on fold 4/5 for simulation...
+2024-09-07 12:24:35,322 - INFO - CNN-LSTM model created with 64 filters, 50 LSTM units, dropout rate 0.3, learning rate 0.001, and kernel size 1
+2024-09-07 12:24:53,918 - INFO - CNN-LSTM model and history saved for fold 4 of simulation
+2024-09-07 12:24:54,536 - INFO - Confusion Matrix for simulation, Fold 4:
+[[900  29]
+ [  0 929]]
+2024-09-07 12:24:54,536 - INFO - F1-Score for simulation, Fold 4: 0.9846316905140434
+2024-09-07 12:24:54,537 - INFO - Precision-Recall AUC for simulation, Fold 4: 0.9983375128195994
+2024-09-07 12:24:54,537 - INFO - Training on fold 5/5 for simulation...
+2024-09-07 12:24:54,596 - INFO - CNN-LSTM model created with 64 filters, 50 LSTM units, dropout rate 0.3, learning rate 0.001, and kernel size 1
+2024-09-07 12:25:14,143 - INFO - CNN-LSTM model and history saved for fold 5 of simulation
+2024-09-07 12:25:14,762 - INFO - Confusion Matrix for simulation, Fold 5:
+[[909  20]
+ [  0 929]]
+2024-09-07 12:25:14,762 - INFO - F1-Score for simulation, Fold 5: 0.9893503727369543
+2024-09-07 12:25:14,763 - INFO - Precision-Recall AUC for simulation, Fold 5: 0.9975810611637357
+2024-09-07 12:25:14,763 - INFO - Average AUC across folds for simulation: 0.9987417340278626
+2024-09-07 12:25:14,763 - INFO - Average F1-Score across folds for simulation: 0.9868331838680676
+2024-09-07 12:25:14,763 - INFO - Average Precision-Recall AUC across folds for simulation: 0.9981829127628632
+2024-09-07 12:25:14,764 - INFO - Model performance for simulation is satisfactory.
+2024-09-07 12:25:14,764 - INFO - Processing database: combined
+2024-09-07 12:25:14,789 - INFO - Loaded X shape: (11717, 1, 30)
+2024-09-07 12:25:14,789 - INFO - Input data is already 3D: (11717, 1, 30)
+2024-09-07 12:25:14,801 - INFO - Training on fold 1/5 for combined...
+2024-09-07 12:25:14,871 - INFO - CNN-LSTM model created with 64 filters, 50 LSTM units, dropout rate 0.3, learning rate 0.001, and kernel size 1
+2024-09-07 12:25:52,781 - INFO - CNN-LSTM model and history saved for fold 1 of combined
+2024-09-07 12:25:53,536 - INFO - Confusion Matrix for combined, Fold 1:
+[[2167  109]
+ [  25 2250]]
+2024-09-07 12:25:53,536 - INFO - F1-Score for combined, Fold 1: 0.9710832973672853
+2024-09-07 12:25:53,538 - INFO - Precision-Recall AUC for combined, Fold 1: 0.9948235274327142
+2024-09-07 12:25:53,538 - INFO - Training on fold 2/5 for combined...
+2024-09-07 12:25:53,602 - INFO - CNN-LSTM model created with 64 filters, 50 LSTM units, dropout rate 0.3, learning rate 0.001, and kernel size 1
+2024-09-07 12:26:31,479 - INFO - CNN-LSTM model and history saved for fold 2 of combined
+2024-09-07 12:26:32,236 - INFO - Confusion Matrix for combined, Fold 2:
+[[2194   81]
+ [   9 2267]]
+2024-09-07 12:26:32,236 - INFO - F1-Score for combined, Fold 2: 0.9805363321799307
+2024-09-07 12:26:32,237 - INFO - Precision-Recall AUC for combined, Fold 2: 0.9944029116507422
+2024-09-07 12:26:32,237 - INFO - Training on fold 3/5 for combined...
+2024-09-07 12:26:32,305 - INFO - CNN-LSTM model created with 64 filters, 50 LSTM units, dropout rate 0.3, learning rate 0.001, and kernel size 1
+2024-09-07 12:27:09,192 - INFO - CNN-LSTM model and history saved for fold 3 of combined
+2024-09-07 12:27:09,950 - INFO - Confusion Matrix for combined, Fold 3:
+[[2135  140]
+ [   3 2272]]
+2024-09-07 12:27:09,950 - INFO - F1-Score for combined, Fold 3: 0.9694900789417538
+2024-09-07 12:27:09,951 - INFO - Precision-Recall AUC for combined, Fold 3: 0.9908514322286917
+2024-09-07 12:27:09,952 - INFO - Training on fold 4/5 for combined...
+2024-09-07 12:27:10,014 - INFO - CNN-LSTM model created with 64 filters, 50 LSTM units, dropout rate 0.3, learning rate 0.001, and kernel size 1
+2024-09-07 12:27:51,142 - INFO - CNN-LSTM model and history saved for fold 4 of combined
+2024-09-07 12:27:51,910 - INFO - Confusion Matrix for combined, Fold 4:
+[[2186   89]
+ [  31 2244]]
+2024-09-07 12:27:51,910 - INFO - F1-Score for combined, Fold 4: 0.9739583333333334
+2024-09-07 12:27:51,911 - INFO - Precision-Recall AUC for combined, Fold 4: 0.9924241007039357
+2024-09-07 12:27:51,911 - INFO - Training on fold 5/5 for combined...
+2024-09-07 12:27:51,978 - INFO - CNN-LSTM model created with 64 filters, 50 LSTM units, dropout rate 0.3, learning rate 0.001, and kernel size 1
+2024-09-07 12:28:30,456 - INFO - CNN-LSTM model and history saved for fold 5 of combined
+2024-09-07 12:28:31,207 - INFO - Confusion Matrix for combined, Fold 5:
+[[2177   98]
+ [  39 2236]]
+2024-09-07 12:28:31,207 - INFO - F1-Score for combined, Fold 5: 0.9702755478411803
+2024-09-07 12:28:31,208 - INFO - Precision-Recall AUC for combined, Fold 5: 0.9905627107740065
+2024-09-07 12:28:31,208 - INFO - Average AUC across folds for combined: 0.9942431807518005
+2024-09-07 12:28:31,208 - INFO - Average F1-Score across folds for combined: 0.9730687179326967
+2024-09-07 12:28:31,208 - INFO - Average Precision-Recall AUC across folds for combined: 0.9926129365580181
+2024-09-07 12:28:31,209 - INFO - Model performance for combined is satisfactory.
+2024-09-07 12:28:31,209 - INFO - Processing database: real
+2024-09-07 12:28:31,243 - INFO - Loaded X shape: (6925, 1, 30)
+2024-09-07 12:28:31,243 - INFO - Input data is already 3D: (6925, 1, 30)
+2024-09-07 12:28:31,252 - INFO - Training on fold 1/5 for real...
+2024-09-07 12:28:31,321 - INFO - CNN-LSTM model created with 64 filters, 50 LSTM units, dropout rate 0.3, learning rate 0.001, and kernel size 1
+2024-09-07 12:28:56,042 - INFO - CNN-LSTM model and history saved for fold 1 of real
+2024-09-07 12:28:56,713 - INFO - Confusion Matrix for real, Fold 1:
+[[1283   64]
+ [   0 1347]]
+2024-09-07 12:28:56,713 - INFO - F1-Score for real, Fold 1: 0.9767947788252357
+2024-09-07 12:28:56,714 - INFO - Precision-Recall AUC for real, Fold 1: 0.994429286772081
+2024-09-07 12:28:56,714 - INFO - Training on fold 2/5 for real...
+2024-09-07 12:28:56,777 - INFO - CNN-LSTM model created with 64 filters, 50 LSTM units, dropout rate 0.3, learning rate 0.001, and kernel size 1
+2024-09-07 12:29:21,980 - INFO - CNN-LSTM model and history saved for fold 2 of real
+2024-09-07 12:29:22,667 - INFO - Confusion Matrix for real, Fold 2:
+[[1285   62]
+ [   4 1342]]
+2024-09-07 12:29:22,667 - INFO - F1-Score for real, Fold 2: 0.976
+2024-09-07 12:29:22,668 - INFO - Precision-Recall AUC for real, Fold 2: 0.9902069499166635
+2024-09-07 12:29:22,668 - INFO - Training on fold 3/5 for real...
+2024-09-07 12:29:22,731 - INFO - CNN-LSTM model created with 64 filters, 50 LSTM units, dropout rate 0.3, learning rate 0.001, and kernel size 1
+2024-09-07 12:29:47,436 - INFO - CNN-LSTM model and history saved for fold 3 of real
+2024-09-07 12:29:48,121 - INFO - Confusion Matrix for real, Fold 3:
+[[1275   72]
+ [   6 1340]]
+2024-09-07 12:29:48,121 - INFO - F1-Score for real, Fold 3: 0.971718636693256
+2024-09-07 12:29:48,122 - INFO - Precision-Recall AUC for real, Fold 3: 0.9929882439039299
+2024-09-07 12:29:48,122 - INFO - Training on fold 4/5 for real...
+2024-09-07 12:29:48,188 - INFO - CNN-LSTM model created with 64 filters, 50 LSTM units, dropout rate 0.3, learning rate 0.001, and kernel size 1
+2024-09-07 12:30:13,971 - INFO - CNN-LSTM model and history saved for fold 4 of real
+2024-09-07 12:30:14,634 - INFO - Confusion Matrix for real, Fold 4:
+[[1284   62]
+ [   0 1347]]
+2024-09-07 12:30:14,634 - INFO - F1-Score for real, Fold 4: 0.9775036284470247
+2024-09-07 12:30:14,635 - INFO - Precision-Recall AUC for real, Fold 4: 0.9954189792892358
+2024-09-07 12:30:14,635 - INFO - Training on fold 5/5 for real...
+2024-09-07 12:30:14,696 - INFO - CNN-LSTM model created with 64 filters, 50 LSTM units, dropout rate 0.3, learning rate 0.001, and kernel size 1
+2024-09-07 12:30:40,075 - INFO - CNN-LSTM model and history saved for fold 5 of real
+2024-09-07 12:30:40,767 - INFO - Confusion Matrix for real, Fold 5:
+[[1292   54]
+ [   0 1347]]
+2024-09-07 12:30:40,767 - INFO - F1-Score for real, Fold 5: 0.980349344978166
+2024-09-07 12:30:40,767 - INFO - Precision-Recall AUC for real, Fold 5: 0.9930000792792874
+2024-09-07 12:30:40,768 - INFO - Average AUC across folds for real: 0.9948736667633057
+2024-09-07 12:30:40,768 - INFO - Average F1-Score across folds for real: 0.9764732777887364
+2024-09-07 12:30:40,768 - INFO - Average Precision-Recall AUC across folds for real: 0.9932087078322395
+2024-09-07 12:30:40,768 - INFO - Model performance for real is satisfactory.
+2024-09-07 19:39:52,755 - INFO - Processing database: simulation
+2024-09-07 19:39:52,774 - INFO - Loaded X shape: (4792, 1, 30)
+2024-09-07 19:39:52,774 - INFO - Input data is already 3D: (4792, 1, 30)
+2024-09-07 19:39:52,952 - INFO - Training on fold 1/5 for simulation...
+2024-09-07 19:39:53,246 - INFO - CNN-LSTM model created with 64 filters, 50 LSTM units, dropout rate 0.3, learning rate 0.001, and kernel size 1
+2024-09-07 19:40:16,662 - INFO - CNN-LSTM model and history saved for fold 1 of simulation
+2024-09-07 19:40:17,423 - INFO - Confusion Matrix for simulation, Fold 1:
+[[897  32]
+ [  2 927]]
+2024-09-07 19:40:17,423 - INFO - F1-Score for simulation, Fold 1: 0.9819915254237288
+2024-09-07 19:40:17,427 - INFO - Precision-Recall AUC for simulation, Fold 1: 0.9965894854105094
+2024-09-07 19:40:17,427 - INFO - Training on fold 2/5 for simulation...
+2024-09-07 19:40:17,527 - INFO - CNN-LSTM model created with 64 filters, 50 LSTM units, dropout rate 0.3, learning rate 0.001, and kernel size 1
+2024-09-07 19:40:39,921 - INFO - CNN-LSTM model and history saved for fold 2 of simulation
+2024-09-07 19:40:40,626 - INFO - Confusion Matrix for simulation, Fold 2:
+[[906  23]
+ [  0 929]]
+2024-09-07 19:40:40,626 - INFO - F1-Score for simulation, Fold 2: 0.987772461456672
+2024-09-07 19:40:40,627 - INFO - Precision-Recall AUC for simulation, Fold 2: 0.999333465298058
+2024-09-07 19:40:40,627 - INFO - Training on fold 3/5 for simulation...
+2024-09-07 19:40:40,723 - INFO - CNN-LSTM model created with 64 filters, 50 LSTM units, dropout rate 0.3, learning rate 0.001, and kernel size 1
+2024-09-07 19:41:03,242 - INFO - CNN-LSTM model and history saved for fold 3 of simulation
+2024-09-07 19:41:03,939 - INFO - Confusion Matrix for simulation, Fold 3:
+[[896  33]
+ [  5 924]]
+2024-09-07 19:41:03,939 - INFO - F1-Score for simulation, Fold 3: 0.9798515376458112
+2024-09-07 19:41:03,940 - INFO - Precision-Recall AUC for simulation, Fold 3: 0.996104879363433
+2024-09-07 19:41:03,940 - INFO - Training on fold 4/5 for simulation...
+2024-09-07 19:41:04,037 - INFO - CNN-LSTM model created with 64 filters, 50 LSTM units, dropout rate 0.3, learning rate 0.001, and kernel size 1
+2024-09-07 19:41:28,612 - INFO - CNN-LSTM model and history saved for fold 4 of simulation
+2024-09-07 19:41:29,606 - INFO - Confusion Matrix for simulation, Fold 4:
+[[901  28]
+ [  2 927]]
+2024-09-07 19:41:29,607 - INFO - F1-Score for simulation, Fold 4: 0.9840764331210191
+2024-09-07 19:41:29,607 - INFO - Precision-Recall AUC for simulation, Fold 4: 0.9997483102224187
+2024-09-07 19:41:29,608 - INFO - Training on fold 5/5 for simulation...
+2024-09-07 19:41:29,718 - INFO - CNN-LSTM model created with 64 filters, 50 LSTM units, dropout rate 0.3, learning rate 0.001, and kernel size 1
+2024-09-07 19:41:54,122 - INFO - CNN-LSTM model and history saved for fold 5 of simulation
+2024-09-07 19:41:54,838 - INFO - Confusion Matrix for simulation, Fold 5:
+[[879  50]
+ [  1 928]]
+2024-09-07 19:41:54,839 - INFO - F1-Score for simulation, Fold 5: 0.9732564237021499
+2024-09-07 19:41:54,839 - INFO - Precision-Recall AUC for simulation, Fold 5: 0.9986302185265677
+2024-09-07 19:41:54,839 - INFO - Average AUC across folds for simulation: 0.9984957695007324
+2024-09-07 19:41:54,839 - INFO - Average F1-Score across folds for simulation: 0.9813896762698763
+2024-09-07 19:41:54,839 - INFO - Average Precision-Recall AUC across folds for simulation: 0.9980812717641973
+2024-09-07 19:41:54,839 - INFO - Processing database: combined
+2024-09-07 19:41:54,876 - INFO - Loaded X shape: (11717, 1, 30)
+2024-09-07 19:41:54,876 - INFO - Input data is already 3D: (11717, 1, 30)
+2024-09-07 19:41:54,893 - INFO - Training on fold 1/5 for combined...
+2024-09-07 19:41:54,999 - INFO - CNN-LSTM model created with 64 filters, 50 LSTM units, dropout rate 0.3, learning rate 0.001, and kernel size 1
+2024-09-07 19:42:43,006 - INFO - CNN-LSTM model and history saved for fold 1 of combined
+2024-09-07 19:42:43,983 - INFO - Confusion Matrix for combined, Fold 1:
+[[2146  130]
+ [  11 2264]]
+2024-09-07 19:42:43,983 - INFO - F1-Score for combined, Fold 1: 0.9698008138787749
+2024-09-07 19:42:43,984 - INFO - Precision-Recall AUC for combined, Fold 1: 0.9935904956221976
+2024-09-07 19:42:43,985 - INFO - Training on fold 2/5 for combined...
+2024-09-07 19:42:44,092 - INFO - CNN-LSTM model created with 64 filters, 50 LSTM units, dropout rate 0.3, learning rate 0.001, and kernel size 1
+2024-09-07 19:43:31,304 - INFO - CNN-LSTM model and history saved for fold 2 of combined
+2024-09-07 19:43:32,191 - INFO - Confusion Matrix for combined, Fold 2:
+[[2146  129]
+ [  14 2262]]
+2024-09-07 19:43:32,191 - INFO - F1-Score for combined, Fold 2: 0.9693593314763231
+2024-09-07 19:43:32,192 - INFO - Precision-Recall AUC for combined, Fold 2: 0.9910863330367895
+2024-09-07 19:43:32,192 - INFO - Training on fold 3/5 for combined...
+2024-09-07 19:43:32,295 - INFO - CNN-LSTM model created with 64 filters, 50 LSTM units, dropout rate 0.3, learning rate 0.001, and kernel size 1
+2024-09-07 19:44:18,938 - INFO - CNN-LSTM model and history saved for fold 3 of combined
+2024-09-07 19:44:19,805 - INFO - Confusion Matrix for combined, Fold 3:
+[[2136  139]
+ [  14 2261]]
+2024-09-07 19:44:19,805 - INFO - F1-Score for combined, Fold 3: 0.9672727272727273
+2024-09-07 19:44:19,806 - INFO - Precision-Recall AUC for combined, Fold 3: 0.9872226846809424
+2024-09-07 19:44:19,806 - INFO - Training on fold 4/5 for combined...
+2024-09-07 19:44:19,907 - INFO - CNN-LSTM model created with 64 filters, 50 LSTM units, dropout rate 0.3, learning rate 0.001, and kernel size 1
+2024-09-07 19:45:07,194 - INFO - CNN-LSTM model and history saved for fold 4 of combined
+2024-09-07 19:45:08,105 - INFO - Confusion Matrix for combined, Fold 4:
+[[2142  133]
+ [  19 2256]]
+2024-09-07 19:45:08,105 - INFO - F1-Score for combined, Fold 4: 0.967409948542024
+2024-09-07 19:45:08,107 - INFO - Precision-Recall AUC for combined, Fold 4: 0.9947607515691791
+2024-09-07 19:45:08,107 - INFO - Training on fold 5/5 for combined...
+2024-09-07 19:45:08,210 - INFO - CNN-LSTM model created with 64 filters, 50 LSTM units, dropout rate 0.3, learning rate 0.001, and kernel size 1
+2024-09-07 19:45:56,049 - INFO - CNN-LSTM model and history saved for fold 5 of combined
+2024-09-07 19:45:56,976 - INFO - Confusion Matrix for combined, Fold 5:
+[[2116  159]
+ [   5 2270]]
+2024-09-07 19:45:56,976 - INFO - F1-Score for combined, Fold 5: 0.9651360544217688
+2024-09-07 19:45:56,978 - INFO - Precision-Recall AUC for combined, Fold 5: 0.9912012820167392
+2024-09-07 19:45:56,978 - INFO - Average AUC across folds for combined: 0.9939265847206116
+2024-09-07 19:45:56,978 - INFO - Average F1-Score across folds for combined: 0.9677957751183236
+2024-09-07 19:45:56,978 - INFO - Average Precision-Recall AUC across folds for combined: 0.9915723093851696
+2024-09-07 19:45:56,979 - INFO - Processing database: real
+2024-09-07 19:45:57,009 - INFO - Loaded X shape: (6925, 1, 30)
+2024-09-07 19:45:57,010 - INFO - Input data is already 3D: (6925, 1, 30)
+2024-09-07 19:45:57,021 - INFO - Training on fold 1/5 for real...
+2024-09-07 19:45:57,122 - INFO - CNN-LSTM model created with 64 filters, 50 LSTM units, dropout rate 0.3, learning rate 0.001, and kernel size 1
+2024-09-07 19:46:28,941 - INFO - CNN-LSTM model and history saved for fold 1 of real
+2024-09-07 19:46:29,746 - INFO - Confusion Matrix for real, Fold 1:
+[[1267   80]
+ [  28 1319]]
+2024-09-07 19:46:29,746 - INFO - F1-Score for real, Fold 1: 0.9606700655498908
+2024-09-07 19:46:29,747 - INFO - Precision-Recall AUC for real, Fold 1: 0.9900475887176419
+2024-09-07 19:46:29,747 - INFO - Training on fold 2/5 for real...
+2024-09-07 19:46:29,864 - INFO - CNN-LSTM model created with 64 filters, 50 LSTM units, dropout rate 0.3, learning rate 0.001, and kernel size 1
+2024-09-07 19:47:00,867 - INFO - CNN-LSTM model and history saved for fold 2 of real
+2024-09-07 19:47:01,697 - INFO - Confusion Matrix for real, Fold 2:
+[[1276   71]
+ [  20 1326]]
+2024-09-07 19:47:01,697 - INFO - F1-Score for real, Fold 2: 0.966824644549763
+2024-09-07 19:47:01,698 - INFO - Precision-Recall AUC for real, Fold 2: 0.9877871576209205
+2024-09-07 19:47:01,698 - INFO - Training on fold 3/5 for real...
+2024-09-07 19:47:01,798 - INFO - CNN-LSTM model created with 64 filters, 50 LSTM units, dropout rate 0.3, learning rate 0.001, and kernel size 1
+2024-09-07 19:47:35,308 - INFO - CNN-LSTM model and history saved for fold 3 of real
+2024-09-07 19:47:36,503 - INFO - Confusion Matrix for real, Fold 3:
+[[1283   64]
+ [   5 1341]]
+2024-09-07 19:47:36,503 - INFO - F1-Score for real, Fold 3: 0.9749182115594329
+2024-09-07 19:47:36,504 - INFO - Precision-Recall AUC for real, Fold 3: 0.9935335140801566
+2024-09-07 19:47:36,504 - INFO - Training on fold 4/5 for real...
+2024-09-07 19:47:36,631 - INFO - CNN-LSTM model created with 64 filters, 50 LSTM units, dropout rate 0.3, learning rate 0.001, and kernel size 1
+2024-09-07 19:48:08,166 - INFO - CNN-LSTM model and history saved for fold 4 of real
+2024-09-07 19:48:08,969 - INFO - Confusion Matrix for real, Fold 4:
+[[1294   52]
+ [  11 1336]]
+2024-09-07 19:48:08,969 - INFO - F1-Score for real, Fold 4: 0.9769652650822669
+2024-09-07 19:48:08,970 - INFO - Precision-Recall AUC for real, Fold 4: 0.9941628344904155
+2024-09-07 19:48:08,970 - INFO - Training on fold 5/5 for real...
+2024-09-07 19:48:09,072 - INFO - CNN-LSTM model created with 64 filters, 50 LSTM units, dropout rate 0.3, learning rate 0.001, and kernel size 1
+2024-09-07 19:48:41,828 - INFO - CNN-LSTM model and history saved for fold 5 of real
+2024-09-07 19:48:42,644 - INFO - Confusion Matrix for real, Fold 5:
+[[1265   81]
+ [  10 1337]]
+2024-09-07 19:48:42,645 - INFO - F1-Score for real, Fold 5: 0.9670886075949368
+2024-09-07 19:48:42,646 - INFO - Precision-Recall AUC for real, Fold 5: 0.9939796512642298
+2024-09-07 19:48:42,646 - INFO - Average AUC across folds for real: 0.9935999751091004
+2024-09-07 19:48:42,646 - INFO - Average F1-Score across folds for real: 0.9692933588672581
+2024-09-07 19:48:42,646 - INFO - Average Precision-Recall AUC across folds for real: 0.9919021492346729
