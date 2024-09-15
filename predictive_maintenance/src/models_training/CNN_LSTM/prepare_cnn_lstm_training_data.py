@@ -11,7 +11,7 @@ logging.basicConfig(filename='../../../logs/data_preparation.log', level=logging
 logging.info('Starting data preparation for CNN-LSTM training')
 
 # Load the data
-data_path = '../../../data/simulation/simulate_processed_sensor_data_with_lags.csv'  # Assuming the combined data is used
+data_path = '../../../data/processed/combined_data.csv'  # Assuming the combined data is used
 data = pd.read_csv(data_path)
 logging.info(f'Data loaded from {data_path}, shape: {data.shape}')
 
@@ -68,10 +68,10 @@ logging.info(f'Data split into training and test sets: '
              f'Training set size: {X_train.shape[0]}, Test set size: {X_test.shape[0]}')
 
 # Save the prepared datasets
-np.save('../../../data/prepare_cnn_lstm_training_data/simulation_X_train.npy', X_train)
-np.save('../../../data/prepare_cnn_lstm_training_data/simulation_X_test.npy', X_test)
-np.save('../../../data/prepare_cnn_lstm_training_data/simulation_y_train.npy', y_train)
-np.save('../../../data/prepare_cnn_lstm_training_data/simulation_y_test.npy', y_test)
+np.save('../../../data/prepare_cnn_lstm_training_data/combined_X_train.npy', X_train)
+np.save('../../../data/prepare_cnn_lstm_training_data/combined_X_test.npy', X_test)
+np.save('../../../data/prepare_cnn_lstm_training_data/combined_y_train.npy', y_train)
+np.save('../../../data/prepare_cnn_lstm_training_data/combined_y_test.npy', y_test)
 
 logging.info('Prepared datasets saved to prepare_cnn_lstm_training_data directory.')
 logging.info('Data preparation for CNN-LSTM training completed successfully.')
