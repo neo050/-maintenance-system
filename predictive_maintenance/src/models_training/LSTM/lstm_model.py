@@ -13,7 +13,7 @@ from sklearn.utils import resample
 from sklearn.metrics import precision_recall_curve, auc, confusion_matrix, f1_score
 
 # Setup logging
-log_file_path = '../../../logs/model_training.log'
+log_file_path = '../../../logs/LSTM_training.log'
 os.makedirs(os.path.dirname(log_file_path), exist_ok=True)
 
 logging.basicConfig(level=logging.INFO,

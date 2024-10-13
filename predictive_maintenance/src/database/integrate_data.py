@@ -72,9 +72,9 @@ def integrate_data(real_data_path, simulated_data_path, output_path, db_config_p
 
 
 if __name__ == "__main__":
-    real_data_file = '../../data/processed/processed_data_with_lags.csv'
-    simulated_data_file = '../../data/simulation/simulate_processed_sensor_data_with_lags.csv'
-    output_file = '../../data/processed/combined_data.csv'
-    db_config_file = '../../config/database_config.yaml'
+    real_data_file = '../../../data/processed/processed_data_with_lags.csv'
+    simulated_data_file = '../../../data/simulation/simulate_processed_sensor_data_with_lags.csv'
+    output_file = '../../../data/processed/combined_data.csv'
+    db_config_file = '../../../config/database_config.yaml'
 
     integrate_data(real_data_file, simulated_data_file, output_file, db_config_file)

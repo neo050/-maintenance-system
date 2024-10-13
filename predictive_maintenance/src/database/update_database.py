@@ -46,7 +46,6 @@ def create_database(config):
             Column('PWF', Integer),
             Column('OSF', Integer),
             Column('RNF', Integer),
-            # Add other columns if needed
         )
 
         processed_data_table = Table(
@@ -68,7 +67,61 @@ def create_database(config):
             Column('RNF', Integer),
             Column('air_temp_diff', Float),
             Column('power', Float),
-            # Add other columns as needed
+
+            # Adding all lag and scaled columns
+            Column('log_Air_temperature_K', Float),
+            Column('log_Process_temperature_K', Float),
+            Column('log_Rotational_speed_rpm', Float),
+            Column('log_Torque_Nm', Float),
+            Column('log_Tool_wear_min', Float),
+
+            Column('scaled_Air_temperature_K', Float),
+            Column('scaled_Process_temperature_K', Float),
+            Column('scaled_Rotational_speed_rpm', Float),
+            Column('scaled_Torque_Nm', Float),
+            Column('scaled_Tool_wear_min', Float),
+
+            Column('lag_1', Float),
+            Column('lag_2', Float),
+            Column('lag_3', Float),
+            Column('lag_4', Float),
+            Column('lag_5', Float),
+
+            Column('scaled_Air_temperature_K_lag_1', Float),
+            Column('scaled_Process_temperature_K_lag_1', Float),
+            Column('scaled_Rotational_speed_rpm_lag_1', Float),
+            Column('scaled_Torque_Nm_lag_1', Float),
+            Column('scaled_Tool_wear_min_lag_1', Float),
+
+            Column('scaled_Air_temperature_K_lag_2', Float),
+            Column('scaled_Process_temperature_K_lag_2', Float),
+            Column('scaled_Rotational_speed_rpm_lag_2', Float),
+            Column('scaled_Torque_Nm_lag_2', Float),
+            Column('scaled_Tool_wear_min_lag_2', Float),
+
+            Column('scaled_Air_temperature_K_lag_3', Float),
+            Column('scaled_Process_temperature_K_lag_3', Float),
+            Column('scaled_Rotational_speed_rpm_lag_3', Float),
+            Column('scaled_Torque_Nm_lag_3', Float),
+            Column('scaled_Tool_wear_min_lag_3', Float),
+
+            Column('scaled_Air_temperature_K_lag_4', Float),
+            Column('scaled_Process_temperature_K_lag_4', Float),
+            Column('scaled_Rotational_speed_rpm_lag_4', Float),
+            Column('scaled_Torque_Nm_lag_4', Float),
+            Column('scaled_Tool_wear_min_lag_4', Float),
+
+            Column('scaled_Air_temperature_K_lag_5', Float),
+            Column('scaled_Process_temperature_K_lag_5', Float),
+            Column('scaled_Rotational_speed_rpm_lag_5', Float),
+            Column('scaled_Torque_Nm_lag_5', Float),
+            Column('scaled_Tool_wear_min_lag_5', Float),
+
+            Column('lag_1_lag_5', Float),
+            Column('lag_2_lag_5', Float),
+            Column('lag_3_lag_5', Float),
+            Column('lag_4_lag_5', Float),
+            Column('lag_5_lag_5', Float)
         )
 
         simulated_data_table = Table(
@@ -87,7 +140,66 @@ def create_database(config):
             Column('PWF', Integer),
             Column('OSF', Integer),
             Column('RNF', Integer),
-            # Add other columns as needed
+            Column('air_temp_diff', Float),
+            Column('power', Float),
+
+            # Log and scaled columns
+            Column('log_Air_temperature_K', Float),
+            Column('log_Process_temperature_K', Float),
+            Column('log_Rotational_speed_rpm', Float),
+            Column('log_Torque_Nm', Float),
+            Column('log_Tool_wear_min', Float),
+
+            Column('scaled_Air_temperature_K', Float),
+            Column('scaled_Process_temperature_K', Float),
+            Column('scaled_Rotational_speed_rpm', Float),
+            Column('scaled_Torque_Nm', Float),
+            Column('scaled_Tool_wear_min', Float),
+
+            # Lag columns
+            Column('lag_1', Float),
+            Column('lag_2', Float),
+            Column('lag_3', Float),
+            Column('lag_4', Float),
+            Column('lag_5', Float),
+
+            # Scaled lag columns
+            Column('scaled_Air_temperature_K_lag_1', Float),
+            Column('scaled_Process_temperature_K_lag_1', Float),
+            Column('scaled_Rotational_speed_rpm_lag_1', Float),
+            Column('scaled_Torque_Nm_lag_1', Float),
+            Column('scaled_Tool_wear_min_lag_1', Float),
+
+            Column('scaled_Air_temperature_K_lag_2', Float),
+            Column('scaled_Process_temperature_K_lag_2', Float),
+            Column('scaled_Rotational_speed_rpm_lag_2', Float),
+            Column('scaled_Torque_Nm_lag_2', Float),
+            Column('scaled_Tool_wear_min_lag_2', Float),
+
+            Column('scaled_Air_temperature_K_lag_3', Float),
+            Column('scaled_Process_temperature_K_lag_3', Float),
+            Column('scaled_Rotational_speed_rpm_lag_3', Float),
+            Column('scaled_Torque_Nm_lag_3', Float),
+            Column('scaled_Tool_wear_min_lag_3', Float),
+
+            Column('scaled_Air_temperature_K_lag_4', Float),
+            Column('scaled_Process_temperature_K_lag_4', Float),
+            Column('scaled_Rotational_speed_rpm_lag_4', Float),
+            Column('scaled_Torque_Nm_lag_4', Float),
+            Column('scaled_Tool_wear_min_lag_4', Float),
+
+            Column('scaled_Air_temperature_K_lag_5', Float),
+            Column('scaled_Process_temperature_K_lag_5', Float),
+            Column('scaled_Rotational_speed_rpm_lag_5', Float),
+            Column('scaled_Torque_Nm_lag_5', Float),
+            Column('scaled_Tool_wear_min_lag_5', Float),
+
+            # Further lag columns
+            Column('lag_1_lag_5', Float),
+            Column('lag_2_lag_5', Float),
+            Column('lag_3_lag_5', Float),
+            Column('lag_4_lag_5', Float),
+            Column('lag_5_lag_5', Float)
         )
 
         combined_data_table = Table(
@@ -109,7 +221,64 @@ def create_database(config):
             Column('RNF', Integer),
             Column('air_temp_diff', Float),
             Column('power', Float),
-            # Add other columns as needed
+
+            # Log and scaled columns
+            Column('log_Air_temperature_K', Float),
+            Column('log_Process_temperature_K', Float),
+            Column('log_Rotational_speed_rpm', Float),
+            Column('log_Torque_Nm', Float),
+            Column('log_Tool_wear_min', Float),
+
+            Column('scaled_Air_temperature_K', Float),
+            Column('scaled_Process_temperature_K', Float),
+            Column('scaled_Rotational_speed_rpm', Float),
+            Column('scaled_Torque_Nm', Float),
+            Column('scaled_Tool_wear_min', Float),
+
+            # Lag columns
+            Column('lag_1', Float),
+            Column('lag_2', Float),
+            Column('lag_3', Float),
+            Column('lag_4', Float),
+            Column('lag_5', Float),
+
+            # Scaled lag columns
+            Column('scaled_Air_temperature_K_lag_1', Float),
+            Column('scaled_Process_temperature_K_lag_1', Float),
+            Column('scaled_Rotational_speed_rpm_lag_1', Float),
+            Column('scaled_Torque_Nm_lag_1', Float),
+            Column('scaled_Tool_wear_min_lag_1', Float),
+
+            Column('scaled_Air_temperature_K_lag_2', Float),
+            Column('scaled_Process_temperature_K_lag_2', Float),
+            Column('scaled_Rotational_speed_rpm_lag_2', Float),
+            Column('scaled_Torque_Nm_lag_2', Float),
+            Column('scaled_Tool_wear_min_lag_2', Float),
+
+            Column('scaled_Air_temperature_K_lag_3', Float),
+            Column('scaled_Process_temperature_K_lag_3', Float),
+            Column('scaled_Rotational_speed_rpm_lag_3', Float),
+            Column('scaled_Torque_Nm_lag_3', Float),
+            Column('scaled_Tool_wear_min_lag_3', Float),
+
+            Column('scaled_Air_temperature_K_lag_4', Float),
+            Column('scaled_Process_temperature_K_lag_4', Float),
+            Column('scaled_Rotational_speed_rpm_lag_4', Float),
+            Column('scaled_Torque_Nm_lag_4', Float),
+            Column('scaled_Tool_wear_min_lag_4', Float),
+
+            Column('scaled_Air_temperature_K_lag_5', Float),
+            Column('scaled_Process_temperature_K_lag_5', Float),
+            Column('scaled_Rotational_speed_rpm_lag_5', Float),
+            Column('scaled_Torque_Nm_lag_5', Float),
+            Column('scaled_Tool_wear_min_lag_5', Float),
+
+            # Further lag columns
+            Column('lag_1_lag_5', Float),
+            Column('lag_2_lag_5', Float),
+            Column('lag_3_lag_5', Float),
+            Column('lag_4_lag_5', Float),
+            Column('lag_5_lag_5', Float)
         )
 
         metadata.create_all(engine)
@@ -136,21 +305,16 @@ if __name__ == "__main__":
 
     if engine is not None:
         # Load and save real data
-        real_data_file = '../../data/raw/sensor_data.csv'
+        real_data_file = '../../data/raw/ai4i2020.csv'
         real_data = pd.read_csv(real_data_file)
         save_to_database(engine, real_data, 'real_data')
 
-        # Load and save processed data
-        processed_data_file = '../../data/processed/processed_data_with_lags.csv'
-        processed_data = pd.read_csv(processed_data_file)
-        save_to_database(engine, processed_data, 'processed_data')
-
         # Load and save simulated data
-        simulated_data_file = '../../data/simulation/simulate_processed_sensor_data_with_lags.csv'
+        simulated_data_file = '../../data/simulation/synthetic_data.csv'
         simulated_data = pd.read_csv(simulated_data_file)
         save_to_database(engine, simulated_data, 'simulated_data')
 
         # Load and save combined data
-        combined_data_file = '../../data/processed/combined_data.csv'
+        combined_data_file = '../../data/combined/combined_data.csv'
         combined_data = pd.read_csv(combined_data_file)
         save_to_database(engine, combined_data, 'combined_data')

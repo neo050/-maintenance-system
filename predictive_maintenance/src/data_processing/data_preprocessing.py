@@ -3,6 +3,11 @@ import pandas as pd
 from sklearn.preprocessing import StandardScaler, MinMaxScaler, RobustScaler
 import numpy as np
 
+# Ensure this script can be imported without executing the main block
+if __name__ != "__main__":
+    # Existing function definitions...
+    # (No changes needed)
+    pass
 # Setup logging
 logging.basicConfig(level=logging.INFO, format='%(asctime)s - %(levelname)s - %(message)s')
 
@@ -130,7 +135,7 @@ def preprocess_data(file_path, output_path, feature_columns, lags=5):
         raise
 
 if __name__ == "__main__":
-    input_file = '../../data/raw/sensor_data.csv'
+    input_file = '../../data/raw/ai4i2020.csv'
     output_file = '../../data/processed/processed_data_with_lags.csv'
     feature_columns = ['Air temperature [K]', 'Process temperature [K]', 'Rotational speed [rpm]', 'Torque [Nm]', 'Tool wear [min]']
 
