@@ -71,9 +71,16 @@ def start_services(docker_compose_path, service_desc, logger, wait_time=20):
     except subprocess.CalledProcessError as e:
         logger.error(f"Failed to start {service_desc}: {e}")
         raise
+    except KeyboardInterrupt as e:
+        logger.error("An KeyboardInterrupt interrupt  while running processes.", exc_info=True)
+        sys.exit(0)
+
+    except Exception as e:
+        logger.error(f"An Exception interrupted  while running processes.{e}", exc_info=True)
+        raise
 
 def main():
-    logger = setup_logging()
+
 
     # Use the directory where run.py is located as the base directory
     base_dir = os.path.abspath(os.path.dirname(__file__))
@@ -203,4 +210,10 @@ def main():
     logger.info("Script completed successfully.")
 
 if __name__ == "__main__":
-    main()
+    logger = setup_logging()
+    try:
+        main()
+    except Exception as e:
+        logger.error(f"An Exception interrupted  while running processes.{e}", exc_info=True)
+
+

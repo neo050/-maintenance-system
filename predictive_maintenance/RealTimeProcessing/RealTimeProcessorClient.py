@@ -254,6 +254,24 @@ class RealTimeProcessor:
             self.logger.error("Type column is missing from the input data.")
             return None
 
+        # Validate data types for all required fields
+        expected_types = {
+            'Air temperature [K]': (int, float),
+            'Process temperature [K]': (int, float),
+            'Rotational speed [rpm]': (int, float),
+            'Torque [Nm]': (int, float),
+            'Tool wear [min]': (int, float),
+            'Type': str
+        }
+
+        for column, expected in expected_types.items():
+            if column not in df.columns:
+                self.logger.error(f"Missing required column: {column}")
+                return None
+            if not df[column].map(lambda x: isinstance(x, expected)).all():
+                self.logger.error(f"Invalid data type in column '{column}'. Expected types: {expected}")
+                return None
+
         # Encode 'Type' using the reconstructed mapping
         df['Type'] = df['Type'].map(self.type_mapping)
         if df['Type'].isnull().any():
@@ -272,24 +290,24 @@ class RealTimeProcessor:
 
         # Failure condition features
         df['TWF_condition'] = (
-            (df['Tool wear [min]'] >= 200) & (df['Tool wear [min]'] <= 240)
+                (df['Tool wear [min]'] >= 200) & (df['Tool wear [min]'] <= 240)
         ).astype(int)
         df['HDF_condition'] = (
-            (df['Temp_diff'] < 8.6) & (df['Rotational speed [rpm]'] < 1380)
+                (df['Temp_diff'] < 8.6) & (df['Rotational speed [rpm]'] < 1380)
         ).astype(int)
         df['PWF_condition'] = (
-            (df['Power'] < 3500) | (df['Power'] > 9000)
+                (df['Power'] < 3500) | (df['Power'] > 9000)
         ).astype(int)
         df['OSF_condition'] = (
-            df['Tool_Torque_Product'] > df['OSF_threshold']
+                df['Tool_Torque_Product'] > df['OSF_threshold']
         ).astype(int)
 
         # Aggregate failure risk
         df['Failure_Risk'] = (
-            df['TWF_condition'] |
-            df['HDF_condition'] |
-            df['PWF_condition'] |
-            df['OSF_condition']
+                df['TWF_condition'] |
+                df['HDF_condition'] |
+                df['PWF_condition'] |
+                df['OSF_condition']
         ).astype(int)
 
         # Log the features after engineering
@@ -356,6 +374,7 @@ class RealTimeProcessor:
         self.logger.error("Failed to connect Kafka producer after multiple attempts.")
         self.producer = None
 
+
     def process_messages(self):
         # Feature mapping for supervised models (temporary fix)
         feature_mapping = {
@@ -389,14 +408,14 @@ class RealTimeProcessor:
                     # Feature engineering
                     df = self.feature_engineering(df)
                     if df is None:
-                        self.logger.info("Skipping this record due to feature engineering error.")
+                        self.logger.error("Feature engineering failed. Skipping this record.")
                         continue  # Skip this message due to error
 
                     # Prepare data
                     df_processed = self.prepare_data(df)
                     if df_processed is None:
-                        self.logger.info("Skipping this record due to data preparation error.")
-                        continue
+                        self.logger.error("Data preparation failed. Skipping this record.")
+                        continue  # Skip this message due to error
 
                     predictions = []
 
@@ -549,14 +568,30 @@ class RealTimeProcessor:
             self.logger.error(f"Error in get message: {e}", exc_info=True)
         finally:
             self.cleanup()
-
     def cleanup(self):
-        if self.consumer is not None:
-            self.consumer.close()
-            self.logger.info("Kafka consumer closed.")
-        if self.producer is not None:
-            self.producer.close()
-            self.logger.info("Kafka producer closed.")
-        if self.engine is not None:
-            self.engine.dispose()
-            self.logger.info("Database engine disposed.")
+        try:
+            if self.consumer is not None:
+                self.consumer.close()
+                self.logger.info("Kafka consumer closed.")
+            if self.producer is not None:
+                self.producer.close()
+                self.logger.info("Kafka producer closed.")
+            if self.engine is not None:
+                self.engine.dispose()
+                self.logger.info("Database engine disposed.")
+
+        except Exception as e:
+            self.logger.error(f"Error while cleanup RealTimeProcessorClient : {e}")
+
+        try:
+            # Close and remove all handlers associated with the logger
+            handlers = self.logger.handlers[:]
+            for handler in handlers:
+                handler.close()
+                self.logger.removeHandler(handler)
+                self.logger.debug(f"Closed and removed handler: {handler}")
+
+            self.logger.info("RealTimeProcessorClient has been shut down.")
+        except Exception as e:
+            print(f"Error while closing logger: {e}")
+

@@ -1,3 +1,4 @@
+#. tests/integration_test.py
 import subprocess
 import unittest
 import threading
@@ -50,6 +51,7 @@ class TestIntegrationPipeline(unittest.TestCase):
             subprocess.run(['docker-compose', '-f', docker_compose_path, 'up', '-d'], check=True)
             cls.logger.info("Kafka cluster started successfully.")
             # Wait for Kafka to be ready
+            time.sleep(20)  # Wait to ensure Kafka is ready
         except subprocess.CalledProcessError as e:
             cls.logger.error(f"Failed to start Kafka cluster: {e}")
             raise
@@ -79,26 +81,47 @@ class TestIntegrationPipeline(unittest.TestCase):
     def setUp(self):
         self.logger.info("Setting up test environment...")
 
+        # Set up Kafka bootstrap servers
         bootstrap_servers = self.kafka_config.get('bootstrap_servers', ['localhost:9092'])
+
+        # Initialize and configure the SensorDataSimulator
         self.simulator = SensorDataSimulator(
             bootstrap_servers=bootstrap_servers,
             kafka_topics=["sensor-data", "failure_predictions"]
         )
+        # Reduce samples and speed up intervals for faster testing
         self.simulator.num_samples = 5
         self.simulator.sleep_interval = 0.5
 
+        # Initialize RealTimeProcessor
         models_dir = os.path.join(self.project_root, 'models')
         config_file = os.path.join(self.project_root, 'config', 'database_config.yaml')
         self.processor = RealTimeProcessor(models_dir=models_dir, config_file=config_file, bootstrap_servers=bootstrap_servers)
 
+        # Shutdown event for the OpenMaint consumer
         self.shutdown_event = threading.Event()
 
+        # Start the OpenMaint consumer in a separate thread
+        self.consumer_thread = threading.Thread(
+            target=openmaint_consumer_main,
+            args=(self.shutdown_event,),
+            daemon=True,
+            name="OpenMaintConsumerThread"
+        )
+        self.consumer_thread.start()
+        self.logger.info("OpenMaint consumer started.")
+
+        time.sleep(40)
+        # Start SensorDataSimulator in a separate thread
         self.simulator_thread = threading.Thread(
             target=self.simulator.start_simulation,
             daemon=True,
             name="SensorDataSimulatorThread"
         )
+        self.simulator_thread.start()
+        self.logger.info("SensorDataSimulator started.")
 
+        # Start RealTimeProcessor in a separate thread
         self.processor_thread = threading.Thread(
             target=self.processor.process_messages,
             daemon=True,
@@ -108,15 +131,19 @@ class TestIntegrationPipeline(unittest.TestCase):
         self.logger.info("RealTimeProcessor started.")
 
 
+
     def tearDown(self):
         self.logger.info("Tearing down test environment...")
         try:
+            # Cleanup simulator
             if self.simulator:
                 self.simulator.cleanup()
 
+            # Cleanup processor
             if self.processor:
                 self.processor.cleanup()
 
+            # Signal the OpenMaint consumer to shut down
             if self.consumer_thread and self.consumer_thread.is_alive():
                 self.logger.info("Signaling OpenMaint consumer thread to shutdown.")
                 self.shutdown_event.set()
@@ -125,18 +152,28 @@ class TestIntegrationPipeline(unittest.TestCase):
                     self.logger.warning("OpenMaint consumer thread is still alive after timeout.")
                 else:
                     self.logger.info("OpenMaint consumer thread terminated successfully.")
+
         except Exception as e:
             self.logger.error(f"Error during teardown: {e}")
 
     def test_end_to_end_pipeline(self):
         """
         End-to-end integration test:
+        - SensorDataSimulator produces data to Kafka.
+        - RealTimeProcessor consumes 'sensor-data', generates predictions, and publishes to 'failure_predictions'.
+        - OpenMaint consumer consumes 'failure_predictions' and creates work orders in OpenMaint.
+        - Verify results in the database and 'failure_predictions' topic.
+        - Check OpenMaint integration if configured.
         """
 
         self.logger.info("Starting the end-to-end pipeline test...")
 
+        # Allow time for messages to flow through the entire pipeline
+        time.sleep(15)
 
+        self.logger.info("All components finished processing. Verifying pipeline results...")
 
+        # 1) Verify that predictions were saved to 'real_time_predictions' table in the database.
         db_url = self.database_config.get('database', {}).get('url')
         if db_url:
             try:
@@ -154,6 +191,7 @@ class TestIntegrationPipeline(unittest.TestCase):
         else:
             self.logger.warning("No database configured, skipping database verification.")
 
+        # 2) Verify that 'failure_predictions' topic received messages
         bootstrap_servers = self.kafka_config.get('bootstrap_servers', ['localhost:9092'])
         preds_received = self.check_kafka_topic_with_retries('failure_predictions', bootstrap_servers)
         self.assertTrue(
@@ -161,12 +199,14 @@ class TestIntegrationPipeline(unittest.TestCase):
             "No failure predictions found in 'failure_predictions' topic."
         )
 
+        # 3) Check OpenMaint integration if credentials and API URL are available
         api_url = self.openmaint_config.get('api_url')
         username = self.openmaint_config.get('username')
         password = self.openmaint_config.get('password')
         if api_url and username and password:
             try:
                 om_client = OpenMaintClient(api_url, username, password)
+                # For sanity check, we could attempt a simple retrieval (like get_all_employees)
                 om_client.logout()
             except Exception as e:
                 self.logger.warning(f"Could not verify OpenMAINT integration: {e}")
@@ -215,6 +255,7 @@ class TestIntegrationPipeline(unittest.TestCase):
 
         self.logger.error(f"No messages found in topic '{topic}' after {max_retries} attempts.")
         return False
+
 
 if __name__ == '__main__':
     unittest.main()

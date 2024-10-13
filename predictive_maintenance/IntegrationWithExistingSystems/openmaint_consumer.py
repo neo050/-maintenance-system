@@ -275,4 +275,18 @@ if __name__ == "__main__":
     except Exception as e:
         logger.error(f"An error occurred in OpenMaint consumer: {e}", exc_info=True)
     finally:
-        logger.info("OpenMaint consumer has been terminated.")
+
+        try:
+            # Close and remove all handlers associated with the logger
+            handlers = logger.handlers[:]
+            for handler in handlers:
+                handler.close()
+                logger.removeHandler(handler)
+                logger.debug(f"Closed and removed handler: {handler}")
+
+                logger.info("OpenMaint consumer has been terminated.")
+        except Exception as e:
+            print(f"Error while closing logger: {e}")
+
+
+

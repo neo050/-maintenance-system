@@ -1,20 +1,30 @@
-# simulate_real_data_runner.py
-from SensorDataSimulatorClient import SensorDataSimulator
+# SensorDataSimulator.py
+
+import logging
+import subprocess
+import os
+import sys
+import time
+
+from RealTimeProcessing.SensorDataSimulatorClient import SensorDataSimulator
 
 def main():
-    # Specify the path to your Kafka installation directory
-    kafka_dir = r"C:\kafka\kafka_2.13-3.7.0"
-
-    # Instantiate the simulator
-    simulator = SensorDataSimulator(kafka_dir=kafka_dir)
-
-    # Start the simulation
+    simulator = None
     try:
-        simulator.start_simulation()
+        simulator = SensorDataSimulator()
+        simulator.start_simulation()  # Assuming this method starts the simulation
     except Exception as e:
-        simulator.logger.error(f"Simulation encountered an error: {e}")
+        if simulator:
+            simulator.logger.error(f"Simulation encountered an error: {e} end of simulation")
+            simulator.cleanup()
+        else:
+            # Initialize a temporary logger
+            logging.basicConfig(level=logging.ERROR)
+            temp_logger = logging.getLogger(__name__)
+            temp_logger.error(f"Simulation encountered an error before simulator initialization: {e}")
     finally:
-        simulator.cleanup()
+        if simulator:
+            simulator.cleanup()
 
 if __name__ == "__main__":
     main()
