@@ -1,8 +1,8 @@
 Important_questions_and_key_points_related_to_the_final_project_and_(GPT).txt
 .venv/
-../.idea
-config/
+../.idea/
+config
 ../maintenance_env/
 logs/
-.idea
+.idea/
 directory_structure.txt
