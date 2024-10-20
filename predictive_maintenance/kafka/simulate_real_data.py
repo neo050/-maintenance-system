@@ -254,40 +254,54 @@ def main():
     bootstrap_servers = ['127.0.0.1:9092']
     producer = create_producer(bootstrap_servers)
 
-    # Simulate sensor data
-    num_samples = 100  # Adjust the number of samples as needed
-    simulated_data = simulate_sensor_data(num_samples)
 
-    # Send data to Kafka
-    for index, row in simulated_data.iterrows():
-        data = {
-            'Air temperature [K]': row['Air temperature [K]'],
-            'Process temperature [K]': row['Process temperature [K]'],
-            'Rotational speed [rpm]': row['Rotational speed [rpm]'],
-            'Torque [Nm]': row['Torque [Nm]'],
-            'Tool wear [min]': row['Tool wear [min]'],
-            'Type': row['Type'],  # Ensure 'Type' is included
-            'UDI': row["UDI"],
-            'Product ID': row["Product ID"],
-            'Machine failure': row['Machine failure'],
-            'TWF': row['TWF'],
-            'HDF': row['HDF'],
-            'PWF': row['PWF'],
-            'OSF': row['OSF'],
-            'RNF': row['RNF']
-        } 
-        send_data(producer, topic, data)
-        time.sleep(1.5)  # Adjust the sleep time as needed
+    try:
+        # Simulate sensor data
+        num_samples = 100  # Adjust the number of samples as needed
+        simulated_data = simulate_sensor_data(num_samples)
 
-    # Optional: Terminate Zookeeper and Kafka processes after data is sent
-    logger.info("Shutting down Kafka broker and Zookeeper...")
-    if kafka_process:
-        kafka_process.terminate()
-        kafka_process.wait()
-    if zookeeper_process:
-        zookeeper_process.terminate()
-        zookeeper_process.wait()
-    logger.info("Kafka broker and Zookeeper have been shut down.")
+        # Send data to Kafka
+        for index, row in simulated_data.iterrows():
+            data = {
+                'Air temperature [K]': row['Air temperature [K]'],
+                'Process temperature [K]': row['Process temperature [K]'],
+                'Rotational speed [rpm]': row['Rotational speed [rpm]'],
+                'Torque [Nm]': row['Torque [Nm]'],
+                'Tool wear [min]': row['Tool wear [min]'],
+                'Type': row['Type'],
+                'UDI': row["UDI"],
+                'Product ID': row["Product ID"],
+                'Machine failure': row['Machine failure'],
+                'TWF': row['TWF'],
+                'HDF': row['HDF'],
+                'PWF': row['PWF'],
+                'OSF': row['OSF'],
+                'RNF': row['RNF']
+            }
+            send_data(producer, topic, data)
+            time.sleep(1.5)  # Adjust the sleep time as needed
+
+    except KeyboardInterrupt:
+        logger.info("KeyboardInterrupt received. Exiting gracefully.")
+
+    except Exception as e:
+        logger.error(f"An unexpected error occurred: {e}")
+
+    finally:
+        # Close the Kafka producer
+        if producer:
+            logger.info("Closing the Kafka producer.")
+            producer.close()
+
+        # Shutdown Kafka and Zookeeper
+        logger.info("Shutting down Kafka broker and Zookeeper...")
+        if kafka_process:
+            kafka_process.terminate()
+            kafka_process.wait()
+        if zookeeper_process:
+            zookeeper_process.terminate()
+            zookeeper_process.wait()
+        logger.info("Kafka broker and Zookeeper have been shut down.")
 
 if __name__ == "__main__":
     main()
