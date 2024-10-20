@@ -7,6 +7,8 @@ import logging
 import json
 from kafka import KafkaProducer
 import sys
+import socket
+import time
 
 # Remove any existing handlers
 for handler in logging.root.handlers[:]:
@@ -37,41 +39,75 @@ stream_handler.setFormatter(formatter)
 logger.addHandler(file_handler)
 logger.addHandler(stream_handler)
 
-def is_process_running(process_name):
+def is_port_in_use(port):
     """Check if a process with the given name is running."""
     try:
-        result = subprocess.run(['tasklist'], stdout=subprocess.PIPE, text=True)
-        return process_name.lower() in result.stdout.lower()
+        with socket.socket(socket.AF_INET, socket.SOCK_STREAM) as s:
+            return s.connect_ex(('localhost', port)) == 0
     except Exception as e:
         logger.error(f"Error checking for running processes: {e}")
         return False
 
+def wait_for_zookeeper_ready(timeout=60):
+
+    start_time = time.time()
+    while time.time() - start_time < timeout:
+        try:
+            with socket.create_connection(('localhost', 2181), timeout=5):
+                logger.info("Zookeeper is ready.")
+                return True
+        except Exception:
+            logger.info("Waiting for Zookeeper to be ready...")
+            time.sleep(5)
+    logger.error("Zookeeper did not become ready in time.")
+    return False
+
 def start_zookeeper(kafka_dir):
     try:
-        if is_process_running('zookeeper'):
+        if is_port_in_use(2181):
             logger.info("Zookeeper is already running.")
+            if not wait_for_zookeeper_ready():
+                raise Exception("Zookeeper is not ready.")
             return None
         logger.info("Starting Zookeeper...")
         zookeeper_cmd = os.path.join(kafka_dir, 'bin', 'windows', 'zookeeper-server-start.bat')
         zookeeper_config = os.path.join(kafka_dir, 'config', 'zookeeper.properties')
         zookeeper_process = subprocess.Popen(f'"{zookeeper_cmd}" "{zookeeper_config}"', shell=True)
-        time.sleep(15)  # Wait for Zookeeper to start
+        if not wait_for_zookeeper_ready():
+            raise Exception("Zookeeper did not start in time.")
         logger.info("Zookeeper started.")
         return zookeeper_process
     except Exception as e:
         logger.error(f"Failed to start Zookeeper: {e}")
         raise
+def wait_for_kafka_ready(timeout=60):
+
+
+    start_time = time.time()
+    while time.time() - start_time < timeout:
+        try:
+            with socket.create_connection(('localhost', 9092), timeout=5):
+                logger.info("Kafka broker is ready.")
+                return True
+        except Exception:
+            logger.info("Waiting for Kafka broker to be ready...")
+            time.sleep(5)
+    logger.error("Kafka broker did not become ready in time.")
+    return False
 
 def start_kafka_broker(kafka_dir):
     try:
-        if is_process_running('kafka'):
+        if is_port_in_use(9092):
             logger.info("Kafka broker is already running.")
+            if not wait_for_kafka_ready():
+                raise Exception("Kafka broker is not ready.")
             return None
         logger.info("Starting Kafka broker...")
         kafka_cmd = os.path.join(kafka_dir, 'bin', 'windows', 'kafka-server-start.bat')
         kafka_config = os.path.join(kafka_dir, 'config', 'server.properties')
         kafka_process = subprocess.Popen(f'"{kafka_cmd}" "{kafka_config}"', shell=True)
-        time.sleep(15)  # Wait for Kafka broker to start
+        if not wait_for_kafka_ready():
+            raise Exception("Kafka broker did not start in time.")
         logger.info("Kafka broker started.")
         return kafka_process
     except Exception as e:
@@ -101,6 +137,7 @@ def create_producer(bootstrap_servers):
     try:
         producer = KafkaProducer(
             bootstrap_servers=bootstrap_servers,
+            api_version=(3, 7, 0),
             value_serializer=lambda x: json.dumps(x).encode('utf-8')
         )
         logger.info("Kafka producer created.")
@@ -218,7 +255,7 @@ def main():
     producer = create_producer(bootstrap_servers)
 
     # Simulate sensor data
-    num_samples = 6  # Adjust the number of samples as needed
+    num_samples = 100  # Adjust the number of samples as needed
     simulated_data = simulate_sensor_data(num_samples)
 
     # Send data to Kafka
@@ -240,7 +277,7 @@ def main():
             'RNF': row['RNF']
         } 
         send_data(producer, topic, data)
-        time.sleep(5)  # Adjust the sleep time as needed
+        time.sleep(1.5)  # Adjust the sleep time as needed
 
     # Optional: Terminate Zookeeper and Kafka processes after data is sent
     logger.info("Shutting down Kafka broker and Zookeeper...")
