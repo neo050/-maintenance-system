@@ -5,7 +5,7 @@ import plotly.graph_objs as go
 import pandas as pd
 
 # Load data for visualization
-data = pd.read_csv('../data/processed/processed_data_with_features.csv')
+data = pd.read_csv('../data/raw/ai4i2020.csv')
 
 app = dash.Dash(__name__)
 

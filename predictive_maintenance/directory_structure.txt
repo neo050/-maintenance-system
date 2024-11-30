@@ -18,6 +18,8 @@
             dashboard_config.json
             maintenance_dashboard.json
         data/
+            combined/
+                combined_data.csv
             datatests/
             prepare_anomaly_training_data/
                 combined_X_test.csv
@@ -59,424 +61,123 @@
                 simulate_y_test.npy
                 simulate_y_train.npy
             prepare_lstm_training_data/
-                combined_X_test.csv
-                combined_X_train.csv
-                combined_y_test.csv
-                combined_y_train.csv
-                processed_X_test.csv
-                processed_X_train.csv
-                processed_y_test.csv
-                processed_y_train.csv
-                simulation_X_test.csv
-                simulation_X_train.csv
-                simulation_y_test.csv
-                simulation_y_train.csv
+                combined_X_test.npy
+                combined_X_train.npy
+                combined_y_test.npy
+                combined_y_train.npy
             processed/
-                combined_data.csv
-                processed_data_with_lags.csv
             raw/
-                data_preview.csv
-                sensor_data.csv
+                ai4i2020.csv
             reports/
-                processed_data.csv
             simulation/
-                simulate_processed_sensor_data_with_lags.csv
+                synthetic_data.csv
             validation/
-                statistical_validation_results_updated.txt
         Documentation_of_processes_and_the_logic_behind_it_during_the_project/
-            Documentation_of_the_model_training_process/
+            Documentation_of_the_process/
+                Implement real-time monitoring alerts for anomalies and failures..docx
+                Real-Time Machine Failure Prediction and Sensor Data.docx
                 Training_the_models.docx
-        kafka/
-            kafka_consumer.py
-            kafka_producer.py
+        IntegrationWithExistingSystems/
+            setup_kafka.py
+            setup_postgresql.py
         logs/
             anomaly_detection_training.log
-            data_preparation.log
-            model_training.log
+            CNN_LSTM_training.log
+            CNN_training.log
+            kafka.log
+            LSTM_training.log
             preprocessing.log
-            training_simulated_data.log
+            real_time_processing.log
+            simulate_sensor_data.log
+            zookeeper.log
         models/
             anomaly_detection_model_combined/
-                anomaly_detection_model_combined_data_1.png
-                anomaly_detection_model_combined_data_2.png
-                anomaly_detection_model_combined_data_3.png
-                anomaly_detection_model_combined_data_4.png
-                anomaly_detection_model_combined_data_5.png
-                anomaly_detection_model_combined_data_history.csv
-                DBSCAN_fold_1_contamination_0.005.joblib
-                DBSCAN_fold_1_contamination_0.01.joblib
-                DBSCAN_fold_1_contamination_0.02.joblib
-                DBSCAN_fold_2_contamination_0.005.joblib
-                DBSCAN_fold_2_contamination_0.01.joblib
-                DBSCAN_fold_2_contamination_0.02.joblib
-                DBSCAN_fold_3_contamination_0.005.joblib
-                DBSCAN_fold_3_contamination_0.01.joblib
-                DBSCAN_fold_3_contamination_0.02.joblib
-                history_contamination_0.005.csv
-                history_contamination_0.01.csv
-                history_contamination_0.02.csv
-                IsolationForest_fold_1_contamination_0.005.joblib
-                IsolationForest_fold_1_contamination_0.01.joblib
-                IsolationForest_fold_1_contamination_0.02.joblib
-                IsolationForest_fold_2_contamination_0.005.joblib
-                IsolationForest_fold_2_contamination_0.01.joblib
-                IsolationForest_fold_2_contamination_0.02.joblib
-                IsolationForest_fold_3_contamination_0.005.joblib
-                IsolationForest_fold_3_contamination_0.01.joblib
-                IsolationForest_fold_3_contamination_0.02.joblib
-                LOF_fold_1_contamination_0.005.joblib
-                LOF_fold_1_contamination_0.01.joblib
-                LOF_fold_1_contamination_0.02.joblib
-                LOF_fold_2_contamination_0.005.joblib
-                LOF_fold_2_contamination_0.01.joblib
-                LOF_fold_2_contamination_0.02.joblib
-                LOF_fold_3_contamination_0.005.joblib
-                LOF_fold_3_contamination_0.01.joblib
-                LOF_fold_3_contamination_0.02.joblib
-                OneClassSVM_fold_1_contamination_0.005.joblib
-                OneClassSVM_fold_1_contamination_0.01.joblib
-                OneClassSVM_fold_1_contamination_0.02.joblib
-                OneClassSVM_fold_2_contamination_0.005.joblib
-                OneClassSVM_fold_2_contamination_0.01.joblib
-                OneClassSVM_fold_2_contamination_0.02.joblib
-                OneClassSVM_fold_3_contamination_0.005.joblib
-                OneClassSVM_fold_3_contamination_0.01.joblib
-                OneClassSVM_fold_3_contamination_0.02.joblib
-                RandomForest_fold_1_contamination_0.005.joblib
-                RandomForest_fold_1_contamination_0.01.joblib
-                RandomForest_fold_1_contamination_0.02.joblib
-                RandomForest_fold_2_contamination_0.005.joblib
-                RandomForest_fold_2_contamination_0.01.joblib
-                RandomForest_fold_2_contamination_0.02.joblib
-                RandomForest_fold_3_contamination_0.005.joblib
-                RandomForest_fold_3_contamination_0.01.joblib
-                RandomForest_fold_3_contamination_0.02.joblib
-            anomaly_detection_model_real/
-                anomaly_detection_model_real_data_1.png
-                anomaly_detection_model_real_data_2.png
-                anomaly_detection_model_real_data_3.png
-                anomaly_detection_model_real_data_4.png
-                anomaly_detection_model_real_data_5.png
-                anomaly_detection_model_real_data_history.csv
-                DBSCAN_fold_1_contamination_0.005.joblib
-                DBSCAN_fold_1_contamination_0.01.joblib
-                DBSCAN_fold_1_contamination_0.02.joblib
-                DBSCAN_fold_2_contamination_0.005.joblib
-                DBSCAN_fold_2_contamination_0.01.joblib
-                DBSCAN_fold_2_contamination_0.02.joblib
-                DBSCAN_fold_3_contamination_0.005.joblib
-                DBSCAN_fold_3_contamination_0.01.joblib
-                DBSCAN_fold_3_contamination_0.02.joblib
-                history_contamination_0.005.csv
-                history_contamination_0.01.csv
-                history_contamination_0.02.csv
-                IsolationForest_fold_1_contamination_0.005.joblib
-                IsolationForest_fold_1_contamination_0.01.joblib
-                IsolationForest_fold_1_contamination_0.02.joblib
-                IsolationForest_fold_2_contamination_0.005.joblib
-                IsolationForest_fold_2_contamination_0.01.joblib
-                IsolationForest_fold_2_contamination_0.02.joblib
-                IsolationForest_fold_3_contamination_0.005.joblib
-                IsolationForest_fold_3_contamination_0.01.joblib
-                IsolationForest_fold_3_contamination_0.02.joblib
-                LOF_fold_1_contamination_0.005.joblib
-                LOF_fold_1_contamination_0.01.joblib
-                LOF_fold_1_contamination_0.02.joblib
-                LOF_fold_2_contamination_0.005.joblib
-                LOF_fold_2_contamination_0.01.joblib
-                LOF_fold_2_contamination_0.02.joblib
-                LOF_fold_3_contamination_0.005.joblib
-                LOF_fold_3_contamination_0.01.joblib
-                LOF_fold_3_contamination_0.02.joblib
-                OneClassSVM_fold_1_contamination_0.005.joblib
-                OneClassSVM_fold_1_contamination_0.01.joblib
-                OneClassSVM_fold_1_contamination_0.02.joblib
-                OneClassSVM_fold_2_contamination_0.005.joblib
-                OneClassSVM_fold_2_contamination_0.01.joblib
-                OneClassSVM_fold_2_contamination_0.02.joblib
-                OneClassSVM_fold_3_contamination_0.005.joblib
-                OneClassSVM_fold_3_contamination_0.01.joblib
-                OneClassSVM_fold_3_contamination_0.02.joblib
-                RandomForest_fold_1_contamination_0.005.joblib
-                RandomForest_fold_1_contamination_0.01.joblib
-                RandomForest_fold_1_contamination_0.02.joblib
-                RandomForest_fold_2_contamination_0.005.joblib
-                RandomForest_fold_2_contamination_0.01.joblib
-                RandomForest_fold_2_contamination_0.02.joblib
-                RandomForest_fold_3_contamination_0.005.joblib
-                RandomForest_fold_3_contamination_0.01.joblib
-                RandomForest_fold_3_contamination_0.02.joblib
-            anomaly_detection_model_simulation/
-                anomaly_detection_model_simulation_data_1.png
-                anomaly_detection_model_simulation_data_2.png
-                anomaly_detection_model_simulation_data_3.png
-                anomaly_detection_model_simulation_data_4.png
-                anomaly_detection_model_simulation_data_5.png
-                anomaly_detection_model_simulation_data_history.csv
-                DBSCAN_fold_1_contamination_0.005.joblib
-                DBSCAN_fold_1_contamination_0.01.joblib
-                DBSCAN_fold_1_contamination_0.02.joblib
-                DBSCAN_fold_2_contamination_0.005.joblib
-                DBSCAN_fold_2_contamination_0.01.joblib
-                DBSCAN_fold_2_contamination_0.02.joblib
-                DBSCAN_fold_3_contamination_0.005.joblib
-                DBSCAN_fold_3_contamination_0.01.joblib
-                DBSCAN_fold_3_contamination_0.02.joblib
-                history_contamination_0.005.csv
-                history_contamination_0.01.csv
-                history_contamination_0.02.csv
-                IsolationForest_fold_1_contamination_0.005.joblib
-                IsolationForest_fold_1_contamination_0.01.joblib
-                IsolationForest_fold_1_contamination_0.02.joblib
-                IsolationForest_fold_2_contamination_0.005.joblib
-                IsolationForest_fold_2_contamination_0.01.joblib
-                IsolationForest_fold_2_contamination_0.02.joblib
-                IsolationForest_fold_3_contamination_0.005.joblib
-                IsolationForest_fold_3_contamination_0.01.joblib
-                IsolationForest_fold_3_contamination_0.02.joblib
-                LOF_fold_1_contamination_0.005.joblib
-                LOF_fold_1_contamination_0.01.joblib
-                LOF_fold_1_contamination_0.02.joblib
-                LOF_fold_2_contamination_0.005.joblib
-                LOF_fold_2_contamination_0.01.joblib
-                LOF_fold_2_contamination_0.02.joblib
-                LOF_fold_3_contamination_0.005.joblib
-                LOF_fold_3_contamination_0.01.joblib
-                LOF_fold_3_contamination_0.02.joblib
-                OneClassSVM_fold_1_contamination_0.005.joblib
-                OneClassSVM_fold_1_contamination_0.01.joblib
-                OneClassSVM_fold_1_contamination_0.02.joblib
-                OneClassSVM_fold_2_contamination_0.005.joblib
-                OneClassSVM_fold_2_contamination_0.01.joblib
-                OneClassSVM_fold_2_contamination_0.02.joblib
-                OneClassSVM_fold_3_contamination_0.005.joblib
-                OneClassSVM_fold_3_contamination_0.01.joblib
-                OneClassSVM_fold_3_contamination_0.02.joblib
-                RandomForest_fold_1_contamination_0.005.joblib
-                RandomForest_fold_1_contamination_0.01.joblib
-                RandomForest_fold_1_contamination_0.02.joblib
-                RandomForest_fold_2_contamination_0.005.joblib
-                RandomForest_fold_2_contamination_0.01.joblib
-                RandomForest_fold_2_contamination_0.02.joblib
-                RandomForest_fold_3_contamination_0.005.joblib
-                RandomForest_fold_3_contamination_0.01.joblib
-                RandomForest_fold_3_contamination_0.02.joblib
+                best_model.pkl
+                best_model_feature_importance.png
+                ensemble_model.pkl
+                feature_importance.png
+                optuna_study.pkl
+                scaler.pkl
+                selected_features.pkl
+                shap_summary_plot.png
             cnn_lstm_model_combined/
-                CNN-LSTM_Combined DATA Model Loss Across Folds.png
-                CNN-LSTM_Combined DATA Training Vs Validation Accuracy  Data Model.png
-                CNN-LSTM_Combined DATA_fold_1_history.csv
-                CNN-LSTM_Combined DATA_fold_2_history.csv
-                CNN-LSTM_Combined DATA_fold_3_history.csv
-                CNN-LSTM_Combined DATA_fold_4_history.csv
-                CNN-LSTM_Combined DATA_fold_5_history.csv
-                combined_fold_1.keras
-                combined_fold_2.keras
-                combined_fold_3.keras
-                combined_fold_4.keras
-                combined_fold_5.keras
-            cnn_lstm_model_real/
-                CNN-LSTM_Real  DATA Model Loss Across Folds.png
-                CNN-LSTM_Real  DATA Training Vs Validation Accuracy Model.png
-                CNN-LSTM_Real  DATA_fold_1_history.csv
-                CNN-LSTM_Real  DATA_fold_2_history.csv
-                CNN-LSTM_Real  DATA_fold_3_history.csv
-                CNN-LSTM_Real  DATA_fold_4_history.csv
-                CNN-LSTM_Real  DATA_fold_5_history.csv
-                real_fold_1.keras
-                real_fold_2.keras
-                real_fold_3.keras
-                real_fold_4.keras
-                real_fold_5.keras
-            cnn_lstm_model_simulation/
-                CNN-LSTM_simulation  DATA Training Vs Validation Accuracy Model.png
-                CNN-LSTM_simulation  DATA Training Vs Validation Loss Model.png
-                CNN-LSTM_simulation  DATA _fold_1_history.csv
-                CNN-LSTM_simulation  DATA_fold_2_history.csv
-                CNN-LSTM_simulation  DATA_fold_3_history.csv
-                CNN-LSTM_simulation  DATA_fold_4_history.csv
-                CNN-LSTM_simulation  DATA_fold_5_history.csv
-                simulation_fold_1.keras
-                simulation_fold_2.keras
-                simulation_fold_3.keras
-                simulation_fold_4.keras
-                simulation_fold_5.keras
+                cnn_lstm_fold_1.keras
+                cnn_lstm_fold_1_history.json
+                cnn_lstm_fold_2.keras
+                cnn_lstm_fold_2_history.json
+                cnn_lstm_fold_3.keras
+                cnn_lstm_fold_3_history.json
+                cnn_lstm_fold_4.keras
+                cnn_lstm_fold_4_history.json
+                cnn_lstm_fold_5.keras
+                cnn_lstm_fold_5_history.json
+                scaler_nn.pkl
+                training_validation_accuracy_loss_per_fold.png
             cnn_model_combined/
-                CNN_combined_DATA Final Model Loss Across Folds.png
-                CNN_combined_DATA Training Vs Validation Loss Across Folds.png
-                CNN_combined_DATA _Training Vs Validation Accuracy Across Folds.png
-                CNN_combined_DATA_fold_1_history.csv
-                CNN_combined_DATA_fold_2_history.csv
-                CNN_combined_DATA_fold_3_history.csv
-                CNN_combined_DATA_fold_4_history.csv
-                CNN_combined_DATA_fold_5_history.csv
                 combined_fold_1.keras
                 combined_fold_2.keras
                 combined_fold_3.keras
                 combined_fold_4.keras
                 combined_fold_5.keras
-            cnn_model_real/
-                CNN_real_DATA Final Model Loss Across Folds.png
-                CNN_real_DATA Training Vs Validation Accuracy Across Folds.png
-                CNN_real_DATA Training Vs Validation Loss Across Folds.png
-                CNN_real_DATA_fold_1_history.csv
-                CNN_real_DATA_fold_2_history.csv
-                CNN_real_DATA_fold_3_history.csv
-                CNN_real_DATA_fold_4_history.csv
-                CNN_real_DATA_fold_5_history.csv
-                real_fold_1.keras
-                real_fold_2.keras
-                real_fold_3.keras
-                real_fold_4.keras
-                real_fold_5.keras
-            cnn_model_simulation/
-                CNN_simulation_DATA Final Model Loss Across Folds.png
-                CNN_simulation_DATA Training Vs Validation Loss Across Folds.png
-                CNN_simulation_DATAT raining Vs Validation Accuracy Across Folds.png
-                CNN_simulation_DATA_fold_1_history.csv
-                CNN_simulation_DATA_fold_2_history.csv
-                CNN_simulation_DATA_fold_3_history.csv
-                CNN_simulation_DATA_fold_4_history.csv
-                CNN_simulation_DATA_fold_5_history.csv
-                simulation_fold_1.keras
-                simulation_fold_2.keras
-                simulation_fold_3.keras
-                simulation_fold_4.keras
-                simulation_fold_5.keras
+                history_fold_1.csv
+                history_fold_2.csv
+                history_fold_3.csv
+                history_fold_4.csv
+                history_fold_5.csv
+                plot_results.png
+                scaler_nn.pkl
             lstm_model_combined/
-                combined_fold_1.keras
-                combined_fold_2.keras
-                combined_fold_3.keras
-                combined_fold_4.keras
-                combined_fold_5.keras
-                LSTM_combined_DATA  Final Model Loss Across Folds.png
-                LSTM_combined_DATA  Training Vs Validation Accuracy Across Folds.png
-                LSTM_combined_DATA  Training Vs Validation Loss Across Folds.png
-                LSTM_combined_DATA _fold_1_history.csv
-                LSTM_combined_DATA_fold_2_history.csv
-                LSTM_combined_DATA_fold_3_history.csv
-                LSTM_combined_DATA_fold_4_history.csv
-                LSTM_combined_DATA_fold_5_history.csv
-            lstm_model_real/
-                LSTM_real_DATA  Final Model Loss Across Folds.png
-                LSTM_real_DATA Training Vs Validation Accuracy Across Folds.png
-                LSTM_real_DATA Training Vs Validation Loss Across Folds.png
-                LSTM_real_DATA_fold_1_history.csv
-                LSTM_real_DATA_fold_2_history.csv
-                LSTM_real_DATA_fold_3_history.csv
-                LSTM_real_DATA_fold_4_history.csv
-                LSTM_real_DATA_fold_5_history.csv
-                real_fold_1.keras
-                real_fold_2.keras
-                real_fold_3.keras
-                real_fold_4.keras
-                real_fold_5.keras
-            lstm_model_simulation/
-                LSTM_simulation_DATA Final Model Loss Across Folds.png
-                LSTM_simulation_DATA Training Vs Validation Accuracy Across Folds.png
-                LSTM_simulation_DATA Training Vs Validation Loss Across Folds.png
-                LSTM_simulation_DATA_fold_1_history.csv
-                LSTM_simulation_DATA_fold_2_history.csv
-                LSTM_simulation_DATA_fold_3_history.csv
-                LSTM_simulation_DATA_fold_4_history.csv
-                LSTM_simulation_DATA_fold_5_history.csv
-                simulation_fold_1.keras
-                simulation_fold_2.keras
-                simulation_fold_3.keras
-                simulation_fold_4.keras
-                simulation_fold_5.keras
-        models2/
-            Autoencoder model.keras
-            Autoencoder_model.keras
-            Autoencoder_model_history.csv
-            CNN model.keras
-            cnn_model.h5
-            CNN_model.keras
-            CNN_model_history.csv
-            hybrid_model.h5
-            IsolationForest_model.joblib
-            LSTM model.keras
-            lstm_model.h5
-            lstm_model.keras
-            LSTM_model_history.csv
+                history_fold_1.csv
+                history_fold_2.csv
+                history_fold_3.csv
+                history_fold_4.csv
+                history_fold_5.csv
+                model_fold_1.keras
+                model_fold_2.keras
+                model_fold_3.keras
+                model_fold_4.keras
+                model_fold_5.keras
+                plot_results.png
+                scaler_nn.pkl
         notebooks/
             data_analysis.ipynb
             model_training.ipynb
             visualization.ipynb
         Photos/
-            data_normalization_analysis/
-                Figure_1.png
-                Figure_2.png
-                Figure_3.png
-                Figure_4.png
-                Figure_5.png
-            data_review/
-                Figure_1.png
-                Figure_10.png
-                Figure_2.png
-                Figure_3.png
-                Figure_4.png
-                Figure_5.png
-                Figure_6.png
-                Figure_7.png
-                Figure_8.png
-                Figure_9.png
-            Simulated_sataVS_real_data/
-                Distribution of HDF.png
-                Distribution of Machine failure.png
-                Distribution of OSF.png
-                Distribution of Process temperature [K].png
-                Distribution of PWF.png
-                Distribution of RNF.png
-                Distribution of TWF.png
-                Distribution of Type.png
-                output (3).png
-                output (4).png
-                output (5).png
-                output (6).png
+        RealTimeProcessing/
+            check_trained_model_features.py
+            kafka_producer.py
+            real_time_processing.py
+            simulate_real_data.py
+            __pycache__/
+                kafka_producer.cpython-312.pyc
         requirements/
             literature_survey.pdf
             requirements.txt
             requirements_document.md
-        scripts/
-            KAFKA_SETUP.md
-            run_pipeline.py
-            setup_postgresql.py
         src/
-            __init__.py
             data/
                 VerifyData.py
             database/
                 integrate_data.py
                 update_database.py
                 verify_tables.py
-            data_processing/
-                data_normalization_analysis.py
-                data_preprocessing.py
-                diagnose.py
-                real_time_processing.py
-                __pycache__/
-                    data_preprocessing.cpython-312.pyc
             models_training/
-                autoencoder_model.py
-                model_selection.py
-                model_training.py
                 CNN/
                     cnn_model.py
-                    prepare_cnn_training_data.py
+                    prepare_and_training_cnn.py
                 CNN_LSTM/
                     cnn_lstm_model.py
-                    prepare_cnn_lstm_training_data.py
+                    prepare_and_training_cnn_lstm.py
                 ISOLATION_FOREST/
                     combined_CSV_file.py
                     isolation_forest_model.py
-                    prepare_isolation_forest_training_data.py
+                    prepare_and_training_isolation_forest.py
                 LSTM/
                     lstm_model.py
-                    prepare_lstm_training_data.py
+                    prepare_and_training_lstm.py
             simulate_data/
-                original_simulate_sensor_data.py
-                simulate_processed_sensor_data.py
-                SyntheticDatatest.py
+                synthetic_data.py
             statisticaltests/
                 statisticaltest.py
                 statistical_validation.py
@@ -490,7 +191,6 @@
                 visualization.py
             __pycache__/
                 model_selection.cpython-312.pyc
-                __init__.cpython-312.pyc
         tests/
             test_data_preprocessing.py
             test_model_training.py

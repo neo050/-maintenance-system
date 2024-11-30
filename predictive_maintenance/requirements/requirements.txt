@@ -5,3 +5,6 @@ tensorflow
 keras
 kafka-python
 matplotlib
+psycopg2-binary
+PyYAML
+kafka-python
