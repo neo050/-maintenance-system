@@ -1,21 +1,11 @@
 import os
 import sys
-import logging
-import json
 import yaml
-import requests
-import time
-import requests
-import json
 import logging
-from datetime import datetime
-from contextlib import contextmanager
-import urllib.parse
 from kafka import KafkaConsumer
 from OpenMaintClient import OpenMaintClient
 from datetime import datetime
 import json
-
 # Remove existing handlers
 for handler in logging.root.handlers[:]:
     logging.root.removeHandler(handler)

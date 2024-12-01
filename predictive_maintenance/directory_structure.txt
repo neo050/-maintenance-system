@@ -13,6 +13,7 @@
             grafana_config.yaml
             kafka_config.yaml
             model_config.yaml
+            openmaint_config.yaml
         dashboards/
             dashboard.py
             dashboard_config.json
@@ -21,6 +22,10 @@
             combined/
                 combined_data.csv
             datatests/
+            integration/
+                assets.csv
+                maintenance_records.csv
+                preventive_maintenance_records.csv
             prepare_anomaly_training_data/
                 combined_X_test.csv
                 combined_X_train.csv
@@ -75,19 +80,27 @@
         Documentation_of_processes_and_the_logic_behind_it_during_the_project/
             Documentation_of_the_process/
                 Implement real-time monitoring alerts for anomalies and failures..docx
+                Integration with Existing Systems.rtf
                 Real-Time Machine Failure Prediction and Sensor Data.docx
                 Training_the_models.docx
         IntegrationWithExistingSystems/
+            OpenMaintClient.py
+            openmaint_consumer.py
             setup_kafka.py
             setup_postgresql.py
+            __pycache__/
+                OpenMaintClient.cpython-312.pyc
         logs/
             anomaly_detection_training.log
             CNN_LSTM_training.log
             CNN_training.log
             kafka.log
             LSTM_training.log
+            OpenMaintClient.log
+            openmaint_consumer.log
             preprocessing.log
             real_time_processing.log
+            setup_postgresql.log
             simulate_sensor_data.log
             zookeeper.log
         models/
@@ -146,11 +159,13 @@
         Photos/
         RealTimeProcessing/
             check_trained_model_features.py
-            kafka_producer.py
-            real_time_processing.py
-            simulate_real_data.py
+            RealTimeProcessor.py
+            RealTimeProcessorClient.py
+            SensorDataSimulator.py
+            SensorDataSimulatorClient.py
             __pycache__/
-                kafka_producer.cpython-312.pyc
+                RealTimeProcessorClient.cpython-312.pyc
+                SensorDataSimulatorClient.cpython-312.pyc
         requirements/
             literature_survey.pdf
             requirements.txt
