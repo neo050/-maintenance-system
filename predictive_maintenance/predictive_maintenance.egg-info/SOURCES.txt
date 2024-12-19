@@ -1,0 +1,12 @@
+LICENSE
+README.md
+setup.py
+predictive_maintenance.egg-info/PKG-INFO
+predictive_maintenance.egg-info/SOURCES.txt
+predictive_maintenance.egg-info/dependency_links.txt
+predictive_maintenance.egg-info/top_level.txt
+tests/test_data_preprocessing.py
+tests/test_model_training.py
+tests/test_real_time_processing.py
+tests/test_sensor_data_simulator_client.py
+tests/test_visualization.py

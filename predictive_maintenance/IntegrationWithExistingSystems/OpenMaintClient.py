@@ -1,26 +1,50 @@
 #!/usr/bin/python3
 import os
+import subprocess
 import sys
+import time
 import requests
 import json
 import logging
 from datetime import datetime
 import urllib.parse
+from contextlib import contextmanager
 
 class OpenMaintClient:
-    def __init__(self, api_url, username, password, log_file_path='../logs/OpenMaintClient.log'):
-        self.api_url = api_url
-        self.username = username
-        self.password = password
-        self.session = None
+    def __init__(self, api_url, username, password, log_file_path=os.path.join(os.path.abspath(os.path.join(os.path.dirname(__file__), '..')),'logs','OpenMaintClient.log')):
         self.logger = self.setup_logger(log_file_path)
+        self.logger.info("Starting openMAINT cluster using Docker Compose...")
+        try:
+            # Path to your openMAINT Docker Compose file
+            base_dir = os.path.abspath(os.path.join(os.path.dirname(__file__), '..'))
+            docker_compose_path = os.path.join(base_dir,'IntegrationWithExistingSystems','openmaint-2.3-3.4.1-d', 'docker-compose.yml')
+            if not os.path.exists(docker_compose_path):
+                self.logger.error(f"Docker Compose file not found at: {docker_compose_path}")
+                raise FileNotFoundError(f"Docker Compose file not found at: {docker_compose_path}")
+
+            # Start openMAINT services
+            subprocess.run(['docker-compose', '-f', docker_compose_path, 'up', '-d'], check=True)
+            self.logger.info("openMAINT cluster started successfully.")
+
+            self.api_url = api_url
+            self.username = username
+            self.password = password
+            # Wait for openMAINT API to be ready
+            time.sleep(15)
+            self.wait_for_api(api_url)
+
+        except subprocess.CalledProcessError as e:
+            self.logger.error(f"Failed to start openMAINT cluster: {e}")
+            raise
+        except FileNotFoundError as e:
+            self.logger.error(str(e))
+            raise
+
+
+        self.session = None
         self.login()
 
     def setup_logger(self, log_file_path):
-        # Remove existing handlers
-        #for handler in logging.root.handlers[:]:
-            #logging.root.removeHandler(handler)
-
         # Create logger
         logger = logging.getLogger(__name__)
         logger.setLevel(logging.DEBUG)  # Capture all logs
@@ -47,35 +71,74 @@ class OpenMaintClient:
 
         return logger
 
+    def wait_for_api(self, api_url, max_retries=30, wait_interval=5):
+        """
+        Waits until the openMAINT API is responsive.
+
+        Args:
+            api_url (str): The base URL of the openMAINT API.
+            max_retries (int): Maximum number of retry attempts.
+            wait_interval (int): Seconds to wait between retries.
+
+        Raises:
+            ConnectionError: If the API is not responsive after max_retries.
+        """
+        self.logger.info(f"Checking if openMAINT API is ready at {api_url}...")
+        auth_url = f"{api_url}/sessions?scope=service&returnId=true"
+        payload = {'username': self.username, 'password': self.password}
+        headers = {'Content-Type': 'application/json', 'Accept': 'application/json'}
+
+        for attempt in range(1, max_retries + 1):
+            try:
+                response = requests.post(auth_url, json=payload, headers=headers, timeout=15)
+                if response.status_code == 200 and response.json().get("success"):
+                    self.logger.info("openMAINT API is up and running.")
+                    return
+                else:
+                    self.logger.warning(f"Attempt {attempt}/{max_retries}: API not ready yet. Status Code: {response.status_code}")
+            except requests.exceptions.RequestException as e:
+                self.logger.warning(f"Attempt {attempt}/{max_retries}: API not ready yet. Error: {e}")
+
+            time.sleep(wait_interval)
+
+        self.logger.error(f"openMAINT API did not become ready after {max_retries} attempts.")
+        raise ConnectionError("Failed to connect to openMAINT API.")
+
     def login(self):
         """Authenticate with the API and initialize the session."""
         auth_url = f"{self.api_url}/sessions?scope=service&returnId=true"
         payload = {'username': self.username, 'password': self.password}
         headers = {'Content-Type': 'application/json', 'Accept': 'application/json'}
         self.session = requests.Session()
-        response = self.session.post(auth_url, json=payload, headers=headers)
-
-        if response.status_code == 200 and response.json().get("success"):
-            session_id = response.json().get("data", {}).get("_id")
-            if session_id:
-                self.session.headers.update({
-                    "CMDBuild-Authorization": session_id,
-                    "Content-Type": 'application/json',
-                    "Accept": 'application/json'
-                })
-                self.logger.info("Login successful, session initialized.")
+        try:
+            response = self.session.post(auth_url, json=payload, headers=headers, timeout=10)
+            if response.status_code == 200 and response.json().get("success"):
+                session_id = response.json().get("data", {}).get("_id")
+                if session_id:
+                    self.session.headers.update({
+                        "CMDBuild-Authorization": session_id,
+                        "Content-Type": 'application/json',
+                        "Accept": 'application/json'
+                    })
+                    self.logger.info("Login successful, session initialized.")
+                else:
+                    self.logger.error("Failed to retrieve session ID.")
+                    raise ValueError("Session ID retrieval failed.")
             else:
-                self.logger.error("Failed to retrieve session ID.")
-                raise ValueError("Session ID retrieval failed.")
-        else:
-            self.logger.error(f"Login failed: {response.text}")
-            raise ValueError(f"Login failed: {response.text}")
+                self.logger.error(f"Login failed: {response.text}")
+                raise ValueError(f"Login failed: {response.text}")
+        except requests.exceptions.RequestException as e:
+            self.logger.error(f"Login request failed: {e}")
+            raise
 
     def logout(self):
         """Close the session."""
         if self.session:
             self.session.close()
+            self.session = None  # Ensure the session is cleared
             self.logger.info("Session closed.")
+
+
 
     # Helper Methods
     def get_lookup_id(self, lookup_type, code):

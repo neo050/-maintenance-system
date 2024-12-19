@@ -1,3 +1,5 @@
+# RealTimeProcessing/RealTimeProcessorClient.py
+
 import os
 import sys
 import pandas as pd
@@ -13,6 +15,7 @@ import yaml
 from datetime import datetime, timezone
 import warnings
 import tensorflow as tf
+import time
 
 # Suppress TensorFlow logging and warnings
 os.environ['TF_CPP_MIN_LOG_LEVEL'] = '2'
@@ -21,7 +24,7 @@ warnings.filterwarnings('ignore', category=UserWarning, module='tensorflow')
 
 
 class RealTimeProcessor:
-    def __init__(self, models_dir, config_file, log_file_path='../logs/real_time_processing.log'):
+    def __init__(self, models_dir, config_file, bootstrap_servers=['localhost:9092'], log_file_path=os.path.join(os.path.abspath(os.path.join(os.path.dirname(__file__), '..')),'logs','real_time_processing.log')):
         self.models_dir = models_dir
         self.config_file = config_file
         self.logger = self.setup_logger(log_file_path)
@@ -83,6 +86,7 @@ class RealTimeProcessor:
         self.producer = None
         self.engine = None
         self.config = None
+        self.bootstrap_servers = bootstrap_servers
 
         self.load_models()
         self.load_config()
@@ -245,6 +249,11 @@ class RealTimeProcessor:
         # Log the received data
         self.logger.debug(f"Data before feature engineering:\n{df.to_dict()}")
 
+        # Check if 'Type' column is present
+        if 'Type' not in df.columns:
+            self.logger.error("Type column is missing from the input data.")
+            return None
+
         # Encode 'Type' using the reconstructed mapping
         df['Type'] = df['Type'].map(self.type_mapping)
         if df['Type'].isnull().any():
@@ -284,7 +293,7 @@ class RealTimeProcessor:
         ).astype(int)
 
         # Log the features after engineering
-        self.logger.debug(f"Features after engineering:\n{df.to_dict()}")
+        self.logger.debug(f"Features after feature engineering:\n{df.to_dict()}")
         return df
 
     def prepare_data(self, df):
@@ -306,32 +315,46 @@ class RealTimeProcessor:
         final_prediction = 1 if final_score >= 0.5 else 0
         return final_prediction, final_score
 
-    def setup_kafka_consumer(self):
-        try:
-            self.consumer = KafkaConsumer(
-                'sensor-data',
-                bootstrap_servers=['127.0.0.1:9092'],
-                value_deserializer=lambda x: json.loads(x.decode('utf-8')),
-                auto_offset_reset='latest',
-                enable_auto_commit=True,
-                group_id='sensor-data-group',
-                consumer_timeout_ms=10000 * 20  # Timeout after 200 seconds of inactivity
-            )
-            self.logger.info("Kafka consumer connected.")
-        except Exception as e:
-            self.logger.error(f"Kafka consumer setup error: {e}")
-            sys.exit(1)
+    def setup_kafka_consumer(self, retries=5, delay=2):
+        attempt = 0
+        while attempt < retries:
+            try:
+                self.consumer = KafkaConsumer(
+                    'sensor-data',
+                    bootstrap_servers=self.bootstrap_servers,
+                    value_deserializer=lambda x: json.loads(x.decode('utf-8')),
+                    auto_offset_reset='latest',
+                    enable_auto_commit=True,
+                    group_id='sensor-data-group',
+                    consumer_timeout_ms=1000 * 20  # Timeout after 20 seconds of inactivity
+                )
+                self.logger.info("Kafka consumer connected.")
+                return
+            except Exception as e:
+                self.logger.error(f"Kafka consumer setup error: {e}")
+                attempt += 1
+                self.logger.info(f"Retrying Kafka consumer setup in {delay} seconds... (Attempt {attempt}/{retries})")
+                time.sleep(delay)
+        self.logger.error("Failed to connect Kafka consumer after multiple attempts.")
+        self.consumer = None
 
-    def setup_kafka_producer(self):
-        try:
-            self.producer = KafkaProducer(
-                bootstrap_servers=['127.0.0.1:9092'],
-                value_serializer=lambda x: json.dumps(x).encode('utf-8')
-            )
-            self.logger.info("Kafka producer connected.")
-        except Exception as e:
-            self.logger.error(f"Kafka producer setup error: {e}")
-            sys.exit(1)
+    def setup_kafka_producer(self, retries=5, delay=2):
+        attempt = 0
+        while attempt < retries:
+            try:
+                self.producer = KafkaProducer(
+                    bootstrap_servers=self.bootstrap_servers,
+                    value_serializer=lambda x: json.dumps(x).encode('utf-8')
+                )
+                self.logger.info("Kafka producer connected.")
+                return
+            except Exception as e:
+                self.logger.error(f"Kafka producer setup error: {e}")
+                attempt += 1
+                self.logger.info(f"Retrying Kafka producer setup in {delay} seconds... (Attempt {attempt}/{retries})")
+                time.sleep(delay)
+        self.logger.error("Failed to connect Kafka producer after multiple attempts.")
+        self.producer = None
 
     def process_messages(self):
         # Feature mapping for supervised models (temporary fix)
@@ -453,7 +476,7 @@ class RealTimeProcessor:
                                 self.logger.error(f"Missing required features for scaler {model_type}: {missing_features}")
                                 continue  # Skip this iteration if required features are missing
 
-                            # Reindex df_nn to match the scaler's expected feature names and order
+                            # Reindex df_processed to match the scaler's expected feature names and order
                             df_nn = df_processed[scaler_feature_names]
                         else:
                             self.logger.error(f"Scaler for {model_type} does not have feature_names_in_.")
@@ -496,7 +519,6 @@ class RealTimeProcessor:
                     df_processed['timestamp'] = datetime.now(timezone.utc)
 
                     if final_score >= 0.6:
-
                         # Send prediction to Kafka
                         prediction_message = {
                             'PredictedFailureDate': df_processed['timestamp'].iloc[0].strftime('%Y-%m-%d %H:%M:%S'),
@@ -523,6 +545,8 @@ class RealTimeProcessor:
             self.logger.info("No more messages. Exiting consumer.")
         except KeyboardInterrupt:
             self.logger.info("Consumer interrupted by user.")
+        except Exception as e:
+            self.logger.error(f"Error in get message: {e}", exc_info=True)
         finally:
             self.cleanup()
 
@@ -536,4 +560,3 @@ class RealTimeProcessor:
         if self.engine is not None:
             self.engine.dispose()
             self.logger.info("Database engine disposed.")
-
