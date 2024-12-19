@@ -6,6 +6,10 @@ __pycache__/
 *.swp
 *.swo
 
+
+__pycache__/
+*.pyc
+
 # Virtual environment directories (commonly named .venv or venv)
 .venv/
 venv/
