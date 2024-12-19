@@ -5,6 +5,7 @@ import logging
 import subprocess
 import webbrowser
 import yaml
+import zipfile
 
 def setup_logging(log_level=logging.DEBUG):
     logger = logging.getLogger(__name__)
@@ -33,6 +34,30 @@ def load_yaml_config(file_path, logger):
             logger.error(f"Error loading YAML config from {file_path}: {e}")
             raise
 
+def extract_zip_file(zip_path, extract_to, logger):
+    """
+    Extracts the contents of the given zip file to the specified directory.
+    If the directory does not exist, it will be created.
+    """
+    if not os.path.exists(zip_path):
+        logger.info(f"No ZIP file found at {zip_path}. Skipping extraction.")
+        return False
+
+    try:
+        logger.info(f"Extracting {zip_path} to {extract_to}...")
+        if not os.path.exists(extract_to):
+            os.makedirs(extract_to, exist_ok=True)
+        with zipfile.ZipFile(zip_path, 'r') as zip_ref:
+            zip_ref.extractall(extract_to)
+        logger.info(f"Extraction of {zip_path} completed successfully.")
+        return True
+    except zipfile.BadZipFile as e:
+        logger.error(f"Invalid ZIP file {zip_path}: {e}")
+        raise
+    except Exception as e:
+        logger.error(f"Failed to extract {zip_path}: {e}")
+        raise
+
 def start_services(docker_compose_path, service_desc, logger, wait_time=20):
     if not os.path.exists(docker_compose_path):
         logger.error(f"Docker Compose file not found at: {docker_compose_path}")
@@ -41,7 +66,7 @@ def start_services(docker_compose_path, service_desc, logger, wait_time=20):
     logger.info(f"Starting {service_desc} using Docker Compose...")
     try:
         subprocess.run(['docker-compose', '-f', docker_compose_path, 'up', '-d'], check=True)
-        logger.info(f"{service_desc} started successfully.")
+        logger.info(f"{service_desc} started successfully. Waiting {wait_time} seconds for services to be ready.")
         time.sleep(wait_time)
     except subprocess.CalledProcessError as e:
         logger.error(f"Failed to start {service_desc}: {e}")
@@ -54,11 +79,45 @@ def main():
     base_dir = os.path.abspath(os.path.dirname(__file__))
     logger.debug(f"Base directory: {base_dir}")
 
+    # Paths to docker-compose files
+    kafka_compose_path = os.path.join(base_dir, 'docker-compose.yml')
+    openmaint_compose_path = os.path.join(base_dir, 'IntegrationWithExistingSystems', 'openmaint-2.3-3.4.1-d',
+                                          'docker-compose.yml')
+
     # Construct paths to config files relative to base_dir
     openmaint_config_path = os.path.join(base_dir, 'config', 'openmaint_config.yaml')
     grafana_config_path = os.path.join(base_dir, 'config', 'grafana_config.yaml')
 
-    # Load configurations
+    # Before loading configs, extract any required ZIP files.
+    # Let's assume the ZIP files for openMAINT and Grafana are located similarly:
+    # e.g., openmaint-2.3-3.4.1-d.zip for openMAINT and maybe some grafana-related zip if needed.
+    # Adjust these names/paths as required by your project.
+    openmaint_zip_path = os.path.join(base_dir, 'IntegrationWithExistingSystems', 'openmaint-2.3-3.4.1-d.zip')
+    openmaint_extract_path = os.path.join(base_dir, 'IntegrationWithExistingSystems')
+
+    kafka_zip_path = os.path.join(base_dir, 'RealTimeProcessing', 'kafka.zip')
+    kafka_extract_path = os.path.join(base_dir, 'RealTimeProcessing')
+
+    # If there are other zip files to extract, replicate the pattern:
+    # grafana_zip_path = os.path.join(base_dir, 'grafana.zip')
+    # grafana_extract_path = os.path.join(base_dir, 'grafana_extracted_folder')
+
+    if not os.path.exists(openmaint_compose_path):
+        # Extract openmaint zip if exists
+        try:
+            extract_zip_file(openmaint_zip_path, openmaint_extract_path, logger)
+        except Exception as e:
+            logger.error("Failed to extract openmaint ZIP file.", exc_info=True)
+            sys.exit(1)
+
+    if not os.path.exists(os.path.join(base_dir, 'RealTimeProcessing', 'kafka')):
+        try:
+            extract_zip_file(kafka_zip_path, kafka_extract_path, logger)
+        except Exception as e:
+            logger.error("Failed to extract kafka ZIP file.", exc_info=True)
+            sys.exit(1)
+
+    # Now load configurations
     try:
         openmaint_config = load_yaml_config(openmaint_config_path, logger)
         grafana_config = load_yaml_config(grafana_config_path, logger)
@@ -76,9 +135,7 @@ def main():
         logger.error(f"Missing expected keys in configuration: {e}", exc_info=True)
         sys.exit(1)
 
-    # Paths to docker-compose files (adjust these if your docker-compose files are elsewhere)
-    kafka_compose_path = os.path.join(base_dir, 'docker-compose.yml')
-    openmaint_compose_path = os.path.join(base_dir, 'IntegrationWithExistingSystems', 'openmaint-2.3-3.4.1-d', 'docker-compose.yml')
+
 
     # Start Kafka cluster
     try:
@@ -115,12 +172,16 @@ def main():
         logger.info("Starting openmaint_consumer...")
         processes.append(subprocess.Popen(['python', openmaint_script]))
 
+        # Wait a bit before opening browsers
         time.sleep(10)
 
         # Open the URLs in the default browser
         logger.info("Opening configured URLs in the default browser...")
-        webbrowser.open(openmaint_url)
-        webbrowser.open(grafana_url)
+        try:
+            webbrowser.open(openmaint_url)
+            webbrowser.open(grafana_url)
+        except Exception as e:
+            logger.error(f"Failed to open URLs in the browser: {e}", exc_info=True)
 
         for p in processes:
             p.wait()
