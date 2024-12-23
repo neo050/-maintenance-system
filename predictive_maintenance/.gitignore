@@ -70,7 +70,7 @@ RealTimeProcessing/kafka
 qodana.yaml
 
 # Local configuration files (if you don't want them committed)
-config/database_config.yaml
+config/database_config.
 config/grafana_config.yaml
 config/kafka_config.yaml
 config/model_config.yaml

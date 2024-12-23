@@ -6,7 +6,6 @@
   <component name="ChangeListManager">
     <list default="true" id="05a52790-cb4f-4665-b701-c640a83dff26" name="Changes" comment="git">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/predictive_maintenance/run.py" beforeDir="false" afterPath="$PROJECT_DIR$/predictive_maintenance/run.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -449,7 +448,7 @@
       <workItem from="1734351893583" duration="18672000" />
       <workItem from="1734455866429" duration="73453000" />
       <workItem from="1734901782544" duration="7637000" />
-      <workItem from="1734940663472" duration="31857000" />
+      <workItem from="1734940663472" duration="31937000" />
     </task>
     <task id="LOCAL‎-00001" summary="...">
       <option name="closed" value="true" />
@@ -787,7 +786,15 @@
       <option name="project" value="LOCAL‎" />
       <updated>1734980867068</updated>
     </task>
-    <option name="localTasksCounter" value="43" />
+    <task id="LOCAL‎-00043" summary="git">
+      <option name="closed" value="true" />
+      <created>1734982693612</created>
+      <option name="number" value="00043" />
+      <option name="presentableId" value="LOCAL‎-00043" />
+      <option name="project" value="LOCAL‎" />
+      <updated>1734982693612</updated>
+    </task>
+    <option name="localTasksCounter" value="44" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
