@@ -137,6 +137,7 @@ def main():
         openmaint_url = openmaint_config['openmaint']['work_order']
         grafana_url = grafana_config['url']
         logger.info(f"OpenMaint work_order URL: {openmaint_url}")
+        logger.info("OpenMaint's: Username: admin  Password: admin")
         logger.info(f"Grafana URL: {grafana_url}")
     except KeyError as e:
         logger.error(f"Missing expected keys in configuration: {e}", exc_info=True)

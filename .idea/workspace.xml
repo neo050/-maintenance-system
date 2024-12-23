@@ -6,12 +6,7 @@
   <component name="ChangeListManager">
     <list default="true" id="05a52790-cb4f-4665-b701-c640a83dff26" name="Changes" comment="git">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/predictive_maintenance/IntegrationWithExistingSystems/OpenMaintClient.py" beforeDir="false" afterPath="$PROJECT_DIR$/predictive_maintenance/IntegrationWithExistingSystems/OpenMaintClient.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/predictive_maintenance/IntegrationWithExistingSystems/openmaint_consumer.py" beforeDir="false" afterPath="$PROJECT_DIR$/predictive_maintenance/IntegrationWithExistingSystems/openmaint_consumer.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/predictive_maintenance/RealTimeProcessing/RealTimeProcessorClient.py" beforeDir="false" afterPath="$PROJECT_DIR$/predictive_maintenance/RealTimeProcessing/RealTimeProcessorClient.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/predictive_maintenance/RealTimeProcessing/SensorDataSimulatorClient.py" beforeDir="false" afterPath="$PROJECT_DIR$/predictive_maintenance/RealTimeProcessing/SensorDataSimulatorClient.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/predictive_maintenance/tests/test_real_time_processor_client.py" beforeDir="false" afterPath="$PROJECT_DIR$/predictive_maintenance/tests/test_real_time_processor_client.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/predictive_maintenance/tests/test_sensor_data_simulator_client.py" beforeDir="false" afterPath="$PROJECT_DIR$/predictive_maintenance/tests/test_sensor_data_simulator_client.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/predictive_maintenance/run.py" beforeDir="false" afterPath="$PROJECT_DIR$/predictive_maintenance/run.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -205,7 +200,7 @@
       <recent name="C:\Users\neora\Desktop\Final_project\-maintenance-system\predictive_maintenance\src\models_training\CNN" />
     </key>
   </component>
-  <component name="RunManager" selected="Python tests.Python tests in test_openmaint_client.py">
+  <component name="RunManager" selected="Python.run">
     <configuration name="cnn_model" type="PythonConfigurationType" factoryName="Python" nameIsGenerated="true">
       <module name="-maintenance-system" />
       <option name="ENV_FILES" value="" />
@@ -277,6 +272,29 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
+    <configuration name="run" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="-maintenance-system" />
+      <option name="ENV_FILES" value="" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/predictive_maintenance" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/predictive_maintenance/run.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
     <configuration name="predictive_maintenance.kafka: Compose Deployment" type="docker-deploy" factoryName="docker-compose.yml">
       <deployment type="docker-compose.yml">
         <settings>
@@ -322,22 +340,6 @@
       <option name="_new_targetType" value="&quot;PATH&quot;" />
       <method v="2" />
     </configuration>
-    <configuration name="Python tests in test_real_time_processor_client.py" type="tests" factoryName="Autodetect" temporary="true" nameIsGenerated="true">
-      <module name="-maintenance-system" />
-      <option name="ENV_FILES" value="" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/predictive_maintenance/tests" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
-      <option name="_new_additionalArguments" value="&quot;&quot;" />
-      <option name="_new_target" value="&quot;$PROJECT_DIR$/predictive_maintenance/tests/test_real_time_processor_client.py&quot;" />
-      <option name="_new_targetType" value="&quot;PATH&quot;" />
-      <method v="2" />
-    </configuration>
     <configuration name="Python tests in test_real_time_processor.py" type="tests" factoryName="Autodetect" temporary="true" nameIsGenerated="true">
       <module name="-maintenance-system" />
       <option name="ENV_FILES" value="" />
@@ -354,7 +356,7 @@
       <option name="_new_targetType" value="&quot;PATH&quot;" />
       <method v="2" />
     </configuration>
-    <configuration name="Python tests in test_sensor_data_simulator.py" type="tests" factoryName="Autodetect" temporary="true" nameIsGenerated="true">
+    <configuration name="Python tests in test_sensor_data_simulator_client.py" type="tests" factoryName="Autodetect" temporary="true" nameIsGenerated="true">
       <module name="-maintenance-system" />
       <option name="ENV_FILES" value="" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -366,7 +368,7 @@
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
       <option name="_new_additionalArguments" value="&quot;&quot;" />
-      <option name="_new_target" value="&quot;$PROJECT_DIR$/predictive_maintenance/tests/test_sensor_data_simulator.py&quot;" />
+      <option name="_new_target" value="&quot;$PROJECT_DIR$/predictive_maintenance/tests/test_sensor_data_simulator_client.py&quot;" />
       <option name="_new_targetType" value="&quot;PATH&quot;" />
       <method v="2" />
     </configuration>
@@ -375,19 +377,19 @@
       <item itemvalue="Python.cnn_model" />
       <item itemvalue="Python.feature_engineering" />
       <item itemvalue="Python.python12" />
+      <item itemvalue="Python.run" />
       <item itemvalue="Python tests.Python tests in test_openmaint_client.py" />
       <item itemvalue="Python tests.Python tests in test_openmaint_consumer.py" />
       <item itemvalue="Python tests.Python tests in test_real_time_processor.py" />
-      <item itemvalue="Python tests.Python tests in test_real_time_processor_client.py" />
-      <item itemvalue="Python tests.Python tests in test_sensor_data_simulator.py" />
+      <item itemvalue="Python tests.Python tests in test_sensor_data_simulator_client.py" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Python.run" />
+        <item itemvalue="Python tests.Python tests in test_sensor_data_simulator_client.py" />
         <item itemvalue="Python tests.Python tests in test_openmaint_client.py" />
         <item itemvalue="Python tests.Python tests in test_openmaint_consumer.py" />
         <item itemvalue="Python tests.Python tests in test_real_time_processor.py" />
-        <item itemvalue="Python tests.Python tests in test_real_time_processor_client.py" />
-        <item itemvalue="Python tests.Python tests in test_sensor_data_simulator.py" />
       </list>
     </recent_temporary>
   </component>
@@ -447,7 +449,7 @@
       <workItem from="1734351893583" duration="18672000" />
       <workItem from="1734455866429" duration="73453000" />
       <workItem from="1734901782544" duration="7637000" />
-      <workItem from="1734940663472" duration="29981000" />
+      <workItem from="1734940663472" duration="31857000" />
     </task>
     <task id="LOCAL‎-00001" summary="...">
       <option name="closed" value="true" />
@@ -777,7 +779,15 @@
       <option name="project" value="LOCAL‎" />
       <updated>1734971842112</updated>
     </task>
-    <option name="localTasksCounter" value="42" />
+    <task id="LOCAL‎-00042" summary="git">
+      <option name="closed" value="true" />
+      <created>1734980867068</created>
+      <option name="number" value="00042" />
+      <option name="presentableId" value="LOCAL‎-00042" />
+      <option name="project" value="LOCAL‎" />
+      <updated>1734980867068</updated>
+    </task>
+    <option name="localTasksCounter" value="43" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -866,7 +876,7 @@
     <SUITE FILE_PATH="coverage/_maintenance_system$model_training.coverage" NAME="model_training Coverage Results" MODIFIED="1722145065793" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/predictive_maintenance/src" />
     <SUITE FILE_PATH="coverage/_maintenance_system$prepare_and_training_cnn.coverage" NAME="prepare_and_training_cnn Coverage Results" MODIFIED="1728732651469" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/predictive_maintenance/src/models_training/CNN" />
     <SUITE FILE_PATH="coverage/_maintenance_system$p.coverage" NAME="p Coverage Results" MODIFIED="1734378257049" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/predictive_maintenance/IntegrationWithExistingSystems" />
-    <SUITE FILE_PATH="coverage/_maintenance_system$.coverage" NAME=" Coverage Results" MODIFIED="1734980170145" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/predictive_maintenance/tests" />
+    <SUITE FILE_PATH="coverage/_maintenance_system$.coverage" NAME=" Coverage Results" MODIFIED="1734981017205" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/predictive_maintenance/tests" />
     <SUITE FILE_PATH="coverage/consume_sensor_data_py$data_preprocessing.coverage" NAME="data_preprocessing Coverage Results" MODIFIED="1722437568493" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/predictive_maintenance/src/data processing" />
     <SUITE FILE_PATH="coverage/_maintenance_system$new.coverage" NAME="new Coverage Results" MODIFIED="1728808837053" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/predictive_maintenance/kafka" />
     <SUITE FILE_PATH="coverage/_maintenance_system$SensorDataSimulator.coverage" NAME="SensorDataSimulator Coverage Results" MODIFIED="1734813103517" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/predictive_maintenance/RealTimeProcessing" />
@@ -880,7 +890,7 @@
     <SUITE FILE_PATH="coverage/_maintenance_system$lstm_model__1_.coverage" NAME="lstm_model (1) Coverage Results" MODIFIED="1725471189790" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/predictive_maintenance/src/models_training/LSTM" />
     <SUITE FILE_PATH="coverage/_maintenance_system$isolation_forest_model.coverage" NAME="isolation_forest_model Coverage Results" MODIFIED="1726387774304" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/predictive_maintenance/src/models_training/ISOLATION_FOREST" />
     <SUITE FILE_PATH="coverage/_maintenance_system$scan_directory.coverage" NAME="scan_directory Coverage Results" MODIFIED="1734628240277" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/predictive_maintenance" />
-    <SUITE FILE_PATH="coverage/_maintenance_system$run.coverage" NAME="run Coverage Results" MODIFIED="1734971914179" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/predictive_maintenance" />
+    <SUITE FILE_PATH="coverage/_maintenance_system$run.coverage" NAME="run Coverage Results" MODIFIED="1734981853229" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/predictive_maintenance" />
     <SUITE FILE_PATH="coverage/consume_sensor_data_py$diagnose.coverage" NAME="diagnose Coverage Results" MODIFIED="1722535967724" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/predictive_maintenance/src/data_processing" />
     <SUITE FILE_PATH="coverage/_maintenance_system$prepare_datasets.coverage" NAME="prepare_datasets Coverage Results" MODIFIED="1722003425510" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/predictive_maintenance/src" />
     <SUITE FILE_PATH="coverage/consume_sensor_data_py$data_preprocessing__1_.coverage" NAME="data_preprocessing (1) Coverage Results" MODIFIED="1722951540847" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/predictive_maintenance/src/data_processing" />
