@@ -1,0 +1,887 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="05a52790-cb4f-4665-b701-c640a83dff26" name="Changes" comment="git">
+      <changelist_data name="neoray hagag" email="93078043+neo050@users.noreply.github.com" date="1728841414000" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/predictive_maintenance/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/predictive_maintenance/.gitignore" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/predictive_maintenance/RealTimeProcessing/kafka.zip" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/predictive_maintenance/RealTimeProcessing/kafka/kafka_2.13-3.7.0/libs/rocksdbjni-7.9.2.jar" beforeDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Dockerfile" />
+        <option value="Python Script" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="PUSH_AUTO_UPDATE" value="true" />
+    <option name="RECENT_BRANCH_BY_REPOSITORY">
+      <map>
+        <entry key="$PROJECT_DIR$" value="main" />
+      </map>
+    </option>
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+    <option name="RESET_MODE" value="HARD" />
+  </component>
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
+  </component>
+  <component name="ProblemsViewState">
+    <option name="selectedTabId" value="CurrentFile" />
+  </component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 6
+}</component>
+  <component name="ProjectId" id="2hKUt5FfUmCl8LuIfhMnu78C8YP" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "ASKED_ADD_EXTERNAL_FILES": "true",
+    "ASKED_MARK_IGNORED_FILES_AS_EXCLUDED": "true",
+    "Python tests.Python tests for integration_test.TestIntegrationPipeline.executor": "Run",
+    "Python tests.Python tests for integration_test.TestIntegrationPipeline.test_end_to_end_pipeline.executor": "Run",
+    "Python tests.Python tests for predictive_maintenance.tests.test_sensor_data_simulator_client.TestSensorDataSimulator.executor": "Run",
+    "Python tests.Python tests for test_openmaint_client.TestOpenMaintClient.executor": "Run",
+    "Python tests.Python tests for test_openmaint_client.TestOpenMaintClient.test_get_employee_id.executor": "Run",
+    "Python tests.Python tests for test_openmaint_client.TestOpenMaintClient.test_get_lookup_id.executor": "Run",
+    "Python tests.Python tests for test_openmaint_client.TestOpenMaintClient.test_login_success.executor": "Run",
+    "Python tests.Python tests for test_openmaint_client.TestOpenMaintClient.test_logout.executor": "Run",
+    "Python tests.Python tests for test_openmaint_client.TestOpenMaintConsumer.test_openmaint_consumer_main.executor": "Run",
+    "Python tests.Python tests for test_openmaint_consumer.TestOpenMaintConsumer.executor": "Run",
+    "Python tests.Python tests for test_openmaint_consumer.TestOpenMaintConsumer.test_main.executor": "Run",
+    "Python tests.Python tests for test_openmaint_consumer.TestOpenMaintConsumer.test_no_failure_predictions.executor": "Run",
+    "Python tests.Python tests for test_openmaint_consumer.TestOpenMaintConsumer.test_openmaint_consumer_main.executor": "Run",
+    "Python tests.Python tests for test_real_time_processor.TestRealTimeProcessorRunner.executor": "Run",
+    "Python tests.Python tests for test_real_time_processor.TestRealTimeProcessorRunner.test_main.executor": "Run",
+    "Python tests.Python tests for test_real_time_processor_client.TestRealTimeProcessor.executor": "Run",
+    "Python tests.Python tests for test_real_time_processor_client.TestRealTimeProcessor.test_aggregate_predictions.executor": "Run",
+    "Python tests.Python tests for test_real_time_processor_client.TestRealTimeProcessor.test_feature_engineering_with_missing_type.executor": "Run",
+    "Python tests.Python tests for test_real_time_processor_client.TestRealTimeProcessor.test_load_models.executor": "Run",
+    "Python tests.Python tests for test_real_time_processor_client.TestRealTimeProcessor.test_prepare_data.executor": "Run",
+    "Python tests.Python tests for test_real_time_processor_client.TestRealTimeProcessor.test_process_messages.executor": "Run",
+    "Python tests.Python tests for test_real_time_processor_client.TestRealTimeProcessor.test_process_messages_with_invalid_data.executor": "Run",
+    "Python tests.Python tests for test_real_time_processor_client.TestRealTimeProcessor.test_save_to_database.executor": "Run",
+    "Python tests.Python tests for test_sensor_data_simulator.TestSensorDataSimulatorRunner.test_main.executor": "Run",
+    "Python tests.Python tests for test_sensor_data_simulator_client.TestSensorDataSimulator.executor": "Run",
+    "Python tests.Python tests for test_sensor_data_simulator_client.TestSensorDataSimulator.test_cleanup_twice.executor": "Run",
+    "Python tests.Python tests for test_sensor_data_simulator_client.TestSensorDataSimulator.test_delete_log_directories.executor": "Run",
+    "Python tests.Python tests for test_sensor_data_simulator_client.TestSensorDataSimulator.test_init_docker_compose.executor": "Run",
+    "Python tests.Python tests for test_sensor_data_simulator_client.TestSensorDataSimulator.test_is_kafka_running.executor": "Run",
+    "Python tests.Python tests for test_sensor_data_simulator_client.TestSensorDataSimulator.test_simulate_sensor_data.executor": "Run",
+    "Python tests.Python tests for test_sensor_data_simulator_client.TestSensorDataSimulator.test_start_simulation.executor": "Run",
+    "Python tests.Python tests for test_sensor_data_simulator_client.TestSensorDataSimulator.test_start_zookeeper_command_missing.executor": "Run",
+    "Python tests.Python tests for test_sensor_data_simulator_client.TestSensorDataSimulator.test_start_zookeeper_never_ready.executor": "Run",
+    "Python tests.Python tests for test_sensor_data_simulator_client.TestSensorDataSimulator.test_terminate_processes.executor": "Run",
+    "Python tests.Python tests for test_setup_postgresql.TestSetupPostgreSQL.test_fetch_assets.executor": "Run",
+    "Python tests.Python tests in integration_test.py.executor": "Run",
+    "Python tests.Python tests in test_openmaint_client.py.executor": "Run",
+    "Python tests.Python tests in test_openmaint_consumer.py.executor": "Run",
+    "Python tests.Python tests in test_real_time_processor.py.executor": "Run",
+    "Python tests.Python tests in test_real_time_processor_client.py.executor": "Run",
+    "Python tests.Python tests in test_sensor_data_simulator.py.executor": "Run",
+    "Python tests.Python tests in test_sensor_data_simulator_client.py.executor": "Run",
+    "Python.InsertCSVData.executor": "Run",
+    "Python.LSTMֹ_OFֹֹֹֹ_simulate_processed_sensor_data.executor": "Run",
+    "Python.OpenMaintClient.executor": "Run",
+    "Python.RealTimeProcessor.executor": "Run",
+    "Python.RealTimeProcessorClient.executor": "Run",
+    "Python.SensorDataSimulator.executor": "Run",
+    "Python.SensorDataSimulatorClient.executor": "Run",
+    "Python.SyntheticDatatest.executor": "Run",
+    "Python.VerifyData.executor": "Run",
+    "Python.check_trained_model_features.executor": "Run",
+    "Python.cleanup_environment.executor": "Run",
+    "Python.cnn_lstm_model.executor": "Run",
+    "Python.cnn_model.executor": "Run",
+    "Python.combined_CSV_file.executor": "Run",
+    "Python.dashboard.executor": "Run",
+    "Python.data_normalization_analysis.executor": "Run",
+    "Python.data_preprocessing (1).executor": "Run",
+    "Python.data_preprocessing.executor": "Run",
+    "Python.data_review.executor": "Run",
+    "Python.diagnose.executor": "Run",
+    "Python.feature_engineering.executor": "Run",
+    "Python.integrate_data.executor": "Run",
+    "Python.isolation_forest_model.executor": "Run",
+    "Python.logging_util.executor": "Run",
+    "Python.lstm_model (1).executor": "Run",
+    "Python.lstm_model.executor": "Run",
+    "Python.model_selection.executor": "Run",
+    "Python.model_training.executor": "Run",
+    "Python.new.executor": "Run",
+    "Python.openmaint_consumer.executor": "Run",
+    "Python.original_simulate_sensor_data.executor": "Run",
+    "Python.p.executor": "Run",
+    "Python.populate_database.executor": "Run",
+    "Python.populates_predictive_maintenance_data.executor": "Run",
+    "Python.prepare_and_training_cnn (1).executor": "Run",
+    "Python.prepare_and_training_cnn.executor": "Run",
+    "Python.prepare_and_training_cnn_data.executor": "Run",
+    "Python.prepare_and_training_cnn_lstm.executor": "Run",
+    "Python.prepare_and_training_isolation_forest.executor": "Run",
+    "Python.prepare_and_training_lstm.executor": "Run",
+    "Python.prepare_and_training_lstm_.executor": "Run",
+    "Python.prepare_cnn_lstm_training_data.executor": "Run",
+    "Python.prepare_cnn_training_data.executor": "Run",
+    "Python.prepare_datasets.executor": "Run",
+    "Python.prepare_isolation_forest_training_data.executor": "Run",
+    "Python.prepare_lstm_training_data.executor": "Run",
+    "Python.real_time_processing.executor": "Run",
+    "Python.real_time_processing_CNNֹ_LSTM.executor": "Run",
+    "Python.run.executor": "Run",
+    "Python.scan_directory.executor": "Run",
+    "Python.setup_postgresql.executor": "Run",
+    "Python.simulate_processed_sensor_data (1).executor": "Run",
+    "Python.simulate_processed_sensor_data.executor": "Run",
+    "Python.simulate_real_data.executor": "Run",
+    "Python.simulate_sensor_data.executor": "Run",
+    "Python.statistical_validation.executor": "Run",
+    "Python.statisticaltest.executor": "Run",
+    "Python.test.executor": "Run",
+    "Python.test2.executor": "Run",
+    "Python.testOpenMaintClient.executor": "Run",
+    "Python.update_database.executor": "Run",
+    "Python.verify_tables.executor": "Run",
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "ignore.virus.scanning.warn.message": "true",
+    "last_opened_file_path": "C:/Users/neora/Desktop/APISecurityImplementation",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "vue.rearranger.settings.migration": "true"
+  }
+}]]></component>
+  <component name="QodanaHighlightedReportService">
+    <option name="localRunNotPublishedPersistedInfo">
+      <LocalReportPersistedInfo>
+        <option name="path" value="C:\Users\neora\AppData\Local\Temp\qodana_output\qodana.sarif.json" />
+        <option name="reportGuid" value="0614acb5-471b-49cc-af2a-84fc8b9b14e8" />
+        <option name="reportName" value="-maintenance-system/qodana/2024-12-16" />
+      </LocalReportPersistedInfo>
+    </option>
+  </component>
+  <component name="QodanaIsSelectedPersistenceService">
+    <option name="selectedOrLoading" value="true" />
+  </component>
+  <component name="QodanaReportsService">
+    <option name="descriptions">
+      <ReportDescription localRun="true" path="C:\Users\neora\AppData\Local\Temp\qodana_output\qodana.sarif.json" reportGuid="0614acb5-471b-49cc-af2a-84fc8b9b14e8" reportId="-maintenance-system/qodana/2024-12-16" />
+    </option>
+  </component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\neora\Desktop\Final_project\-maintenance-system\predictive_maintenance\RealTimeProcessing" />
+      <recent name="C:\Users\neora\Desktop\Final_project\-maintenance-system\predictive_maintenance\kafka" />
+      <recent name="C:\Users\neora\Desktop\Final_project\-maintenance-system\predictive_maintenance" />
+      <recent name="C:\Users\neora\Desktop\Final_project\-maintenance-system\predictive_maintenance\src\models_training\ISOLATION_FOREST" />
+      <recent name="C:\Users\neora\Desktop\Final_project\-maintenance-system\predictive_maintenance\src\models_training\CNN" />
+    </key>
+  </component>
+  <component name="RunManager" selected="Python tests.Python tests in test_real_time_processor_client.py">
+    <configuration name="OpenMaintClient" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="-maintenance-system" />
+      <option name="ENV_FILES" value="" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/predictive_maintenance/IntegrationWithExistingSystems" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/predictive_maintenance/IntegrationWithExistingSystems/OpenMaintClient.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="cnn_model" type="PythonConfigurationType" factoryName="Python" nameIsGenerated="true">
+      <module name="-maintenance-system" />
+      <option name="ENV_FILES" value="" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="SDK_NAME" value="Python 3.12 (2)" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/predictive_maintenance/src/models_training/CNN" />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/predictive_maintenance/src/models_training/CNN/cnn_model.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="feature_engineering" type="PythonConfigurationType" factoryName="Python" nameIsGenerated="true">
+      <module name="-maintenance-system" />
+      <option name="ENV_FILES" value="" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/predictive_maintenance/src" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/predictive_maintenance/src/feature_engineering.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="python12" type="PythonConfigurationType" factoryName="Python">
+      <module name="-maintenance-system" />
+      <option name="ENV_FILES" value="" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="SDK_NAME" value="Python 3.12 (2)" />
+      <option name="WORKING_DIRECTORY" value="" />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="predictive_maintenance.kafka: Compose Deployment" type="docker-deploy" factoryName="docker-compose.yml">
+      <deployment type="docker-compose.yml">
+        <settings>
+          <option name="services">
+            <list>
+              <option value="kafka" />
+            </list>
+          </option>
+          <option name="sourceFilePath" value="predictive_maintenance/docker-compose.yml" />
+        </settings>
+      </deployment>
+      <method v="2" />
+    </configuration>
+    <configuration name="Python tests for test_openmaint_client.TestOpenMaintClient.test_logout" type="tests" factoryName="Autodetect" temporary="true" nameIsGenerated="true">
+      <module name="-maintenance-system" />
+      <option name="ENV_FILES" value="" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/predictive_maintenance/tests" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="_new_additionalArguments" value="&quot;&quot;" />
+      <option name="_new_target" value="&quot;test_openmaint_client.TestOpenMaintClient.test_logout&quot;" />
+      <option name="_new_targetType" value="&quot;PYTHON&quot;" />
+      <method v="2" />
+    </configuration>
+    <configuration name="Python tests for test_real_time_processor_client.TestRealTimeProcessor.test_process_messages" type="tests" factoryName="Autodetect" temporary="true" nameIsGenerated="true">
+      <module name="-maintenance-system" />
+      <option name="ENV_FILES" value="" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/predictive_maintenance/tests" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="_new_additionalArguments" value="&quot;&quot;" />
+      <option name="_new_target" value="&quot;test_real_time_processor_client.TestRealTimeProcessor.test_process_messages&quot;" />
+      <option name="_new_targetType" value="&quot;PYTHON&quot;" />
+      <method v="2" />
+    </configuration>
+    <configuration name="Python tests for test_real_time_processor_client.TestRealTimeProcessor.test_process_messages_with_invalid_data" type="tests" factoryName="Autodetect" temporary="true" nameIsGenerated="true">
+      <module name="-maintenance-system" />
+      <option name="ENV_FILES" value="" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/predictive_maintenance/tests" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="_new_additionalArguments" value="&quot;&quot;" />
+      <option name="_new_target" value="&quot;test_real_time_processor_client.TestRealTimeProcessor.test_process_messages_with_invalid_data&quot;" />
+      <option name="_new_targetType" value="&quot;PYTHON&quot;" />
+      <method v="2" />
+    </configuration>
+    <configuration name="Python tests in test_real_time_processor_client.py" type="tests" factoryName="Autodetect" temporary="true" nameIsGenerated="true">
+      <module name="-maintenance-system" />
+      <option name="ENV_FILES" value="" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/predictive_maintenance/tests" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="_new_additionalArguments" value="&quot;&quot;" />
+      <option name="_new_target" value="&quot;$PROJECT_DIR$/predictive_maintenance/tests/test_real_time_processor_client.py&quot;" />
+      <option name="_new_targetType" value="&quot;PATH&quot;" />
+      <method v="2" />
+    </configuration>
+    <list>
+      <item itemvalue="Docker.predictive_maintenance.kafka: Compose Deployment" />
+      <item itemvalue="Python.cnn_model" />
+      <item itemvalue="Python.feature_engineering" />
+      <item itemvalue="Python.python12" />
+      <item itemvalue="Python.OpenMaintClient" />
+      <item itemvalue="Python tests.Python tests for test_openmaint_client.TestOpenMaintClient.test_logout" />
+      <item itemvalue="Python tests.Python tests for test_real_time_processor_client.TestRealTimeProcessor.test_process_messages" />
+      <item itemvalue="Python tests.Python tests for test_real_time_processor_client.TestRealTimeProcessor.test_process_messages_with_invalid_data" />
+      <item itemvalue="Python tests.Python tests in test_real_time_processor_client.py" />
+    </list>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Python tests.Python tests in test_real_time_processor_client.py" />
+        <item itemvalue="Python tests.Python tests for test_real_time_processor_client.TestRealTimeProcessor.test_process_messages" />
+        <item itemvalue="Python tests.Python tests for test_real_time_processor_client.TestRealTimeProcessor.test_process_messages_with_invalid_data" />
+        <item itemvalue="Python.OpenMaintClient" />
+        <item itemvalue="Python tests.Python tests for test_openmaint_client.TestOpenMaintClient.test_logout" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SharedIndexes">
+    <attachedChunks>
+      <set>
+        <option value="bundled-js-predefined-1d06a55b98c1-0b3e54e931b4-JavaScript-PY-241.18034.82" />
+        <option value="bundled-python-sdk-975db3bf15a3-2767605e8bc2-com.jetbrains.pycharm.pro.sharedIndexes.bundled-PY-241.18034.82" />
+      </set>
+    </attachedChunks>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="05a52790-cb4f-4665-b701-c640a83dff26" name="Changes" comment="" />
+      <created>1717342473461</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1717342473461</updated>
+      <workItem from="1721477567034" duration="278000" />
+      <workItem from="1721477858251" duration="2403000" />
+      <workItem from="1721531428984" duration="2010000" />
+      <workItem from="1721986614416" duration="27376000" />
+      <workItem from="1722140265370" duration="6470000" />
+      <workItem from="1722226197679" duration="91286000" />
+      <workItem from="1722939072443" duration="21831000" />
+      <workItem from="1723978676992" duration="3338000" />
+      <workItem from="1724647048341" duration="35093000" />
+      <workItem from="1725311837712" duration="25834000" />
+      <workItem from="1725470739876" duration="112469000" />
+      <workItem from="1726327520775" duration="12569000" />
+      <workItem from="1726387595735" duration="25922000" />
+      <workItem from="1726588417962" duration="5810000" />
+      <workItem from="1726737761566" duration="83768000" />
+      <workItem from="1727265057342" duration="76343000" />
+      <workItem from="1728572577388" duration="51990000" />
+      <workItem from="1728826582478" duration="2785000" />
+      <workItem from="1728829522886" duration="11237000" />
+      <workItem from="1728848288343" duration="3275000" />
+      <workItem from="1728853222786" duration="12867000" />
+      <workItem from="1729350032986" duration="26857000" />
+      <workItem from="1729784419277" duration="3597000" />
+      <workItem from="1729790824587" duration="8181000" />
+      <workItem from="1729968388580" duration="16601000" />
+      <workItem from="1730807279547" duration="6000" />
+      <workItem from="1731005585841" duration="6913000" />
+      <workItem from="1731258467790" duration="14497000" />
+      <workItem from="1731511573372" duration="12029000" />
+      <workItem from="1731660260040" duration="30753000" />
+      <workItem from="1732025935374" duration="55232000" />
+      <workItem from="1732466632615" duration="95856000" />
+      <workItem from="1733493289066" duration="2162000" />
+      <workItem from="1733657553360" duration="14365000" />
+      <workItem from="1733938410589" duration="31060000" />
+      <workItem from="1734129012954" duration="19047000" />
+      <workItem from="1734351273194" duration="591000" />
+      <workItem from="1734351893583" duration="18672000" />
+      <workItem from="1734455866429" duration="73453000" />
+      <workItem from="1734901782544" duration="7637000" />
+      <workItem from="1734940663472" duration="21837000" />
+    </task>
+    <task id="LOCAL‎-00001" summary="...">
+      <option name="closed" value="true" />
+      <created>1717958556722</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL‎-00001" />
+      <option name="project" value="LOCAL‎" />
+      <updated>1717958556722</updated>
+    </task>
+    <task id="LOCAL‎-00002" summary="...">
+      <option name="closed" value="true" />
+      <created>1717958871025</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL‎-00002" />
+      <option name="project" value="LOCAL‎" />
+      <updated>1717958871025</updated>
+    </task>
+    <task id="LOCAL‎-00003" summary="...">
+      <option name="closed" value="true" />
+      <created>1718552058124</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL‎-00003" />
+      <option name="project" value="LOCAL‎" />
+      <updated>1718552058124</updated>
+    </task>
+    <task id="LOCAL‎-00004" summary="...">
+      <option name="closed" value="true" />
+      <created>1718637986586</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL‎-00004" />
+      <option name="project" value="LOCAL‎" />
+      <updated>1718637986586</updated>
+    </task>
+    <task id="LOCAL‎-00005" summary="Updating the file hierarchy and structure of the project">
+      <option name="closed" value="true" />
+      <created>1720514512365</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL‎-00005" />
+      <option name="project" value="LOCAL‎" />
+      <updated>1720514512365</updated>
+    </task>
+    <task id="LOCAL‎-00006" summary="Summary of Today's Tasks&#10;1. Data Preprocessing and Logging Configuration&#10;Issue: Logs were being created in the incorrect directory.&#10;Solution: Updated the logging configuration to ensure logs are saved in the correct logs directory.&#10;2. Data Review and Error Handling&#10;Issue: Error in loading and processing processed_data_with_lags.csv.&#10;Solution: Corrected issues in the data_review.py script to properly display data and handle errors.&#10;3. Data Normalization and Feature Engineering&#10;Task: Implemented data normalization techniques and feature engineering.&#10;Solution: Ensured data_preprocessing.py includes normalization, feature engineering, log transformation, and scaling.&#10;4. Database Setup and Schema Creation&#10;Issue: Connection to PostgreSQL failed due to incorrect credentials and service not running.&#10;Solution: Updated database_config.yaml with correct credentials, started the PostgreSQL service, and used setup_postgresql.py to create the database schema and save processed data.&#10;5. Simulated Data Generation&#10;Task: Created a script to generate simulated sensor data.&#10;Solution: Developed simulate_sensor_data.py to generate simulated data with necessary features, saved to data/simulation/simulated_data.csv.&#10;6. Data Integration&#10;Task: Combined real and simulated data.&#10;Solution: Updated integrate_data.py to combine real and simulated data, saved combined data to data/processed/combined_data.csv, and inserted it into the PostgreSQL database.&#10;7. Verification of Data in PostgreSQL&#10;Task: Verified the contents of processed_data and combined_data tables in PostgreSQL.&#10;Solution: Developed verify_tables.py to check for missing values and ensure data integrity in the database.">
+      <option name="closed" value="true" />
+      <created>1721133233722</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL‎-00006" />
+      <option name="project" value="LOCAL‎" />
+      <updated>1721133233722</updated>
+    </task>
+    <task id="LOCAL‎-00007" summary="Summary of Today's Work&#10;1. Database Setup and Configuration&#10;Ensured PostgreSQL service is running.&#10;Connected to the PostgreSQL database and created necessary tables.&#10;2. Simulation of Sensor Data&#10;Created a script simulate_sensor_data.py to generate simulated sensor data based on the statistics of real data.&#10;Implemented data normalization, feature engineering, log transformation, and added lag features in the simulation script.&#10;Validated simulated data against real data using statistical tests (Kolmogorov-Smirnov Test and Chi-Square Test).&#10;3. Data Integration&#10;Integrated real and simulated data using integrate_data.py script.&#10;Saved the integrated data to the database.&#10;4. Database Verification&#10;Verified that all data tables (real_data, processed_data, simulated_data, and combined_data) are correctly populated in the database using verify_tables.py script.&#10;5. Updated and Combined Scripts&#10;Combined various scripts into a single script update_database.py for better management.&#10;Ensured all scripts handle database connections and configurations correctly.&#10;6. Validation Results&#10;Ensured that the simulated data matches the real data distributions closely.&#10;Verified no missing values in the final integrated dataset.&#10;Scripts and Their Functions&#10;simulate_sensor_data.py&#10;&#10;Generates simulated sensor data.&#10;Validates the generated data against real data using statistical tests.&#10;Saves the validated simulated data.&#10;integrate_data.py&#10;&#10;Loads real and simulated data.&#10;Integrates them into a single dataset.&#10;Saves the integrated dataset to the database.&#10;update_database.py&#10;&#10;Loads database configurations.&#10;Creates necessary tables in the database.&#10;Saves processed data to the database.&#10;verify_tables.py&#10;&#10;Verifies the content of the database tables.&#10;Checks for missing values in the tables.&#10;Files Created/Modified&#10;simulate_sensor_data.py&#10;integrate_data.py&#10;update_database.py&#10;verify_tables.py&#10;configuration files: database_config.yaml&#10;data files: simulated_data.csv, processed_data_with_lags.csv, combined_data.csv">
+      <option name="closed" value="true" />
+      <created>1721477439614</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL‎-00007" />
+      <option name="project" value="LOCAL‎" />
+      <updated>1721477439614</updated>
+    </task>
+    <task id="LOCAL‎-00008" summary="&quot;Implement JWT authentication, API routes, and configuration setup. Added PostgreSQL configuration, updated routes for user roles, and prepared the project for deployment on AWS EC2 with RDS integration.&quot;">
+      <option name="closed" value="true" />
+      <created>1724942566298</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL‎-00008" />
+      <option name="project" value="LOCAL‎" />
+      <updated>1724942566298</updated>
+    </task>
+    <task id="LOCAL‎-00009" summary="feat: Add comprehensive LSTM model training documentation and final model scripts&#10;&#10;- Added detailed documentation covering the entire LSTM model training process, including:&#10;  - Project setup and initial considerations&#10;  - Data preparation and feature engineering&#10;  - Model design, architecture, and iterations&#10;  - Training processes, hyperparameter tuning, and logging&#10;  - Decision points, hesitations, and challenges faced&#10;  - Final model outcomes and performance analysis&#10;  - Conclusion and future work recommendations&#10;&#10;- Updated the following directories with final versions:&#10;  - `models/`: Added final trained LSTM models and related scripts.&#10;  - `data/`: Included preprocessed datasets and additional feature-engineered data.&#10;  - `scripts/`: Updated with the latest versions of data preparation, training, and evaluation scripts.&#10;  - `logs/`: Stored final training logs and performance metrics.&#10;&#10;- Improved script logic based on trial and error iterations, refining the model architecture and feature selection process.&#10;- Enhanced documentation to reflect the rationale behind algorithm choices and model enhancements.&#10;- Prepared the repository for final review and presentation.">
+      <option name="closed" value="true" />
+      <created>1725359579461</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL‎-00009" />
+      <option name="project" value="LOCAL‎" />
+      <updated>1725359579461</updated>
+    </task>
+    <task id="LOCAL‎-00010" summary="Add CNN Model Documentation and Updates to Predictive Maintenance Project&#10;&#10;- Added detailed CNN model training documentation to the project. This includes an overview of the model development process, dataset descriptions, preprocessing steps, model architecture, training results, and final insights. &#10;- Improved upon the previous LSTM documentation by refining the structure, adding more context where necessary, and providing clearer insights into the challenges and hesitations during the CNN model training process.&#10;- Enhanced performance monitoring through logging and TensorBoard tracking, ensuring a clear and comprehensive report on the training process.&#10;- Updated `README.md` with new documentation links and project goals related to the CNN model.&#10;- Updated directory structure to include CNN model-related scripts, logs, and data.&#10;- Added preprocessing scripts specifically for CNN model training.&#10;- Added training scripts for CNN models including hyperparameter tuning and early stopping.&#10;&#10;The project is now ready for further exploration into hybrid CNN-LSTM models and additional ensemble methods.&#10;&#10;- Added: /documentation/CNN_Model_Documentation.md&#10;- Updated: README.md (added documentation references and new CNN details)&#10;- Added: /scripts/preprocess_cnn_data.py (data preparation script for CNN)&#10;- Added: /scripts/train_cnn_model.py (training script for CNN model)&#10;- Added: /logs/cnn_training.log (logging file for CNN model training)">
+      <option name="closed" value="true" />
+      <created>1725467657630</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL‎-00010" />
+      <option name="project" value="LOCAL‎" />
+      <updated>1725467657630</updated>
+    </task>
+    <task id="LOCAL‎-00011" summary="- Added the CNN-LSTM model training script (`cnn_lstm_model.py`) for simulation and combined datasets.&#10;- Implemented the CNN-LSTM architecture with 64 filters, 50 LSTM units, dropout rate 0.3, learning rate 0.001, and kernel size 1.&#10;- Applied 5-fold cross-validation for the simulation and combined datasets, recording model performance and validation metrics.&#10;- Integrated learning rate reduction and early stopping to improve model training efficiency.&#10;- Logged training performance metrics, including AUC, F1-score, and Precision-Recall AUC for each fold.&#10;- Generated detailed logs for each fold's training process, confusion matrix, and model performance.&#10;- Updated the documentation for CNN-LSTM model training, highlighting architecture decisions, hyperparameter choices, and rationale for model adjustments.&#10;- Saved trained model weights and histories for each fold for both datasets.&#10;- Added instructions for model saving and configuration changes in the log file.&#10;- Prepared the final report detailing all changes and performance outcomes.">
+      <option name="closed" value="true" />
+      <created>1725733020393</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL‎-00011" />
+      <option name="project" value="LOCAL‎" />
+      <updated>1725733020394</updated>
+    </task>
+    <task id="LOCAL‎-00012" summary="Add Random Forest model script for predictive maintenance with comprehensive analysis&#10;&#10;- Set up the project environment with Python and necessary libraries (Scikit-learn, Pandas, NumPy, etc.).&#10;- Structured the project directories for models, data, scripts, and logs.&#10;- Collected and explored datasets (real, simulated, and combined) for equipment sensor data.&#10;- Performed data preprocessing:&#10;  - Handled missing values using imputation techniques.&#10;  - Normalized and scaled features to improve computational efficiency.&#10;  - Addressed class imbalance using SMOTE to generate synthetic minority class examples.&#10;- Implemented feature engineering:&#10;  - Selected key features impacting equipment health (temperature, rotational speed, torque, tool wear, vibration).&#10;  - Ensured proper encoding of any categorical variables.&#10;- Designed the Random Forest model architecture:&#10;  - Used `RandomForestClassifier` with initial baseline parameters.&#10;  - Set `class_weight='balanced'` to handle class imbalance.&#10;- Iteratively improved the model:&#10;  - Conducted hyperparameter tuning using Grid Search over parameters like `n_estimators`, `max_depth`, `min_samples_split`, `min_samples_leaf`, and `max_features`.&#10;  - Employed Stratified K-Fold cross-validation to ensure robust evaluation.&#10;  - Limited tree growth to prevent overfitting by adjusting `max_depth` and `min_samples_leaf`.&#10;- Trained the model on different datasets:&#10;  - Real Data:&#10;    - Achieved high accuracy and AUC but observed low F1-Score due to class imbalance.&#10;  - Simulated Data:&#10;    - Noted high accuracy but F1-Score of zero, indicating failure to identify true positives.&#10;  - Combined Data:&#10;    - Observed improved generalization but still faced challenges with minority class detection.&#10;- Evaluated model performance using metrics:&#10;  - Accuracy, F1-Score, AUC (Area Under ROC Curve), PR AUC (Precision-Recall AUC), Precision, Recall, and Loss.&#10;  - Analyzed that high accuracy and AUC were misleading due to severe class imbalance.&#10;  - Identified low F1-Scores and PR AUC values across datasets, highlighting issues in detecting failures.&#10;- Updated the documentation:&#10;  - Prepared a comprehensive report detailing the project setup, data preparation, model design, training process, decision points, final results, and future work.&#10;  - Included an in-depth performance analysis for real, simulated, and combined datasets.&#10;  - Adjusted the &quot;Final Performance&quot; section to reflect the latest findings and metrics.&#10;- Planned future work to address identified challenges:&#10;  - Enhance data quality and representation by improving simulated data and collecting more real failure cases.&#10;  - Explore advanced techniques for imbalanced data handling.&#10;  - Consider alternative models like XGBoost or deep learning approaches.&#10;  - Implement feature engineering and selection methods.&#10;  - Incorporate temporal dynamics using time-series models.">
+      <option name="closed" value="true" />
+      <created>1726412644231</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL‎-00012" />
+      <option name="project" value="LOCAL‎" />
+      <updated>1726412644231</updated>
+    </task>
+    <task id="LOCAL‎-00013" summary="Add complete machine failure prediction project with data preprocessing, feature engineering, models, and documentation.&#10;&#10;- **Data Preparation**:&#10;  - Loaded and combined real and synthetic datasets.&#10;  - Performed exploratory data analysis (EDA).&#10;  - Engineered new features based on domain knowledge:&#10;    - Temperature difference (`Temp_diff`), rotational speed in radians, power, tool torque product.&#10;  - Created failure condition indicators and aggregated failure risk.&#10;  - Cleaned data by handling infinite and missing values.&#10;  - Encoded categorical variables and scaled numerical features.&#10;  - Addressed class imbalance through over-sampling of the minority class.&#10;&#10;- **Model Development**:&#10;  - Implemented supervised learning models:&#10;    - Random Forest, XGBoost, LightGBM classifiers.&#10;    - Performed hyperparameter tuning using Optuna.&#10;  - Developed deep learning models:&#10;    - Convolutional Neural Network (CNN).&#10;    - Long Short-Term Memory (LSTM) network.&#10;    - Hybrid CNN-LSTM model.&#10;  - Designed model architectures using Keras and TensorFlow.&#10;  - Adjusted data preprocessing to fit model input requirements.&#10;  - Implemented regularization techniques to prevent overfitting.&#10;&#10;- **Training and Evaluation**:&#10;  - Trained models using 5-fold cross-validation.&#10;  - Monitored training and validation metrics.&#10;  - Calculated performance metrics: accuracy, precision, recall, F1 score, ROC-AUC.&#10;  - Determined optimal probability thresholds for classification.&#10;  - Analyzed results and compared model performances.&#10;&#10;- **Documentation and Reports**:&#10;  - Prepared comprehensive reports for each model:&#10;    - Included project introduction, data preparation, model architecture, training process, results, and conclusions.&#10;  - Updated project README with:&#10;    - Project overview and objectives.&#10;    - Instructions for setting up the environment and running scripts.&#10;    - Summaries of models and their performances.&#10;  - Added code comments and docstrings for clarity.&#10;&#10;- **Code Refinements**:&#10;  - Organized scripts into appropriate directories.&#10;  - Refactored code for modularity and readability.&#10;  - Ensured all dependencies and requirements are documented.">
+      <option name="closed" value="true" />
+      <created>1728572749350</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL‎-00013" />
+      <option name="project" value="LOCAL‎" />
+      <updated>1728572749350</updated>
+    </task>
+    <task id="LOCAL‎-00014" summary="Title: Finalize real-time processing and data simulation scripts with enhanced error handling and detailed documentation&#10;&#10;Commit:&#10;&#10;- **Added Comprehensive Error Handling:**&#10;  - In `simulate_real_data.py`:&#10;    - Implemented `is_process_running` function to check if Kafka and Zookeeper are already running before attempting to start them, preventing potential conflicts and resource issues.&#10;    - Enhanced logging to capture errors during process checks and startups.&#10;    - Modified shutdown sequence to conditionally terminate Kafka and Zookeeper only if they were started by the script.&#10;  - In `real_time_processing.py`:&#10;    - Set a consumer timeout (`consumer_timeout_ms`) to allow the script to exit gracefully after a period of inactivity.&#10;    - Wrapped the message processing loop in `try-except-finally` blocks to handle `StopIteration` and `KeyboardInterrupt` exceptions, ensuring clean shutdowns.&#10;    - Closed the Kafka consumer in the `finally` block and logged the closure.&#10;&#10;- **Enhanced Logging and Debugging:**&#10;  - Configured logging to capture both DEBUG and INFO level logs in both scripts.&#10;  - Added detailed log messages throughout the scripts to trace execution flow and capture internal states, aiding in debugging and monitoring.&#10;  - Logged data being sent to Kafka, including critical features like 'Type', to verify data integrity.&#10;&#10;- **Updated Feature Engineering in `real_time_processing.py`:**&#10;  - Reconstructed the `type_mapping` to encode 'Type' features correctly.&#10;  - Replicated failure condition logic (`TWF_condition`, `HDF_condition`, `PWF_condition`, `OSF_condition`) based on the original dataset description to ensure consistent feature engineering.&#10;  - Calculated additional features such as `Temp_diff`, `Rotational speed [rad/s]`, `Power`, and `Tool_Torque_Product` to enhance model predictions.&#10;  - Aggregated failure risks to create a comprehensive `Failure_Risk` indicator.&#10;&#10;- **Improved Data Simulation in `simulate_real_data.py`:**&#10;  - Simulated sensor data that closely matches the statistical properties and failure conditions of the original dataset.&#10;  - Implemented failure logic for all failure modes (TWF, HDF, PWF, OSF, RNF) based on specific conditions and thresholds.&#10;  - Ensured the proportions of product types ('L', 'M', 'H') and their associated features reflect the original dataset.&#10;&#10;- **Ensured Robust Kafka Integration:**&#10;  - Modified the scripts to handle Kafka startup errors gracefully, avoiding attempts to start Kafka if it's already running.&#10;  - Added checks to prevent the creation of existing Kafka topics, handling `TopicExistsException` appropriately.&#10;  - Ensured the Kafka producer and consumer are created and closed properly, preventing resource leaks.&#10;&#10;- **Detailed Documentation and Line-by-Line Analysis:**&#10;  - Prepared an in-depth report covering each step of the development process, including strategies, decision points, and the journey to the final scripts.&#10;  - Included a line-by-line analysis of both `simulate_real_data.py` and `real_time_processing.py` scripts to explain the rationale behind each code segment.&#10;  - Documented the feature engineering process and the logic behind the simulated data generation, linking it to the original dataset's characteristics.&#10;&#10;- **Refined Code Structure and Readability:**&#10;  - Organized code into functions for better modularity and readability.&#10;  - Followed PEP 8 styling guidelines to enhance code consistency.&#10;  - Removed redundant code and comments to clean up the scripts.&#10;&#10;- **Updated Configurations and Paths:**&#10;  - Ensured all file paths and configurations are relative and do not contain hardcoded values that could cause issues on different systems.&#10;  - Used `os.path.join` for path constructions to ensure cross-platform compatibility.&#10;&#10;- **Future Considerations and Improvements:**&#10;  - Noted areas for future enhancement, such as scalability optimizations, dynamic configuration management, and comprehensive testing.&#10;  - Suggested potential features like real-time data visualization and containerization for easier deployment.&#10;&#10;**Files Affected:**&#10;&#10;- `simulate_real_data.py`&#10;- `real_time_processing.py`&#10;- `../logs/simulate_sensor_data.log`&#10;- `../logs/real_time_processing.log`&#10;&#10;**Note:**&#10;&#10;- This commit represents a significant milestone in the project, finalizing the core functionality of real-time data simulation and processing while ensuring robustness and maintainability.&#10;- All changes have been thoroughly tested to confirm they meet the project requirements and perform as expected.">
+      <option name="closed" value="true" />
+      <created>1728840382067</created>
+      <option name="number" value="00014" />
+      <option name="presentableId" value="LOCAL‎-00014" />
+      <option name="project" value="LOCAL‎" />
+      <updated>1728840382067</updated>
+    </task>
+    <task id="LOCAL‎-00015" summary="Title: Finalize real-time processing and data simulation scripts with enhanced error handling and detailed documentation&#10;&#10;Commit:&#10;&#10;- **Added Comprehensive Error Handling:**&#10;  - In `simulate_real_data.py`:&#10;    - Implemented `is_process_running` function to check if Kafka and Zookeeper are already running before attempting to start them, preventing potential conflicts and resource issues.&#10;    - Enhanced logging to capture errors during process checks and startups.&#10;    - Modified shutdown sequence to conditionally terminate Kafka and Zookeeper only if they were started by the script.&#10;  - In `real_time_processing.py`:&#10;    - Set a consumer timeout (`consumer_timeout_ms`) to allow the script to exit gracefully after a period of inactivity.&#10;    - Wrapped the message processing loop in `try-except-finally` blocks to handle `StopIteration` and `KeyboardInterrupt` exceptions, ensuring clean shutdowns.&#10;    - Closed the Kafka consumer in the `finally` block and logged the closure.&#10;&#10;- **Enhanced Logging and Debugging:**&#10;  - Configured logging to capture both DEBUG and INFO level logs in both scripts.&#10;  - Added detailed log messages throughout the scripts to trace execution flow and capture internal states, aiding in debugging and monitoring.&#10;  - Logged data being sent to Kafka, including critical features like 'Type', to verify data integrity.&#10;&#10;- **Updated Feature Engineering in `real_time_processing.py`:**&#10;  - Reconstructed the `type_mapping` to encode 'Type' features correctly.&#10;  - Replicated failure condition logic (`TWF_condition`, `HDF_condition`, `PWF_condition`, `OSF_condition`) based on the original dataset description to ensure consistent feature engineering.&#10;  - Calculated additional features such as `Temp_diff`, `Rotational speed [rad/s]`, `Power`, and `Tool_Torque_Product` to enhance model predictions.&#10;  - Aggregated failure risks to create a comprehensive `Failure_Risk` indicator.&#10;&#10;- **Improved Data Simulation in `simulate_real_data.py`:**&#10;  - Simulated sensor data that closely matches the statistical properties and failure conditions of the original dataset.&#10;  - Implemented failure logic for all failure modes (TWF, HDF, PWF, OSF, RNF) based on specific conditions and thresholds.&#10;  - Ensured the proportions of product types ('L', 'M', 'H') and their associated features reflect the original dataset.&#10;&#10;- **Ensured Robust Kafka Integration:**&#10;  - Modified the scripts to handle Kafka startup errors gracefully, avoiding attempts to start Kafka if it's already running.&#10;  - Added checks to prevent the creation of existing Kafka topics, handling `TopicExistsException` appropriately.&#10;  - Ensured the Kafka producer and consumer are created and closed properly, preventing resource leaks.&#10;&#10;- **Detailed Documentation and Line-by-Line Analysis:**&#10;  - Prepared an in-depth report covering each step of the development process, including strategies, decision points, and the journey to the final scripts.&#10;  - Included a line-by-line analysis of both `simulate_real_data.py` and `real_time_processing.py` scripts to explain the rationale behind each code segment.&#10;  - Documented the feature engineering process and the logic behind the simulated data generation, linking it to the original dataset's characteristics.&#10;&#10;- **Refined Code Structure and Readability:**&#10;  - Organized code into functions for better modularity and readability.&#10;  - Followed PEP 8 styling guidelines to enhance code consistency.&#10;  - Removed redundant code and comments to clean up the scripts.&#10;&#10;- **Updated Configurations and Paths:**&#10;  - Ensured all file paths and configurations are relative and do not contain hardcoded values that could cause issues on different systems.&#10;  - Used `os.path.join` for path constructions to ensure cross-platform compatibility.&#10;&#10;- **Future Considerations and Improvements:**&#10;  - Noted areas for future enhancement, such as scalability optimizations, dynamic configuration management, and comprehensive testing.&#10;  - Suggested potential features like real-time data visualization and containerization for easier deployment.&#10;&#10;**Files Affected:**&#10;&#10;- `simulate_real_data.py`&#10;- `real_time_processing.py`&#10;- `../logs/simulate_sensor_data.log`&#10;- `../logs/real_time_processing.log`&#10;&#10;**Note:**&#10;&#10;- This commit represents a significant milestone in the project, finalizing the core functionality of real-time data simulation and processing while ensuring robustness and maintainability.&#10;- All changes have been thoroughly tested to confirm they meet the project requirements and perform as expected.">
+      <option name="closed" value="true" />
+      <created>1728840958046</created>
+      <option name="number" value="00015" />
+      <option name="presentableId" value="LOCAL‎-00015" />
+      <option name="project" value="LOCAL‎" />
+      <updated>1728840958046</updated>
+    </task>
+    <task id="LOCAL‎-00016" summary="Title: Finalize real-time processing and data simulation scripts with enhanced error handling and detailed documentation&#10;&#10;Commit:&#10;&#10;- **Added Comprehensive Error Handling:**&#10;  - In `simulate_real_data.py`:&#10;    - Implemented `is_process_running` function to check if Kafka and Zookeeper are already running before attempting to start them, preventing potential conflicts and resource issues.&#10;    - Enhanced logging to capture errors during process checks and startups.&#10;    - Modified shutdown sequence to conditionally terminate Kafka and Zookeeper only if they were started by the script.&#10;  - In `real_time_processing.py`:&#10;    - Set a consumer timeout (`consumer_timeout_ms`) to allow the script to exit gracefully after a period of inactivity.&#10;    - Wrapped the message processing loop in `try-except-finally` blocks to handle `StopIteration` and `KeyboardInterrupt` exceptions, ensuring clean shutdowns.&#10;    - Closed the Kafka consumer in the `finally` block and logged the closure.&#10;&#10;- **Enhanced Logging and Debugging:**&#10;  - Configured logging to capture both DEBUG and INFO level logs in both scripts.&#10;  - Added detailed log messages throughout the scripts to trace execution flow and capture internal states, aiding in debugging and monitoring.&#10;  - Logged data being sent to Kafka, including critical features like 'Type', to verify data integrity.&#10;&#10;- **Updated Feature Engineering in `real_time_processing.py`:**&#10;  - Reconstructed the `type_mapping` to encode 'Type' features correctly.&#10;  - Replicated failure condition logic (`TWF_condition`, `HDF_condition`, `PWF_condition`, `OSF_condition`) based on the original dataset description to ensure consistent feature engineering.&#10;  - Calculated additional features such as `Temp_diff`, `Rotational speed [rad/s]`, `Power`, and `Tool_Torque_Product` to enhance model predictions.&#10;  - Aggregated failure risks to create a comprehensive `Failure_Risk` indicator.&#10;&#10;- **Improved Data Simulation in `simulate_real_data.py`:**&#10;  - Simulated sensor data that closely matches the statistical properties and failure conditions of the original dataset.&#10;  - Implemented failure logic for all failure modes (TWF, HDF, PWF, OSF, RNF) based on specific conditions and thresholds.&#10;  - Ensured the proportions of product types ('L', 'M', 'H') and their associated features reflect the original dataset.&#10;&#10;- **Ensured Robust Kafka Integration:**&#10;  - Modified the scripts to handle Kafka startup errors gracefully, avoiding attempts to start Kafka if it's already running.&#10;  - Added checks to prevent the creation of existing Kafka topics, handling `TopicExistsException` appropriately.&#10;  - Ensured the Kafka producer and consumer are created and closed properly, preventing resource leaks.&#10;&#10;- **Detailed Documentation and Line-by-Line Analysis:**&#10;  - Prepared an in-depth report covering each step of the development process, including strategies, decision points, and the journey to the final scripts.&#10;  - Included a line-by-line analysis of both `simulate_real_data.py` and `real_time_processing.py` scripts to explain the rationale behind each code segment.&#10;  - Documented the feature engineering process and the logic behind the simulated data generation, linking it to the original dataset's characteristics.&#10;&#10;- **Refined Code Structure and Readability:**&#10;  - Organized code into functions for better modularity and readability.&#10;  - Followed PEP 8 styling guidelines to enhance code consistency.&#10;  - Removed redundant code and comments to clean up the scripts.&#10;&#10;- **Updated Configurations and Paths:**&#10;  - Ensured all file paths and configurations are relative and do not contain hardcoded values that could cause issues on different systems.&#10;  - Used `os.path.join` for path constructions to ensure cross-platform compatibility.&#10;&#10;- **Future Considerations and Improvements:**&#10;  - Noted areas for future enhancement, such as scalability optimizations, dynamic configuration management, and comprehensive testing.&#10;  - Suggested potential features like real-time data visualization and containerization for easier deployment.&#10;&#10;**Files Affected:**&#10;&#10;- `simulate_real_data.py`&#10;- `real_time_processing.py`&#10;- `../logs/simulate_sensor_data.log`&#10;- `../logs/real_time_processing.log`&#10;&#10;**Note:**&#10;&#10;- This commit represents a significant milestone in the project, finalizing the core functionality of real-time data simulation and processing while ensuring robustness and maintainability.&#10;- All changes have been thoroughly tested to confirm they meet the project requirements and perform as expected.">
+      <option name="closed" value="true" />
+      <created>1728841437835</created>
+      <option name="number" value="00016" />
+      <option name="presentableId" value="LOCAL‎-00016" />
+      <option name="project" value="LOCAL‎" />
+      <updated>1728841437835</updated>
+    </task>
+    <task id="LOCAL‎-00017" summary="Title: Finalize real-time processing and data simulation scripts with enhanced error handling and detailed documentation&#10;&#10;Commit:&#10;&#10;- **Added Comprehensive Error Handling:**&#10;  - In `simulate_real_data.py`:&#10;    - Implemented `is_process_running` function to check if Kafka and Zookeeper are already running before attempting to start them, preventing potential conflicts and resource issues.&#10;    - Enhanced logging to capture errors during process checks and startups.&#10;    - Modified shutdown sequence to conditionally terminate Kafka and Zookeeper only if they were started by the script.&#10;  - In `real_time_processing.py`:&#10;    - Set a consumer timeout (`consumer_timeout_ms`) to allow the script to exit gracefully after a period of inactivity.&#10;    - Wrapped the message processing loop in `try-except-finally` blocks to handle `StopIteration` and `KeyboardInterrupt` exceptions, ensuring clean shutdowns.&#10;    - Closed the Kafka consumer in the `finally` block and logged the closure.&#10;&#10;- **Enhanced Logging and Debugging:**&#10;  - Configured logging to capture both DEBUG and INFO level logs in both scripts.&#10;  - Added detailed log messages throughout the scripts to trace execution flow and capture internal states, aiding in debugging and monitoring.&#10;  - Logged data being sent to Kafka, including critical features like 'Type', to verify data integrity.&#10;&#10;- **Updated Feature Engineering in `real_time_processing.py`:**&#10;  - Reconstructed the `type_mapping` to encode 'Type' features correctly.&#10;  - Replicated failure condition logic (`TWF_condition`, `HDF_condition`, `PWF_condition`, `OSF_condition`) based on the original dataset description to ensure consistent feature engineering.&#10;  - Calculated additional features such as `Temp_diff`, `Rotational speed [rad/s]`, `Power`, and `Tool_Torque_Product` to enhance model predictions.&#10;  - Aggregated failure risks to create a comprehensive `Failure_Risk` indicator.&#10;&#10;- **Improved Data Simulation in `simulate_real_data.py`:**&#10;  - Simulated sensor data that closely matches the statistical properties and failure conditions of the original dataset.&#10;  - Implemented failure logic for all failure modes (TWF, HDF, PWF, OSF, RNF) based on specific conditions and thresholds.&#10;  - Ensured the proportions of product types ('L', 'M', 'H') and their associated features reflect the original dataset.&#10;&#10;- **Ensured Robust Kafka Integration:**&#10;  - Modified the scripts to handle Kafka startup errors gracefully, avoiding attempts to start Kafka if it's already running.&#10;  - Added checks to prevent the creation of existing Kafka topics, handling `TopicExistsException` appropriately.&#10;  - Ensured the Kafka producer and consumer are created and closed properly, preventing resource leaks.&#10;&#10;- **Detailed Documentation and Line-by-Line Analysis:**&#10;  - Prepared an in-depth report covering each step of the development process, including strategies, decision points, and the journey to the final scripts.&#10;  - Included a line-by-line analysis of both `simulate_real_data.py` and `real_time_processing.py` scripts to explain the rationale behind each code segment.&#10;  - Documented the feature engineering process and the logic behind the simulated data generation, linking it to the original dataset's characteristics.&#10;&#10;- **Refined Code Structure and Readability:**&#10;  - Organized code into functions for better modularity and readability.&#10;  - Followed PEP 8 styling guidelines to enhance code consistency.&#10;  - Removed redundant code and comments to clean up the scripts.&#10;&#10;- **Updated Configurations and Paths:**&#10;  - Ensured all file paths and configurations are relative and do not contain hardcoded values that could cause issues on different systems.&#10;  - Used `os.path.join` for path constructions to ensure cross-platform compatibility.&#10;&#10;- **Future Considerations and Improvements:**&#10;  - Noted areas for future enhancement, such as scalability optimizations, dynamic configuration management, and comprehensive testing.&#10;  - Suggested potential features like real-time data visualization and containerization for easier deployment.&#10;&#10;**Files Affected:**&#10;&#10;- `simulate_real_data.py`&#10;- `real_time_processing.py`&#10;- `../logs/simulate_sensor_data.log`&#10;- `../logs/real_time_processing.log`&#10;&#10;**Note:**&#10;&#10;- This commit represents a significant milestone in the project, finalizing the core functionality of real-time data simulation and processing while ensuring robustness and maintainability.&#10;- All changes have been thoroughly tested to confirm they meet the project requirements and perform as expected.">
+      <option name="closed" value="true" />
+      <created>1728848435175</created>
+      <option name="number" value="00017" />
+      <option name="presentableId" value="LOCAL‎-00017" />
+      <option name="project" value="LOCAL‎" />
+      <updated>1728848435175</updated>
+    </task>
+    <task id="LOCAL‎-00018" summary="Title: Finalize real-time processing and data simulation scripts with enhanced error handling and detailed documentation&#10;&#10;Commit:&#10;&#10;- **Added Comprehensive Error Handling:**&#10;  - In `simulate_real_data.py`:&#10;    - Implemented `is_process_running` function to check if Kafka and Zookeeper are already running before attempting to start them, preventing potential conflicts and resource issues.&#10;    - Enhanced logging to capture errors during process checks and startups.&#10;    - Modified shutdown sequence to conditionally terminate Kafka and Zookeeper only if they were started by the script.&#10;  - In `real_time_processing.py`:&#10;    - Set a consumer timeout (`consumer_timeout_ms`) to allow the script to exit gracefully after a period of inactivity.&#10;    - Wrapped the message processing loop in `try-except-finally` blocks to handle `StopIteration` and `KeyboardInterrupt` exceptions, ensuring clean shutdowns.&#10;    - Closed the Kafka consumer in the `finally` block and logged the closure.&#10;&#10;- **Enhanced Logging and Debugging:**&#10;  - Configured logging to capture both DEBUG and INFO level logs in both scripts.&#10;  - Added detailed log messages throughout the scripts to trace execution flow and capture internal states, aiding in debugging and monitoring.&#10;  - Logged data being sent to Kafka, including critical features like 'Type', to verify data integrity.&#10;&#10;- **Updated Feature Engineering in `real_time_processing.py`:**&#10;  - Reconstructed the `type_mapping` to encode 'Type' features correctly.&#10;  - Replicated failure condition logic (`TWF_condition`, `HDF_condition`, `PWF_condition`, `OSF_condition`) based on the original dataset description to ensure consistent feature engineering.&#10;  - Calculated additional features such as `Temp_diff`, `Rotational speed [rad/s]`, `Power`, and `Tool_Torque_Product` to enhance model predictions.&#10;  - Aggregated failure risks to create a comprehensive `Failure_Risk` indicator.&#10;&#10;- **Improved Data Simulation in `simulate_real_data.py`:**&#10;  - Simulated sensor data that closely matches the statistical properties and failure conditions of the original dataset.&#10;  - Implemented failure logic for all failure modes (TWF, HDF, PWF, OSF, RNF) based on specific conditions and thresholds.&#10;  - Ensured the proportions of product types ('L', 'M', 'H') and their associated features reflect the original dataset.&#10;&#10;- **Ensured Robust Kafka Integration:**&#10;  - Modified the scripts to handle Kafka startup errors gracefully, avoiding attempts to start Kafka if it's already running.&#10;  - Added checks to prevent the creation of existing Kafka topics, handling `TopicExistsException` appropriately.&#10;  - Ensured the Kafka producer and consumer are created and closed properly, preventing resource leaks.&#10;&#10;- **Detailed Documentation and Line-by-Line Analysis:**&#10;  - Prepared an in-depth report covering each step of the development process, including strategies, decision points, and the journey to the final scripts.&#10;  - Included a line-by-line analysis of both `simulate_real_data.py` and `real_time_processing.py` scripts to explain the rationale behind each code segment.&#10;  - Documented the feature engineering process and the logic behind the simulated data generation, linking it to the original dataset's characteristics.&#10;&#10;- **Refined Code Structure and Readability:**&#10;  - Organized code into functions for better modularity and readability.&#10;  - Followed PEP 8 styling guidelines to enhance code consistency.&#10;  - Removed redundant code and comments to clean up the scripts.&#10;&#10;- **Updated Configurations and Paths:**&#10;  - Ensured all file paths and configurations are relative and do not contain hardcoded values that could cause issues on different systems.&#10;  - Used `os.path.join` for path constructions to ensure cross-platform compatibility.&#10;&#10;- **Future Considerations and Improvements:**&#10;  - Noted areas for future enhancement, such as scalability optimizations, dynamic configuration management, and comprehensive testing.&#10;  - Suggested potential features like real-time data visualization and containerization for easier deployment.&#10;&#10;**Files Affected:**&#10;&#10;- `simulate_real_data.py`&#10;- `real_time_processing.py`&#10;- `../logs/simulate_sensor_data.log`&#10;- `../logs/real_time_processing.log`&#10;&#10;**Note:**&#10;&#10;- This commit represents a significant milestone in the project, finalizing the core functionality of real-time data simulation and processing while ensuring robustness and maintainability.&#10;- All changes have been thoroughly tested to confirm they meet the project requirements and perform as expected.">
+      <option name="closed" value="true" />
+      <created>1728850971965</created>
+      <option name="number" value="00018" />
+      <option name="presentableId" value="LOCAL‎-00018" />
+      <option name="project" value="LOCAL‎" />
+      <updated>1728850971965</updated>
+    </task>
+    <task id="LOCAL‎-00019" summary="Title: Finalize real-time processing and data simulation scripts with enhanced error handling and detailed documentation&#10;&#10;Commit:&#10;&#10;- **Added Comprehensive Error Handling:**&#10;  - In `simulate_real_data.py`:&#10;    - Implemented `is_process_running` function to check if Kafka and Zookeeper are already running before attempting to start them, preventing potential conflicts and resource issues.&#10;    - Enhanced logging to capture errors during process checks and startups.&#10;    - Modified shutdown sequence to conditionally terminate Kafka and Zookeeper only if they were started by the script.&#10;  - In `real_time_processing.py`:&#10;    - Set a consumer timeout (`consumer_timeout_ms`) to allow the script to exit gracefully after a period of inactivity.&#10;    - Wrapped the message processing loop in `try-except-finally` blocks to handle `StopIteration` and `KeyboardInterrupt` exceptions, ensuring clean shutdowns.&#10;    - Closed the Kafka consumer in the `finally` block and logged the closure.&#10;&#10;- **Enhanced Logging and Debugging:**&#10;  - Configured logging to capture both DEBUG and INFO level logs in both scripts.&#10;  - Added detailed log messages throughout the scripts to trace execution flow and capture internal states, aiding in debugging and monitoring.&#10;  - Logged data being sent to Kafka, including critical features like 'Type', to verify data integrity.&#10;&#10;- **Updated Feature Engineering in `real_time_processing.py`:**&#10;  - Reconstructed the `type_mapping` to encode 'Type' features correctly.&#10;  - Replicated failure condition logic (`TWF_condition`, `HDF_condition`, `PWF_condition`, `OSF_condition`) based on the original dataset description to ensure consistent feature engineering.&#10;  - Calculated additional features such as `Temp_diff`, `Rotational speed [rad/s]`, `Power`, and `Tool_Torque_Product` to enhance model predictions.&#10;  - Aggregated failure risks to create a comprehensive `Failure_Risk` indicator.&#10;&#10;- **Improved Data Simulation in `simulate_real_data.py`:**&#10;  - Simulated sensor data that closely matches the statistical properties and failure conditions of the original dataset.&#10;  - Implemented failure logic for all failure modes (TWF, HDF, PWF, OSF, RNF) based on specific conditions and thresholds.&#10;  - Ensured the proportions of product types ('L', 'M', 'H') and their associated features reflect the original dataset.&#10;&#10;- **Ensured Robust Kafka Integration:**&#10;  - Modified the scripts to handle Kafka startup errors gracefully, avoiding attempts to start Kafka if it's already running.&#10;  - Added checks to prevent the creation of existing Kafka topics, handling `TopicExistsException` appropriately.&#10;  - Ensured the Kafka producer and consumer are created and closed properly, preventing resource leaks.&#10;&#10;- **Detailed Documentation and Line-by-Line Analysis:**&#10;  - Prepared an in-depth report covering each step of the development process, including strategies, decision points, and the journey to the final scripts.&#10;  - Included a line-by-line analysis of both `simulate_real_data.py` and `real_time_processing.py` scripts to explain the rationale behind each code segment.&#10;  - Documented the feature engineering process and the logic behind the simulated data generation, linking it to the original dataset's characteristics.&#10;&#10;- **Refined Code Structure and Readability:**&#10;  - Organized code into functions for better modularity and readability.&#10;  - Followed PEP 8 styling guidelines to enhance code consistency.&#10;  - Removed redundant code and comments to clean up the scripts.&#10;&#10;- **Updated Configurations and Paths:**&#10;  - Ensured all file paths and configurations are relative and do not contain hardcoded values that could cause issues on different systems.&#10;  - Used `os.path.join` for path constructions to ensure cross-platform compatibility.&#10;&#10;- **Future Considerations and Improvements:**&#10;  - Noted areas for future enhancement, such as scalability optimizations, dynamic configuration management, and comprehensive testing.&#10;  - Suggested potential features like real-time data visualization and containerization for easier deployment.&#10;&#10;**Files Affected:**&#10;&#10;- `simulate_real_data.py`&#10;- `real_time_processing.py`&#10;- `../logs/simulate_sensor_data.log`&#10;- `../logs/real_time_processing.log`&#10;&#10;**Note:**&#10;&#10;- This commit represents a significant milestone in the project, finalizing the core functionality of real-time data simulation and processing while ensuring robustness and maintainability.&#10;- All changes have been thoroughly tested to confirm they meet the project requirements and perform as expected.">
+      <option name="closed" value="true" />
+      <created>1728853316940</created>
+      <option name="number" value="00019" />
+      <option name="presentableId" value="LOCAL‎-00019" />
+      <option name="project" value="LOCAL‎" />
+      <updated>1728853316940</updated>
+    </task>
+    <task id="LOCAL‎-00020" summary="git ignore">
+      <option name="closed" value="true" />
+      <created>1728853628155</created>
+      <option name="number" value="00020" />
+      <option name="presentableId" value="LOCAL‎-00020" />
+      <option name="project" value="LOCAL‎" />
+      <updated>1728853628155</updated>
+    </task>
+    <task id="LOCAL‎-00021" summary="git ignore">
+      <option name="closed" value="true" />
+      <created>1728853666104</created>
+      <option name="number" value="00021" />
+      <option name="presentableId" value="LOCAL‎-00021" />
+      <option name="project" value="LOCAL‎" />
+      <updated>1728853666104</updated>
+    </task>
+    <task id="LOCAL‎-00022" summary="git ignore">
+      <option name="closed" value="true" />
+      <created>1728853730100</created>
+      <option name="number" value="00022" />
+      <option name="presentableId" value="LOCAL‎-00022" />
+      <option name="project" value="LOCAL‎" />
+      <updated>1728853730100</updated>
+    </task>
+    <task id="LOCAL‎-00023" summary="git ignore">
+      <option name="closed" value="true" />
+      <created>1728853753887</created>
+      <option name="number" value="00023" />
+      <option name="presentableId" value="LOCAL‎-00023" />
+      <option name="project" value="LOCAL‎" />
+      <updated>1728853753887</updated>
+    </task>
+    <task id="LOCAL‎-00024" summary="git ignore">
+      <option name="closed" value="true" />
+      <created>1728853814122</created>
+      <option name="number" value="00024" />
+      <option name="presentableId" value="LOCAL‎-00024" />
+      <option name="project" value="LOCAL‎" />
+      <updated>1728853814122</updated>
+    </task>
+    <task id="LOCAL‎-00025" summary="git ignore">
+      <option name="closed" value="true" />
+      <created>1728854049742</created>
+      <option name="number" value="00025" />
+      <option name="presentableId" value="LOCAL‎-00025" />
+      <option name="project" value="LOCAL‎" />
+      <updated>1728854049742</updated>
+    </task>
+    <task id="LOCAL‎-00026" summary="git ignore">
+      <option name="closed" value="true" />
+      <created>1728984488454</created>
+      <option name="number" value="00026" />
+      <option name="presentableId" value="LOCAL‎-00026" />
+      <option name="project" value="LOCAL‎" />
+      <updated>1728984488454</updated>
+    </task>
+    <task id="LOCAL‎-00027" summary="Add readiness checks and enhance Kafka data pipeline script&#10;&#10;&#10;Implemented readiness checks for Kafka and Zookeeper, enhanced existing functions, and fixed version mismatches to improve the reliability and robustness of the Kafka data pipeline script.&#10;&#10;**Changes Made:**&#10;&#10;1. **Added Function: `is_port_in_use(port)`**&#10;&#10;    - **Code Added:**&#10;    ```python&#10;    import socket&#10;&#10;    def is_port_in_use(port):&#10;        with socket.socket(socket.AF_INET, socket.SOCK_STREAM) as s:&#10;            return s.connect_ex(('localhost', port)) == 0&#10;    ```&#10;&#10;    - **Rationale:**&#10;        - **Port Availability Check:**&#10;            - The `is_port_in_use()` function checks if a specific port is already in use on `localhost`.&#10;        - **Prevents Port Conflicts:**&#10;            - Ensures that the script does not attempt to start a service on a port that is already occupied, avoiding runtime errors.&#10;&#10;2. **Added Function: `wait_for_zookeeper_ready(timeout=30)`**&#10;&#10;    - **Code Added:**&#10;    ```python&#10;    import time&#10;&#10;    def wait_for_zookeeper_ready(timeout=30):&#10;        start_time = time.time()&#10;        while time.time() - start_time &lt; timeout:&#10;            if is_port_in_use(2181):&#10;                logging.info(&quot;Zookeeper is ready.&quot;)&#10;                return True&#10;            else:&#10;                logging.info(&quot;Waiting for Zookeeper to be ready...&quot;)&#10;                time.sleep(1)&#10;        logging.error(&quot;Zookeeper did not become ready within the timeout period.&quot;)&#10;        return False&#10;    ```&#10;&#10;    - **Rationale:**&#10;        - **Zookeeper Readiness Check:**&#10;            - Waits for Zookeeper to become ready before proceeding, ensuring that dependent services can connect successfully.&#10;        - **Improves Reliability:**&#10;            - Prevents race conditions where the script might attempt to interact with Zookeeper before it's fully initialized.&#10;        - **Configurable Timeout:**&#10;            - Allows specifying a timeout period to avoid indefinite waiting.&#10;&#10;3. **Added Function: `wait_for_kafka_ready(timeout=30)`**&#10;&#10;    - **Code Added:**&#10;    ```python&#10;    def wait_for_kafka_ready(timeout=30):&#10;        start_time = time.time()&#10;        while time.time() - start_time &lt; timeout:&#10;            if is_port_in_use(9092):&#10;                logging.info(&quot;Kafka broker is ready.&quot;)&#10;                return True&#10;            else:&#10;                logging.info(&quot;Waiting for Kafka broker to be ready...&quot;)&#10;                time.sleep(1)&#10;        logging.error(&quot;Kafka broker did not become ready within the timeout period.&quot;)&#10;        return False&#10;    ```&#10;&#10;    - **Rationale:**&#10;        - **Kafka Broker Readiness Check:**&#10;            - Similar to the Zookeeper readiness check, but for the Kafka broker on port 9092.&#10;        - **Ensures Sequential Startup:**&#10;            - Guarantees that the Kafka broker is fully operational before the script attempts to create topics or produce messages.&#10;        - **Avoids Connection Errors:**&#10;            - Reduces the likelihood of connection failures due to premature client initialization.&#10;&#10;4. **Upgraded Existing Functions Based on New Logic**&#10;&#10;    - **Changes Made:**&#10;        - Updated functions to utilize the new readiness checks before performing operations that depend on Zookeeper or Kafka being ready.&#10;        - Ensured that the script now starts Zookeeper and Kafka services programmatically and waits for them to be ready before proceeding.&#10;&#10;    - **Rationale:**&#10;        - **Enhanced Stability:**&#10;            - By integrating readiness checks into the workflow, we ensure that services are up and running before any operations are performed.&#10;        - **Improved Flow Control:**&#10;            - The script now has better control over the sequence of operations, reducing the chance of errors due to unavailable services.&#10;&#10;5. **Fixed Kafka Client Version Mismatch**&#10;&#10;    - **Code Changed:**&#10;    ```python&#10;    from kafka import KafkaProducer&#10;&#10;    # Previous code:&#10;    producer = KafkaProducer(bootstrap_servers=['localhost:9092'])&#10;&#10;    # Updated code:&#10;    producer = KafkaProducer(&#10;        bootstrap_servers=['localhost:9092'],&#10;        api_version=(3, 7, 0)  # Explicitly set to match the broker version&#10;    )&#10;    ```&#10;&#10;    - **Rationale:**&#10;        - **Version Consistency:**&#10;            - Explicitly setting `api_version` to `(3, 7, 0)` ensures that the client and broker communicate using the same protocol version.&#10;        - **Compatibility Fix:**&#10;            - Resolves the issue where the client misidentified the broker version, preventing potential incompatibility problems.&#10;        - **Performance Improvement:**&#10;            - Avoids unnecessary version probing during client initialization, enhancing startup performance.&#10;&#10;6. **Enhanced Logging and Exception Handling**&#10;&#10;    - **Changes Made:**&#10;        - Improved logging messages to provide clearer feedback during startup and operations.&#10;        - Added error handling to manage exceptions during service startups and readiness checks.&#10;&#10;    - **Rationale:**&#10;        - **Visibility:**&#10;            - Provides better insight into the application's behavior and aids in troubleshooting.&#10;        - **Robustness:**&#10;            - Ensures that the script can handle unexpected situations gracefully.&#10;&#10;7. **Implemented Data Sending Loop with Interval**&#10;&#10;    - **Code Added:**&#10;    ```python&#10;    import time&#10;&#10;    while True:&#10;        data = generate_sensor_data()&#10;        send_data_to_kafka(producer, 'sensor-data', data)&#10;        time.sleep(25)  # Wait for 25 seconds before sending the next data point&#10;    ```&#10;&#10;    - **Rationale:**&#10;        - **Continuous Data Stream:**&#10;            - The loop simulates a real-time data feed by continuously generating and sending data at regular intervals.&#10;        - **Configurability:**&#10;            - The sleep interval can be adjusted to match the desired data rate for testing or production environments.&#10;&#10;**Overall Rationale:**&#10;&#10;- **Reliability and Robustness:**&#10;    - The addition of readiness checks for Zookeeper and Kafka ensures that the script operates reliably, even in environments where service startup times may vary.&#10;- **Preventing Runtime Errors:**&#10;    - By checking if ports are in use, we avoid conflicts and potential crashes due to attempting to bind to an already used port.&#10;- **Enhanced Workflow:**&#10;    - The script now follows a more logical sequence: starting services, waiting for them to be ready, and then performing dependent operations.&#10;- **Improved Maintainability:**&#10;    - Encapsulating the readiness logic into functions makes the code cleaner and easier to maintain or extend in the future.">
+      <option name="closed" value="true" />
+      <created>1729428328049</created>
+      <option name="number" value="00027" />
+      <option name="presentableId" value="LOCAL‎-00027" />
+      <option name="project" value="LOCAL‎" />
+      <updated>1729428328049</updated>
+    </task>
+    <task id="LOCAL‎-00028" summary="Added the treatment of errors&#10;&quot;&#10;Try:&#10;Except:&#10;&quot;&#10;In Real_Time_Prcessing's Main function.py script">
+      <option name="closed" value="true" />
+      <created>1729429690058</created>
+      <option name="number" value="00028" />
+      <option name="presentableId" value="LOCAL‎-00028" />
+      <option name="project" value="LOCAL‎" />
+      <updated>1729429690059</updated>
+    </task>
+    <task id="LOCAL‎-00029" summary="Integration with Existing Systems:&#10;&#10;- **Added new scripts:**&#10;  - `openmaint_consumer.py`: Kafka consumer script integrating with openMAINT.&#10;  - `OpenMaintClient.py`: Client library for interacting with openMAINT's API.&#10;  - `setup_kafka.py`: Script to set up Kafka for message streaming.&#10;  - `setup_postgresql.py`: Script to set up PostgreSQL database.&#10;  - `integration_with_existing_systems.work`: Documentation and work notes.&#10;&#10;- **Updated scripts:**&#10;  - `real_time_processing.py`: Modified to integrate with openMAINT and handle new data structures.&#10;  - `simulate_real_data.py`: Updated data simulation to match new integration requirements.&#10;&#10;- **Implemented:**&#10;  - Seamless data flow between predictive models and openMAINT.&#10;  - Integration scripts for connecting with existing systems and databases.&#10;  - Testing of integrations with existing data sources.&#10;&#10;- **Documentation:**&#10;  - Documented integration processes and best practices in `integration_with_existing_systems.work`.&#10;&#10;- **Notes:**&#10;  - Completed Subtasks:&#10;    - 5.1: Identified integration points with existing systems and databases.&#10;    - 5.2: Developed integration scripts for seamless data flow.&#10;    - 5.3: Tested integrations with existing data sources.&#10;    - 5.4: Documented integration processes and best practices.">
+      <option name="closed" value="true" />
+      <created>1732988472882</created>
+      <option name="number" value="00029" />
+      <option name="presentableId" value="LOCAL‎-00029" />
+      <option name="project" value="LOCAL‎" />
+      <updated>1732988472882</updated>
+    </task>
+    <task id="LOCAL‎-00030" summary="Refactored scripts into modular, class-based modules for better encapsulation and reusability&#10;&#10;- **Overview**:&#10;  - Refactored the following scripts to encapsulate their functionalities within classes:&#10;    - `simulate_real_data.py`&#10;    - `real_time_processing.py`&#10;    - `openmaint_consumer.py`&#10;&#10;- **Changes Made**:&#10;  - **simulate_real_data.py**:&#10;    - Created a new class `SensorDataSimulator` that encapsulates all functionalities of the original script.&#10;    - Converted all functions into methods within the class.&#10;    - Preserved the original logic and functionality while improving modularity.&#10;    - The class handles Kafka environment setup, data simulation, and data streaming to Kafka topics.&#10;    - Created a new script `simulate_real_data_runner.py` to instantiate and run the `SensorDataSimulator` class.&#10;&#10;  - **real_time_processing.py**:&#10;    - Created a new class `RealTimeProcessor` that encapsulates all functionalities of the original script.&#10;    - Converted all functions into methods within the class.&#10;    - Preserved the original processing logic and ensured that the script continues to work as before.&#10;    - The class handles model loading, feature engineering, prediction, Kafka integration, and database interactions.&#10;    - Created a new script `real_time_processing_runner.py` to instantiate and run the `RealTimeProcessor` class.&#10;&#10;  - **openmaint_consumer.py**:&#10;    - Created a new class `OpenMaintConsumer` that encapsulates all functionalities of the original script.&#10;    - Converted all functions into methods within the class.&#10;    - Preserved the original functionality, ensuring that the script continues to interact with OpenMAINT as before.&#10;    - The class handles Kafka message consumption, OpenMAINT API interactions, and work order creation.&#10;    - Created a new script `openmaint_consumer_runner.py` to instantiate and run the `OpenMaintConsumer` class.&#10;&#10;- **New Files Created**:&#10;  - `sensor_data_simulator.py` (refactored class module for `simulate_real_data.py`)&#10;  - `simulate_real_data_runner.py` (script to run the `SensorDataSimulator` class)&#10;  - `real_time_processor.py` (refactored class module for `real_time_processing.py`)&#10;  - `real_time_processing_runner.py` (script to run the `RealTimeProcessor` class)&#10;  - `openmaint_consumer_module.py` (refactored class module for `openmaint_consumer.py`)&#10;  - `openmaint_consumer_runner.py` (script to run the `OpenMaintConsumer` class)&#10;&#10;- **Benefits**:&#10;  - **Encapsulation**: All functionalities are encapsulated within classes, promoting better code organization.&#10;  - **Reusability**: Classes can be easily imported and used in other scripts or projects.&#10;  - **Modularity**: Separation of concerns allows for easier maintenance and scalability.&#10;  - **Maintainability**: Updates or bug fixes can be made within the class, benefiting all scripts that use it.&#10;&#10;- **Detailed Explanation**:&#10;  - **simulate_real_data.py**:&#10;    - The `SensorDataSimulator` class handles:&#10;      - Kafka environment preparation (starting Zookeeper and Kafka broker).&#10;      - Modifying Kafka configurations to ensure unique log directories.&#10;      - Simulating sensor data using statistical models.&#10;      - Sending simulated data to Kafka topics at specified intervals.&#10;      - Graceful shutdown and cleanup of resources.&#10;&#10;  - **real_time_processing.py**:&#10;    - The `RealTimeProcessor` class handles:&#10;      - Loading pre-trained machine learning models and associated scalers.&#10;      - Setting up Kafka consumer and producer for data ingestion and notifications.&#10;      - Performing feature engineering on incoming data.&#10;      - Making predictions using both supervised and neural network models.&#10;      - Aggregating predictions and determining potential machine failures.&#10;      - Saving processed data and predictions to the database.&#10;      - Sending alerts to Kafka topics when high-risk conditions are detected.&#10;      - Resource management and cleanup.&#10;&#10;  - **openmaint_consumer.py**:&#10;    - The `OpenMaintConsumer` class handles:&#10;      - Consuming messages from Kafka topics.&#10;      - Interacting with the OpenMAINT API to create work orders.&#10;      - Handling authentication, session management, and API calls to OpenMAINT.&#10;      - Parsing and processing the incoming data to create appropriate work orders.&#10;      - Logging and error handling.&#10;      - Graceful shutdown and resource cleanup.&#10;&#10;- **Notes**:&#10;  - Existing functionality and logic have been preserved to ensure that the scripts continue to work as intended.&#10;  - Refactoring improves code quality and facilitates integration with other components or systems.&#10;  - The new class-based modules provide a cleaner interface for interacting with the scripts' functionalities.">
+      <option name="closed" value="true" />
+      <created>1733083294225</created>
+      <option name="number" value="00030" />
+      <option name="presentableId" value="LOCAL‎-00030" />
+      <option name="project" value="LOCAL‎" />
+      <updated>1733083294225</updated>
+    </task>
+    <task id="LOCAL‎-00031" summary="feat: Implement fully integrated startup sequence with robust error handling and configuration-based URLs&#10;&#10;After extensive iterations, refactors, and debugging sessions, we have arrived at a final, professional-grade script that coordinates the entire maintenance prediction system and integrates seamlessly with Kafka, openMAINT, and Grafana dashboards.&#10;&#10;Key points addressed throughout this development process:&#10;&#10;1. **Directory and Path Management:**&#10;   - Initially, we struggled with relative paths and `..` usage, causing missing file errors on different machines.&#10;   - We resolved this by using `os.path.abspath(os.path.dirname(__file__))` to reliably reference directories and ensure all paths remain consistent on any computer.&#10;   - This change ensures that configuration files, Docker Compose files, and scripts are always found relative to the `run.py` location.&#10;&#10;2. **Error Handling and Professionalism:**&#10;   - Incorporated robust `try-except` blocks to gracefully handle file not found errors, subprocess failures, and YAML loading issues.&#10;   - Added detailed logging at various points (DEBUG, INFO, ERROR) to trace each step of the startup process and provide insightful error messages.&#10;   - Ensured that the script fails fast and clearly if configurations or required services fail to start.&#10;&#10;3. **Configuration-Driven URLs:**&#10;   - Moved hardcoded URLs for openMAINT and Grafana dashboards into YAML configuration files (`openmaint_config.yaml` and `grafana_config.yaml`) to enhance flexibility and portability.&#10;   - Extracted `work_order` (for openMAINT) and `url` (for Grafana) from these config files, enabling easy updates without code changes.&#10;&#10;4. **Integration with Services:**&#10;   - Introduced a unified `start_services` function to bring up Docker Compose services (Kafka and openMAINT).&#10;   - Wait times after service startup ensure that external services are ready before we proceed to the next steps.&#10;&#10;5. **Process Management:**&#10;   - Spawned the SensorDataSimulator, RealTimeProcessor, and openmaint_consumer in separate subprocesses, ensuring they run concurrently.&#10;   - Implemented error handling and cleanup (terminate processes on error or KeyboardInterrupt).&#10;&#10;6. **Opening Web Pages:**&#10;   - After ensuring the pipeline (Kafka, openMAINT, RealTimeProcessor, SensorDataSimulator) is up and running, the script now automatically opens the configured openMAINT work order page and the Grafana dashboard URL in the default web browser, enhancing user convenience.&#10;&#10;This commit consolidates all improvements and ensures the final `run.py` script is production-ready, professional, and portable, addressing all issues encountered during previous iterations.">
+      <option name="closed" value="true" />
+      <created>1734628050975</created>
+      <option name="number" value="00031" />
+      <option name="presentableId" value="LOCAL‎-00031" />
+      <option name="project" value="LOCAL‎" />
+      <updated>1734628050975</updated>
+    </task>
+    <task id="LOCAL‎-00032" summary="Test files and kafka and openmaint-2.3-3.4.1-d files loaded via Docker in addition to docker-compose.yml files">
+      <option name="closed" value="true" />
+      <created>1734631569679</created>
+      <option name="number" value="00032" />
+      <option name="presentableId" value="LOCAL‎-00032" />
+      <option name="project" value="LOCAL‎" />
+      <updated>1734631569679</updated>
+    </task>
+    <task id="LOCAL‎-00033" summary="feat: Add conditional ZIP extraction for openMAINT and Kafka directories before startup&#10;&#10;- Introduce logic to extract `openmaint-2.3-3.4.1-d.zip` if the openMAINT docker-compose file is missing.&#10;- Introduce logic to extract `kafka.zip` if the Kafka directory under RealTimeProcessing is missing.&#10;- Maintain robust error handling and logging throughout the process.&#10;- Ensure configuration loading occurs after successful extraction.&#10;- Verify script existence before running sensor, processor, and openmaint_consumer processes.&#10;- Attempt to open configured URLs in the default browser, handling any exceptions gracefully.&#10;- Fix minor logging typos and improve clarity in error messages.">
+      <option name="closed" value="true" />
+      <created>1734636032888</created>
+      <option name="number" value="00033" />
+      <option name="presentableId" value="LOCAL‎-00033" />
+      <option name="project" value="LOCAL‎" />
+      <updated>1734636032888</updated>
+    </task>
+    <task id="LOCAL‎-00034" summary="feat: Add conditional ZIP extraction for openMAINT and Kafka directories before startup&#10;&#10;- Introduce logic to extract `openmaint-2.3-3.4.1-d.zip` if the openMAINT docker-compose file is missing.&#10;- Introduce logic to extract `kafka.zip` if the Kafka directory under RealTimeProcessing is missing.&#10;- Maintain robust error handling and logging throughout the process.&#10;- Ensure configuration loading occurs after successful extraction.&#10;- Verify script existence before running sensor, processor, and openmaint_consumer processes.&#10;- Attempt to open configured URLs in the default browser, handling any exceptions gracefully.&#10;- Fix minor logging typos and improve clarity in error messages.">
+      <option name="closed" value="true" />
+      <created>1734638303287</created>
+      <option name="number" value="00034" />
+      <option name="presentableId" value="LOCAL‎-00034" />
+      <option name="project" value="LOCAL‎" />
+      <updated>1734638303287</updated>
+    </task>
+    <task id="LOCAL‎-00035" summary="&quot;chore: Add comprehensive unit tests for integration and system components&#10;&#10;- Added integration_test.py to validate the end-to-end predictive maintenance pipeline.&#10;- Added test_openmaint_client.py to test OpenMaintClient class methods, including authentication and data retrieval.&#10;- Added test_openmaint_consumer.py to verify the OpenMaintConsumer's message processing and work order creation.&#10;- Added test_real_time_processor.py to ensure RealTimeProcessor initializes and executes correctly.&#10;- Added test_real_time_processor_client.py to validate RealTimeProcessorClient's data aggregation and feature engineering.&#10;- Added test_sensor_data_simulator.py to test SensorDataSimulator's data generation and Kafka interactions.&#10;- Added test_sensor_data_simulator_client.py to validate SensorDataSimulatorClient's Docker and Kafka integration methods.&quot;">
+      <option name="closed" value="true" />
+      <created>1734900567059</created>
+      <option name="number" value="00035" />
+      <option name="presentableId" value="LOCAL‎-00035" />
+      <option name="project" value="LOCAL‎" />
+      <updated>1734900567059</updated>
+    </task>
+    <task id="LOCAL‎-00036" summary="&quot;chore: Add comprehensive unit tests for integration and system components&#10;&#10;- Added integration_test.py to validate the end-to-end predictive maintenance pipeline.&#10;- Added test_openmaint_client.py to test OpenMaintClient class methods, including authentication and data retrieval.&#10;- Added test_openmaint_consumer.py to verify the OpenMaintConsumer's message processing and work order creation.&#10;- Added test_real_time_processor.py to ensure RealTimeProcessor initializes and executes correctly.&#10;- Added test_real_time_processor_client.py to validate RealTimeProcessorClient's data aggregation and feature engineering.&#10;- Added test_sensor_data_simulator.py to test SensorDataSimulator's data generation and Kafka interactions.&#10;- Added test_sensor_data_simulator_client.py to validate SensorDataSimulatorClient's Docker and Kafka integration methods.&quot;">
+      <option name="closed" value="true" />
+      <created>1734902070620</created>
+      <option name="number" value="00036" />
+      <option name="presentableId" value="LOCAL‎-00036" />
+      <option name="project" value="LOCAL‎" />
+      <updated>1734902070620</updated>
+    </task>
+    <task id="LOCAL‎-00037" summary="&quot; Add comprehensive unit tests for integration and system components&#10;&#10;- Added integration_test.py to validate the end-to-end predictive maintenance pipeline.&#10;- Added test_openmaint_client.py to test OpenMaintClient class methods, including authentication and data retrieval.&#10;- Added test_openmaint_consumer.py to verify the OpenMaintConsumer's message processing and work order creation.&#10;- Added test_real_time_processor.py to ensure RealTimeProcessor initializes and executes correctly.&#10;- Added test_real_time_processor_client.py to validate RealTimeProcessorClient's data aggregation and feature engineering.&#10;- Added test_sensor_data_simulator.py to test SensorDataSimulator's data generation and Kafka interactions.&#10;- Added test_sensor_data_simulator_client.py to validate SensorDataSimulatorClient's Docker and Kafka integration methods.&quot;">
+      <option name="closed" value="true" />
+      <created>1734903722947</created>
+      <option name="number" value="00037" />
+      <option name="presentableId" value="LOCAL‎-00037" />
+      <option name="project" value="LOCAL‎" />
+      <updated>1734903722947</updated>
+    </task>
+    <task id="LOCAL‎-00038" summary="&quot; Add comprehensive unit tests for integration and system components&#10;&#10;- Added integration_test.py to validate the end-to-end predictive maintenance pipeline.&#10;- Added test_openmaint_client.py to test OpenMaintClient class methods, including authentication and data retrieval.&#10;- Added test_openmaint_consumer.py to verify the OpenMaintConsumer's message processing and work order creation.&#10;- Added test_real_time_processor.py to ensure RealTimeProcessor initializes and executes correctly.&#10;- Added test_real_time_processor_client.py to validate RealTimeProcessorClient's data aggregation and feature engineering.&#10;- Added test_sensor_data_simulator.py to test SensorDataSimulator's data generation and Kafka interactions.&#10;- Added test_sensor_data_simulator_client.py to validate SensorDataSimulatorClient's Docker and Kafka integration methods.&quot;">
+      <option name="closed" value="true" />
+      <created>1734903911155</created>
+      <option name="number" value="00038" />
+      <option name="presentableId" value="LOCAL‎-00038" />
+      <option name="project" value="LOCAL‎" />
+      <updated>1734903911155</updated>
+    </task>
+    <task id="LOCAL‎-00039" summary="git">
+      <option name="closed" value="true" />
+      <created>1734904122975</created>
+      <option name="number" value="00039" />
+      <option name="presentableId" value="LOCAL‎-00039" />
+      <option name="project" value="LOCAL‎" />
+      <updated>1734904122975</updated>
+    </task>
+    <task id="LOCAL‎-00040" summary="git">
+      <option name="closed" value="true" />
+      <created>1734968559833</created>
+      <option name="number" value="00040" />
+      <option name="presentableId" value="LOCAL‎-00040" />
+      <option name="project" value="LOCAL‎" />
+      <updated>1734968559834</updated>
+    </task>
+    <option name="localTasksCounter" value="41" />
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State>
+              <option name="FILTERS">
+                <map>
+                  <entry key="branch">
+                    <value>
+                      <list>
+                        <option value="new1" />
+                      </list>
+                    </value>
+                  </entry>
+                </map>
+              </option>
+            </State>
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
+    <MESSAGE value="..." />
+    <MESSAGE value="Updating the file hierarchy and structure of the project" />
+    <MESSAGE value="Summary of Today's Tasks&#10;1. Data Preprocessing and Logging Configuration&#10;Issue: Logs were being created in the incorrect directory.&#10;Solution: Updated the logging configuration to ensure logs are saved in the correct logs directory.&#10;2. Data Review and Error Handling&#10;Issue: Error in loading and processing processed_data_with_lags.csv.&#10;Solution: Corrected issues in the data_review.py script to properly display data and handle errors.&#10;3. Data Normalization and Feature Engineering&#10;Task: Implemented data normalization techniques and feature engineering.&#10;Solution: Ensured data_preprocessing.py includes normalization, feature engineering, log transformation, and scaling.&#10;4. Database Setup and Schema Creation&#10;Issue: Connection to PostgreSQL failed due to incorrect credentials and service not running.&#10;Solution: Updated database_config.yaml with correct credentials, started the PostgreSQL service, and used setup_postgresql.py to create the database schema and save processed data.&#10;5. Simulated Data Generation&#10;Task: Created a script to generate simulated sensor data.&#10;Solution: Developed simulate_sensor_data.py to generate simulated data with necessary features, saved to data/simulation/simulated_data.csv.&#10;6. Data Integration&#10;Task: Combined real and simulated data.&#10;Solution: Updated integrate_data.py to combine real and simulated data, saved combined data to data/processed/combined_data.csv, and inserted it into the PostgreSQL database.&#10;7. Verification of Data in PostgreSQL&#10;Task: Verified the contents of processed_data and combined_data tables in PostgreSQL.&#10;Solution: Developed verify_tables.py to check for missing values and ensure data integrity in the database." />
+    <MESSAGE value="Summary of Today's Work&#10;1. Database Setup and Configuration&#10;Ensured PostgreSQL service is running.&#10;Connected to the PostgreSQL database and created necessary tables.&#10;2. Simulation of Sensor Data&#10;Created a script simulate_sensor_data.py to generate simulated sensor data based on the statistics of real data.&#10;Implemented data normalization, feature engineering, log transformation, and added lag features in the simulation script.&#10;Validated simulated data against real data using statistical tests (Kolmogorov-Smirnov Test and Chi-Square Test).&#10;3. Data Integration&#10;Integrated real and simulated data using integrate_data.py script.&#10;Saved the integrated data to the database.&#10;4. Database Verification&#10;Verified that all data tables (real_data, processed_data, simulated_data, and combined_data) are correctly populated in the database using verify_tables.py script.&#10;5. Updated and Combined Scripts&#10;Combined various scripts into a single script update_database.py for better management.&#10;Ensured all scripts handle database connections and configurations correctly.&#10;6. Validation Results&#10;Ensured that the simulated data matches the real data distributions closely.&#10;Verified no missing values in the final integrated dataset.&#10;Scripts and Their Functions&#10;simulate_sensor_data.py&#10;&#10;Generates simulated sensor data.&#10;Validates the generated data against real data using statistical tests.&#10;Saves the validated simulated data.&#10;integrate_data.py&#10;&#10;Loads real and simulated data.&#10;Integrates them into a single dataset.&#10;Saves the integrated dataset to the database.&#10;update_database.py&#10;&#10;Loads database configurations.&#10;Creates necessary tables in the database.&#10;Saves processed data to the database.&#10;verify_tables.py&#10;&#10;Verifies the content of the database tables.&#10;Checks for missing values in the tables.&#10;Files Created/Modified&#10;simulate_sensor_data.py&#10;integrate_data.py&#10;update_database.py&#10;verify_tables.py&#10;configuration files: database_config.yaml&#10;data files: simulated_data.csv, processed_data_with_lags.csv, combined_data.csv" />
+    <MESSAGE value="&quot;Implement JWT authentication, API routes, and configuration setup. Added PostgreSQL configuration, updated routes for user roles, and prepared the project for deployment on AWS EC2 with RDS integration.&quot;" />
+    <MESSAGE value="feat: Add comprehensive LSTM model training documentation and final model scripts&#10;&#10;- Added detailed documentation covering the entire LSTM model training process, including:&#10;  - Project setup and initial considerations&#10;  - Data preparation and feature engineering&#10;  - Model design, architecture, and iterations&#10;  - Training processes, hyperparameter tuning, and logging&#10;  - Decision points, hesitations, and challenges faced&#10;  - Final model outcomes and performance analysis&#10;  - Conclusion and future work recommendations&#10;&#10;- Updated the following directories with final versions:&#10;  - `models/`: Added final trained LSTM models and related scripts.&#10;  - `data/`: Included preprocessed datasets and additional feature-engineered data.&#10;  - `scripts/`: Updated with the latest versions of data preparation, training, and evaluation scripts.&#10;  - `logs/`: Stored final training logs and performance metrics.&#10;&#10;- Improved script logic based on trial and error iterations, refining the model architecture and feature selection process.&#10;- Enhanced documentation to reflect the rationale behind algorithm choices and model enhancements.&#10;- Prepared the repository for final review and presentation." />
+    <MESSAGE value="Add CNN Model Documentation and Updates to Predictive Maintenance Project&#10;&#10;- Added detailed CNN model training documentation to the project. This includes an overview of the model development process, dataset descriptions, preprocessing steps, model architecture, training results, and final insights. &#10;- Improved upon the previous LSTM documentation by refining the structure, adding more context where necessary, and providing clearer insights into the challenges and hesitations during the CNN model training process.&#10;- Enhanced performance monitoring through logging and TensorBoard tracking, ensuring a clear and comprehensive report on the training process.&#10;- Updated `README.md` with new documentation links and project goals related to the CNN model.&#10;- Updated directory structure to include CNN model-related scripts, logs, and data.&#10;- Added preprocessing scripts specifically for CNN model training.&#10;- Added training scripts for CNN models including hyperparameter tuning and early stopping.&#10;&#10;The project is now ready for further exploration into hybrid CNN-LSTM models and additional ensemble methods.&#10;&#10;- Added: /documentation/CNN_Model_Documentation.md&#10;- Updated: README.md (added documentation references and new CNN details)&#10;- Added: /scripts/preprocess_cnn_data.py (data preparation script for CNN)&#10;- Added: /scripts/train_cnn_model.py (training script for CNN model)&#10;- Added: /logs/cnn_training.log (logging file for CNN model training)" />
+    <MESSAGE value="- Added the CNN-LSTM model training script (`cnn_lstm_model.py`) for simulation and combined datasets.&#10;- Implemented the CNN-LSTM architecture with 64 filters, 50 LSTM units, dropout rate 0.3, learning rate 0.001, and kernel size 1.&#10;- Applied 5-fold cross-validation for the simulation and combined datasets, recording model performance and validation metrics.&#10;- Integrated learning rate reduction and early stopping to improve model training efficiency.&#10;- Logged training performance metrics, including AUC, F1-score, and Precision-Recall AUC for each fold.&#10;- Generated detailed logs for each fold's training process, confusion matrix, and model performance.&#10;- Updated the documentation for CNN-LSTM model training, highlighting architecture decisions, hyperparameter choices, and rationale for model adjustments.&#10;- Saved trained model weights and histories for each fold for both datasets.&#10;- Added instructions for model saving and configuration changes in the log file.&#10;- Prepared the final report detailing all changes and performance outcomes." />
+    <MESSAGE value="Add Random Forest model script for predictive maintenance with comprehensive analysis&#10;&#10;- Set up the project environment with Python and necessary libraries (Scikit-learn, Pandas, NumPy, etc.).&#10;- Structured the project directories for models, data, scripts, and logs.&#10;- Collected and explored datasets (real, simulated, and combined) for equipment sensor data.&#10;- Performed data preprocessing:&#10;  - Handled missing values using imputation techniques.&#10;  - Normalized and scaled features to improve computational efficiency.&#10;  - Addressed class imbalance using SMOTE to generate synthetic minority class examples.&#10;- Implemented feature engineering:&#10;  - Selected key features impacting equipment health (temperature, rotational speed, torque, tool wear, vibration).&#10;  - Ensured proper encoding of any categorical variables.&#10;- Designed the Random Forest model architecture:&#10;  - Used `RandomForestClassifier` with initial baseline parameters.&#10;  - Set `class_weight='balanced'` to handle class imbalance.&#10;- Iteratively improved the model:&#10;  - Conducted hyperparameter tuning using Grid Search over parameters like `n_estimators`, `max_depth`, `min_samples_split`, `min_samples_leaf`, and `max_features`.&#10;  - Employed Stratified K-Fold cross-validation to ensure robust evaluation.&#10;  - Limited tree growth to prevent overfitting by adjusting `max_depth` and `min_samples_leaf`.&#10;- Trained the model on different datasets:&#10;  - Real Data:&#10;    - Achieved high accuracy and AUC but observed low F1-Score due to class imbalance.&#10;  - Simulated Data:&#10;    - Noted high accuracy but F1-Score of zero, indicating failure to identify true positives.&#10;  - Combined Data:&#10;    - Observed improved generalization but still faced challenges with minority class detection.&#10;- Evaluated model performance using metrics:&#10;  - Accuracy, F1-Score, AUC (Area Under ROC Curve), PR AUC (Precision-Recall AUC), Precision, Recall, and Loss.&#10;  - Analyzed that high accuracy and AUC were misleading due to severe class imbalance.&#10;  - Identified low F1-Scores and PR AUC values across datasets, highlighting issues in detecting failures.&#10;- Updated the documentation:&#10;  - Prepared a comprehensive report detailing the project setup, data preparation, model design, training process, decision points, final results, and future work.&#10;  - Included an in-depth performance analysis for real, simulated, and combined datasets.&#10;  - Adjusted the &quot;Final Performance&quot; section to reflect the latest findings and metrics.&#10;- Planned future work to address identified challenges:&#10;  - Enhance data quality and representation by improving simulated data and collecting more real failure cases.&#10;  - Explore advanced techniques for imbalanced data handling.&#10;  - Consider alternative models like XGBoost or deep learning approaches.&#10;  - Implement feature engineering and selection methods.&#10;  - Incorporate temporal dynamics using time-series models." />
+    <MESSAGE value="Add complete machine failure prediction project with data preprocessing, feature engineering, models, and documentation.&#10;&#10;- **Data Preparation**:&#10;  - Loaded and combined real and synthetic datasets.&#10;  - Performed exploratory data analysis (EDA).&#10;  - Engineered new features based on domain knowledge:&#10;    - Temperature difference (`Temp_diff`), rotational speed in radians, power, tool torque product.&#10;  - Created failure condition indicators and aggregated failure risk.&#10;  - Cleaned data by handling infinite and missing values.&#10;  - Encoded categorical variables and scaled numerical features.&#10;  - Addressed class imbalance through over-sampling of the minority class.&#10;&#10;- **Model Development**:&#10;  - Implemented supervised learning models:&#10;    - Random Forest, XGBoost, LightGBM classifiers.&#10;    - Performed hyperparameter tuning using Optuna.&#10;  - Developed deep learning models:&#10;    - Convolutional Neural Network (CNN).&#10;    - Long Short-Term Memory (LSTM) network.&#10;    - Hybrid CNN-LSTM model.&#10;  - Designed model architectures using Keras and TensorFlow.&#10;  - Adjusted data preprocessing to fit model input requirements.&#10;  - Implemented regularization techniques to prevent overfitting.&#10;&#10;- **Training and Evaluation**:&#10;  - Trained models using 5-fold cross-validation.&#10;  - Monitored training and validation metrics.&#10;  - Calculated performance metrics: accuracy, precision, recall, F1 score, ROC-AUC.&#10;  - Determined optimal probability thresholds for classification.&#10;  - Analyzed results and compared model performances.&#10;&#10;- **Documentation and Reports**:&#10;  - Prepared comprehensive reports for each model:&#10;    - Included project introduction, data preparation, model architecture, training process, results, and conclusions.&#10;  - Updated project README with:&#10;    - Project overview and objectives.&#10;    - Instructions for setting up the environment and running scripts.&#10;    - Summaries of models and their performances.&#10;  - Added code comments and docstrings for clarity.&#10;&#10;- **Code Refinements**:&#10;  - Organized scripts into appropriate directories.&#10;  - Refactored code for modularity and readability.&#10;  - Ensured all dependencies and requirements are documented." />
+    <MESSAGE value="Title: Finalize real-time processing and data simulation scripts with enhanced error handling and detailed documentation&#10;&#10;Commit:&#10;&#10;- **Added Comprehensive Error Handling:**&#10;  - In `simulate_real_data.py`:&#10;    - Implemented `is_process_running` function to check if Kafka and Zookeeper are already running before attempting to start them, preventing potential conflicts and resource issues.&#10;    - Enhanced logging to capture errors during process checks and startups.&#10;    - Modified shutdown sequence to conditionally terminate Kafka and Zookeeper only if they were started by the script.&#10;  - In `real_time_processing.py`:&#10;    - Set a consumer timeout (`consumer_timeout_ms`) to allow the script to exit gracefully after a period of inactivity.&#10;    - Wrapped the message processing loop in `try-except-finally` blocks to handle `StopIteration` and `KeyboardInterrupt` exceptions, ensuring clean shutdowns.&#10;    - Closed the Kafka consumer in the `finally` block and logged the closure.&#10;&#10;- **Enhanced Logging and Debugging:**&#10;  - Configured logging to capture both DEBUG and INFO level logs in both scripts.&#10;  - Added detailed log messages throughout the scripts to trace execution flow and capture internal states, aiding in debugging and monitoring.&#10;  - Logged data being sent to Kafka, including critical features like 'Type', to verify data integrity.&#10;&#10;- **Updated Feature Engineering in `real_time_processing.py`:**&#10;  - Reconstructed the `type_mapping` to encode 'Type' features correctly.&#10;  - Replicated failure condition logic (`TWF_condition`, `HDF_condition`, `PWF_condition`, `OSF_condition`) based on the original dataset description to ensure consistent feature engineering.&#10;  - Calculated additional features such as `Temp_diff`, `Rotational speed [rad/s]`, `Power`, and `Tool_Torque_Product` to enhance model predictions.&#10;  - Aggregated failure risks to create a comprehensive `Failure_Risk` indicator.&#10;&#10;- **Improved Data Simulation in `simulate_real_data.py`:**&#10;  - Simulated sensor data that closely matches the statistical properties and failure conditions of the original dataset.&#10;  - Implemented failure logic for all failure modes (TWF, HDF, PWF, OSF, RNF) based on specific conditions and thresholds.&#10;  - Ensured the proportions of product types ('L', 'M', 'H') and their associated features reflect the original dataset.&#10;&#10;- **Ensured Robust Kafka Integration:**&#10;  - Modified the scripts to handle Kafka startup errors gracefully, avoiding attempts to start Kafka if it's already running.&#10;  - Added checks to prevent the creation of existing Kafka topics, handling `TopicExistsException` appropriately.&#10;  - Ensured the Kafka producer and consumer are created and closed properly, preventing resource leaks.&#10;&#10;- **Detailed Documentation and Line-by-Line Analysis:**&#10;  - Prepared an in-depth report covering each step of the development process, including strategies, decision points, and the journey to the final scripts.&#10;  - Included a line-by-line analysis of both `simulate_real_data.py` and `real_time_processing.py` scripts to explain the rationale behind each code segment.&#10;  - Documented the feature engineering process and the logic behind the simulated data generation, linking it to the original dataset's characteristics.&#10;&#10;- **Refined Code Structure and Readability:**&#10;  - Organized code into functions for better modularity and readability.&#10;  - Followed PEP 8 styling guidelines to enhance code consistency.&#10;  - Removed redundant code and comments to clean up the scripts.&#10;&#10;- **Updated Configurations and Paths:**&#10;  - Ensured all file paths and configurations are relative and do not contain hardcoded values that could cause issues on different systems.&#10;  - Used `os.path.join` for path constructions to ensure cross-platform compatibility.&#10;&#10;- **Future Considerations and Improvements:**&#10;  - Noted areas for future enhancement, such as scalability optimizations, dynamic configuration management, and comprehensive testing.&#10;  - Suggested potential features like real-time data visualization and containerization for easier deployment.&#10;&#10;**Files Affected:**&#10;&#10;- `simulate_real_data.py`&#10;- `real_time_processing.py`&#10;- `../logs/simulate_sensor_data.log`&#10;- `../logs/real_time_processing.log`&#10;&#10;**Note:**&#10;&#10;- This commit represents a significant milestone in the project, finalizing the core functionality of real-time data simulation and processing while ensuring robustness and maintainability.&#10;- All changes have been thoroughly tested to confirm they meet the project requirements and perform as expected." />
+    <MESSAGE value="git ignore" />
+    <MESSAGE value="Add readiness checks and enhance Kafka data pipeline script&#10;&#10;&#10;Implemented readiness checks for Kafka and Zookeeper, enhanced existing functions, and fixed version mismatches to improve the reliability and robustness of the Kafka data pipeline script.&#10;&#10;**Changes Made:**&#10;&#10;1. **Added Function: `is_port_in_use(port)`**&#10;&#10;    - **Code Added:**&#10;    ```python&#10;    import socket&#10;&#10;    def is_port_in_use(port):&#10;        with socket.socket(socket.AF_INET, socket.SOCK_STREAM) as s:&#10;            return s.connect_ex(('localhost', port)) == 0&#10;    ```&#10;&#10;    - **Rationale:**&#10;        - **Port Availability Check:**&#10;            - The `is_port_in_use()` function checks if a specific port is already in use on `localhost`.&#10;        - **Prevents Port Conflicts:**&#10;            - Ensures that the script does not attempt to start a service on a port that is already occupied, avoiding runtime errors.&#10;&#10;2. **Added Function: `wait_for_zookeeper_ready(timeout=30)`**&#10;&#10;    - **Code Added:**&#10;    ```python&#10;    import time&#10;&#10;    def wait_for_zookeeper_ready(timeout=30):&#10;        start_time = time.time()&#10;        while time.time() - start_time &lt; timeout:&#10;            if is_port_in_use(2181):&#10;                logging.info(&quot;Zookeeper is ready.&quot;)&#10;                return True&#10;            else:&#10;                logging.info(&quot;Waiting for Zookeeper to be ready...&quot;)&#10;                time.sleep(1)&#10;        logging.error(&quot;Zookeeper did not become ready within the timeout period.&quot;)&#10;        return False&#10;    ```&#10;&#10;    - **Rationale:**&#10;        - **Zookeeper Readiness Check:**&#10;            - Waits for Zookeeper to become ready before proceeding, ensuring that dependent services can connect successfully.&#10;        - **Improves Reliability:**&#10;            - Prevents race conditions where the script might attempt to interact with Zookeeper before it's fully initialized.&#10;        - **Configurable Timeout:**&#10;            - Allows specifying a timeout period to avoid indefinite waiting.&#10;&#10;3. **Added Function: `wait_for_kafka_ready(timeout=30)`**&#10;&#10;    - **Code Added:**&#10;    ```python&#10;    def wait_for_kafka_ready(timeout=30):&#10;        start_time = time.time()&#10;        while time.time() - start_time &lt; timeout:&#10;            if is_port_in_use(9092):&#10;                logging.info(&quot;Kafka broker is ready.&quot;)&#10;                return True&#10;            else:&#10;                logging.info(&quot;Waiting for Kafka broker to be ready...&quot;)&#10;                time.sleep(1)&#10;        logging.error(&quot;Kafka broker did not become ready within the timeout period.&quot;)&#10;        return False&#10;    ```&#10;&#10;    - **Rationale:**&#10;        - **Kafka Broker Readiness Check:**&#10;            - Similar to the Zookeeper readiness check, but for the Kafka broker on port 9092.&#10;        - **Ensures Sequential Startup:**&#10;            - Guarantees that the Kafka broker is fully operational before the script attempts to create topics or produce messages.&#10;        - **Avoids Connection Errors:**&#10;            - Reduces the likelihood of connection failures due to premature client initialization.&#10;&#10;4. **Upgraded Existing Functions Based on New Logic**&#10;&#10;    - **Changes Made:**&#10;        - Updated functions to utilize the new readiness checks before performing operations that depend on Zookeeper or Kafka being ready.&#10;        - Ensured that the script now starts Zookeeper and Kafka services programmatically and waits for them to be ready before proceeding.&#10;&#10;    - **Rationale:**&#10;        - **Enhanced Stability:**&#10;            - By integrating readiness checks into the workflow, we ensure that services are up and running before any operations are performed.&#10;        - **Improved Flow Control:**&#10;            - The script now has better control over the sequence of operations, reducing the chance of errors due to unavailable services.&#10;&#10;5. **Fixed Kafka Client Version Mismatch**&#10;&#10;    - **Code Changed:**&#10;    ```python&#10;    from kafka import KafkaProducer&#10;&#10;    # Previous code:&#10;    producer = KafkaProducer(bootstrap_servers=['localhost:9092'])&#10;&#10;    # Updated code:&#10;    producer = KafkaProducer(&#10;        bootstrap_servers=['localhost:9092'],&#10;        api_version=(3, 7, 0)  # Explicitly set to match the broker version&#10;    )&#10;    ```&#10;&#10;    - **Rationale:**&#10;        - **Version Consistency:**&#10;            - Explicitly setting `api_version` to `(3, 7, 0)` ensures that the client and broker communicate using the same protocol version.&#10;        - **Compatibility Fix:**&#10;            - Resolves the issue where the client misidentified the broker version, preventing potential incompatibility problems.&#10;        - **Performance Improvement:**&#10;            - Avoids unnecessary version probing during client initialization, enhancing startup performance.&#10;&#10;6. **Enhanced Logging and Exception Handling**&#10;&#10;    - **Changes Made:**&#10;        - Improved logging messages to provide clearer feedback during startup and operations.&#10;        - Added error handling to manage exceptions during service startups and readiness checks.&#10;&#10;    - **Rationale:**&#10;        - **Visibility:**&#10;            - Provides better insight into the application's behavior and aids in troubleshooting.&#10;        - **Robustness:**&#10;            - Ensures that the script can handle unexpected situations gracefully.&#10;&#10;7. **Implemented Data Sending Loop with Interval**&#10;&#10;    - **Code Added:**&#10;    ```python&#10;    import time&#10;&#10;    while True:&#10;        data = generate_sensor_data()&#10;        send_data_to_kafka(producer, 'sensor-data', data)&#10;        time.sleep(25)  # Wait for 25 seconds before sending the next data point&#10;    ```&#10;&#10;    - **Rationale:**&#10;        - **Continuous Data Stream:**&#10;            - The loop simulates a real-time data feed by continuously generating and sending data at regular intervals.&#10;        - **Configurability:**&#10;            - The sleep interval can be adjusted to match the desired data rate for testing or production environments.&#10;&#10;**Overall Rationale:**&#10;&#10;- **Reliability and Robustness:**&#10;    - The addition of readiness checks for Zookeeper and Kafka ensures that the script operates reliably, even in environments where service startup times may vary.&#10;- **Preventing Runtime Errors:**&#10;    - By checking if ports are in use, we avoid conflicts and potential crashes due to attempting to bind to an already used port.&#10;- **Enhanced Workflow:**&#10;    - The script now follows a more logical sequence: starting services, waiting for them to be ready, and then performing dependent operations.&#10;- **Improved Maintainability:**&#10;    - Encapsulating the readiness logic into functions makes the code cleaner and easier to maintain or extend in the future." />
+    <MESSAGE value="Added the treatment of errors&#10;&quot;&#10;Try:&#10;Except:&#10;&quot;&#10;In Real_Time_Prcessing's Main function.py script" />
+    <MESSAGE value="Integration with Existing Systems:&#10;&#10;- **Added new scripts:**&#10;  - `openmaint_consumer.py`: Kafka consumer script integrating with openMAINT.&#10;  - `OpenMaintClient.py`: Client library for interacting with openMAINT's API.&#10;  - `setup_kafka.py`: Script to set up Kafka for message streaming.&#10;  - `setup_postgresql.py`: Script to set up PostgreSQL database.&#10;  - `integration_with_existing_systems.work`: Documentation and work notes.&#10;&#10;- **Updated scripts:**&#10;  - `real_time_processing.py`: Modified to integrate with openMAINT and handle new data structures.&#10;  - `simulate_real_data.py`: Updated data simulation to match new integration requirements.&#10;&#10;- **Implemented:**&#10;  - Seamless data flow between predictive models and openMAINT.&#10;  - Integration scripts for connecting with existing systems and databases.&#10;  - Testing of integrations with existing data sources.&#10;&#10;- **Documentation:**&#10;  - Documented integration processes and best practices in `integration_with_existing_systems.work`.&#10;&#10;- **Notes:**&#10;  - Completed Subtasks:&#10;    - 5.1: Identified integration points with existing systems and databases.&#10;    - 5.2: Developed integration scripts for seamless data flow.&#10;    - 5.3: Tested integrations with existing data sources.&#10;    - 5.4: Documented integration processes and best practices." />
+    <MESSAGE value="Refactored scripts into modular, class-based modules for better encapsulation and reusability&#10;&#10;- **Overview**:&#10;  - Refactored the following scripts to encapsulate their functionalities within classes:&#10;    - `simulate_real_data.py`&#10;    - `real_time_processing.py`&#10;    - `openmaint_consumer.py`&#10;&#10;- **Changes Made**:&#10;  - **simulate_real_data.py**:&#10;    - Created a new class `SensorDataSimulator` that encapsulates all functionalities of the original script.&#10;    - Converted all functions into methods within the class.&#10;    - Preserved the original logic and functionality while improving modularity.&#10;    - The class handles Kafka environment setup, data simulation, and data streaming to Kafka topics.&#10;    - Created a new script `simulate_real_data_runner.py` to instantiate and run the `SensorDataSimulator` class.&#10;&#10;  - **real_time_processing.py**:&#10;    - Created a new class `RealTimeProcessor` that encapsulates all functionalities of the original script.&#10;    - Converted all functions into methods within the class.&#10;    - Preserved the original processing logic and ensured that the script continues to work as before.&#10;    - The class handles model loading, feature engineering, prediction, Kafka integration, and database interactions.&#10;    - Created a new script `real_time_processing_runner.py` to instantiate and run the `RealTimeProcessor` class.&#10;&#10;  - **openmaint_consumer.py**:&#10;    - Created a new class `OpenMaintConsumer` that encapsulates all functionalities of the original script.&#10;    - Converted all functions into methods within the class.&#10;    - Preserved the original functionality, ensuring that the script continues to interact with OpenMAINT as before.&#10;    - The class handles Kafka message consumption, OpenMAINT API interactions, and work order creation.&#10;    - Created a new script `openmaint_consumer_runner.py` to instantiate and run the `OpenMaintConsumer` class.&#10;&#10;- **New Files Created**:&#10;  - `sensor_data_simulator.py` (refactored class module for `simulate_real_data.py`)&#10;  - `simulate_real_data_runner.py` (script to run the `SensorDataSimulator` class)&#10;  - `real_time_processor.py` (refactored class module for `real_time_processing.py`)&#10;  - `real_time_processing_runner.py` (script to run the `RealTimeProcessor` class)&#10;  - `openmaint_consumer_module.py` (refactored class module for `openmaint_consumer.py`)&#10;  - `openmaint_consumer_runner.py` (script to run the `OpenMaintConsumer` class)&#10;&#10;- **Benefits**:&#10;  - **Encapsulation**: All functionalities are encapsulated within classes, promoting better code organization.&#10;  - **Reusability**: Classes can be easily imported and used in other scripts or projects.&#10;  - **Modularity**: Separation of concerns allows for easier maintenance and scalability.&#10;  - **Maintainability**: Updates or bug fixes can be made within the class, benefiting all scripts that use it.&#10;&#10;- **Detailed Explanation**:&#10;  - **simulate_real_data.py**:&#10;    - The `SensorDataSimulator` class handles:&#10;      - Kafka environment preparation (starting Zookeeper and Kafka broker).&#10;      - Modifying Kafka configurations to ensure unique log directories.&#10;      - Simulating sensor data using statistical models.&#10;      - Sending simulated data to Kafka topics at specified intervals.&#10;      - Graceful shutdown and cleanup of resources.&#10;&#10;  - **real_time_processing.py**:&#10;    - The `RealTimeProcessor` class handles:&#10;      - Loading pre-trained machine learning models and associated scalers.&#10;      - Setting up Kafka consumer and producer for data ingestion and notifications.&#10;      - Performing feature engineering on incoming data.&#10;      - Making predictions using both supervised and neural network models.&#10;      - Aggregating predictions and determining potential machine failures.&#10;      - Saving processed data and predictions to the database.&#10;      - Sending alerts to Kafka topics when high-risk conditions are detected.&#10;      - Resource management and cleanup.&#10;&#10;  - **openmaint_consumer.py**:&#10;    - The `OpenMaintConsumer` class handles:&#10;      - Consuming messages from Kafka topics.&#10;      - Interacting with the OpenMAINT API to create work orders.&#10;      - Handling authentication, session management, and API calls to OpenMAINT.&#10;      - Parsing and processing the incoming data to create appropriate work orders.&#10;      - Logging and error handling.&#10;      - Graceful shutdown and resource cleanup.&#10;&#10;- **Notes**:&#10;  - Existing functionality and logic have been preserved to ensure that the scripts continue to work as intended.&#10;  - Refactoring improves code quality and facilitates integration with other components or systems.&#10;  - The new class-based modules provide a cleaner interface for interacting with the scripts' functionalities." />
+    <MESSAGE value="feat: Implement fully integrated startup sequence with robust error handling and configuration-based URLs&#10;&#10;After extensive iterations, refactors, and debugging sessions, we have arrived at a final, professional-grade script that coordinates the entire maintenance prediction system and integrates seamlessly with Kafka, openMAINT, and Grafana dashboards.&#10;&#10;Key points addressed throughout this development process:&#10;&#10;1. **Directory and Path Management:**&#10;   - Initially, we struggled with relative paths and `..` usage, causing missing file errors on different machines.&#10;   - We resolved this by using `os.path.abspath(os.path.dirname(__file__))` to reliably reference directories and ensure all paths remain consistent on any computer.&#10;   - This change ensures that configuration files, Docker Compose files, and scripts are always found relative to the `run.py` location.&#10;&#10;2. **Error Handling and Professionalism:**&#10;   - Incorporated robust `try-except` blocks to gracefully handle file not found errors, subprocess failures, and YAML loading issues.&#10;   - Added detailed logging at various points (DEBUG, INFO, ERROR) to trace each step of the startup process and provide insightful error messages.&#10;   - Ensured that the script fails fast and clearly if configurations or required services fail to start.&#10;&#10;3. **Configuration-Driven URLs:**&#10;   - Moved hardcoded URLs for openMAINT and Grafana dashboards into YAML configuration files (`openmaint_config.yaml` and `grafana_config.yaml`) to enhance flexibility and portability.&#10;   - Extracted `work_order` (for openMAINT) and `url` (for Grafana) from these config files, enabling easy updates without code changes.&#10;&#10;4. **Integration with Services:**&#10;   - Introduced a unified `start_services` function to bring up Docker Compose services (Kafka and openMAINT).&#10;   - Wait times after service startup ensure that external services are ready before we proceed to the next steps.&#10;&#10;5. **Process Management:**&#10;   - Spawned the SensorDataSimulator, RealTimeProcessor, and openmaint_consumer in separate subprocesses, ensuring they run concurrently.&#10;   - Implemented error handling and cleanup (terminate processes on error or KeyboardInterrupt).&#10;&#10;6. **Opening Web Pages:**&#10;   - After ensuring the pipeline (Kafka, openMAINT, RealTimeProcessor, SensorDataSimulator) is up and running, the script now automatically opens the configured openMAINT work order page and the Grafana dashboard URL in the default web browser, enhancing user convenience.&#10;&#10;This commit consolidates all improvements and ensures the final `run.py` script is production-ready, professional, and portable, addressing all issues encountered during previous iterations." />
+    <MESSAGE value="Test files and kafka and openmaint-2.3-3.4.1-d files loaded via Docker in addition to docker-compose.yml files" />
+    <MESSAGE value="feat: Add conditional ZIP extraction for openMAINT and Kafka directories before startup&#10;&#10;- Introduce logic to extract `openmaint-2.3-3.4.1-d.zip` if the openMAINT docker-compose file is missing.&#10;- Introduce logic to extract `kafka.zip` if the Kafka directory under RealTimeProcessing is missing.&#10;- Maintain robust error handling and logging throughout the process.&#10;- Ensure configuration loading occurs after successful extraction.&#10;- Verify script existence before running sensor, processor, and openmaint_consumer processes.&#10;- Attempt to open configured URLs in the default browser, handling any exceptions gracefully.&#10;- Fix minor logging typos and improve clarity in error messages." />
+    <MESSAGE value="&quot;chore: Add comprehensive unit tests for integration and system components&#10;&#10;- Added integration_test.py to validate the end-to-end predictive maintenance pipeline.&#10;- Added test_openmaint_client.py to test OpenMaintClient class methods, including authentication and data retrieval.&#10;- Added test_openmaint_consumer.py to verify the OpenMaintConsumer's message processing and work order creation.&#10;- Added test_real_time_processor.py to ensure RealTimeProcessor initializes and executes correctly.&#10;- Added test_real_time_processor_client.py to validate RealTimeProcessorClient's data aggregation and feature engineering.&#10;- Added test_sensor_data_simulator.py to test SensorDataSimulator's data generation and Kafka interactions.&#10;- Added test_sensor_data_simulator_client.py to validate SensorDataSimulatorClient's Docker and Kafka integration methods.&quot;" />
+    <MESSAGE value="&quot; Add comprehensive unit tests for integration and system components&#10;&#10;- Added integration_test.py to validate the end-to-end predictive maintenance pipeline.&#10;- Added test_openmaint_client.py to test OpenMaintClient class methods, including authentication and data retrieval.&#10;- Added test_openmaint_consumer.py to verify the OpenMaintConsumer's message processing and work order creation.&#10;- Added test_real_time_processor.py to ensure RealTimeProcessor initializes and executes correctly.&#10;- Added test_real_time_processor_client.py to validate RealTimeProcessorClient's data aggregation and feature engineering.&#10;- Added test_sensor_data_simulator.py to test SensorDataSimulator's data generation and Kafka interactions.&#10;- Added test_sensor_data_simulator_client.py to validate SensorDataSimulatorClient's Docker and Kafka integration methods.&quot;" />
+    <MESSAGE value="git" />
+    <option name="LAST_COMMIT_MESSAGE" value="git" />
+  </component>
+  <component name="com.intellij.coverage.CoverageDataManagerImpl">
+    <SUITE FILE_PATH="coverage/consume_sensor_data_py$original_simulate_sensor_data.coverage" NAME="original_simulate_sensor_data Coverage Results" MODIFIED="1722780550416" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/predictive_maintenance/src/simulate_data" />
+    <SUITE FILE_PATH="coverage/consume_sensor_data_py$prepare_cnn_training_data.coverage" NAME="prepare_cnn_training_data Coverage Results" MODIFIED="1725458683528" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/predictive_maintenance/src/models_training/CNN" />
+    <SUITE FILE_PATH="coverage/_maintenance_system$setup_postgresql.coverage" NAME="setup_postgresql Coverage Results" MODIFIED="1731346391478" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/predictive_maintenance/IntegrationWithExistingSystems" />
+    <SUITE FILE_PATH="coverage/_maintenance_system$OpenMaintClient.coverage" NAME="OpenMaintClient Coverage Results" MODIFIED="1734964673027" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/predictive_maintenance/IntegrationWithExistingSystems" />
+    <SUITE FILE_PATH="coverage/consume_sensor_data_py$VerifyData.coverage" NAME="VerifyData Coverage Results" MODIFIED="1722953472238" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/predictive_maintenance/src/Testing&amp;preparationData" />
+    <SUITE FILE_PATH="coverage/_maintenance_system$lstm_model.coverage" NAME="lstm_model Coverage Results" MODIFIED="1727538280324" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/predictive_maintenance/src/models_training/LSTM" />
+    <SUITE FILE_PATH="coverage/_maintenance_system$check_trained_model_features.coverage" NAME="check_trained_model_features Coverage Results" MODIFIED="1727182561234" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/predictive_maintenance/kafka/logs" />
+    <SUITE FILE_PATH="coverage/_maintenance_system$prepare_and_training_isolation_forest.coverage" NAME="prepare_and_training_isolation_forest Coverage Results" MODIFIED="1728213508277" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/predictive_maintenance/src/models_training/ISOLATION_FOREST" />
+    <SUITE FILE_PATH="coverage/_maintenance_system$original_simulate_sensor_data.coverage" NAME="original_simulate_sensor_data Coverage Results" MODIFIED="1726592048167" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/predictive_maintenance/src/simulate_data" />
+    <SUITE FILE_PATH="coverage/_maintenance_system$real_time_processing_CNN_LSTM.coverage" NAME="real_time_processing_CNNֹ_LSTM Coverage Results" MODIFIED="1727172488615" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/predictive_maintenance/kafka" />
+    <SUITE FILE_PATH="coverage/consume_sensor_data_py$statisticaltest.coverage" NAME="statisticaltest Coverage Results" MODIFIED="1722765506545" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/predictive_maintenance/src/statisticaltests" />
+    <SUITE FILE_PATH="coverage/_maintenance_system$verify_tables.coverage" NAME="verify_tables Coverage Results" MODIFIED="1721999530120" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/predictive_maintenance/src" />
+    <SUITE FILE_PATH="coverage/_maintenance_system$test.coverage" NAME="test Coverage Results" MODIFIED="1732623684386" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/predictive_maintenance/IntegrationWithExistingSystems" />
+    <SUITE FILE_PATH="coverage/consume_sensor_data_py$simulate_processed_sensor_data__1_.coverage" NAME="simulate_processed_sensor_data (1) Coverage Results" MODIFIED="1722953398540" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/predictive_maintenance/src/simulate_data" />
+    <SUITE FILE_PATH="coverage/_maintenance_system$model_selection.coverage" NAME="model_selection Coverage Results" MODIFIED="1722003082063" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/predictive_maintenance/src" />
+    <SUITE FILE_PATH="coverage/_maintenance_system$prepare_and_training_cnn__1_.coverage" NAME="prepare_and_training_cnn (1) Coverage Results" MODIFIED="1728217432618" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/predictive_maintenance/src/models_training/CNN" />
+    <SUITE FILE_PATH="coverage/_maintenance_system$prepare_and_training_lstm.coverage" NAME="prepare_and_training_lstm Coverage Results" MODIFIED="1728732906590" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/predictive_maintenance/src/models_training/LSTM" />
+    <SUITE FILE_PATH="coverage/_maintenance_system$combined_CSV_file.coverage" NAME="combined_CSV_file Coverage Results" MODIFIED="1726408463288" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/predictive_maintenance/src/models_training/ISOLATION_FOREST" />
+    <SUITE FILE_PATH="coverage/consume_sensor_data_py$LSTM_OF_simulate_processed_sensor_data.coverage" NAME="LSTMֹ_OFֹֹֹֹ_simulate_processed_sensor_data Coverage Results" MODIFIED="1725295874689" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/predictive_maintenance/src/models_training" />
+    <SUITE FILE_PATH="coverage/_maintenance_system$prepare_isolation_forest_training_data.coverage" NAME="prepare_isolation_forest_training_data Coverage Results" MODIFIED="1725786732413" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/predictive_maintenance/src/models_training/ISOLATION_FOREST" />
+    <SUITE FILE_PATH="coverage/_maintenance_system$RealTimeProcessorClient.coverage" NAME="RealTimeProcessorClient Coverage Results" MODIFIED="1733086180553" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/predictive_maintenance/RealTimeProcessing" />
+    <SUITE FILE_PATH="coverage/_maintenance_system$cleanup_environment.coverage" NAME="cleanup_environment Coverage Results" MODIFIED="1734343032759" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/predictive_maintenance" />
+    <SUITE FILE_PATH="coverage/_maintenance_system$simulate_real_data.coverage" NAME="simulate_real_data Coverage Results" MODIFIED="1732967314468" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/predictive_maintenance/RealTimeProcessing" />
+    <SUITE FILE_PATH="coverage/consume_sensor_data_py$prepare_lstm_training_data.coverage" NAME="prepare_lstm_training_data Coverage Results" MODIFIED="1725352215037" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/predictive_maintenance/src/models_training" />
+    <SUITE FILE_PATH="coverage/_maintenance_system$update_database.coverage" NAME="update_database Coverage Results" MODIFIED="1730223684165" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/predictive_maintenance/src/database" />
+    <SUITE FILE_PATH="coverage/_maintenance_system$prepare_and_training_lstm_.coverage" NAME="prepare_and_training_lstm_ Coverage Results" MODIFIED="1727528804508" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/predictive_maintenance/src/models_training/LSTM" />
+    <SUITE FILE_PATH="coverage/_maintenance_system$openmaint_consumer.coverage" NAME="openmaint_consumer Coverage Results" MODIFIED="1734461031298" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/predictive_maintenance/IntegrationWithExistingSystems" />
+    <SUITE FILE_PATH="coverage/consume_sensor_data_py$lstm_model.coverage" NAME="lstm_model Coverage Results" MODIFIED="1725353802844" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/predictive_maintenance/src/models_training" />
+    <SUITE FILE_PATH="coverage/consume_sensor_data_py$SyntheticDatatest.coverage" NAME="SyntheticDatatest Coverage Results" MODIFIED="1722761944018" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/predictive_maintenance/src/database" />
+    <SUITE FILE_PATH="coverage/consume_sensor_data_py$statistical_validation.coverage" NAME="statistical_validation Coverage Results" MODIFIED="1722781832565" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/predictive_maintenance/src/statisticaltests" />
+    <SUITE FILE_PATH="coverage/_maintenance_system$model_training.coverage" NAME="model_training Coverage Results" MODIFIED="1722145065793" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/predictive_maintenance/src" />
+    <SUITE FILE_PATH="coverage/_maintenance_system$prepare_and_training_cnn.coverage" NAME="prepare_and_training_cnn Coverage Results" MODIFIED="1728732651469" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/predictive_maintenance/src/models_training/CNN" />
+    <SUITE FILE_PATH="coverage/_maintenance_system$p.coverage" NAME="p Coverage Results" MODIFIED="1734378257049" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/predictive_maintenance/IntegrationWithExistingSystems" />
+    <SUITE FILE_PATH="coverage/_maintenance_system$.coverage" NAME=" Coverage Results" MODIFIED="1734968222759" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/predictive_maintenance/tests" />
+    <SUITE FILE_PATH="coverage/consume_sensor_data_py$data_preprocessing.coverage" NAME="data_preprocessing Coverage Results" MODIFIED="1722437568493" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/predictive_maintenance/src/data processing" />
+    <SUITE FILE_PATH="coverage/_maintenance_system$new.coverage" NAME="new Coverage Results" MODIFIED="1728808837053" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/predictive_maintenance/kafka" />
+    <SUITE FILE_PATH="coverage/_maintenance_system$SensorDataSimulator.coverage" NAME="SensorDataSimulator Coverage Results" MODIFIED="1734813103517" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/predictive_maintenance/RealTimeProcessing" />
+    <SUITE FILE_PATH="coverage/_maintenance_system$dashboard.coverage" NAME="dashboard Coverage Results" MODIFIED="1730210489417" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/predictive_maintenance/dashboards" />
+    <SUITE FILE_PATH="coverage/_maintenance_system$simulate_processed_sensor_data.coverage" NAME="simulate_processed_sensor_data Coverage Results" MODIFIED="1727452371280" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/predictive_maintenance/src/simulate_data" />
+    <SUITE FILE_PATH="coverage/_maintenance_system$RealTimeProcessor.coverage" NAME="RealTimeProcessor Coverage Results" MODIFIED="1734625251728" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/predictive_maintenance/RealTimeProcessing" />
+    <SUITE FILE_PATH="coverage/_maintenance_system$prepare_and_training_cnn_lstm.coverage" NAME="prepare_and_training_cnn_lstm Coverage Results" MODIFIED="1728732785174" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/predictive_maintenance/src/models_training/CNN_LSTM" />
+    <SUITE FILE_PATH="coverage/consume_sensor_data_py$update_database.coverage" NAME="update_database Coverage Results" MODIFIED="1722954488965" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/predictive_maintenance/src/database" />
+    <SUITE FILE_PATH="coverage/consume_sensor_data_py$simulate_sensor_data.coverage" NAME="simulate_sensor_data Coverage Results" MODIFIED="1722764330844" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/predictive_maintenance/src/database" />
+    <SUITE FILE_PATH="coverage/_maintenance_system$prepare_and_training_cnn_data.coverage" NAME="prepare_and_training_cnn_data Coverage Results" MODIFIED="1727607926066" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/predictive_maintenance/src/models_training/CNN" />
+    <SUITE FILE_PATH="coverage/_maintenance_system$lstm_model__1_.coverage" NAME="lstm_model (1) Coverage Results" MODIFIED="1725471189790" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/predictive_maintenance/src/models_training/LSTM" />
+    <SUITE FILE_PATH="coverage/_maintenance_system$isolation_forest_model.coverage" NAME="isolation_forest_model Coverage Results" MODIFIED="1726387774304" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/predictive_maintenance/src/models_training/ISOLATION_FOREST" />
+    <SUITE FILE_PATH="coverage/_maintenance_system$scan_directory.coverage" NAME="scan_directory Coverage Results" MODIFIED="1734628240277" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/predictive_maintenance" />
+    <SUITE FILE_PATH="coverage/_maintenance_system$run.coverage" NAME="run Coverage Results" MODIFIED="1734963999623" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/predictive_maintenance" />
+    <SUITE FILE_PATH="coverage/consume_sensor_data_py$diagnose.coverage" NAME="diagnose Coverage Results" MODIFIED="1722535967724" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/predictive_maintenance/src/data_processing" />
+    <SUITE FILE_PATH="coverage/_maintenance_system$prepare_datasets.coverage" NAME="prepare_datasets Coverage Results" MODIFIED="1722003425510" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/predictive_maintenance/src" />
+    <SUITE FILE_PATH="coverage/consume_sensor_data_py$data_preprocessing__1_.coverage" NAME="data_preprocessing (1) Coverage Results" MODIFIED="1722951540847" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/predictive_maintenance/src/data_processing" />
+    <SUITE FILE_PATH="coverage/_maintenance_system$real_time_processing.coverage" NAME="real_time_processing Coverage Results" MODIFIED="1732967366287" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/predictive_maintenance/RealTimeProcessing" />
+    <SUITE FILE_PATH="coverage/_maintenance_system$test2.coverage" NAME="test2 Coverage Results" MODIFIED="1732742485103" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/predictive_maintenance/IntegrationWithExistingSystems" />
+    <SUITE FILE_PATH="coverage/_maintenance_system$cnn_lstm_model.coverage" NAME="cnn_lstm_model Coverage Results" MODIFIED="1725782319987" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/predictive_maintenance/src/models_training/CNN_LSTM" />
+    <SUITE FILE_PATH="coverage/consume_sensor_data_py$cnn_model.coverage" NAME="cnn_model Coverage Results" MODIFIED="1725465634565" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/predictive_maintenance/src/models_training/CNN" />
+    <SUITE FILE_PATH="coverage/_maintenance_system$prepare_cnn_lstm_training_data.coverage" NAME="prepare_cnn_lstm_training_data Coverage Results" MODIFIED="1725772901594" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/predictive_maintenance/src/models_training/CNN_LSTM" />
+    <SUITE FILE_PATH="coverage/_maintenance_system$testOpenMaintClient.coverage" NAME="testOpenMaintClient Coverage Results" MODIFIED="1732896373665" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/predictive_maintenance/IntegrationWithExistingSystems" />
+    <SUITE FILE_PATH="coverage/consume_sensor_data_py$integrate_data.coverage" NAME="integrate_data Coverage Results" MODIFIED="1722954337797" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/predictive_maintenance/src/database" />
+    <SUITE FILE_PATH="coverage/_maintenance_system$SensorDataSimulatorClient.coverage" NAME="SensorDataSimulatorClient Coverage Results" MODIFIED="1734813136817" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/predictive_maintenance/RealTimeProcessing" />
+  </component>
+</project>

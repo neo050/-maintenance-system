@@ -1,0 +1,99 @@
+# Byte-compiled and cache directories
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+*.swp
+*.swo
+
+
+__pycache__/
+*.pyc
+
+# Virtual environment directories (commonly named .venv or venv)
+.venv/
+venv/
+../maintenance_env/
+
+# IDE and editor configuration files
+.idea/
+../.idea/
+
+# Python egg metadata and build artifacts
+*.egg-info/
+*.egg
+build/
+dist/
+*.egg-info/
+*.egg
+
+# Logs and temporary files
+logs/
+*.log
+
+# System files
+.DS_Store
+Thumbs.db
+
+# Temporary or test data files that should not be committed
+data/combined/*.csv
+data/simulation/*.csv
+data/processed/*.csv
+data/integration/*.csv
+data/prepare_anomaly_training_data/*.csv
+data/prepare_cnn_lstm_training_data/*.npy
+data/prepare_cnn_training_data/*.npy
+data/prepare_lstm_training_data/*.npy
+
+# Intermediate training artifacts
+models/**/history_fold_*.csv
+#models/**/*.keras
+#models/**/best_model.pkl
+#models/**/ensemble_model.pkl
+#models/**/scaler*.pkl
+#models/**/optuna_study.pkl
+models/**/feature_importance.png
+models/**/shap_summary_plot.png
+models/**/plot_results.png
+models/**/training_validation_accuracy_loss_per_fold.png"""
+
+# Kafka and temporary binaries (if you don't need them versioned)
+
+RealTimeProcessing/kafka.zip
+RealTimeProcessing/kafka
+# IntelliJ / PyCharm project files (already covered by .idea/, but just in case)
+*.iml
+*.iws
+*.ipr
+
+# Qodana (if generated)
+qodana.yaml
+
+# Local configuration files (if you don't want them committed)
+config/database_config.yaml
+config/grafana_config.yaml
+config/kafka_config.yaml
+config/model_config.yaml
+config/openmaint_config.yaml
+
+# Documentation or temporary documentation notes (if desired)
+Important_questions_and_key_points_related_to_the_final_project_and_(GPT).txt
+directory_structure.txt
+
+# Any test output or temporary test artifacts
+tests/**/__pycache__/
+tests/**/.pytest_cache/
+
+# Node or front-end specific (if any were to appear)
+node_modules/
+
+# Ignore Mac OS generated files
+.DS_Store
+
+# Ignore Windows thumbnail/caching
+Thumbs.db
+IntegrationWithExistingSystems/openmaint-2.3-3.4.1-d
+IntegrationWithExistingSystems/openmaint-2.3-3.4.1-d.zip
+# Ignore large Kafka files
+predictive_maintenance/RealTimeProcessing/kafka/kafka_2.13-3.7.0/libs/rocksdbjni-7.9.2.jar
+predictive_maintenance/RealTimeProcessing/kafka.zip
