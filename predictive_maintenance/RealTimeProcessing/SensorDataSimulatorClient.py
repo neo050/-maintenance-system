@@ -239,13 +239,14 @@ class SensorDataSimulator:
             self.logger.error(f"Error while closing producer: {e}")
 
         try:
+            # Log before closing handlers
+            self.logger.info("SensorDataSimulatorClient is shutting down.")
+
             # Close and remove all handlers associated with the logger
             handlers = self.logger.handlers[:]
             for handler in handlers:
                 handler.close()
                 self.logger.removeHandler(handler)
                 self.logger.debug(f"Closed and removed handler: {handler}")
-
-            self.logger.info("Kafka producer has been shut down.")
         except Exception as e:
             print(f"Error while closing logger: {e}")

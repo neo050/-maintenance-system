@@ -277,16 +277,16 @@ if __name__ == "__main__":
     finally:
 
         try:
+            # Log before closing handlers
+            logger.info("openmaint_consumer is shutting down.")
+
             # Close and remove all handlers associated with the logger
             handlers = logger.handlers[:]
             for handler in handlers:
                 handler.close()
                 logger.removeHandler(handler)
                 logger.debug(f"Closed and removed handler: {handler}")
-
-                logger.info("OpenMaint consumer has been terminated.")
         except Exception as e:
             print(f"Error while closing logger: {e}")
-
 
 

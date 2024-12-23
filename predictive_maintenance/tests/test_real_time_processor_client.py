@@ -1,22 +1,43 @@
-# tests/test_real_time_processor_client.py
-
 import unittest
 from unittest.mock import patch, MagicMock
 import pandas as pd
 import numpy as np
 from RealTimeProcessing.RealTimeProcessorClient import RealTimeProcessor
-
+import warnings
 
 class TestRealTimeProcessor(unittest.TestCase):
 
     @patch('RealTimeProcessing.RealTimeProcessorClient.logging.getLogger')
-    def setUp(self, mock_get_logger):
+    @patch.object(RealTimeProcessor, 'load_models')
+    @patch.object(RealTimeProcessor, 'load_config')
+    @patch.object(RealTimeProcessor, 'create_database_engine')
+    @patch.object(RealTimeProcessor, 'setup_kafka_consumer')
+    @patch.object(RealTimeProcessor, 'setup_kafka_producer')
+    def setUp(
+        self,
+        mock_setup_producer,
+        mock_setup_consumer,
+        mock_create_db_engine,
+        mock_load_config,
+        mock_load_models,
+        mock_get_logger
+    ):
+        warnings.simplefilter("ignore", ResourceWarning)
         self.models_dir = '../models'
         self.config_file = '../config/database_config.yaml'
         self.mock_logger = MagicMock()
         mock_get_logger.return_value = self.mock_logger
 
+        # Initialize RealTimeProcessor with mocked methods
         self.processor = RealTimeProcessor(self.models_dir, self.config_file)
+
+        # Mock models and scalers to prevent actual predictions
+        self.processor.models = {
+            'supervised': {'models': [MagicMock()], 'scaler': MagicMock()},
+            'cnn': {'models': [MagicMock()], 'scaler': MagicMock()},
+            'lstm': {'models': [MagicMock()], 'scaler': MagicMock()},
+            'cnn_lstm': {'models': [MagicMock()], 'scaler': MagicMock()},
+        }
 
     def tearDown(self):
         # Ensure cleanup is called after each test
@@ -76,10 +97,33 @@ class TestRealTimeProcessor(unittest.TestCase):
         mock_producer = MagicMock()
         mock_kafka_producer.return_value = mock_producer
 
+        # **Assign the mocked consumer and producer to the processor**
+        self.processor.consumer = mock_consumer
+        self.processor.producer = mock_producer
+
+        # Ensure scalers are mocked to prevent actual scaling
+        self.processor.models = {
+            'supervised': {'models': [MagicMock()], 'scaler': MagicMock()},
+            'cnn': {'models': [MagicMock()], 'scaler': MagicMock()},
+            'lstm': {'models': [MagicMock()], 'scaler': MagicMock()},
+            'cnn_lstm': {'models': [MagicMock()], 'scaler': MagicMock()},
+        }
+
+        # Call process_messages
         self.processor.process_messages()
-        # An error should be logged due to invalid 'Air temperature [K]'
-        self.mock_logger.error.assert_called_with(
-            "Invalid data type in column 'Air temperature [K]'. Expected types: (<class 'int'>, <class 'float'>)")
+
+        # Gather all error messages
+        error_messages = [call.args[0] for call in self.mock_logger.error.call_args_list]
+
+        # Define expected error message
+        expected_message = "Invalid data type in column 'Air temperature [K]'. Expected types: (<class 'int'>, <class 'float'>)"
+
+        # Assert that the expected error message was logged
+        self.assertIn(
+            expected_message,
+            error_messages,
+            f"Expected log message not found. Logged messages: {error_messages}"
+        )
 
     @patch('RealTimeProcessing.RealTimeProcessorClient.os.listdir')
     @patch('RealTimeProcessing.RealTimeProcessorClient.load_model')
@@ -197,7 +241,16 @@ class TestRealTimeProcessor(unittest.TestCase):
             'Rotational speed [rpm]': 1500.0,
             'Torque [Nm]': 40.0,
             'Tool wear [min]': 100,
-            'Type': 'L'
+            'Type': 'L',
+            'Temp_diff': 10.0,
+            'Rotational speed [rad/s]': 157.08,
+            'Power': 6283.2,
+            'Tool_Torque_Product': 4000.0,
+            'TWF_condition': 0,
+            'HDF_condition': 0,
+            'PWF_condition': 0,
+            'OSF_condition': 0,
+            'Failure_Risk': 0
         }
         mock_consumer.__iter__.return_value = [mock_message]
 

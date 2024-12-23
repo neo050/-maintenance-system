@@ -145,17 +145,17 @@ class OpenMaintClient:
             print(f"Error while closing OpenMaintClient: {e}")
 
         try:
+            # Log before closing handlers
+            self.logger.info("OpenMaintClient is shutting down.")
+
             # Close and remove all handlers associated with the logger
             handlers = self.logger.handlers[:]
             for handler in handlers:
                 handler.close()
                 self.logger.removeHandler(handler)
                 self.logger.debug(f"Closed and removed handler: {handler}")
-
-            self.logger.info("OpenMaintClient producer has been shut down.")
         except Exception as e:
             print(f"Error while closing logger: {e}")
-
     # Helper Methods
     def get_lookup_id(self, lookup_type, code):
         """Retrieve the ID of a lookup value given its type and code or description."""

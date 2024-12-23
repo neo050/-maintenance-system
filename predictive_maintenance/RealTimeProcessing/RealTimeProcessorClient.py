@@ -568,6 +568,7 @@ class RealTimeProcessor:
             self.logger.error(f"Error in get message: {e}", exc_info=True)
         finally:
             self.cleanup()
+
     def cleanup(self):
         try:
             if self.consumer is not None:
@@ -579,19 +580,19 @@ class RealTimeProcessor:
             if self.engine is not None:
                 self.engine.dispose()
                 self.logger.info("Database engine disposed.")
-
         except Exception as e:
             self.logger.error(f"Error while cleanup RealTimeProcessorClient : {e}")
 
         try:
+            # Log before closing handlers
+            self.logger.info("RealTimeProcessorClient is shutting down.")
+
             # Close and remove all handlers associated with the logger
             handlers = self.logger.handlers[:]
             for handler in handlers:
                 handler.close()
                 self.logger.removeHandler(handler)
                 self.logger.debug(f"Closed and removed handler: {handler}")
-
-            self.logger.info("RealTimeProcessorClient has been shut down.")
         except Exception as e:
             print(f"Error while closing logger: {e}")
 
