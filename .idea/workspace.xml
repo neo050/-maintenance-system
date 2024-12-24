@@ -5,12 +5,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="05a52790-cb4f-4665-b701-c640a83dff26" name="Changes" comment="git">
-      <change afterPath="$PROJECT_DIR$/requirements.in" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/requirements.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/predictive_maintenance/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/predictive_maintenance/.gitignore" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/predictive_maintenance/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/predictive_maintenance/README.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/predictive_maintenance/requirements/requirements.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -197,11 +192,11 @@
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\neora\Desktop\Final_project\-maintenance-system" />
       <recent name="C:\Users\neora\Desktop\Final_project\-maintenance-system\predictive_maintenance\RealTimeProcessing" />
       <recent name="C:\Users\neora\Desktop\Final_project\-maintenance-system\predictive_maintenance\kafka" />
       <recent name="C:\Users\neora\Desktop\Final_project\-maintenance-system\predictive_maintenance" />
       <recent name="C:\Users\neora\Desktop\Final_project\-maintenance-system\predictive_maintenance\src\models_training\ISOLATION_FOREST" />
-      <recent name="C:\Users\neora\Desktop\Final_project\-maintenance-system\predictive_maintenance\src\models_training\CNN" />
     </key>
   </component>
   <component name="RunManager" selected="Python.run">
@@ -453,7 +448,7 @@
       <workItem from="1734351893583" duration="18672000" />
       <workItem from="1734455866429" duration="73453000" />
       <workItem from="1734901782544" duration="7637000" />
-      <workItem from="1734940663472" duration="39276000" />
+      <workItem from="1734940663472" duration="39484000" />
     </task>
     <task id="LOCAL‎-00001" summary="...">
       <option name="closed" value="true" />
@@ -807,7 +802,23 @@
       <option name="project" value="LOCAL‎" />
       <updated>1734982935394</updated>
     </task>
-    <option name="localTasksCounter" value="45" />
+    <task id="LOCAL‎-00045" summary="git">
+      <option name="closed" value="true" />
+      <created>1735071487841</created>
+      <option name="number" value="00045" />
+      <option name="presentableId" value="LOCAL‎-00045" />
+      <option name="project" value="LOCAL‎" />
+      <updated>1735071487841</updated>
+    </task>
+    <task id="LOCAL‎-00046" summary="git">
+      <option name="closed" value="true" />
+      <created>1735071540079</created>
+      <option name="number" value="00046" />
+      <option name="presentableId" value="LOCAL‎-00046" />
+      <option name="project" value="LOCAL‎" />
+      <updated>1735071540079</updated>
+    </task>
+    <option name="localTasksCounter" value="47" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
