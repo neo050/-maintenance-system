@@ -1,12 +1,13 @@
 # Byte-compiled and cache directories
+../requirements.in
 __pycache__/
 *.pyc
 *.pyo
 *.pyd
 *.swp
 *.swo
-
-
+requirements.in
+requirements
 __pycache__/
 *.pyc
 
@@ -14,7 +15,6 @@ __pycache__/
 .venv/
 venv/
 ../maintenance_env/
-
 # IDE and editor configuration files
 .idea/
 ../.idea/
@@ -70,11 +70,6 @@ RealTimeProcessing/kafka
 qodana.yaml
 
 # Local configuration files (if you don't want them committed)
-config/database_config.
-config/grafana_config.yaml
-config/kafka_config.yaml
-config/model_config.yaml
-config/openmaint_config.yaml
 
 # Documentation or temporary documentation notes (if desired)
 Important_questions_and_key_points_related_to_the_final_project_and_(GPT).txt

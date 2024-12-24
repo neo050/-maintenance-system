@@ -5,7 +5,12 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="05a52790-cb4f-4665-b701-c640a83dff26" name="Changes" comment="git">
+      <change afterPath="$PROJECT_DIR$/requirements.in" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/requirements.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/predictive_maintenance/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/predictive_maintenance/.gitignore" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/predictive_maintenance/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/predictive_maintenance/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/predictive_maintenance/requirements/requirements.txt" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -164,7 +169,7 @@
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "ignore.virus.scanning.warn.message": "true",
-    "last_opened_file_path": "C:/Users/neora/Desktop/APISecurityImplementation",
+    "last_opened_file_path": "C:/Users/neora/Downloads/-maintenance-system-main",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
@@ -448,7 +453,7 @@
       <workItem from="1734351893583" duration="18672000" />
       <workItem from="1734455866429" duration="73453000" />
       <workItem from="1734901782544" duration="7637000" />
-      <workItem from="1734940663472" duration="31937000" />
+      <workItem from="1734940663472" duration="39276000" />
     </task>
     <task id="LOCAL‎-00001" summary="...">
       <option name="closed" value="true" />
@@ -794,7 +799,15 @@
       <option name="project" value="LOCAL‎" />
       <updated>1734982693612</updated>
     </task>
-    <option name="localTasksCounter" value="44" />
+    <task id="LOCAL‎-00044" summary="git">
+      <option name="closed" value="true" />
+      <created>1734982935394</created>
+      <option name="number" value="00044" />
+      <option name="presentableId" value="LOCAL‎-00044" />
+      <option name="project" value="LOCAL‎" />
+      <updated>1734982935394</updated>
+    </task>
+    <option name="localTasksCounter" value="45" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -897,7 +910,7 @@
     <SUITE FILE_PATH="coverage/_maintenance_system$lstm_model__1_.coverage" NAME="lstm_model (1) Coverage Results" MODIFIED="1725471189790" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/predictive_maintenance/src/models_training/LSTM" />
     <SUITE FILE_PATH="coverage/_maintenance_system$isolation_forest_model.coverage" NAME="isolation_forest_model Coverage Results" MODIFIED="1726387774304" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/predictive_maintenance/src/models_training/ISOLATION_FOREST" />
     <SUITE FILE_PATH="coverage/_maintenance_system$scan_directory.coverage" NAME="scan_directory Coverage Results" MODIFIED="1734628240277" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/predictive_maintenance" />
-    <SUITE FILE_PATH="coverage/_maintenance_system$run.coverage" NAME="run Coverage Results" MODIFIED="1734981853229" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/predictive_maintenance" />
+    <SUITE FILE_PATH="coverage/_maintenance_system$run.coverage" NAME="run Coverage Results" MODIFIED="1735069384637" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/predictive_maintenance" />
     <SUITE FILE_PATH="coverage/consume_sensor_data_py$diagnose.coverage" NAME="diagnose Coverage Results" MODIFIED="1722535967724" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/predictive_maintenance/src/data_processing" />
     <SUITE FILE_PATH="coverage/_maintenance_system$prepare_datasets.coverage" NAME="prepare_datasets Coverage Results" MODIFIED="1722003425510" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/predictive_maintenance/src" />
     <SUITE FILE_PATH="coverage/consume_sensor_data_py$data_preprocessing__1_.coverage" NAME="data_preprocessing (1) Coverage Results" MODIFIED="1722951540847" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/predictive_maintenance/src/data_processing" />

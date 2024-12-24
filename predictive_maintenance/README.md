@@ -1,59 +1,69 @@
-#### `README.md`
+Prerequisites
+Before setting up and running the Predictive Maintenance System, ensure that your system meets the following prerequisites:
 
-```markdown
-# Predictive Maintenance System
+Operating System:
 
-## Project Overview
+Windows
+Python:
 
-This project involves developing an AI-powered predictive maintenance system for manufacturing equipment. The system uses sensor data to predict potential equipment failures and sends alerts for maintenance needs.
+Python 3.12 is required. You can download it from the official Python website. https://www.python.org/downloads/.
+Docker:
 
-## Kafka Setup
+Docker is essential for managing containerized services like Kafka openmaint and PostgreSQL.
+Installation:
+Windows :
+Download and install Docker Desktop from the official Docker website https://www.docker.com/.
 
-Follow the instructions in [KAFKA_SETUP.md](KAFKA_SETUP.md) to set up Apache Kafka on your local machine.
+Post-Installation:
+Ensure Docker is running. You can verify by running:
 
-## Running the Project
 
-To run the entire project, including data preprocessing, model training, real-time processing, and visualization, follow these steps:
+docker --version
 
-1. **Ensure Kafka and ZooKeeper are Running**:
-   - Follow the steps in `KAFKA_SETUP.md` to start ZooKeeper and the Kafka broker.
+You should see output similar to Docker version 20.10.7, build f0df350.
 
-2. **Run the Project**:
-   - Navigate to your project directory and run the `run.py` script.
-   - Open a command prompt and run:
-     ```sh
-     cd C:\Users\neora\Desktop\Final_project\-maintenance-system\predictive_maintenance
-     python run.py
-     ```
+Docker Compose:
+Docker Compose typically comes bundled with Docker Desktop. Verify its installation:
 
-## Project Structure
-predictive_maintenance
-├── KAFKA_SETUP.md
-├── data
-│ ├── raw
-│ │ └── data_preview.csv
-│ ├── processed
-│ │ └── processed_data.csv
-│ │ └── processed_data_with_lags.csv
-├── models
-│ ├── lstm_model.keras
-│ └── isolation_forest_model.pkl
-├── src
-│ ├── init.py
-│ ├── data_preprocessing.py
-│ ├── model_training.py
-│ ├── real_time_processing.py
-│ └── visualization.py
-├── run.py
-└── README.md
+docker-compose --version
+Expected output: docker-compose version 1.29.2, build 5becea4c.
 
-## Real-Time Processing
 
-The `real_time_processing.py` script consumes sensor data from a Kafka topic, processes it using trained machine learning models, and sends alerts if anomalies are detected.
 
-## Visualization and Reporting
+Setup
+1. Clone the Repository
+Begin by cloning the repository to your local machine using Git.
 
-The `visualization.py` script handles the visualization and reporting of the sensor data.
 
+git clone https://github.com/neo050/-maintenance-system.git
+cd -maintenance-system
+2. Create a Virtual Environment
+It's recommended to use a virtual environment to manage your project's dependencies and avoid conflicts with other projects.
+
+
+python -m venv venv
+3. Activate the Virtual Environment
+Activate the virtual environment you just created.
+
+Windows
+
+venv\Scripts\activate
+
+After activation, your command prompt should reflect the active virtual environment, e.g., (venv) C:\path\to\project>.
+
+4. Install Dependencies
+Install the required Python packages using pip and the provided requirements.txt file.
+
+
+pip install -r requirements.txt
+Note: If you encounter any issues during installation, ensure that your pip is up to date:
+
+
+pip install --upgrade pip
+5. Run the Application
+Once all dependencies are installed, you can run the main application script.
+
+
+python run.py
 
 
