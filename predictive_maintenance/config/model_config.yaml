@@ -1,0 +1,42 @@
+output_dir: '../models'
+lstm:
+  units: 50
+  activation: sigmoid
+  optimizer: adam
+  loss: binary_crossentropy
+  metrics: ['accuracy']
+cnn:
+  filters: 32
+  kernel_size: 3
+  activation: relu
+  pool_size: 2
+  dense_units: 50
+  final_activation: sigmoid
+  optimizer: adam
+  loss: binary_crossentropy
+  metrics: ['accuracy']
+autoencoder:
+  dense_units: [64, 32, 64]
+  final_activation: sigmoid
+  optimizer: adam
+  loss: mean_squared_error
+isolation_forest:
+  n_estimators: 100
+  contamination: 0.1
+
+
+feature_columns:
+ 'Air temperature [K]','Process temperature [K]', 'Rotational speed [rpm]', 'Torque [Nm]', 'Tool wear [min]'
+
+target_column: 'Machine failure'
+epochs: 20
+batch_size: 32
+train_data_path: '../data/processed/combined_train.csv'
+val_data_path: '../data/processed/combined_val.csv'
+lstm_model_path: '../models/LSTM_model_20240727-070636.keras'
+cnn_model_path: '../models/CNN_model_20240727-070701.keras'
+autoencoder_model_path: '../models/Autoencoder_model_20240727-070710.keras'
+isolation_forest_model_path: '../models/IsolationForest_model_20240727-070710.joblib'
+lstm_history_path: '../models/LSTM_model_history_20240727-070636.csv'
+cnn_history_path: '../models/CNN_model_history_20240727-070701.csv'
+autoencoder_history_path: '../models/Autoencoder_model_history_20240727-070710.csv'

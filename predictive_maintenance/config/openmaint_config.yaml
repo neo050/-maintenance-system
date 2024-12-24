@@ -1,0 +1,5 @@
+openmaint:
+  api_url: 'http://localhost:8091/cmdbuild/services/rest/v3'
+  username: 'admin'
+  password: 'admin'
+  work_order: http://localhost:8091/cmdbuild/ui/#custompages/correctivemaint/processes/CorrectiveMaint/instances

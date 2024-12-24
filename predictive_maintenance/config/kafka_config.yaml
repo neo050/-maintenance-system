@@ -1,0 +1,18 @@
+bootstrap_servers:
+  - 'localhost:9092'
+topics:
+  - 'sensor-data'
+producer_settings:
+  acks: 'all'
+  retries: 5
+consumer_settings:
+  enable_auto_commit: True
+  auto_offset_reset: 'earliest'
+
+
+kafka:
+  bootstrap_servers:
+    - 'localhost:9092'
+  failure_predictions_topic: 'failure_predictions'
+
+
