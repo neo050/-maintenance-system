@@ -5,15 +5,13 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="05a52790-cb4f-4665-b701-c640a83dff26" name="Changes" comment="git">
-      <change beforePath="$PROJECT_DIR$/.idea/-maintenance-system.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/-maintenance-system.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/predictive_maintenance/Documentation_of_processes_and_the_logic_behind_it_during_the_project/Documentation_of_the_process/Report-Implement real-time monitoring alerts for anomalies and failures..docx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/predictive_maintenance/Documentation_of_processes_and_the_logic_behind_it_during_the_project/Documentation_of_the_process/report  Training_the_models.docx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/predictive_maintenance/Documentation_of_processes_and_the_logic_behind_it_during_the_project/Documentation_of_the_process/report Integration with Existing Systems.rtf" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/predictive_maintenance/IntegrationWithExistingSystems/openmaint_consumer.py" beforeDir="false" afterPath="$PROJECT_DIR$/predictive_maintenance/IntegrationWithExistingSystems/openmaint_consumer.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/predictive_maintenance/RealTimeProcessing/RealTimeProcessor.py" beforeDir="false" afterPath="$PROJECT_DIR$/predictive_maintenance/RealTimeProcessing/RealTimeProcessor.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/predictive_maintenance/RealTimeProcessing/RealTimeProcessorClient.py" beforeDir="false" afterPath="$PROJECT_DIR$/predictive_maintenance/RealTimeProcessing/RealTimeProcessorClient.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/predictive_maintenance/RealTimeProcessing/SensorDataSimulator.py" beforeDir="false" afterPath="$PROJECT_DIR$/predictive_maintenance/RealTimeProcessing/SensorDataSimulator.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/predictive_maintenance/requirements.txt" beforeDir="false" afterPath="$PROJECT_DIR$/predictive_maintenance/requirements.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/predictive_maintenance/Documentation_of_processes_and_the_logic_behind_it_during_the_project/Documentation_of_the_process/Implement real-time monitoring alerts for anomalies and failures..docx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/predictive_maintenance/Documentation_of_processes_and_the_logic_behind_it_during_the_project/Documentation_of_the_process/Integration with Existing Systems.rtf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/predictive_maintenance/Documentation_of_processes_and_the_logic_behind_it_during_the_project/Documentation_of_the_process/Training_the_models.docx" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/predictive_maintenance/run.py" beforeDir="false" afterPath="$PROJECT_DIR$/predictive_maintenance/run.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -466,15 +464,7 @@
       <workItem from="1734455866429" duration="73453000" />
       <workItem from="1734901782544" duration="7637000" />
       <workItem from="1734940663472" duration="67327000" />
-      <workItem from="1735132835028" duration="14207000" />
-    </task>
-    <task id="LOCAL‎-00001" summary="...">
-      <option name="closed" value="true" />
-      <created>1717958556722</created>
-      <option name="number" value="00001" />
-      <option name="presentableId" value="LOCAL‎-00001" />
-      <option name="project" value="LOCAL‎" />
-      <updated>1717958556722</updated>
+      <workItem from="1735132835028" duration="16527000" />
     </task>
     <task id="LOCAL‎-00002" summary="...">
       <option name="closed" value="true" />
@@ -860,7 +850,15 @@
       <option name="project" value="LOCAL‎" />
       <updated>1735132607455</updated>
     </task>
-    <option name="localTasksCounter" value="50" />
+    <task id="LOCAL‎-00050" summary="git">
+      <option name="closed" value="true" />
+      <created>1735150390714</created>
+      <option name="number" value="00050" />
+      <option name="presentableId" value="LOCAL‎-00050" />
+      <option name="project" value="LOCAL‎" />
+      <updated>1735150390714</updated>
+    </task>
+    <option name="localTasksCounter" value="51" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -963,7 +961,7 @@
     <SUITE FILE_PATH="coverage/_maintenance_system$lstm_model__1_.coverage" NAME="lstm_model (1) Coverage Results" MODIFIED="1725471189790" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/predictive_maintenance/src/models_training/LSTM" />
     <SUITE FILE_PATH="coverage/_maintenance_system$isolation_forest_model.coverage" NAME="isolation_forest_model Coverage Results" MODIFIED="1726387774304" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/predictive_maintenance/src/models_training/ISOLATION_FOREST" />
     <SUITE FILE_PATH="coverage/_maintenance_system$scan_directory.coverage" NAME="scan_directory Coverage Results" MODIFIED="1735119382316" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/predictive_maintenance" />
-    <SUITE FILE_PATH="coverage/_maintenance_system$run.coverage" NAME="run Coverage Results" MODIFIED="1735149780017" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/predictive_maintenance" />
+    <SUITE FILE_PATH="coverage/_maintenance_system$run.coverage" NAME="run Coverage Results" MODIFIED="1735160470691" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/predictive_maintenance" />
     <SUITE FILE_PATH="coverage/consume_sensor_data_py$diagnose.coverage" NAME="diagnose Coverage Results" MODIFIED="1722535967724" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/predictive_maintenance/src/data_processing" />
     <SUITE FILE_PATH="coverage/_maintenance_system$prepare_datasets.coverage" NAME="prepare_datasets Coverage Results" MODIFIED="1722003425510" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/predictive_maintenance/src" />
     <SUITE FILE_PATH="coverage/consume_sensor_data_py$data_preprocessing__1_.coverage" NAME="data_preprocessing (1) Coverage Results" MODIFIED="1722951540847" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/predictive_maintenance/src/data_processing" />

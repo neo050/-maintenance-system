@@ -150,14 +150,14 @@ def main():
 
     # Start Kafka cluster
     try:
-        start_services(kafka_compose_path, "Kafka cluster", logger, wait_time=1)#15
+        start_services(kafka_compose_path, "Kafka cluster", logger, wait_time=15)#15
     except Exception as e:
         logger.error("Could not start Kafka services.", exc_info=True)
         sys.exit(1)
 
     # Start openMAINT cluster
     try:
-        start_services(openmaint_compose_path, "openMAINT cluster", logger, wait_time=1)#45
+        start_services(openmaint_compose_path, "openMAINT cluster", logger, wait_time=45)#45
     except Exception as e:
         logger.error("Could not start openMAINT services.", exc_info=True)
         sys.exit(1)
