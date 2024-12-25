@@ -6,7 +6,7 @@ Operating System:
 Windows
 Python:
 
-Python 3.12 is required. You can download it from the official Python website. https://www.python.org/downloads/.
+Python 3.10.0 is required. You can download it from the official Python website. https://www.python.org/downloads/.
 Docker:
 
 Docker is essential for managing containerized services like Kafka openmaint and PostgreSQL.

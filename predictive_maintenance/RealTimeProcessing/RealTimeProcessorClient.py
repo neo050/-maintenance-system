@@ -7,7 +7,6 @@ import numpy as np
 import logging
 import joblib
 import json
-from sklearn.preprocessing import MinMaxScaler
 from tensorflow.keras.models import load_model
 from kafka import KafkaConsumer, KafkaProducer
 from sqlalchemy import create_engine
@@ -16,11 +15,6 @@ from datetime import datetime, timezone
 import warnings
 import tensorflow as tf
 import time
-
-# Suppress TensorFlow logging and warnings
-os.environ['TF_CPP_MIN_LOG_LEVEL'] = '2'
-tf.get_logger().setLevel('ERROR')
-warnings.filterwarnings('ignore', category=UserWarning, module='tensorflow')
 
 
 class RealTimeProcessor:

@@ -6,7 +6,7 @@ import os
 import sys
 import time
 
-from RealTimeProcessing.SensorDataSimulatorClient import SensorDataSimulator
+from SensorDataSimulatorClient import SensorDataSimulator
 
 
 def main():

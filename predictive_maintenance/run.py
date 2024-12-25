@@ -6,7 +6,10 @@ import subprocess
 import webbrowser
 import yaml
 import zipfile
-
+import warnings
+from sklearn.exceptions import InconsistentVersionWarning
+warnings.filterwarnings("ignore", category=InconsistentVersionWarning)
+TF_ENABLE_ONEDNN_OPTS = 0
 def setup_logging(log_level=logging.DEBUG):
     logger = logging.getLogger(__name__)
     logger.setLevel(log_level)
@@ -147,14 +150,14 @@ def main():
 
     # Start Kafka cluster
     try:
-        start_services(kafka_compose_path, "Kafka cluster", logger, wait_time=15)
+        start_services(kafka_compose_path, "Kafka cluster", logger, wait_time=1)#15
     except Exception as e:
         logger.error("Could not start Kafka services.", exc_info=True)
         sys.exit(1)
 
     # Start openMAINT cluster
     try:
-        start_services(openmaint_compose_path, "openMAINT cluster", logger, wait_time=45)
+        start_services(openmaint_compose_path, "openMAINT cluster", logger, wait_time=1)#45
     except Exception as e:
         logger.error("Could not start openMAINT services.", exc_info=True)
         sys.exit(1)
