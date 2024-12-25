@@ -11,7 +11,7 @@ import urllib.parse
 from contextlib import contextmanager
 
 class OpenMaintClient:
-    def __init__(self, api_url, username, password, log_file_path=os.path.join(os.path.abspath(os.path.join(os.path.dirname(__file__), '..')),'logs','OpenMaintClient.log') ,skip_wait=False, skip_docker=False):
+    def __init__(self, api_url, username, password, log_file_path=os.path.join(os.path.abspath(os.path.join(os.path.dirname(__file__), '..')),'logs','OpenMaintClient.log') ,skip_wait=False, skip_docker=True):
         self.logger = self.setup_logger(log_file_path)
         self.api_url = api_url
         self.username = username

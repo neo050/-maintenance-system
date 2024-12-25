@@ -172,13 +172,12 @@ def main():
     processes = []
     try:
         logger.info("Starting SensorDataSimulator...")
-        processes.append(subprocess.Popen(['python', sensor_script]))
-
+        processes.append(subprocess.Popen([sys.executable, sensor_script]))
         logger.info("Starting RealTimeProcessor...")
-        processes.append(subprocess.Popen(['python', processor_script]))
+        processes.append(subprocess.Popen([sys.executable, processor_script]))
 
         logger.info("Starting openmaint_consumer...")
-        processes.append(subprocess.Popen(['python', openmaint_script]))
+        processes.append(subprocess.Popen([sys.executable, openmaint_script]))
 
         # Wait a bit before opening browsers
         time.sleep(10)

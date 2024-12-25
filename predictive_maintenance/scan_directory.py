@@ -2,7 +2,7 @@ import os
 
 
 def scan_directory(root_dir, output_file):
-    exclude_dirs = {".venv", "maintenance_env",".git",".idea"}  # Directories to exclude
+    exclude_dirs = {".venv", "maintenance_env",".git",".idea","venv"}  # Directories to exclude
 
     with open(output_file, 'w') as f:
         for dirpath, dirnames, filenames in os.walk(root_dir):

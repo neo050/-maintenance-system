@@ -8,6 +8,7 @@ import time
 
 from RealTimeProcessing.SensorDataSimulatorClient import SensorDataSimulator
 
+
 def main():
     simulator = None
     try:

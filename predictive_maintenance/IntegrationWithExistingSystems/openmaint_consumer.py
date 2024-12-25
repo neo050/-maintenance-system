@@ -7,7 +7,7 @@ import requests
 import yaml
 import logging
 from kafka import KafkaConsumer
-from IntegrationWithExistingSystems.OpenMaintClient import OpenMaintClient
+from .OpenMaintClient import OpenMaintClient
 from datetime import datetime
 import json
 import threading

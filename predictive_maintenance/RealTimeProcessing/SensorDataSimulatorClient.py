@@ -12,35 +12,37 @@ import subprocess
 import time
 
 class SensorDataSimulator:
-    def __init__(self, bootstrap_servers=['localhost:9092'], kafka_topics=None, log_file_path = os.path.join(os.path.abspath(os.path.join(os.path.dirname(__file__), '..')),'logs','simulate_sensor_data.log')):
+    def __init__(self, bootstrap_servers=['localhost:9092'], kafka_topics=None, log_file_path = os.path.join(os.path.abspath(os.path.join(os.path.dirname(__file__), '..')),'logs','simulate_sensor_data.log'),skip_docker=True):
         self.logger = self.setup_logger(log_file_path)
 
         self.logger.info("Starting Kafka cluster using Docker...")
 
-        try:
-            docker_compose_path = os.path.join(os.path.abspath(os.path.join(os.path.dirname(__file__), '..')),
-                                               'docker-compose.yml')
-            if not os.path.exists(docker_compose_path):
-                self.logger.error(f"Docker Compose file not found at: {docker_compose_path}")
-                raise FileNotFoundError(f"Docker Compose file not found at: {docker_compose_path}")
+        if not skip_docker:
+            try:
+                docker_compose_path = os.path.join(os.path.abspath(os.path.join(os.path.dirname(__file__), '..')),
+                                                   'docker-compose.yml')
+                if not os.path.exists(docker_compose_path):
+                    self.logger.error(f"Docker Compose file not found at: {docker_compose_path}")
+                    raise FileNotFoundError(f"Docker Compose file not found at: {docker_compose_path}")
+                #        processes.append(subprocess.Popen([sys.executable, sensor_script]))
 
-            subprocess.run(['docker-compose', '-f', docker_compose_path, 'up', '-d'], check=True)
-            self.logger.info("Kafka cluster started successfully.")
-            # Wait for Kafka to be ready
-            time.sleep(10)  # Increased wait time to ensure Kafka is ready
+                subprocess.run(['docker-compose', '-f', docker_compose_path, 'up', '-d'], check=True)
+                self.logger.info("Kafka cluster started successfully.")
+                # Wait for Kafka to be ready
+                time.sleep(10)  # Increased wait time to ensure Kafka is ready
 
-        except subprocess.CalledProcessError as e:
-            self.logger.error(f"Failed to start Kafka cluster: {e}")
-            raise
-        except FileNotFoundError as e:
-            self.logger.error(str(e))
-            raise
-        except KeyboardInterrupt as e:
-            self.logger.error(f"Simulation encountered an error: KeyboardInterrupt  {e} end of simulation ")
-            return
-        except Exception as e:
-            self.logger.error(str(e))
-            raise
+            except subprocess.CalledProcessError as e:
+                self.logger.error(f"Failed to start Kafka cluster: {e}")
+                raise
+            except FileNotFoundError as e:
+                self.logger.error(str(e))
+                raise
+            except KeyboardInterrupt as e:
+                self.logger.error(f"Simulation encountered an error: KeyboardInterrupt  {e} end of simulation ")
+                return
+            except Exception as e:
+                self.logger.error(str(e))
+                raise
 
         self.kafka_topics = kafka_topics if kafka_topics else ["sensor-data", "failure_predictions"]
         self.producer = None

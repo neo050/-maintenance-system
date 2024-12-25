@@ -4,7 +4,19 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="05a52790-cb4f-4665-b701-c640a83dff26" name="Changes" comment="git" />
+    <list default="true" id="05a52790-cb4f-4665-b701-c640a83dff26" name="Changes" comment="git">
+      <change afterPath="$PROJECT_DIR$/predictive_maintenance/requirements.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/-maintenance-system.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/-maintenance-system.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/predictive_maintenance/IntegrationWithExistingSystems/OpenMaintClient.py" beforeDir="false" afterPath="$PROJECT_DIR$/predictive_maintenance/IntegrationWithExistingSystems/OpenMaintClient.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/predictive_maintenance/IntegrationWithExistingSystems/openmaint_consumer.py" beforeDir="false" afterPath="$PROJECT_DIR$/predictive_maintenance/IntegrationWithExistingSystems/openmaint_consumer.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/predictive_maintenance/RealTimeProcessing/SensorDataSimulator.py" beforeDir="false" afterPath="$PROJECT_DIR$/predictive_maintenance/RealTimeProcessing/SensorDataSimulator.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/predictive_maintenance/RealTimeProcessing/SensorDataSimulatorClient.py" beforeDir="false" afterPath="$PROJECT_DIR$/predictive_maintenance/RealTimeProcessing/SensorDataSimulatorClient.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/predictive_maintenance/run.py" beforeDir="false" afterPath="$PROJECT_DIR$/predictive_maintenance/run.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/predictive_maintenance/scan_directory.py" beforeDir="false" afterPath="$PROJECT_DIR$/predictive_maintenance/scan_directory.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/requirements.in" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/requirements.txt" beforeDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -50,127 +62,127 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "ASKED_ADD_EXTERNAL_FILES": "true",
-    "ASKED_MARK_IGNORED_FILES_AS_EXCLUDED": "true",
-    "Python tests.Python tests for integration_test.TestIntegrationPipeline.executor": "Run",
-    "Python tests.Python tests for integration_test.TestIntegrationPipeline.test_end_to_end_pipeline.executor": "Run",
-    "Python tests.Python tests for predictive_maintenance.tests.test_sensor_data_simulator_client.TestSensorDataSimulator.executor": "Run",
-    "Python tests.Python tests for test_openmaint_client.TestOpenMaintClient.executor": "Run",
-    "Python tests.Python tests for test_openmaint_client.TestOpenMaintClient.test_get_employee_id.executor": "Run",
-    "Python tests.Python tests for test_openmaint_client.TestOpenMaintClient.test_get_lookup_id.executor": "Run",
-    "Python tests.Python tests for test_openmaint_client.TestOpenMaintClient.test_login_success.executor": "Run",
-    "Python tests.Python tests for test_openmaint_client.TestOpenMaintClient.test_logout.executor": "Run",
-    "Python tests.Python tests for test_openmaint_client.TestOpenMaintConsumer.test_openmaint_consumer_main.executor": "Run",
-    "Python tests.Python tests for test_openmaint_consumer.TestOpenMaintConsumer.executor": "Run",
-    "Python tests.Python tests for test_openmaint_consumer.TestOpenMaintConsumer.test_main.executor": "Run",
-    "Python tests.Python tests for test_openmaint_consumer.TestOpenMaintConsumer.test_no_failure_predictions.executor": "Run",
-    "Python tests.Python tests for test_openmaint_consumer.TestOpenMaintConsumer.test_openmaint_consumer_main.executor": "Run",
-    "Python tests.Python tests for test_real_time_processor.TestRealTimeProcessorRunner.executor": "Run",
-    "Python tests.Python tests for test_real_time_processor.TestRealTimeProcessorRunner.test_main.executor": "Run",
-    "Python tests.Python tests for test_real_time_processor_client.TestRealTimeProcessor.executor": "Run",
-    "Python tests.Python tests for test_real_time_processor_client.TestRealTimeProcessor.test_aggregate_predictions.executor": "Run",
-    "Python tests.Python tests for test_real_time_processor_client.TestRealTimeProcessor.test_feature_engineering_with_missing_type.executor": "Run",
-    "Python tests.Python tests for test_real_time_processor_client.TestRealTimeProcessor.test_load_models.executor": "Run",
-    "Python tests.Python tests for test_real_time_processor_client.TestRealTimeProcessor.test_prepare_data.executor": "Run",
-    "Python tests.Python tests for test_real_time_processor_client.TestRealTimeProcessor.test_process_messages.executor": "Run",
-    "Python tests.Python tests for test_real_time_processor_client.TestRealTimeProcessor.test_process_messages_with_invalid_data.executor": "Run",
-    "Python tests.Python tests for test_real_time_processor_client.TestRealTimeProcessor.test_save_to_database.executor": "Run",
-    "Python tests.Python tests for test_sensor_data_simulator.TestSensorDataSimulatorRunner.test_main.executor": "Run",
-    "Python tests.Python tests for test_sensor_data_simulator_client.TestSensorDataSimulator.executor": "Run",
-    "Python tests.Python tests for test_sensor_data_simulator_client.TestSensorDataSimulator.test_cleanup.executor": "Run",
-    "Python tests.Python tests for test_sensor_data_simulator_client.TestSensorDataSimulator.test_cleanup_twice.executor": "Run",
-    "Python tests.Python tests for test_sensor_data_simulator_client.TestSensorDataSimulator.test_delete_log_directories.executor": "Run",
-    "Python tests.Python tests for test_sensor_data_simulator_client.TestSensorDataSimulator.test_init_docker_compose.executor": "Run",
-    "Python tests.Python tests for test_sensor_data_simulator_client.TestSensorDataSimulator.test_is_kafka_running.executor": "Run",
-    "Python tests.Python tests for test_sensor_data_simulator_client.TestSensorDataSimulator.test_simulate_sensor_data.executor": "Run",
-    "Python tests.Python tests for test_sensor_data_simulator_client.TestSensorDataSimulator.test_start_simulation.executor": "Run",
-    "Python tests.Python tests for test_sensor_data_simulator_client.TestSensorDataSimulator.test_start_zookeeper_command_missing.executor": "Run",
-    "Python tests.Python tests for test_sensor_data_simulator_client.TestSensorDataSimulator.test_start_zookeeper_never_ready.executor": "Run",
-    "Python tests.Python tests for test_sensor_data_simulator_client.TestSensorDataSimulator.test_terminate_processes.executor": "Run",
-    "Python tests.Python tests for test_setup_postgresql.TestSetupPostgreSQL.test_fetch_assets.executor": "Run",
-    "Python tests.Python tests in integration_test.py.executor": "Run",
-    "Python tests.Python tests in test_openmaint_client.py.executor": "Run",
-    "Python tests.Python tests in test_openmaint_consumer.py.executor": "Run",
-    "Python tests.Python tests in test_real_time_processor.py.executor": "Run",
-    "Python tests.Python tests in test_real_time_processor_client.py.executor": "Run",
-    "Python tests.Python tests in test_sensor_data_simulator.py.executor": "Run",
-    "Python tests.Python tests in test_sensor_data_simulator_client.py.executor": "Run",
-    "Python.InsertCSVData.executor": "Run",
-    "Python.LSTMֹ_OFֹֹֹֹ_simulate_processed_sensor_data.executor": "Run",
-    "Python.OpenMaintClient.executor": "Run",
-    "Python.RealTimeProcessor.executor": "Run",
-    "Python.RealTimeProcessorClient.executor": "Run",
-    "Python.SensorDataSimulator.executor": "Run",
-    "Python.SensorDataSimulatorClient.executor": "Run",
-    "Python.SyntheticDatatest.executor": "Run",
-    "Python.VerifyData.executor": "Run",
-    "Python.check_trained_model_features.executor": "Run",
-    "Python.cleanup_environment.executor": "Run",
-    "Python.cnn_lstm_model.executor": "Run",
-    "Python.cnn_model.executor": "Run",
-    "Python.combined_CSV_file.executor": "Run",
-    "Python.dashboard.executor": "Run",
-    "Python.data_normalization_analysis.executor": "Run",
-    "Python.data_preprocessing (1).executor": "Run",
-    "Python.data_preprocessing.executor": "Run",
-    "Python.data_review.executor": "Run",
-    "Python.diagnose.executor": "Run",
-    "Python.feature_engineering.executor": "Run",
-    "Python.integrate_data.executor": "Run",
-    "Python.isolation_forest_model.executor": "Run",
-    "Python.logging_util.executor": "Run",
-    "Python.lstm_model (1).executor": "Run",
-    "Python.lstm_model.executor": "Run",
-    "Python.model_selection.executor": "Run",
-    "Python.model_training.executor": "Run",
-    "Python.new.executor": "Run",
-    "Python.openmaint_consumer.executor": "Run",
-    "Python.original_simulate_sensor_data.executor": "Run",
-    "Python.p.executor": "Run",
-    "Python.populate_database.executor": "Run",
-    "Python.populates_predictive_maintenance_data.executor": "Run",
-    "Python.prepare_and_training_cnn (1).executor": "Run",
-    "Python.prepare_and_training_cnn.executor": "Run",
-    "Python.prepare_and_training_cnn_data.executor": "Run",
-    "Python.prepare_and_training_cnn_lstm.executor": "Run",
-    "Python.prepare_and_training_isolation_forest.executor": "Run",
-    "Python.prepare_and_training_lstm.executor": "Run",
-    "Python.prepare_and_training_lstm_.executor": "Run",
-    "Python.prepare_cnn_lstm_training_data.executor": "Run",
-    "Python.prepare_cnn_training_data.executor": "Run",
-    "Python.prepare_datasets.executor": "Run",
-    "Python.prepare_isolation_forest_training_data.executor": "Run",
-    "Python.prepare_lstm_training_data.executor": "Run",
-    "Python.real_time_processing.executor": "Run",
-    "Python.real_time_processing_CNNֹ_LSTM.executor": "Run",
-    "Python.run.executor": "Run",
-    "Python.scan_directory.executor": "Run",
-    "Python.setup_postgresql.executor": "Run",
-    "Python.simulate_processed_sensor_data (1).executor": "Run",
-    "Python.simulate_processed_sensor_data.executor": "Run",
-    "Python.simulate_real_data.executor": "Run",
-    "Python.simulate_sensor_data.executor": "Run",
-    "Python.statistical_validation.executor": "Run",
-    "Python.statisticaltest.executor": "Run",
-    "Python.test.executor": "Run",
-    "Python.test2.executor": "Run",
-    "Python.testOpenMaintClient.executor": "Run",
-    "Python.update_database.executor": "Run",
-    "Python.verify_tables.executor": "Run",
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "ignore.virus.scanning.warn.message": "true",
-    "last_opened_file_path": "C:/Users/neora/Downloads/-maintenance-system-main",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "nodejs_package_manager_path": "npm",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;ASKED_ADD_EXTERNAL_FILES&quot;: &quot;true&quot;,
+    &quot;ASKED_MARK_IGNORED_FILES_AS_EXCLUDED&quot;: &quot;true&quot;,
+    &quot;Python tests.Python tests for integration_test.TestIntegrationPipeline.executor&quot;: &quot;Run&quot;,
+    &quot;Python tests.Python tests for integration_test.TestIntegrationPipeline.test_end_to_end_pipeline.executor&quot;: &quot;Run&quot;,
+    &quot;Python tests.Python tests for predictive_maintenance.tests.test_sensor_data_simulator_client.TestSensorDataSimulator.executor&quot;: &quot;Run&quot;,
+    &quot;Python tests.Python tests for test_openmaint_client.TestOpenMaintClient.executor&quot;: &quot;Run&quot;,
+    &quot;Python tests.Python tests for test_openmaint_client.TestOpenMaintClient.test_get_employee_id.executor&quot;: &quot;Run&quot;,
+    &quot;Python tests.Python tests for test_openmaint_client.TestOpenMaintClient.test_get_lookup_id.executor&quot;: &quot;Run&quot;,
+    &quot;Python tests.Python tests for test_openmaint_client.TestOpenMaintClient.test_login_success.executor&quot;: &quot;Run&quot;,
+    &quot;Python tests.Python tests for test_openmaint_client.TestOpenMaintClient.test_logout.executor&quot;: &quot;Run&quot;,
+    &quot;Python tests.Python tests for test_openmaint_client.TestOpenMaintConsumer.test_openmaint_consumer_main.executor&quot;: &quot;Run&quot;,
+    &quot;Python tests.Python tests for test_openmaint_consumer.TestOpenMaintConsumer.executor&quot;: &quot;Run&quot;,
+    &quot;Python tests.Python tests for test_openmaint_consumer.TestOpenMaintConsumer.test_main.executor&quot;: &quot;Run&quot;,
+    &quot;Python tests.Python tests for test_openmaint_consumer.TestOpenMaintConsumer.test_no_failure_predictions.executor&quot;: &quot;Run&quot;,
+    &quot;Python tests.Python tests for test_openmaint_consumer.TestOpenMaintConsumer.test_openmaint_consumer_main.executor&quot;: &quot;Run&quot;,
+    &quot;Python tests.Python tests for test_real_time_processor.TestRealTimeProcessorRunner.executor&quot;: &quot;Run&quot;,
+    &quot;Python tests.Python tests for test_real_time_processor.TestRealTimeProcessorRunner.test_main.executor&quot;: &quot;Run&quot;,
+    &quot;Python tests.Python tests for test_real_time_processor_client.TestRealTimeProcessor.executor&quot;: &quot;Run&quot;,
+    &quot;Python tests.Python tests for test_real_time_processor_client.TestRealTimeProcessor.test_aggregate_predictions.executor&quot;: &quot;Run&quot;,
+    &quot;Python tests.Python tests for test_real_time_processor_client.TestRealTimeProcessor.test_feature_engineering_with_missing_type.executor&quot;: &quot;Run&quot;,
+    &quot;Python tests.Python tests for test_real_time_processor_client.TestRealTimeProcessor.test_load_models.executor&quot;: &quot;Run&quot;,
+    &quot;Python tests.Python tests for test_real_time_processor_client.TestRealTimeProcessor.test_prepare_data.executor&quot;: &quot;Run&quot;,
+    &quot;Python tests.Python tests for test_real_time_processor_client.TestRealTimeProcessor.test_process_messages.executor&quot;: &quot;Run&quot;,
+    &quot;Python tests.Python tests for test_real_time_processor_client.TestRealTimeProcessor.test_process_messages_with_invalid_data.executor&quot;: &quot;Run&quot;,
+    &quot;Python tests.Python tests for test_real_time_processor_client.TestRealTimeProcessor.test_save_to_database.executor&quot;: &quot;Run&quot;,
+    &quot;Python tests.Python tests for test_sensor_data_simulator.TestSensorDataSimulatorRunner.test_main.executor&quot;: &quot;Run&quot;,
+    &quot;Python tests.Python tests for test_sensor_data_simulator_client.TestSensorDataSimulator.executor&quot;: &quot;Run&quot;,
+    &quot;Python tests.Python tests for test_sensor_data_simulator_client.TestSensorDataSimulator.test_cleanup.executor&quot;: &quot;Run&quot;,
+    &quot;Python tests.Python tests for test_sensor_data_simulator_client.TestSensorDataSimulator.test_cleanup_twice.executor&quot;: &quot;Run&quot;,
+    &quot;Python tests.Python tests for test_sensor_data_simulator_client.TestSensorDataSimulator.test_delete_log_directories.executor&quot;: &quot;Run&quot;,
+    &quot;Python tests.Python tests for test_sensor_data_simulator_client.TestSensorDataSimulator.test_init_docker_compose.executor&quot;: &quot;Run&quot;,
+    &quot;Python tests.Python tests for test_sensor_data_simulator_client.TestSensorDataSimulator.test_is_kafka_running.executor&quot;: &quot;Run&quot;,
+    &quot;Python tests.Python tests for test_sensor_data_simulator_client.TestSensorDataSimulator.test_simulate_sensor_data.executor&quot;: &quot;Run&quot;,
+    &quot;Python tests.Python tests for test_sensor_data_simulator_client.TestSensorDataSimulator.test_start_simulation.executor&quot;: &quot;Run&quot;,
+    &quot;Python tests.Python tests for test_sensor_data_simulator_client.TestSensorDataSimulator.test_start_zookeeper_command_missing.executor&quot;: &quot;Run&quot;,
+    &quot;Python tests.Python tests for test_sensor_data_simulator_client.TestSensorDataSimulator.test_start_zookeeper_never_ready.executor&quot;: &quot;Run&quot;,
+    &quot;Python tests.Python tests for test_sensor_data_simulator_client.TestSensorDataSimulator.test_terminate_processes.executor&quot;: &quot;Run&quot;,
+    &quot;Python tests.Python tests for test_setup_postgresql.TestSetupPostgreSQL.test_fetch_assets.executor&quot;: &quot;Run&quot;,
+    &quot;Python tests.Python tests in integration_test.py.executor&quot;: &quot;Run&quot;,
+    &quot;Python tests.Python tests in test_openmaint_client.py.executor&quot;: &quot;Run&quot;,
+    &quot;Python tests.Python tests in test_openmaint_consumer.py.executor&quot;: &quot;Run&quot;,
+    &quot;Python tests.Python tests in test_real_time_processor.py.executor&quot;: &quot;Run&quot;,
+    &quot;Python tests.Python tests in test_real_time_processor_client.py.executor&quot;: &quot;Run&quot;,
+    &quot;Python tests.Python tests in test_sensor_data_simulator.py.executor&quot;: &quot;Run&quot;,
+    &quot;Python tests.Python tests in test_sensor_data_simulator_client.py.executor&quot;: &quot;Run&quot;,
+    &quot;Python.InsertCSVData.executor&quot;: &quot;Run&quot;,
+    &quot;Python.LSTMֹ_OFֹֹֹֹ_simulate_processed_sensor_data.executor&quot;: &quot;Run&quot;,
+    &quot;Python.OpenMaintClient.executor&quot;: &quot;Run&quot;,
+    &quot;Python.RealTimeProcessor.executor&quot;: &quot;Run&quot;,
+    &quot;Python.RealTimeProcessorClient.executor&quot;: &quot;Run&quot;,
+    &quot;Python.SensorDataSimulator.executor&quot;: &quot;Run&quot;,
+    &quot;Python.SensorDataSimulatorClient.executor&quot;: &quot;Run&quot;,
+    &quot;Python.SyntheticDatatest.executor&quot;: &quot;Run&quot;,
+    &quot;Python.VerifyData.executor&quot;: &quot;Run&quot;,
+    &quot;Python.check_trained_model_features.executor&quot;: &quot;Run&quot;,
+    &quot;Python.cleanup_environment.executor&quot;: &quot;Run&quot;,
+    &quot;Python.cnn_lstm_model.executor&quot;: &quot;Run&quot;,
+    &quot;Python.cnn_model.executor&quot;: &quot;Run&quot;,
+    &quot;Python.combined_CSV_file.executor&quot;: &quot;Run&quot;,
+    &quot;Python.dashboard.executor&quot;: &quot;Run&quot;,
+    &quot;Python.data_normalization_analysis.executor&quot;: &quot;Run&quot;,
+    &quot;Python.data_preprocessing (1).executor&quot;: &quot;Run&quot;,
+    &quot;Python.data_preprocessing.executor&quot;: &quot;Run&quot;,
+    &quot;Python.data_review.executor&quot;: &quot;Run&quot;,
+    &quot;Python.diagnose.executor&quot;: &quot;Run&quot;,
+    &quot;Python.feature_engineering.executor&quot;: &quot;Run&quot;,
+    &quot;Python.integrate_data.executor&quot;: &quot;Run&quot;,
+    &quot;Python.isolation_forest_model.executor&quot;: &quot;Run&quot;,
+    &quot;Python.logging_util.executor&quot;: &quot;Run&quot;,
+    &quot;Python.lstm_model (1).executor&quot;: &quot;Run&quot;,
+    &quot;Python.lstm_model.executor&quot;: &quot;Run&quot;,
+    &quot;Python.model_selection.executor&quot;: &quot;Run&quot;,
+    &quot;Python.model_training.executor&quot;: &quot;Run&quot;,
+    &quot;Python.new.executor&quot;: &quot;Run&quot;,
+    &quot;Python.openmaint_consumer.executor&quot;: &quot;Run&quot;,
+    &quot;Python.original_simulate_sensor_data.executor&quot;: &quot;Run&quot;,
+    &quot;Python.p.executor&quot;: &quot;Run&quot;,
+    &quot;Python.populate_database.executor&quot;: &quot;Run&quot;,
+    &quot;Python.populates_predictive_maintenance_data.executor&quot;: &quot;Run&quot;,
+    &quot;Python.prepare_and_training_cnn (1).executor&quot;: &quot;Run&quot;,
+    &quot;Python.prepare_and_training_cnn.executor&quot;: &quot;Run&quot;,
+    &quot;Python.prepare_and_training_cnn_data.executor&quot;: &quot;Run&quot;,
+    &quot;Python.prepare_and_training_cnn_lstm.executor&quot;: &quot;Run&quot;,
+    &quot;Python.prepare_and_training_isolation_forest.executor&quot;: &quot;Run&quot;,
+    &quot;Python.prepare_and_training_lstm.executor&quot;: &quot;Run&quot;,
+    &quot;Python.prepare_and_training_lstm_.executor&quot;: &quot;Run&quot;,
+    &quot;Python.prepare_cnn_lstm_training_data.executor&quot;: &quot;Run&quot;,
+    &quot;Python.prepare_cnn_training_data.executor&quot;: &quot;Run&quot;,
+    &quot;Python.prepare_datasets.executor&quot;: &quot;Run&quot;,
+    &quot;Python.prepare_isolation_forest_training_data.executor&quot;: &quot;Run&quot;,
+    &quot;Python.prepare_lstm_training_data.executor&quot;: &quot;Run&quot;,
+    &quot;Python.real_time_processing.executor&quot;: &quot;Run&quot;,
+    &quot;Python.real_time_processing_CNNֹ_LSTM.executor&quot;: &quot;Run&quot;,
+    &quot;Python.run.executor&quot;: &quot;Run&quot;,
+    &quot;Python.scan_directory.executor&quot;: &quot;Run&quot;,
+    &quot;Python.setup_postgresql.executor&quot;: &quot;Run&quot;,
+    &quot;Python.simulate_processed_sensor_data (1).executor&quot;: &quot;Run&quot;,
+    &quot;Python.simulate_processed_sensor_data.executor&quot;: &quot;Run&quot;,
+    &quot;Python.simulate_real_data.executor&quot;: &quot;Run&quot;,
+    &quot;Python.simulate_sensor_data.executor&quot;: &quot;Run&quot;,
+    &quot;Python.statistical_validation.executor&quot;: &quot;Run&quot;,
+    &quot;Python.statisticaltest.executor&quot;: &quot;Run&quot;,
+    &quot;Python.test.executor&quot;: &quot;Run&quot;,
+    &quot;Python.test2.executor&quot;: &quot;Run&quot;,
+    &quot;Python.testOpenMaintClient.executor&quot;: &quot;Run&quot;,
+    &quot;Python.update_database.executor&quot;: &quot;Run&quot;,
+    &quot;Python.verify_tables.executor&quot;: &quot;Run&quot;,
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;ignore.virus.scanning.warn.message&quot;: &quot;true&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Users/neora/Downloads/-maintenance-system-main&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
-}]]></component>
+}</component>
   <component name="QodanaHighlightedReportService">
     <option name="localRunNotPublishedPersistedInfo">
       <LocalReportPersistedInfo>
@@ -190,10 +202,10 @@
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\neora\Desktop\Final_project\-maintenance-system\predictive_maintenance" />
       <recent name="C:\Users\neora\Desktop\Final_project\-maintenance-system" />
       <recent name="C:\Users\neora\Desktop\Final_project\-maintenance-system\predictive_maintenance\RealTimeProcessing" />
       <recent name="C:\Users\neora\Desktop\Final_project\-maintenance-system\predictive_maintenance\kafka" />
-      <recent name="C:\Users\neora\Desktop\Final_project\-maintenance-system\predictive_maintenance" />
       <recent name="C:\Users\neora\Desktop\Final_project\-maintenance-system\predictive_maintenance\src\models_training\ISOLATION_FOREST" />
     </key>
   </component>
@@ -292,6 +304,29 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
+    <configuration name="scan_directory" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="-maintenance-system" />
+      <option name="ENV_FILES" value="" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/predictive_maintenance" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/predictive_maintenance/scan_directory.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
     <configuration name="predictive_maintenance.kafka: Compose Deployment" type="docker-deploy" factoryName="docker-compose.yml">
       <deployment type="docker-compose.yml">
         <settings>
@@ -337,22 +372,6 @@
       <option name="_new_targetType" value="&quot;PATH&quot;" />
       <method v="2" />
     </configuration>
-    <configuration name="Python tests in test_real_time_processor.py" type="tests" factoryName="Autodetect" temporary="true" nameIsGenerated="true">
-      <module name="-maintenance-system" />
-      <option name="ENV_FILES" value="" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/predictive_maintenance/tests" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
-      <option name="_new_additionalArguments" value="&quot;&quot;" />
-      <option name="_new_target" value="&quot;$PROJECT_DIR$/predictive_maintenance/tests/test_real_time_processor.py&quot;" />
-      <option name="_new_targetType" value="&quot;PATH&quot;" />
-      <method v="2" />
-    </configuration>
     <configuration name="Python tests in test_sensor_data_simulator_client.py" type="tests" factoryName="Autodetect" temporary="true" nameIsGenerated="true">
       <module name="-maintenance-system" />
       <option name="ENV_FILES" value="" />
@@ -374,19 +393,19 @@
       <item itemvalue="Python.cnn_model" />
       <item itemvalue="Python.feature_engineering" />
       <item itemvalue="Python.python12" />
+      <item itemvalue="Python.scan_directory" />
       <item itemvalue="Python.run" />
       <item itemvalue="Python tests.Python tests in test_openmaint_client.py" />
       <item itemvalue="Python tests.Python tests in test_openmaint_consumer.py" />
-      <item itemvalue="Python tests.Python tests in test_real_time_processor.py" />
       <item itemvalue="Python tests.Python tests in test_sensor_data_simulator_client.py" />
     </list>
     <recent_temporary>
       <list>
         <item itemvalue="Python.run" />
+        <item itemvalue="Python.scan_directory" />
         <item itemvalue="Python tests.Python tests in test_sensor_data_simulator_client.py" />
         <item itemvalue="Python tests.Python tests in test_openmaint_client.py" />
         <item itemvalue="Python tests.Python tests in test_openmaint_consumer.py" />
-        <item itemvalue="Python tests.Python tests in test_real_time_processor.py" />
       </list>
     </recent_temporary>
   </component>
@@ -446,7 +465,7 @@
       <workItem from="1734351893583" duration="18672000" />
       <workItem from="1734455866429" duration="73453000" />
       <workItem from="1734901782544" duration="7637000" />
-      <workItem from="1734940663472" duration="39871000" />
+      <workItem from="1734940663472" duration="67286000" />
     </task>
     <task id="LOCAL‎-00001" summary="...">
       <option name="closed" value="true" />
@@ -824,7 +843,15 @@
       <option name="project" value="LOCAL‎" />
       <updated>1735071697240</updated>
     </task>
-    <option name="localTasksCounter" value="48" />
+    <task id="LOCAL‎-00048" summary="git">
+      <option name="closed" value="true" />
+      <created>1735072150014</created>
+      <option name="number" value="00048" />
+      <option name="presentableId" value="LOCAL‎-00048" />
+      <option name="project" value="LOCAL‎" />
+      <updated>1735072150014</updated>
+    </task>
+    <option name="localTasksCounter" value="49" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -841,7 +868,7 @@
                   <entry key="branch">
                     <value>
                       <list>
-                        <option value="main" />
+                        <option value="new1" />
                       </list>
                     </value>
                   </entry>
@@ -926,8 +953,8 @@
     <SUITE FILE_PATH="coverage/_maintenance_system$prepare_and_training_cnn_data.coverage" NAME="prepare_and_training_cnn_data Coverage Results" MODIFIED="1727607926066" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/predictive_maintenance/src/models_training/CNN" />
     <SUITE FILE_PATH="coverage/_maintenance_system$lstm_model__1_.coverage" NAME="lstm_model (1) Coverage Results" MODIFIED="1725471189790" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/predictive_maintenance/src/models_training/LSTM" />
     <SUITE FILE_PATH="coverage/_maintenance_system$isolation_forest_model.coverage" NAME="isolation_forest_model Coverage Results" MODIFIED="1726387774304" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/predictive_maintenance/src/models_training/ISOLATION_FOREST" />
-    <SUITE FILE_PATH="coverage/_maintenance_system$scan_directory.coverage" NAME="scan_directory Coverage Results" MODIFIED="1734628240277" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/predictive_maintenance" />
-    <SUITE FILE_PATH="coverage/_maintenance_system$run.coverage" NAME="run Coverage Results" MODIFIED="1735069384637" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/predictive_maintenance" />
+    <SUITE FILE_PATH="coverage/_maintenance_system$scan_directory.coverage" NAME="scan_directory Coverage Results" MODIFIED="1735119382316" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/predictive_maintenance" />
+    <SUITE FILE_PATH="coverage/_maintenance_system$run.coverage" NAME="run Coverage Results" MODIFIED="1735129550241" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/predictive_maintenance" />
     <SUITE FILE_PATH="coverage/consume_sensor_data_py$diagnose.coverage" NAME="diagnose Coverage Results" MODIFIED="1722535967724" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/predictive_maintenance/src/data_processing" />
     <SUITE FILE_PATH="coverage/_maintenance_system$prepare_datasets.coverage" NAME="prepare_datasets Coverage Results" MODIFIED="1722003425510" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/predictive_maintenance/src" />
     <SUITE FILE_PATH="coverage/consume_sensor_data_py$data_preprocessing__1_.coverage" NAME="data_preprocessing (1) Coverage Results" MODIFIED="1722951540847" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/predictive_maintenance/src/data_processing" />
