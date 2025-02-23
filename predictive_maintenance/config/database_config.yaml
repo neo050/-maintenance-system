@@ -1,5 +1,5 @@
 database:
-  url: postgresql://predictive_maintenance_owner:l2iqhScLz9PQ@ep-floral-meadow-a5zfc3b8.us-east-2.aws.neon.tech/predictive_maintenance?sslmode=require
+  url: postgresql://predictive_maintenance_owner:***************/predictive_maintenance?sslmode=require
 cmdbuild:
   url: postgresql://cmdbuild:cmdbuild@cmdbuild_db:5432/cmdbuild_r2u2
 
